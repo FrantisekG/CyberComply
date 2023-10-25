@@ -1,0 +1,16 @@
+#omyl-klik {
+    position: fixed;
+    /* Fixed position */
+    z-index: 1;
+    /* Sit on top */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    pointer-events: none;
+    /* This will prevent any clicks */
+}

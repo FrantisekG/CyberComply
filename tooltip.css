@@ -1,0 +1,40 @@
+.info-tooltip {
+    position: relative;
+    display: inline-block;
+    /* If you want the (i) to have 'underline' */
+}
+
+.info-tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    max-width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 0.8em;
+    position: absolute;
+    z-index: 1;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: normal;
+}
+
+.info-tooltip .tooltiptext.right {
+    top: 50%;
+    left: 100%;
+    transform: translateX(10px) translateY(-50%);
+}
+
+.info-tooltip .tooltiptext.bottom {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+}
+
+.info-tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

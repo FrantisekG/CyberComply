@@ -1,0 +1,51 @@
+https://aptien.com/cs/kb/articles/what-is-nis2
+
+https://www.e15.cz/byznys/e15-a-byznys/evropska-smernice-o-kyberbezpecnosti-stavi-do-pozoru-tisice-firem-s-pripravami-by-nemely-otalet-1397409
+ 
+Moje představa je klikací nástroj, který na základě preferovaných, nebo již existujících 
+IT služeb / poskytovatelů řešení nabídne sadu nástrojů na pokrytí chybějících opatření. 
+
+ty preferované nástroje tam jsou pro případ ze už by organizace nějaký nástroj měla implementován.  
+Tak aby se k tomu dopočítal zbytek opatření, místo aby se jim nabízelo jiné řešení.
+
+Reddit
+
+"Take the standard controls and turn them into regular language of tools, techniques 
+and processes -- for example, IAM has a lot of controls that are implemented in one technology stack. 
+Map those many controls into something like "octa is in place and functional on the system." 
+Same could go for managerial controls - "documentation are in the logged policy repository which keeps them up to date."
+
+Je důležité si hlídat, do kdy se musí samoidentifikovat přes portál NÚKIB, že na ně tato legislativa dopadá. 
+Za nenahlášení se do portálů hrozí nejvyšší pokuty, konkrétně 175 milionů korun pro nižší režim a 250 milionů pro vyšší.
+
+Dobré detaily: https://finmag.penize.cz/byznys/441765-smernice-nis2-nahlasit-se-musite-sami-hrozi-extremni-pokuty-varuje-expertka
+
+Co přesně budou „dotčené společnosti“ muset udělat?
+
+V první řadě bych si na jejich místě zjistila, co momentálně mám, či nemám v rámci společnosti nastaveno, vytvořila bych GAP analýzu 
+(analýza mezer, pozn. autora) vůči tomu, co minimálně požaduje NIS2 nebo rovnou návrhy nové legislativy. 
+Upozorňuji ale na to, že to jsou stále jen návrhy a může se ještě leccos změnit. 
+A poté bude třeba přijmout organizační a technická opatření, které tato legislativa vyžaduje.
+
+Úplnou novinkou v návrhu je začlenění hodnocení NÚKIB do procesu výběru významného dodavatele (platné pro organizace spadající do režimu vyšších povinností). 
+Cílem je zde začlenění a zmírnění závislostí v kontextu strategických a politických zájmů České republiky. 
+NÚKIB v rámci tohoto procesu plánuje vyhodnocovat oblasti, jako jsou země působnosti dodavatele, trestná činnost dodavatele, 
+ekonomická aktivita, jednání zástupců dodavatele a další oblasti podrobněji popsané ve Vyhlášce o kritériích rizikovosti dodavatele.
+
+Co by tedy každá společnost nyní měla udělat?
+
+1. Assess how the NIS2 impacts you or if you are covered by it
+
+2. Identify partners that can help you to become compliant.
+
+3. Conduct a Gap-Analysis together with experts in the field
+
+4. Create awareness on board level and develop a plan to implement the missing requirements
+
+5. Allocate concrete budgets and if possible, a team to the project
+
+6. Implement missing measures, strategies and routines already now to be compliant by 2024
+
+Upřesnění kategorizace mikropodniků:
+
+https://www.pravniprostor.cz/clanky/mezinarodni-a-evropske-pravo/nis-2-odpiraci-kyberbezpecnosti-treste-se

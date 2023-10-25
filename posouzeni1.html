@@ -1,0 +1,2297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>CyberComply</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet" />
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet" />
+  <!--  Tooltip -->
+  <link rel="stylesheet" href="tooltip.css" />
+</head>
+
+<body id="page-top">
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="landing.html">
+        <div class="sidebar-brand-icon">
+          <i class="fas fa-shield-virus"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">CyberComply</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0" />
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item">
+        <a class="nav-link" href="landing.html">
+          <i class="fa fa-home"></i>
+          <span>Hlavní stránka</span></a>
+      </li>
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Informační přehled</span></a>
+      </li>
+
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Dílčí výsledky</span></a>
+      </li>
+
+      <!-- Nav Item - Posouzení NIS2-->
+      <li class="nav-item">
+        <a class="nav-link" href="nis2.html">
+          <i class="fa fa-gavel"></i>
+          <span>Směrnice NIS2</span></a>
+      </li>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
+          aria-controls="collapsePages">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Legislativa</span>
+        </a>
+        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Login Screens:</h6>
+            <a class="collapse-item" href="login.html">Login</a>
+            <a class="collapse-item" href="register.html">Register</a>
+            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+            <div class="collapse-divider"></div>
+            <h6 class="collapse-header">Other Pages:</h6>
+            <a class="collapse-item" href="404.html">404 Page</a>
+            <a class="collapse-item" href="landing.html">Landing Page</a>
+          </div>
+        </div>
+      </li>
+
+
+      <!-- Nav Item - Utilities Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+          aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fa fa-graduation-cap"></i>
+          <span>Další vzdělání</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Custom Utilities:</h6>
+            <a class="collapse-item" href="utilities-color.html">Colors</a>
+            <a class="collapse-item" href="utilities-border.html">Borders</a>
+            <a class="collapse-item" href="utilities-animation.html">Animations</a>
+            <a class="collapse-item" href="utilities-other.html">Other</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Divider -->
+      <!--<hr class="sidebar-divider" />-->
+
+      <!-- Heading -->
+      <!--<div class="sidebar-heading">Interface</div>-->
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+          aria-controls="collapseTwo">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>Nastavení</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Custom Components:</h6>
+            <a class="collapse-item" href="buttons.html">Buttons</a>
+            <a class="collapse-item" href="cards.html">Cards</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Heading -->
+      <!--<div class="sidebar-heading">Addons</div>-->
+
+      <!-- 
+        <li class="nav-item">
+          <a class="nav-link" href="tables.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Dotazník pro posouzení</span></a
+          >
+        </li>-->
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block" />
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+      <!-- Sidebar Message -->
+    </ul>
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <!-- Main Content -->
+      <div id="content">
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Hledat..."
+                aria-label="Hledat" aria-describedby="basic-addon2" />
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                      aria-label="Search" aria-describedby="basic-addon2" />
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter"></span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">Alerts Center</h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-donate text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for
+                    your account.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+              </div>
+            </li>
+
+            <!-- Nav Item - Messages -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope fa-fw"></i>
+                <!-- Counter - Messages -->
+                <span class="badge badge-danger badge-counter">1</span>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">Message Center</h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="..." />
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div class="font-weight-bold">
+                    <div class="text-truncate">
+                      Hi there! I am wondering if you can help me with a
+                      problem I've been having.
+                    </div>
+                    <div class="small text-gray-500">Emily Fowler · 58m</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="..." />
+                    <div class="status-indicator"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">
+                      I have the photos that you ordered last month, how would
+                      you like them sent to you?
+                    </div>
+                    <div class="small text-gray-500">Jae Chun · 1d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="..." />
+                    <div class="status-indicator bg-warning"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">
+                      Last month's report looks great, I am very happy with
+                      the progress so far, keep up the good work!
+                    </div>
+                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="..." />
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">
+                      Am I a good boy? The reason I ask is because someone
+                      told me that people say this to all dogs, even if they
+                      aren't good...
+                    </div>
+                    <div class="small text-gray-500">
+                      Chicken the Dog · 2w
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+              </div>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Uživatel</span>
+                <img class="img-profile rounded-circle" src="img/undraw_profile.svg" />
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div id="omyl-klik" style="display: none"></div>
+
+        <div class="container my-4" id="dotaznik">
+          <!-- Progress Bar -->
+          <div id="outer-progress-bar" class="progress progress mb-2" style="margin-top: 4rem">
+            <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="10"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <!-- Otázky NIS2 -->
+          <div id="questions">
+            <!-- Otázka č. 1 -->
+            <div class="my-4" id="question1">
+              <h4>Má vaše organizace sídlo nebo poskytuje služby v Evropské unii (EU)?</h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityYes" name="activity" value="yes" autocomplete="off" />
+                  Ano
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityNo" name="activity" value="no" autocomplete="off" />
+                  Ne
+                </label>
+              </div>
+              <p><strong>Upřesnění</strong>:</p>
+              <ul>
+                <li>Působení v Evropské unii znamená, že podnikatelské aktivity, služby nebo infrastruktura
+                  jsou fyzicky
+                  přítomny v některém z členských států EU bez ohledu na to, kde má vaše organizace sídlo.
+                </li>
+              </ul>
+              <div class="alert alert-warning" role="alert">
+                Konkrétní požadavky budou vždy upřesněny národní legislativou. V případě české republiky se bude
+                jednat o nový zákon o kybernetické bezpečnosti, který by měl vejít v platnost koncem roku 2024.
+
+              </div>
+
+            </div>
+
+            <!-- Otázka č. 2 -->
+            <div class="my-4" id="question2" style="display: none">
+              <h4>
+                Je v současnosti vaše organizace regulována zákonem č.
+                181/2014 Sb., o kybernetické bezpečnosti (ZKB)?
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityYes2" name="activity2" value="yes" autocomplete="off" />
+                  Ano
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityNo2" name="activity2" value="no" autocomplete="off" />
+                  Ne
+                </label>
+              </div>
+            </div>
+
+            <!-- Otázka č. 4 -->
+            <div class="my-4" id="question4" style="display: none">
+              <h4>
+                Vyberte, kolik má v současnosti vaše organizace zaměstnanců:
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityZamMikro" name="activity4" value="yes" autocomplete="off" />
+                  1 - 9 zaměstnanců
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityZamMaly" name="activity4" value="no" autocomplete="off" />
+                  10 - 49 zaměstnanců
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityZamStredni" name="activity4_3" value="no" autocomplete="off" />
+                  50 - 249 zaměstnanců
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityZamVelky" name="activity4_4" value="no" autocomplete="off" />
+                  250 a více zaměstnanců
+                </label>
+              </div>
+              <p><b>Upřesnění:</b></p>
+              <ul>
+                <li>Včetně zaměstnanců na plný, částečný, dočasný a sezónní
+                  úvazek. Do počtu zaměstnanců se započítávají také
+                  vlastníci, kteří jsou vedoucími pracovníky v posuzovaném
+                  podniku.</li>
+              </ul>
+            </div>
+
+            <!-- Otázka č. 4_1 - Obrat 2 mil-->
+            <div class="my-4" id="question4_1" style="display: none">
+              <h4>
+                Přesahuje váš roční obrat nebo bilanční suma 2 miliony EUR?
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityYes4_1" name="activity4_1" value="yes" autocomplete="off" />
+                  Ano
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityNo4_1" name="activity4_1" value="no" autocomplete="off" />
+                  Ne
+                </label>
+              </div>
+            </div>
+
+            <!-- Otázka č. 4_2 - Obrat 10 mil -->
+            <div class="my-4" id="question4_2" style="display: none">
+              <h4>
+                Přesahuje váš roční obrat nebo bilanční suma 10 milionu EUR?
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityYes4_2" name="activityYes4_2" value="yes" autocomplete="off" />
+                  Ano
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityNo4_2" name="activity4_2" value="no" autocomplete="off" />
+                  Ne
+                </label>
+              </div>
+            </div>
+
+            <!-- Otázka č. 4_3 - Obrat 50 mil podniku -->
+
+            <div class="my-4" id="question4_3" style="display: none">
+              <h4>
+                Přesahuje váš roční obrat 50 milionu EUR nebo vaše roční
+                bilanční suma 43 milionu EUR?
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityYes4_3" name="activityYes4_3" value="yes" autocomplete="off" />
+                  Ano
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityNo4_3" name="activity4_3" value="no" autocomplete="off" />
+                  Ne
+                </label>
+              </div>
+            </div>
+
+            <!-- Otázka č. 3_1 - Podíly v podniku -->
+            <div class="my-4" id="question3" style="display: none">
+              <h4>
+                Jste nezávislým podnikem?
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityYes3_1" name="activityYes3_1" value="yes" autocomplete="off" />
+                  Ano
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityNo3_1" name="activity3_1" value="no" autocomplete="off" />
+                  Ne
+                </label>
+              </div>
+              <p><b>Upřesnění:</b></p>
+              <ul>
+                <li>Nemáte žádný podíl v jiných podnicích a žádný podnik nemá
+                  podíl ve vašem podniku.</li>
+                <li>
+                  Další informace naleznete v
+                  <a href="https://op.europa.eu/cs/publication-detail/-/publication/79c0ce87-f4dc-11e6-8a35-01aa75ed71a1"
+                    target="_blank" rel="noopener noreferrer">uživatelské
+                    příručce k definici malých a středních
+                    podniků</a> vydané Evropskou komisí.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Otázka č. 3_2 - Podíly v podniku -->
+            <div class=" my-4" id="question3_2" style="display: none">
+              <h4>
+                Jste partnerským podnikem?
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityYes3_2" name="activityYes3_2" value="yes" autocomplete="off" />
+                  Ano
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityNo3_2" name="activity3_2" value="no" autocomplete="off" />
+                  Ne
+                </label>
+              </div>
+              <p><b>Upřesnění:</b></p>
+              <ul>
+                <li>Máte 25-50% podíl v jiném podniku nebo jiný podnik má
+                  zmíněný podíl ve vašem. Podíl nesmí přesáhnout 50 %.</li>
+                <li>
+                  Další informace naleznete v
+                  <a
+                    href="https://op.europa.eu/cs/publication-detail/-/publication/79c0ce87-f4dc-11e6-8a35-01aa75ed71a1">uživatelské
+                    příručce k definici malých a středních
+                    podniků</a> vydané Evropskou komisí.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Otázka č. 3_3 - Podíly v podniku -->
+            <div class="my-4" id="question3_3" style="display: none">
+              <h4>
+                Jste propojeným podnikem?
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityYes3_3" name="activityYes3_3" value="yes" autocomplete="off" />
+                  Ano
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityNo3_3" name="activity3_3" value="no" autocomplete="off" />
+                  Ne
+                </label>
+              </div>
+              <p><b>Upřesnění:</b></p>
+              <ul>
+                <li>Máte nejméně 50% podíl v jiném podniku nebo jiný podnik
+                  má zmíněný podíl ve vašem.</li>
+                <li>
+                  Další informace naleznete v
+                  <a
+                    href="https://op.europa.eu/cs/publication-detail/-/publication/79c0ce87-f4dc-11e6-8a35-01aa75ed71a1">uživatelské
+                    příručce k definici malých a středních
+                    podniků</a> vydané Evropskou komisí.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Otázka č. 6 - Služby pro Mikro/maly -->
+            <div class="my-4" id="question5" style="display: none">
+              <h4>Poskytujete jednu z uvedených služeb?</h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityCertifikace" name="activity5_1" value="yes" autocomplete="off" />
+                  Služba vytvářející důvěru
+                  <span class="info-tooltip">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    <span class="tooltiptext">Akreditovaná certifikační autorita podle schématu
+                      eIDAS.</span>
+                  </span>
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityDNS" name="activity5_2" value="no" autocomplete="off" />
+                  Služba DNS, s výjimkou operátorů kořenových jmenných serverů
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityTLD" name="activity5_3" value="no" autocomplete="off" />
+                  Registry domén nejvyšší úrovně (TLD)
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityElektro" name="activity5_4" value="no" autocomplete="off" />
+                  Veřejné sítě elektronických komunikací nebo veřejně
+                  dostupných služeb elektronických komunikací
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityVerejnost" name="activity5_5" value="no" autocomplete="off" />
+                  Veřejná správy
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityNic" name="activity5_6" value="no" autocomplete="off" />
+                  Žádné z nabízených
+                </label>
+              </div>
+              <p><b>Upřesnění:</b></p>
+              Dle <a href="https://eur-lex.europa.eu/legal-content/CS/TXT/PDF/?uri=CELEX:32014R0910" target="_blank"
+                rel="noopener noreferrer">nařízení (EU) č.
+                910/2014</a> se <b>službou vytvářející důvěru</b> rozumí elektronická služba, která je zpravidla
+              poskytována za úplatu a spočívá:
+              <ul>
+                <li>ve vytváření, ověřování shody a ověřování platnosti elektronických podpisů, elektronických pečetí
+                  nebo elektronických
+                  časových razítek, služeb elektronického doporučeného doručování a certifikátů souvisejících s těmito
+                  službami nebo</li>
+                <li>ve vytváření, ověřování shody a ověřování platnosti certifikátů pro autentizaci internetových
+                  stránek nebo</li>
+                <li>
+                  v uchovávání elektronických podpisů, pečetí nebo certifikátů souvisejících s těmito službami;
+                </li>
+              </ul>
+
+            </div>
+
+            <!-- Otázka č. 7 -->
+            <div class="my-4" id="question7" style="display: none">
+              <h4>
+                Vyberte, kolik zaměstnanců, včetně ročního obratu nebo
+                bilanční sumy má váš podnik po přepočtu:
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityZamMikro2" name="activity7_1" value="yes" autocomplete="off" />
+                  1 - 9 zaměstnanců, roční obrat nebo bilanční suma
+                  nepřesahuje 2 miliony EUR
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityZamMaly2" name="activity7_2" value="no" autocomplete="off" />
+                  10 - 49 zaměstnanců, roční obrat nebo bilanční suma
+                  nepřesahuje 10 miliony EUR
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityZamStredni2" name="activity7_3" value="no" autocomplete="off" />
+                  50 - 249 zaměstnanců, roční obrat nepřesahuje 50 miliony EUR
+                  nebo bilanční suma nepřesahuje 43 miliony EUR
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityZamVelky2" name="activity7_4" value="no" autocomplete="off" />
+                  Více než 250 zaměstnanců, roční obrat přesahuje 50 milionů
+                  EUR nebo bilanční suma přesahuje 43 milionů EUR
+                </label>
+              </div>
+              Pro snažší orientaci v problematice, je níže vložen nástroj na stránkách evropské komise, který může
+              upřesnit daný výpočet.
+              <iframe
+                src="https://ec.europa.eu/growth/tools-databases/SME-Wizard/smeq.do;SME_SESSION_ID=L8zGtxeZAFd4AzCoE28j_b4QPvcxyDplyNZoSU8C5s8EGIVo2P1s!-74218174?execution=e1s1"
+                width="100%" height="400" frameborder="0" style="margin-top: 20px;"></iframe>
+            </div>
+
+            <!-- Otázka č. 8 -->
+            <div class="my-4" id="question8" style="display: none">
+              <h4>Poskytujete služby v jednom z uvedených odvětví?</h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityEnergetika" name="activity8_1" value="yes" autocomplete="off" />
+                  Energetika
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityDoprava" name="activity8_2" value="no" autocomplete="off" />
+                  Doprava
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityBanky" name="activity8_3" value="no" autocomplete="off" />
+                  Bankovnictví
+                  <span class="info-tooltip">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    <span class="tooltiptext">Úvěrové instituce dle nařízení Evropského parlamentu a
+                      Rady (EU) č. 575/2013.</span>
+                  </span>
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityFinance" name="activity8_4" value="no" autocomplete="off" />
+                  Infrastruktura finančních trhů
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityZdravi" name="activity8_5" value="no" autocomplete="off" />
+                  Zdravotnictví
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityPitVoda" name="activity8_6" value="no" autocomplete="off" />
+                  Pitná voda
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityOdpVoda" name="activity8_7" value="no" autocomplete="off" />
+                  Odpadní voda
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityDigi" name="activity8_8" value="no" autocomplete="off" />
+                  Digitální infrastruktura
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityICT" name="activity8_9" value="no" autocomplete="off" />
+                  Řízení ICT služeb
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activitySprava" name="activity8_10" value="no" autocomplete="off" />
+                  Veřejná správa
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityVesmir" name="activity8_11" value="no" autocomplete="off" />
+                  Vesmír
+                  <span class="info-tooltip">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    <span class="tooltiptext">Zajištění podpory poskytování služeb využívajících
+                      kosmického prostoru.</span>
+                  </span>
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityJine" name="activity8_12" value="no" autocomplete="off" />
+                  V jiném odvětví
+                </label>
+              </div>
+              <p><b>Upřesnění:</b></p>
+              <ul>
+                <li>Nařízení <a href="https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32014L0065"
+                    target="_blank" rel="noopener noreferrer">Evropského parlamentu a Rady (EU) č. 575/2013</a> uvádí
+                  <b>úvěrovou instituci</b>
+                  jako podnik, jehož činnost spočívá v přijímání vkladů nebo jiných splatných peněžních prostředků od
+                  veřejnosti a poskytování úvěrů na
+                  vlastní účet.
+                </li>
+                <li>
+                  <p>Odvětví <b>vesmír</b> zahrnuje provozovatelé pozemních infrastruktur vlastněných, spravovaných a
+                    provozovaných členskými státy nebo soukromými subjekty
+                    a podporujících poskytování služeb využívajících kosmického prostoru, s výjimkou poskytovatelů
+                    veřejných sítí
+                    elektronických komunikací.</p>
+                </li>
+              </ul>
+            </div>
+            <!-- Otázka č. 9 - Příloha II -->
+            <div class="my-4" id="question9" style="display: none">
+              <h4>Poskytujete služby v jednom z uvedených odvětví?</h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityPosta" name="activity9_1" value="yes" autocomplete="off" />
+                  Poštovní a kurýrní služby
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityOdpady" name="activity9_2" value="no" autocomplete="off" />
+                  Nakládání s odpady
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityVyrobaCh" name="activity9_3" value="no" autocomplete="off" />
+                  Výroba, produkce a distribuce chemických látek
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityPotraviny" name="activity9_4" value="no" autocomplete="off" />
+                  Výroba, zpracování a distribuce potravin
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityVyroba" name="activity9_5" value="no" autocomplete="off" />
+                  Výroba
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityDigPosk" name="activity9_6" value="no" autocomplete="off" />
+                  Digitální poskytovatelé
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityVyzkum" name="activity9_7" value="no" autocomplete="off" />
+                  Výzkum
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityNic2" name="activity9_8" value="no" autocomplete="off" />
+                  Žádné z nabízených
+                </label>
+              </div>
+            </div>
+            <!-- Otázka č. 10 - Poskytovatele služebe Digitální infrastruktury -->
+            <div class="my-4" id="question10" style="display: none">
+              <h4>Poskytujete jednu z uvedených služeb?</h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityCertifikace2" name="activity10_1" value="yes" autocomplete="off" />
+                  Služba vytvářející důvěru
+                  <span class="info-tooltip">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    <span class="tooltiptext">Akreditovaná certifikační autorita podle schématu
+                      eIDAS.</span>
+                  </span>
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityDNS2" name="activity10_2" value="no" autocomplete="off" />
+                  Služba DNS
+                  <span class="info-tooltip">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    <span class="tooltiptext">S výjimkou operátorů kořenových jmenných serverů.</span>
+                  </span>
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityTLD2" name="activity10_3" value="no" autocomplete="off" />
+                  Registry domén nejvyšší úrovně (TLD)
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityElektro2" name="activity10_4" value="no" autocomplete="off" />
+                  Veřejné sítě elektronických komunikací nebo veřejně
+                  dostupných služeb elektronických komunikací
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityJine2" name="activity10_5" value="no" autocomplete="off" />
+                  Jinou službu
+                </label>
+              </div>
+            </div>
+            <!-- Otázka č. 11 - Poskytovatele služebe Digitální infrastruktury -->
+            <div class="my-4" id="question11" style="display: none">
+              <h4>Poskytujete jednu z uvedených služeb?</h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityCloud" name="activity11_1" value="yes" autocomplete="off" />
+                  Služby cloud computingu
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityDataCentra" name="activity11_2" value="no" autocomplete="off" />
+                  Služby datových center
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityCDN" name="activity11_3" value="no" autocomplete="off" />
+                  Poskytování sítí pro doručování obsahu
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityZadna" name="activity11_4" value="no" autocomplete="off" />
+                  Žádné z nabízených
+                </label>
+              </div>
+            </div>
+            <!-- Otázka č. 12 - Energetika pododvětví -->
+            <div class="my-4" id="question12" style="display: none">
+              <h4>
+                Poskytujete služby v jednom z uvedených pododvětví energity?
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityElektrina" name="activity12_1" value="yes" autocomplete="off" />
+                  Elektřina
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityVytapeni" name="activity12_2" value="no" autocomplete="off" />
+                  Dálkové vytápění a chlazení
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityRopa" name="activity12_3" value="no" autocomplete="off" />
+                  Ropa
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityPlyn" name="activity9_4" value="no" autocomplete="off" />
+                  Zemní plyn
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityVodik" name="activity9_5" value="no" autocomplete="off" />
+                  Vodík
+                </label>
+              </div>
+            </div>
+            <!-- Otázka č. 12_1 - Doprava pododvětví -->
+            <div class="my-4" id="question12_1" style="display: none">
+              <h4>
+                Poskytujete služby v jednom z uvedených pododvětví dopravy?
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityLet" name="activity12_1" value="yes" autocomplete="off" />
+                  Letecká
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityZeleznice" name="activity12_2" value="no" autocomplete="off" />
+                  Železniční
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityVodni" name="activity12_3" value="no" autocomplete="off" />
+                  Vodní
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activitySilnicni" name="activity9_4" value="no" autocomplete="off" />
+                  Silniční
+                </label>
+              </div>
+            </div>
+            <!-- Otázka č. 12_2 - Infrastruktura financí pododvětví -->
+            <div class="my-4" id="question12_2" style="display: none">
+              <h4>
+                Poskytujete služby v jednom z uvedených pododvětví
+                infrastruktury finančních trhů?
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityObchod" name="activity12_1" value="yes" autocomplete="off" />
+                  Obchodní systémy
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityProtistrany" name="activity12_2" value="no" autocomplete="off" />
+                  Ústřední protistrany
+                </label>
+              </div>
+              <p><b>Upřesnění:</b></p>
+              <ul>
+                <li>Dle <a href="https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32014L0065" target="_blank"
+                    rel="noopener noreferrer">směrnice Evropského parlamentu a Rady 2014/65/EU</a> se <b>obchodním
+                    systémem</b>
+                  rozumí
+                  regulovaný trh, mnohostranný obchodní systém nebo organizovaný obchodní systém.</li>
+                <li>
+                  <p><b>Ústřední protistranou</b> se dle <a
+                      href="https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32012R0648" target="_blank"
+                      rel="noopener noreferrer">nařízení
+                      Evropského parlamentu a Rady (EU) č. 648/2012</a> rozumí právnická osoba, která vstupuje mezi
+                    strany
+                    smluv uzavíraných na jednom či na několika finančních trzích, a stává se tak
+                    kupujícím pro každého prodávajícího a prodávajícím pro každého kupujícího.</p>
+                </li>
+              </ul>
+            </div>
+            <!-- Otázka č. 12_3 - Zdravotnictví pododvětví -->
+            <div class="my-4" id="question12_3" style="display: none">
+              <h4>
+                Poskytujete služby v jednom z uvedených pododvětví
+                zdravotnictví?
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityPece" name="activity12_1" value="yes" autocomplete="off" />
+                  Zdravotní péče
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityLabs" name="activity12_2" value="no" autocomplete="off" />
+                  Referenční laboratoře
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityLeciva" name="activity12_2" value="no" autocomplete="off" />
+                  Výzkum a vývoj týkající se léčivých přípravků
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityFarmacie" name="activity12_2" value="no" autocomplete="off" />
+                  Výroba základních farmaceutických výrobků a přípravků
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityZdravotniprostredky" name="activity12_2" value="no"
+                    autocomplete="off" />
+                  Výroba zdravotnických prostředků
+                </label>
+              </div>
+            </div>
+            <!-- Otázka č. 12_4 - Digitální infrastrukutra pododvětví -->
+            <div class="my-4" id="question12_4" style="display: none">
+              <h4>
+                Poskytujete služby v jednom z uvedených pododvětví digitální
+                infrastruktury?
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityIXP" name="activity12_1" value="yes" autocomplete="off" />
+                  Poskytování služby výměnného uzlu internetu (IXP)
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityDNS3" name="activity12_2" value="no" autocomplete="off" />
+                  Poskytování služby systému překladu jmen domén (DNS)
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityRegistry" name="activity12_2" value="no" autocomplete="off" />
+                  Správa a provoz registru internetových domén nejvyšší úrovně
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityCloud2" name="activity12_2" value="no" autocomplete="off" />
+                  Poskytování služby cloud computingu
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityDatoveCentrum" name="activity12_2" value="no" autocomplete="off" />
+                  Poskytování služby datového centra
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityCDN1" name="activity12_2" value="no" autocomplete="off" />
+                  Poskytování služby sítě pro doručování obsahu (CDN)
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityCertifikace3" name="activity12_2" value="no" autocomplete="off" />
+                  Poskytování služby vytvářejících důvěru
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityVerejneKom" name="activity12_2" value="no" autocomplete="off" />
+                  Poskytování služby veřejných sítí elektronických komunikací
+                </label>
+              </div>
+            </div>
+            <!-- Otázka č. 12_2 - Řízení služeb ICT pododvětví -->
+            <div class="my-4" id="question12_5" style="display: none">
+              <h4>
+                Poskytujete služby v jednom z uvedených pododvětví řízených
+                služeb ICT?
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityMSP" name="activity12_1" value="yes" autocomplete="off" />
+                  Poskytování řízené služby (MSP)
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityMSSP" name="activity12_2" value="no" autocomplete="off" />
+                  Poskytování řízené bezpečnostní služby (MSSP)
+                </label>
+              </div>
+            </div>
+            <!-- Otázka č. 12_6 - Veřejná správa pododvětví -->
+            <div class="my-4" id="question12_6" style="display: none">
+              <h4>
+                Poskytujete služby v jednom z uvedených pododvětví veřejné
+                správy?
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityUstredniSprava" name="activity12_1" value="yes" autocomplete="off" />
+                  Ústřední veřejné správy vymezené členským státem v souladu s
+                  vnitrostátním právem
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityRegionalniSprava" name="activity12_2" value="no" autocomplete="off" />
+                  Regionální veřejné správy vymezené členským státem v souladu
+                  s vnitrostátním právem
+                </label>
+              </div>
+            </div>
+            <!-- Otázka č. 12_7 - Výrobní průmysl pododvětví -->
+            <div class="my-4" id="question12_7" style="display: none">
+              <h4>
+                Poskytujete služby v jednom z uvedených pododvětví výrobního
+                průmyslu?
+              </h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityVyrobaPC" name="activity12_1" value="yes" autocomplete="off" />
+                  Výroba počítačů, elektronických a optických přístrojů a
+                  zařízení
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityVyrobaElek" name="activity12_2" value="no" autocomplete="off" />
+                  Výroba elektrických zařízení
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityVyrobaStroje" name="activity12_2" value="no" autocomplete="off" />
+                  Výroba strojů a zařízení nezařazená pod jiné oddíly
+                  klasifikace CZ-NACE
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityVyrobaMotor" name="activity12_2" value="no" autocomplete="off" />
+                  Výroba motorových vozidel (kromě motocyklů), přívěsů a
+                  návěsů
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityVyrobaOstatni" name="activity12_2" value="no" autocomplete="off" />
+                  Výroba ostatních dopravních prostředků a zařízení
+                </label>
+              </div>
+            </div>
+            <!-- Otázka č. 12_8 - Digitální poskytovatelé pododvětví -->
+            <div class="my-4" id="question12_8" style="display: none">
+              <h4>Poskytujete služby v jednom z uvedených pododvětví?</h4>
+              <!-- Odpovědi -->
+              <div class="btn-group-vertical btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityTrziste" name="activity12_1" value="yes" autocomplete="off" />
+                  Poskytování služby on-line tržiště
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityVyhledavac" name="activity12_2" value="no" autocomplete="off" />
+                  Poskytování služby internetového vyhledávače
+                </label>
+                <label class="btn btn-outline-primary m-2">
+                  <input type="radio" id="activityPlatforma" name="activity12_2" value="no" autocomplete="off" />
+                  Poskytování platformy sociální sítě
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- VERDIKT, Subjekt není v EU -> Nespadá pod NIS2 -->
+          <div id="finalVerdictNe" style="display: none">
+            <h3 class="h3 mb-4 text-gray-800">Výsledek samoidentifikace</h3>
+
+            <!-- Tělo karty -  Verdikt NIS2-->
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">
+                  Spadá vaše organizace pod regulaci NIS2?
+                </h6>
+              </div>
+              <div class="card-body">
+                <p style="margin-bottom: 1.5rem">
+                  Povinnosti vyplývající ze směrnice NIS 2 se vaší organizace
+                  <b>týkají</b>.
+                </p>
+                <div class="card-body text-center">
+                  <i class="fa fa-times-circle text-danger" style="font-size: 3rem; margin-bottom: 0.3em"></i>
+                  <p class="font-weight-bold text-danger text-center"
+                    style="font-size: 1.2rem; text-decoration: underline">
+                    NESPADÁ!
+                  </p>
+                </div>
+                <div class="alert alert-warning" role="alert">
+                  NIS 2 se vztahuje jak na organizace se sídlem v EU, tak na
+                  organizace mimo EU, které však nabízejí své služby v rámci
+                  EU. Pro organizace mimo EU je vyžadováno, aby jmenovaly
+                  zástupce v jednom z členských států EU, kde nabízejí své
+                  služby. Organizace s přítomností v několika členských
+                  státech EU podléhají jurisdikci toho členského státu, ve
+                  kterém se nachází jejich hlavní sídlo. Pokud je
+                  infrastruktura umístěna v zahraničí a český subjekt reálně
+                  nemá možnost zavádět do ní bezpečnostní opatření, bude
+                  potřeba mít dostatečným způsobem ošetřeny vztahy mezi
+                  povinným subjektem a reálným správcem systému.
+                </div>
+              </div>
+            </div>
+            <p>
+              Pro pokračování v zhodnocení zavedených bezpečnostních opatření
+              klikněte níže.
+            </p>
+            <div class="d-flex justify-content-center">
+              <a href="posouzeni1.html" class="btn btn-primary btn-lg mr-5">
+                <span class="icon text-white-50"> </span>
+                <span class="text">Znovu spustit sebeidentifikaci</span>
+              </a>
+              <a href="posouzeni2.html" class="btn btn-primary btn-lg ml-5">
+                <span class="icon text-white-50"> </span>
+                <span class="text">Zahájit analýzu zavedených opatření</span>
+              </a>
+            </div>
+
+          </div>
+          <!-- /OSTATNÍ VERDIKT ------------------------------------------------------------- -->
+
+          <!-- VERDIKT, Subjekt nespadá pod NIS2 -->
+          <div id="finalVerdictNe2" style="display: none">
+            <h3 class="h3 mb-4 text-gray-800">Výsledek samoidentifikace</h3>
+
+            <!-- Tělo karty -  Verdikt NIS2-->
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">
+                  Spadá vaše organizace pod regulaci NIS2?
+                </h6>
+              </div>
+              <div class="card-body">
+                <p style="margin-bottom: 1.5rem">
+                  Povinnosti vyplývající ze směrnice NIS 2 se vaší organizace
+                  <b>netýkají</b>.
+                </p>
+                <div class="card-body text-center">
+                  <i class="fa fa-times-circle text-danger" style="font-size: 3rem; margin-bottom: 0.3em"></i>
+                  <p class="font-weight-bold text-danger text-center"
+                    style="font-size: 1.2rem; text-decoration: underline">
+                    NESPADÁ!
+                  </p>
+                </div>
+                <div class="alert alert-warning" role="alert">
+                  Směrnice NIS 2 umožňuje Národnímu úřadu pro kybernetickou a
+                  informační bezpečnost (NÚKIB) zařadit vaši organizaci do
+                  kategorie "režimu nižších povinností" nebo "režimu vyšších povinností", pokud
+                  vyhodnotí, že poskytujete služby jejichž narušení by mohlo
+                  mít významný dopad na společnost.
+                </div>
+              </div>
+            </div>
+            <p>
+              Pro pokračování v zhodnocení zavedených bezpečnostních opatření
+              klikněte níže.
+            </p>
+            <div class="d-flex justify-content-center">
+              <a href="posouzeni1.html" class="btn btn-primary btn-lg mr-5">
+                <span class="icon text-white-50"> </span>
+                <span class="text">Znovu spustit sebeposouzení</span>
+              </a>
+              <a href="posouzeni2.html" class="btn btn-primary btn-lg ml-5">
+                <span class="icon text-white-50"> </span>
+                <span class="text">Zahájit rozdílovou analýzu</span>
+              </a>
+            </div>
+
+
+          </div>
+          <!-- /VERDIKT ------------------------------------------------------------- -->
+
+          <!-- VERDIKT2, Subjekt je již regulovaný -> Spadá -->
+
+          <div id="finalVerdictAno" style="display: none">
+            <h3 class="h3 mb-4 text-gray-800">Výsledek samoidentifikace</h3>
+
+            <!-- Tělo karty -  Verdikt NIS2-->
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">
+                  Spadá vaše organizace pod regulaci NIS2?
+                </h6>
+              </div>
+              <div class="card-body">
+                <p style="margin-bottom: 1.5rem">
+                  Povinnosti vyplývající ze směrnice NIS 2 se vaší organizace
+                  <b>týkají</b>.
+                </p>
+                <!-- SPADÁ Fajfka-->
+                <div class="card-body text-center">
+                  <i class="fa fa-check-circle text-success" style="
+                        font-size: 3rem;
+                        margin-bottom: 0.3em;
+                        color: green !important;
+                      "></i>
+                  <p class="font-weight-bold text-success text-center" style="
+                        font-size: 1.2rem;
+                        text-decoration: underline;
+                        color: green !important;
+                      ">
+                    SPADÁ!
+                  </p>
+                </div>
+                <!-- /SPADÁ Fajfka-->
+              </div>
+            </div>
+            <!-- Tělo karty - Informační přehled -->
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">
+                  Informační přehled vaší organizace
+                </h6>
+              </div>
+              <div class="card-body">
+                <p style="margin-bottom: 1.5rem">
+                  Hlavním cílem směrnice NIS 2 je dosáhnout toho, aby
+                  organizace zaváděly preventivní kroky k posílení své
+                  kybernetické bezpečnosti. A ačkoliv je vaše organizace již
+                  regulována podle ZKB, je nutné počítat s dílčími změnami,
+                  které směrnice NIS 2 přináší. Ty lze shrnout do
+                  následujících pilířů:
+                </p>
+                <!-- Karta 1. Bezpečnostní opatření -->
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Accordion -->
+                  <a href="#collapseCardExample1" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                    aria-expanded="true" aria-controls="collapseCardExample1">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Bezpečnostní opatření
+                    </h6>
+                  </a>
+                  <!-- Card Content - Collapse -->
+                  <div class="collapse" id="collapseCardExample1">
+                    <div class="card-body">
+                      <p>
+                        Směrnice NIS2 zdůrazňuje odpovědnost vedení organizací
+                        za schválení a zavádění bezpečnostních opatření ke
+                        snížení rizik pro kybernetickou bezpečnost. Součástí
+                        těchto požadavků je také to, že vedení organizací má
+                        povinnost osobně absolvovat školení na téma
+                        kybernetické bezpečnosti a podporovat v těchto
+                        školeních také své zaměstnance. Mezi klíčové opatření
+                        patří:
+                      </p>
+
+                      <ul>
+                        <li>
+                          Analýza rizik a politiky bezpečnosti informací;
+                        </li>
+                        <li>Zvládání incidentů;</li>
+                        <li>
+                          Kontinuita činností (tj. business kontinuita),
+                          přičemž směrnice tento okruh ještě rozvádí o příklad
+                          zálohování, zotavení (disaster recovery) a krizové
+                          řízení;
+                        </li>
+                        <li>Bezpečnost v rámci dodavatelského řetězce;</li>
+                        <li>
+                          Bezpečnost v rámci pořízení, vývoje a údržby
+                          systémů;
+                        </li>
+                        <li>
+                          Politiky a postupy pro hodnocení účinnosti
+                          bezpečnostních opatření (tj. audit);
+                        </li>
+                        <li>
+                          Praktiky základní počítačové hygieny a vzdělávání v
+                          oblasti kybernetické bezpečnosti;
+                        </li>
+                        <li>
+                          Politiky a postupy týkající se využívání
+                          kryptografie a tam, kde je to vhodné, také
+                          šifrování;
+                        </li>
+                        <li>
+                          Bezpečnost lidských zdrojů, řízení přístupů a aktiv;
+                        </li>
+                        <li>
+                          Využívání vícefaktorového ověření identity,
+                          bezpečných komunikačních nástrojů a nástrojů pro
+                          nouzovou komunikaci.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Karta 2. Hlášení incidentů -->
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Accordion -->
+                  <a href="#collapseCardExample2" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                    aria-expanded="true" aria-controls="collapseCardExample2">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Hlášení incidentů
+                    </h6>
+                  </a>
+                  <!-- Card Content - Collapse -->
+                  <div class="collapse" id="collapseCardExample2">
+                    <div class="card-body">
+                      <p>
+                        Vedle zavádění bezpečnostních opatření je vaší další
+                        významnou povinností hlášení a zvládání kybernetických
+                        bezpečnostních incidentů. Požadavky na hlášení
+                        incidentů jsou:
+                      </p>
+
+                      <ul>
+                        <li>
+                          <b>Včasné varování</b>: Incident s významným dopadem
+                          na poskytování služby je nutné bez zbytečného
+                          odkladu oznámit nejpozději do 24 hodin. Obsahem
+                          tohoto včasného varování by měly být základní známé
+                          údaje, především to, zda je incident způsoben
+                          nezákonným jednáním nebo že by mohl mít přeshraniční
+                          dopad;
+                        </li>
+                        <li>
+                          <b>Oznámení incidentu</b>: Tyto informace by měly
+                          být co nejdříve, avšak nejpozději do 72 hodin,
+                          zpřesněny ve formě tzn. prvotního posouzení. Obsahem
+                          je nejen doplnění informací o incidentu, ale také
+                          posouzení jeho závažnosti a dopadu a dodání – pokud
+                          jsou k dispozici – indikátorů kompromitace;
+                        </li>
+                        <li>
+                          <b>Průběžná zpráva</b>: Po tomto prvotním posouzení
+                          může příslušný tým CERT sám iniciovat žádost o
+                          doplnění informací.;
+                        </li>
+                        <li>
+                          <b>Závěrečná zpráva</b>: Do jednoho měsíce od
+                          prvotního posouzení má organizace zaslat také
+                          závěrečnou zprávu, která by měla obsahovat podrobný
+                          popis incidentu včetně jeho závažnosti a dopadu,
+                          druh hrozby nebo základní příčinu, která incident
+                          pravděpodobně spustila, učiněná a probíhající
+                          opatření ke zmírnění následků a případně informaci o
+                          přeshraničním dopadu incidentu. Pokud by tou dobou
+                          ještě incident nebyl vyřešen, má organizace za úkol
+                          informovat tým CERT o vývoji celé věci a zaslat
+                          závěrečnou zprávu do jednoho měsíce od vyřešení
+                          incidentu.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Karta 3. Dohled a sankce -->
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Accordion -->
+                  <a href="#collapseCardExample3" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                    aria-expanded="true" aria-controls="collapseCardExample3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Dohled a sankce
+                    </h6>
+                  </a>
+                  <!-- Card Content - Collapse -->
+                  <div class="collapse" id="collapseCardExample3">
+                    <div class="card-body">
+                      <p>
+                        NÚKIB může využívat množství různých metod a postupů v
+                        rámci své dozorové činnosti. Ty mohou zahrnovat
+                        kontroly přímo na místě, provádění bezpečnostních
+                        auditů, skenování zranitelností a nebo uložení pokut.
+                        Níže je souhrn dalších skutečností souvisejících s
+                        regulací NIS 2:
+                      </p>
+                      <div class="alert alert-warning" role="alert">
+                        <ul>
+                          <li>
+                            V případě porušení povinností hrozí pokuty,
+                            jejichž horní hranice sazby je stanovena na
+                            <u>10 milionů EUR nebo 2 % ze světového obratu</u>;
+                          </li>
+                          <li>
+                            Pravomoce NÚKIB provést jak preventivní kontroly
+                            (ex-ante), tak kontroly na základě podezření z
+                            neplnění povinností (ex-post);
+                          </li>
+                          <li>
+                            Odpovědnost vedení organizací za schválení a
+                            zavádění bezpečnostních opatření ke snížení rizik
+                            pro kybernetickou bezpečnost. Součástí těchto
+                            požadavků je také to, že vedení organizací má
+                            povinnost osobně absolvovat školení na téma
+                            kybernetické bezpečnosti a podporovat v těchto
+                            školeních také své zaměstnanc;
+                          </li>
+                          <li>
+                            Povinnosti se nahlásit. Pokud organizaci ze
+                            samoidentifikace vyplyne, že by měla být
+                            regulována podle NIS 2, respektive nového zákona o
+                            kybernetické bezpečnosti, musí se do 30 dní
+                            nahlásit NÚKIB.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p>
+              Pro pokračování v zhodnocení zavedených bezpečnostních opatření
+              klikněte níže.
+            </p>
+            <div class="d-flex justify-content-center">
+              <a href="posouzeni1.html" class="btn btn-primary btn-lg mr-5">
+                <span class="icon text-white-50"> </span>
+                <span class="text">Znovu spustit sebeposouzení</span>
+              </a>
+              <a href="posouzeni2.html" class="btn btn-primary btn-lg ml-5">
+                <span class="icon text-white-50"> </span>
+                <span class="text">Zahájit rozdílovou analýzu</span>
+              </a>
+            </div>
+          </div>
+
+          <!-------------------------------- /VERDIKT2 ------------------------------>
+
+          <!-- VERDIKT - ZÁKLADNÍ subjekt -> Spadá -->
+          <div id="finalVerdictAnoZakladni" style="display: none">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h3 class="h3 text-gray-800">Výsledek samoidentifikace</h3>
+              <a href="#" onclick="downloadPDF('finalVerdictAnoZakladni', 'vysledek-samoidentifikace-nis2.pdf')"
+                class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                  class="fas fa-download fa-sm text-white-50"></i> Stáhnout
+                report</a>
+            </div>
+            <div class="row">
+              <!-- Tělo karty - Spadá organizace pod NIS2? -->
+              <div class="col-lg-6 col-md-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Spadá vaše organizace pod regulaci NIS2?
+                    </h6>
+                  </div>
+                  <div class="card-body">
+                    <p style="margin-bottom: 1.5rem">
+                      Povinnosti vyplývající ze směrnice NIS 2 se vaší
+                      organizace <b>týkají</b>.
+                    </p>
+                    <!-- SPADÁ Fajfka-->
+                    <div class="card-body text-center">
+                      <i class="fa fa-check-circle text-success" style="
+                            font-size: 3rem;
+                            margin-bottom: 0.3em;
+                            color: green !important;
+                          "></i>
+                      <p class="font-weight-bold text-success text-center" style="
+                            font-size: 1.2rem;
+                            text-decoration: underline;
+                            color: green !important;
+                          ">
+                        SPADÁ!
+                      </p>
+                    </div>
+                    <div class="alert alert-warning" id="dora" style="display: none" role="alert">
+                      Sektor, ve kterém se vaše organizace nachází bude
+                      regulován
+                      <a href="https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32022R2554">nařízením
+                        DORA</a>. Nařízení DORA tedy podrobně konkretizuje požadavky na
+                      digitální odolnost dotčených subjektů a tím de facto
+                      naplňuje rámcové požadavky směrnice NIS 2. Dohledovým
+                      orgánem je ČNB.
+                    </div>
+                    <div class="alert alert-warning" id="verejnasprava" style="display: none" role="alert">
+                      Směrnice NIS2 povinně vyžaduje regulaci centrální
+                      veřejné správy. Regionální a lokální autority (tzn. obce
+                      a kraje) mohou být regulovány, pokud to státy považují
+                      za vhodné. Nově připravovaný zákon počítá s tím, že bude
+                      zachována regulace krajů (které jsou dnes regulovány
+                      jako významné informační systémy). Regulace
+                      <a href="https://cs.wikipedia.org/wiki/Obec_s_pov%C4%9B%C5%99en%C3%BDm_obecn%C3%ADm_%C3%BA%C5%99adem"
+                        target="_blank" rel="noopener noreferrer">jedničkových a dvojkových obcí</a>
+                      v tuto chvíli plánována není. Do regulace spadají také
+                      <b>vysoké školy</b>.
+                    </div>
+                    <!-- /SPADÁ Fajfka-->
+                  </div>
+                </div>
+              </div>
+              <!-- Tělo karty - Režim/Kategorie -->
+              <div class="col-lg-6 col-md-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      V jaké kategorii se vaše organizace nachází?
+                    </h6>
+                  </div>
+
+                  <div class="card-body">
+                    <p style="margin-bottom: 1.5rem">
+                      Vaše organizace se nachází v kategorii subjektů
+                      <b>režim vyšších povinností</b>.
+                    </p>
+                    <!-- KATEGORIE Základní-->
+                    <div class="card-body text-center">
+                      <i class="fa fa-exclamation-triangle text-warning"
+                        style="font-size: 3rem; margin-bottom: 0.3em"></i>
+                      <p class="font-weight-bold text-warning text-center"
+                        style="font-size: 1.2rem; text-decoration: underline">
+                        REŽIM VYŠŠÍCH POVINNOSTÍ
+                      </p>
+                    </div>
+                    <!-- /KATEGORIE Základní -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Karty KATEGORIE -->
+
+            <!-- Tělo karty - Informační přehled -->
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">
+                  Informační přehled povinností
+                </h6>
+              </div>
+              <div class="card-body">
+                <!-- Odvětví -->
+                <div class="row">
+                  <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-primary shadow h-100 py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1;"
+                              style="margin-bottom: 1rem">
+                              ODVĚTVÍ
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="finalVerdictSector">
+                              Zdravotnictví
+                            </div>
+                          </div>
+                          <div class="col-auto" style="margin-top: 1.2rem">
+                            <i class="fa fa-briefcase fa-2x text-gray-300"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Velikost podniku -->
+                  <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-primary shadow h-100 py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                              VELIKOST PODNIKU
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="finalVerdictSize"
+                              style="margin-top: 1rem">
+                              Střední podnik
+                              <span class="info-tooltip">
+                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                <span class="tooltiptext">50-250 zaměstnanců, roční obrat pod 50
+                                  milionu EUR.</span>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-auto" style="margin-top: 1.2rem">
+                            <i class="fa fa-users fa-2x text-gray-300"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p style="margin-bottom: 1.5rem">
+                  Hlavním cílem směrnice NIS 2 je dosáhnout toho, aby
+                  organizace zaváděly preventivní kroky k posílení své
+                  kybernetické bezpečnosti. Z toho důvodu se dá směrnice
+                  shrnout do tří klíčových pilířů, v nichž by vaše organizace
+                  měla zvýšit své úsilí, aby byla v souladu s požadavky.
+                </p>
+                <!-- Karta 1. Bezpečnostní opatření -->
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Accordion -->
+                  <a href="#collapseCardExample1" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                    aria-expanded="true" aria-controls="collapseCardExample1">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Bezpečnostní opatření
+                    </h6>
+                  </a>
+                  <!-- Card Content - Collapse -->
+                  <div class="collapse" id="collapseCardExample1">
+                    <div class="card-body">
+                      <p>
+                        Směrnice NIS2 zdůrazňuje odpovědnost vedení organizací
+                        za schválení a zavádění bezpečnostních opatření ke
+                        snížení rizik pro kybernetickou bezpečnost. Součástí
+                        těchto požadavků je také to, že vedení organizací má
+                        povinnost osobně absolvovat školení na téma
+                        kybernetické bezpečnosti a podporovat v těchto
+                        školeních také své zaměstnance. Mezi klíčové opatření
+                        patří:
+                      </p>
+
+                      <ul>
+                        <li>
+                          Analýza rizik a politiky bezpečnosti informací;
+                        </li>
+                        <li>Zvládání incidentů;</li>
+                        <li>
+                          Kontinuita činností (tj. business kontinuita),
+                          přičemž směrnice tento okruh ještě rozvádí o příklad
+                          zálohování, zotavení (disaster recovery) a krizové
+                          řízení;
+                        </li>
+                        <li>Bezpečnost v rámci dodavatelského řetězce;</li>
+                        <li>
+                          Bezpečnost v rámci pořízení, vývoje a údržby
+                          systémů;
+                        </li>
+                        <li>
+                          Politiky a postupy pro hodnocení účinnosti
+                          bezpečnostních opatření (tj. audit);
+                        </li>
+                        <li>
+                          Praktiky základní počítačové hygieny a vzdělávání v
+                          oblasti kybernetické bezpečnosti;
+                        </li>
+                        <li>
+                          Politiky a postupy týkající se využívání
+                          kryptografie a tam, kde je to vhodné, také
+                          šifrování;
+                        </li>
+                        <li>
+                          Bezpečnost lidských zdrojů, řízení přístupů a aktiv;
+                        </li>
+                        <li>
+                          Využívání vícefaktorového ověření identity,
+                          bezpečných komunikačních nástrojů a nástrojů pro
+                          nouzovou komunikaci.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Karta 2. Hlášení incidentů -->
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Accordion -->
+                  <a href="#collapseCardExample2" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                    aria-expanded="true" aria-controls="collapseCardExample2">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Hlášení incidentů
+                    </h6>
+                  </a>
+                  <!-- Card Content - Collapse -->
+                  <div class="collapse" id="collapseCardExample2">
+                    <div class="card-body">
+                      <p>
+                        Vedle zavádění bezpečnostních opatření je vaší další
+                        významnou povinností hlášení a zvládání kybernetických
+                        bezpečnostních incidentů. Požadavky na hlášení
+                        incidentů jsou:
+                      </p>
+
+                      <ul>
+                        <li>
+                          <b>Včasné varování</b>: Incident s významným dopadem
+                          na poskytování služby je nutné bez zbytečného
+                          odkladu oznámit nejpozději do 24 hodin. Obsahem
+                          tohoto včasného varování by měly být základní známé
+                          údaje, především to, zda je incident způsoben
+                          nezákonným jednáním nebo že by mohl mít přeshraniční
+                          dopad;
+                        </li>
+                        <li>
+                          <b>Oznámení incidentu</b>: Tyto informace by měly
+                          být co nejdříve, avšak nejpozději do 72 hodin,
+                          zpřesněny ve formě tzn. prvotního posouzení. Obsahem
+                          je nejen doplnění informací o incidentu, ale také
+                          posouzení jeho závažnosti a dopadu a dodání – pokud
+                          jsou k dispozici – indikátorů kompromitace;
+                        </li>
+                        <li>
+                          <b>Průběžná zpráva</b>: Po tomto prvotním posouzení
+                          může příslušný tým CERT sám iniciovat žádost o
+                          doplnění informací.;
+                        </li>
+                        <li>
+                          <b>Závěrečná zpráva</b>: Do jednoho měsíce od
+                          prvotního posouzení má organizace zaslat také
+                          závěrečnou zprávu, která by měla obsahovat podrobný
+                          popis incidentu včetně jeho závažnosti a dopadu,
+                          druh hrozby nebo základní příčinu, která incident
+                          pravděpodobně spustila, učiněná a probíhající
+                          opatření ke zmírnění následků a případně informaci o
+                          přeshraničním dopadu incidentu. Pokud by tou dobou
+                          ještě incident nebyl vyřešen, má organizace za úkol
+                          informovat tým CERT o vývoji celé věci a zaslat
+                          závěrečnou zprávu do jednoho měsíce od vyřešení
+                          incidentu.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Karta 3. Dohled a sankce -->
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Accordion -->
+                  <a href="#collapseCardExample3" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                    aria-expanded="true" aria-controls="collapseCardExample3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Dohled a sankce
+                    </h6>
+                  </a>
+                  <!-- Card Content - Collapse -->
+                  <div class="collapse" id="collapseCardExample3">
+                    <div class="card-body">
+                      <p>
+                        NÚKIB může využívat množství různých metod a postupů v
+                        rámci své dozorové činnosti. Ty mohou zahrnovat
+                        kontroly přímo na místě, provádění bezpečnostních
+                        auditů, skenování zranitelností a uložení pokut. V
+                        souladu s českým právním řádem může NÚKIB také
+                        požadovat soudní rozhodnutí, kterým bude konkrétní
+                        fyzické osobě v řídicí pozici zabráněno dočasně
+                        vykonávat řídicí funkce v regulované organizaci.
+                      </p>
+                      <div class="card-body text-center">
+                        <i class="fa fa-exclamation-triangle text-warning"
+                          style="font-size: 2rem; margin-bottom: 0.3em"></i>
+                        <p class="font-weight-bold text-warning text-center"
+                          style="font-size: 1rem; text-decoration: underline">
+                          REŽIM VYŠŠÍCH POVINNOSTÍ
+                        </p>
+                      </div>
+                      <div class="alert alert-warning" role="alert">
+                        Vzhledem k tomu, že se vaše organizace nachází v
+                        kategorii subjektů
+                        <b> <u>režim vyšších povinností</u>,</b> tak se na vás vztahují
+                        následující skutečnosti:
+                        <ul>
+                          <li>
+                            V případě porušení povinností hrozí pokuty,
+                            jejichž horní hranice sazby je stanovena na
+                            <u>10 milionů EUR nebo 2 % ze světového obratu</u>;
+                          </li>
+                          <li>
+                            Pravomoce NÚKIB provést jak preventivní kontroly
+                            (ex-ante), tak kontroly na základě podezření z
+                            neplnění povinností (ex-post);
+                          </li>
+                          <li>
+                            Odpovědnost vedení organizací za schválení a
+                            zavádění bezpečnostních opatření ke snížení rizik
+                            pro kybernetickou bezpečnost. Součástí těchto
+                            požadavků je také to, že vedení organizací má
+                            povinnost osobně absolvovat školení na téma
+                            kybernetické bezpečnosti a podporovat v těchto
+                            školeních také své zaměstnanc;
+                          </li>
+                          <li>
+                            Povinnosti se nahlásit. Pokud organizaci ze
+                            samoidentifikace vyplyne, že by měla být
+                            regulována podle NIS 2, respektive nového zákona o
+                            kybernetické bezpečnosti, musí se do 30 dní
+                            nahlásit NÚKIB.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="alert alert-warning" role="alert">
+                  Obsah směrnice NIS 2 stanovuje minimální požadavky a její
+                  platnost neznamená, že musíte ihned začít plnit všechny
+                  povinnosti, které přináší. NÚKIB v současnosti pracuje na
+                  nové podobě zákona č. 181/2014 Sb., o kybernetické
+                  bezpečnosti, který konkrétní požadavky na národní dále
+                  rozvádí. Nový zákon by podle transpoziční lhůty měl vejít v
+                  platnost v říjnu 2024. Nově regulovaným subjektům bude dána
+                  přechodná lhůta jednoho roku pro zahájení plnění povinností.
+                </div>
+              </div>
+            </div>
+            <p>
+              Pro pokračování v zhodnocení zavedených bezpečnostních opatření
+              klikněte níže.
+            </p>
+            <div class="d-flex justify-content-center">
+              <a href="posouzeni1.html" class="btn btn-primary btn-lg mr-5">
+                <span class="icon text-white-50"> </span>
+                <span class="text">Znovu spustit sebeposouzení</span>
+              </a>
+              <a href="posouzeni2.html" class="btn btn-primary btn-lg ml-5">
+                <span class="icon text-white-50"> </span>
+                <span class="text">Zahájit rozdílovou analýzu</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- VERDIKT - DŮLEŽITÝ subjekt -->
+          <div id="finalVerdictAnoDulezity" style="display: none">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h3 class="h3 text-gray-800">Výsledek samoidentifikace</h3>
+              <a href="#" onclick="downloadPDF('finalVerdictAnoDulezity','vysledek-samoidentifikace-nis2.pdf')"
+                class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                  class="fas fa-download fa-sm text-white-50"></i> Stáhnout
+                report</a>
+            </div>
+            <div class="row">
+              <!-- Tělo karty - Spadá organizace pod NIS2? -->
+              <div class="col-lg-6 col-md-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Spadá vaše organizace pod regulaci NIS2?
+                    </h6>
+                  </div>
+                  <div class="card-body">
+                    <p style="margin-bottom: 1.5rem">
+                      Povinnosti vyplývající ze směrnice NIS 2 se vaší
+                      organizace <b>týkají</b>.
+                    </p>
+                    <!-- SPADÁ Fajfka-->
+                    <div class="card-body text-center">
+                      <i class="fa fa-check-circle text-success" style="
+                            font-size: 3rem;
+                            margin-bottom: 0.3em;
+                            color: green !important;
+                          "></i>
+                      <p class="font-weight-bold text-success text-center" style="
+                            font-size: 1.2rem;
+                            text-decoration: underline;
+                            color: green !important;
+                          ">
+                        SPADÁ!
+                      </p>
+                    </div>
+                    <div class="alert alert-warning" id="dora" style="display: none" role="alert">
+                      Sektor, ve kterém se vaše organizace nachází bude
+                      regulován
+                      <a href="https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32022R2554">nařízením
+                        DORA</a>. Nařízení DORA tedy podrobně konkretizuje požadavky na
+                      digitální odolnost dotčených subjektů a tím de facto
+                      naplňuje rámcové požadavky směrnice NIS 2. Dohledovým
+                      orgánem je ČNB.
+                    </div>
+                    <!-- /SPADÁ Fajfka-->
+                  </div>
+                </div>
+              </div>
+              <!-- Tělo karty - Režim/Kategorie -->
+              <div class="col-lg-6 col-md-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      V jaké kategorii se vaše organizace nachází?
+                    </h6>
+                  </div>
+
+                  <div class="card-body">
+                    <p style="margin-bottom: 1.5rem">
+                      Vaše organizace se nachází v kategorii subjektů
+                      <b>režim nižších povinností</b>.
+                    </p>
+                    <!-- KATEGORIE Důležitý-->
+                    <div class="card-body text-center">
+                      <i class="fa fa-exclamation-triangle text-info" style="font-size: 3rem; margin-bottom: 0.3em"></i>
+                      <p class="font-weight-bold text-info text-center"
+                        style="font-size: 1.2rem; text-decoration: underline">
+                        REŽIM NIŽŠÍCH POVINNOSTÍ
+                      </p>
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                      Směrnice NIS 2 umožňuje Národnímu úřadu pro
+                      kybernetickou a informační bezpečnost (NÚKIB) zařadit
+                      vaši organizaci do kategorie "základní subjekt", pokud
+                      vyhodnotí, že poskytujete služby jejichž narušení by
+                      mohlo mít významný dopad na společnost.
+                    </div>
+                    <!-- /KATEGORIE Základní -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Karty KATEGORIE -->
+
+            <!-- Tělo karty - Informační přehled -->
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">
+                  Informační přehled povinností
+                </h6>
+              </div>
+              <div class="card-body">
+                <!-- Odvětví -->
+                <div class="row">
+                  <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-primary shadow h-100 py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1;"
+                              style="margin-bottom: 1rem">
+                              ODVĚTVÍ
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="finalVerdictSectorD">
+                              Zdravotnictví
+                            </div>
+                          </div>
+                          <div class="col-auto" style="margin-top: 1.2rem">
+                            <i class="fa fa-briefcase fa-2x text-gray-300"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Velikost podniku -->
+                  <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-primary shadow h-100 py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                              VELIKOST PODNIKU
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="finalVerdictSizeD"
+                              style="margin-top: 1rem">
+                              Střední podnik
+                              <span class="info-tooltip">
+                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                <span class="tooltiptext">50-250 zaměstnanců, roční obrat pod 50
+                                  milionu EUR.</span>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-auto" style="margin-top: 1.2rem">
+                            <i class="fa fa-users fa-2x text-gray-300"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p style="margin-bottom: 1.5rem">
+                  Hlavním cílem směrnice NIS 2 je dosáhnout toho, aby
+                  organizace zaváděly preventivní kroky k posílení své
+                  kybernetické bezpečnosti. Z toho důvodu se dá směrnice
+                  shrnout do tří klíčových pilířů, v nichž by vaše organizace
+                  měla zvýšit své úsilí, aby byla v souladu s požadavky.
+                </p>
+                <!-- Karta 1. Bezpečnostní opatření -->
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Accordion -->
+                  <a href="#collapseCardExample1" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                    aria-expanded="true" aria-controls="collapseCardExample1">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Bezpečnostní opatření
+                    </h6>
+                  </a>
+                  <!-- Card Content - Collapse -->
+                  <div class="collapse" id="collapseCardExample1">
+                    <div class="card-body">
+                      <p>
+                        Směrnice NIS2 zdůrazňuje odpovědnost vedení organizací
+                        za schválení a zavádění bezpečnostních opatření ke
+                        snížení rizik pro kybernetickou bezpečnost. Součástí
+                        těchto požadavků je také to, že vedení organizací má
+                        povinnost osobně absolvovat školení na téma
+                        kybernetické bezpečnosti a podporovat v těchto
+                        školeních také své zaměstnance. Mezi klíčové opatření
+                        patří:
+                      </p>
+
+                      <ul>
+                        <li>
+                          Analýza rizik a politiky bezpečnosti informací;
+                        </li>
+                        <li>Zvládání incidentů;</li>
+                        <li>
+                          Kontinuita činností (tj. business kontinuita),
+                          přičemž směrnice tento okruh ještě rozvádí o příklad
+                          zálohování, zotavení (disaster recovery) a krizové
+                          řízení;
+                        </li>
+                        <li>Bezpečnost v rámci dodavatelského řetězce;</li>
+                        <li>
+                          Bezpečnost v rámci pořízení, vývoje a údržby
+                          systémů;
+                        </li>
+                        <li>
+                          Politiky a postupy pro hodnocení účinnosti
+                          bezpečnostních opatření (tj. audit);
+                        </li>
+                        <li>
+                          Praktiky základní počítačové hygieny a vzdělávání v
+                          oblasti kybernetické bezpečnosti;
+                        </li>
+                        <li>
+                          Politiky a postupy týkající se využívání
+                          kryptografie a tam, kde je to vhodné, také
+                          šifrování;
+                        </li>
+                        <li>
+                          Bezpečnost lidských zdrojů, řízení přístupů a aktiv;
+                        </li>
+                        <li>
+                          Využívání vícefaktorového ověření identity,
+                          bezpečných komunikačních nástrojů a nástrojů pro
+                          nouzovou komunikaci.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Karta 2. Hlášení incidentů -->
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Accordion -->
+                  <a href="#collapseCardExample2" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                    aria-expanded="true" aria-controls="collapseCardExample2">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Hlášení incidentů
+                    </h6>
+                  </a>
+                  <!-- Card Content - Collapse -->
+                  <div class="collapse" id="collapseCardExample2">
+                    <div class="card-body">
+                      <p>
+                        Vedle zavádění bezpečnostních opatření je vaší další
+                        významnou povinností hlášení a zvládání kybernetických
+                        bezpečnostních incidentů. Požadavky na hlášení
+                        incidentů jsou:
+                      </p>
+
+                      <ul>
+                        <li>
+                          <b>Včasné varování</b>: Incident s významným dopadem
+                          na poskytování služby je nutné bez zbytečného
+                          odkladu oznámit nejpozději do 24 hodin. Obsahem
+                          tohoto včasného varování by měly být základní známé
+                          údaje, především to, zda je incident způsoben
+                          nezákonným jednáním nebo že by mohl mít přeshraniční
+                          dopad;
+                        </li>
+                        <li>
+                          <b>Oznámení incidentu</b>: Tyto informace by měly
+                          být co nejdříve, avšak nejpozději do 72 hodin,
+                          zpřesněny ve formě tzn. prvotního posouzení. Obsahem
+                          je nejen doplnění informací o incidentu, ale také
+                          posouzení jeho závažnosti a dopadu a dodání – pokud
+                          jsou k dispozici – indikátorů kompromitace;
+                        </li>
+                        <li>
+                          <b>Průběžná zpráva</b>: Po tomto prvotním posouzení
+                          může příslušný tým CERT sám iniciovat žádost o
+                          doplnění informací.;
+                        </li>
+                        <li>
+                          <b>Závěrečná zpráva</b>: Do jednoho měsíce od
+                          prvotního posouzení má organizace zaslat také
+                          závěrečnou zprávu, která by měla obsahovat podrobný
+                          popis incidentu včetně jeho závažnosti a dopadu,
+                          druh hrozby nebo základní příčinu, která incident
+                          pravděpodobně spustila, učiněná a probíhající
+                          opatření ke zmírnění následků a případně informaci o
+                          přeshraničním dopadu incidentu. Pokud by tou dobou
+                          ještě incident nebyl vyřešen, má organizace za úkol
+                          informovat tým CERT o vývoji celé věci a zaslat
+                          závěrečnou zprávu do jednoho měsíce od vyřešení
+                          incidentu.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Karta 3. Dohled a sankce -->
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Accordion -->
+                  <a href="#collapseCardExample3" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                    aria-expanded="true" aria-controls="collapseCardExample3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Dohled a sankce
+                    </h6>
+                  </a>
+                  <!-- Card Content - Collapse -->
+                  <div class="collapse" id="collapseCardExample3">
+                    <div class="card-body">
+                      <p>
+                        NÚKIB může využívat množství různých metod a postupů v
+                        rámci své dozorové činnosti. Ty mohou zahrnovat
+                        kontroly přímo na místě, provádění bezpečnostních
+                        auditů, skenování zranitelností a nebo uložení pokut.
+                      </p>
+                      <div class="card-body text-center">
+                        <i class="fa fa-exclamation-triangle text-info"
+                          style="font-size: 2rem; margin-bottom: 0.3em"></i>
+                        <p class="font-weight-bold text-info text-center"
+                          style="font-size: 1rem; text-decoration: underline">
+                          REŽIM NIŽŠÍCH POVINNOSTÍ
+                        </p>
+                      </div>
+                      <div class="alert alert-warning" role="alert">
+                        Vzhledem k tomu, že se vaše organizace nachází v
+                        kategorii subjektů
+                        <b> <u>režim nižších povinností</u>,</b> tak se na vás vztahují
+                        následující skutečnosti:
+                        <ul>
+                          <li>
+                            V případě porušení povinností hrozí pokuty,
+                            jejichž horní hranice sazby je stanovena na
+                            <u>7 milionů EUR nebo 1,4 % ze světového obratu</u>;
+                          </li>
+                          <li>
+                            Pravomoce NÚKIB provést kontroly na základě
+                            podezření z neplnění povinností (ex-post);
+                          </li>
+                          <li>
+                            Odpovědnost vedení organizací za schválení a
+                            zavádění bezpečnostních opatření ke snížení rizik
+                            pro kybernetickou bezpečnost. Součástí těchto
+                            požadavků je také to, že vedení organizací má
+                            povinnost osobně absolvovat školení na téma
+                            kybernetické bezpečnosti a podporovat v těchto
+                            školeních také své zaměstnanc;
+                          </li>
+                          <li>
+                            Povinnosti se nahlásit. Pokud organizaci ze
+                            samoidentifikace vyplyne, že by měla být
+                            regulována podle NIS 2, respektive nového zákona o
+                            kybernetické bezpečnosti, musí se do 30 dní
+                            nahlásit NÚKIB.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="alert alert-warning" role="alert">
+                  Obsah směrnice NIS 2 stanovuje minimální požadavky a její
+                  platnost neznamená, že musíte ihned začít plnit všechny
+                  povinnosti, které přináší. NÚKIB v současnosti pracuje na
+                  nové podobě zákona č. 181/2014 Sb., o kybernetické
+                  bezpečnosti, který konkrétní požadavky na národní dále
+                  rozvádí. Nový zákon by podle transpoziční lhůty měl vejít v
+                  platnost v říjnu 2024. Nově regulovaným subjektům bude dána
+                  přechodná lhůta jednoho roku pro zahájení plnění povinností.
+                </div>
+              </div>
+            </div>
+            <p>
+              Pro pokračování v zhodnocení zavedených bezpečnostních opatření
+              klikněte níže.
+            </p>
+            <div class="d-flex justify-content-center">
+              <a href="posouzeni1.html" class="btn btn-primary btn-lg mr-5">
+                <span class="icon text-white-50"> </span>
+                <span class="text">Znovu spustit sebeposouzení</span>
+              </a>
+              <a href="posouzeni2.html" class="btn btn-primary btn-lg ml-5">
+                <span class="icon text-white-50"> </span>
+                <span class="text">Zahájit rozdílovou analýzu</span>
+              </a>
+            </div>
+          </div>
+
+          <!----------------------- /KONEC VERDIKT DŮLEŽITÝ ---------------------------------------->
+        </div>
+
+        <!-- /.container-fluid -->
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; František Grossmann 2023</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+    </div>
+    <!-- End of Content Wrapper -->
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Select "Logout" below if you are ready to end your current session.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">
+            Cancel
+          </button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Skript na zabránění úkliku -->
+  <script src="omyl-klik.js"></script>
+
+  <!-- Progress bar update + NIS2 logika -->
+  <script src="progress_bar.js"></script>
+
+  <!-- Knihovny pro stahování reportu z dashboardu -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <!-- Javacript pro stazeni pdf-->
+  <script src="downloadPDF.js"></script>
+
+</body>
+
+</html>
