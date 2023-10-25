@@ -19,6 +19,31 @@ document.addEventListener("DOMContentLoaded", function () {
   const finalVerdictAnoZakladni = document.getElementById("finalVerdictAnoZakladni");
   const finalVerdictAnoDulezity = document.getElementById("finalVerdictAnoDulezity");
 
+  // Mechanismus pro ukládání výsledku
+  function saveNIS2ResultsToLocalStorage(verdictShown) {
+    const isUnderNIS =
+      finalVerdictAnoZakladni.style.display === "block" ||
+      finalVerdictAnoDulezity.style.display === "block";
+
+    const isNotUnderNIS =
+      finalVerdictNe.style.display === "block" ||
+      finalVerdictNe2.style.display === "block";
+
+    const nis2Results = {
+      isUnderNIS: isUnderNIS,
+      isNotUnderNIS: isNotUnderNIS,  // Přidali jsme nový klíč
+      sector: sector,
+      verdict: finalVerdictAnoZakladni.style.display === "block" ? "Základní" :
+        (finalVerdictAnoDulezity.style.display === "block" ? "Důležitý" :
+          (finalVerdictNe.style.display === "block" ? "Ne" :
+            (finalVerdictNe2.style.display === "block" ? "Ne2" : ""))),
+      entityStatus: entityStatus,
+      finalVerdictShown: verdictShown
+    };
+
+    localStorage.setItem('NIS2Results', JSON.stringify(nis2Results));
+  }
+
   // ----- Funkce další otázka ----------------- //
   function showNextQuestion(nextQuestionId) {
     console.log('Current question id:', currentQuestionId);
@@ -30,14 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
     updateProgress();
   }
   ////////////////////////////////////////////////////
-
-  /*
-    function updateProgress() {
-      const increment = 100 / (Object.keys(questions).length - 1);
-      const newWidth = (Object.keys(questions).indexOf(currentQuestionId) * increment).toFixed(2);
-      progressBar.style.width = newWidth + "%";
-      progressBar.setAttribute("aria-valuenow", newWidth);
-    }*/
 
   let totalAnsweredQuestions = 0;
   let maxQuestions = 6;  // Set this to the maximum number of questions in your questionnaire
@@ -61,6 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
     questions[currentQuestionId].style.display = "none";
     finalVerdictNe.style.display = "block";
     finalVerdictAno.style.display = "none";
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictNe');  // Uložení ID zobrazeného verdiktu
   });
 
   document.getElementById("activityYes2").addEventListener("click", function () {
@@ -68,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
     questions[currentQuestionId].style.display = "none";
     finalVerdictAno.style.display = "block";
     finalVerdictNe.style.display = "none";
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAno');  // Uložení ID zobrazeného verdiktu
   });
   // KONEC Otázka č. 1
 
@@ -231,6 +250,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questions[currentQuestionId].style.display = "none";
         finalVerdictAnoDulezity.style.display = "block";
         updateFinalVerdictD(); // delay the call to updateFinalVerdict
+        localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
 
 
         // Velikost podniku je velký, proto subjekty ZÁKLADNÍ"
@@ -239,6 +259,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questions[currentQuestionId].style.display = "none";
         finalVerdictAnoZakladni.style.display = "block";
         updateFinalVerdict();
+        localStorage.setItem('NIS2FinalVerdict', 'finalVerdictZakladni');  // Uložení ID zobrazeného verdiktu
       }
     });
   }
@@ -263,6 +284,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questions[currentQuestionId].style.display = "none";
         finalVerdictAnoDulezity.style.display = "block";
         updateFinalVerdictD();
+        localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
 
         // Velikost podniku je velký, proto subjekty ZÁKLADNÍ"
       } else if (entityStatus == "velky") {
@@ -270,6 +292,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questions[currentQuestionId].style.display = "none";
         finalVerdictAnoZakladni.style.display = "block";
         updateFinalVerdict();
+        localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
       }
     });
   }
@@ -283,13 +306,17 @@ document.addEventListener("DOMContentLoaded", function () {
       outerProgressBar.style.display = "none";
       questions[currentQuestionId].style.display = "none";
       finalVerdictAnoDulezity.style.display = "block";
+      // Uložení ID zobrazeného verdiktu
       updateFinalVerdictD();
+      localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');
+
       // Velikost podniku je velký, proto subjekty ZÁKLADNÍ"
     } else if (entityStatus == "velky") {
       outerProgressBar.style.display = "none";
       questions[currentQuestionId].style.display = "none";
       finalVerdictAnoZakladni.style.display = "block";
       updateFinalVerdict();
+      localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
     }
   });
   // question8 - Poskytujete služby v jednom z uvedených odvětví? Infrastruktura finančních trhů
@@ -315,6 +342,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questions[currentQuestionId].style.display = "none";
         finalVerdictAnoDulezity.style.display = "block";
         updateFinalVerdictD();
+        localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
 
         // Velikost podniku je velký, proto subjekty ZÁKLADNÍ"
       } else if (entityStatus == "velky") {
@@ -322,6 +350,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questions[currentQuestionId].style.display = "none";
         finalVerdictAnoZakladni.style.display = "block";
         updateFinalVerdict();
+        localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
       }
     });
   }
@@ -346,6 +375,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questions[currentQuestionId].style.display = "none";
         finalVerdictAnoDulezity.style.display = "block";
         updateFinalVerdictD();
+        localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
 
         // Velikost podniku je velký, proto subjekty ZÁKLADNÍ"
       } else if (entityStatus == "velky") {
@@ -353,6 +383,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questions[currentQuestionId].style.display = "none";
         finalVerdictAnoZakladni.style.display = "block";
         updateFinalVerdict();
+        localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
       }
     });
   }
@@ -367,12 +398,15 @@ document.addEventListener("DOMContentLoaded", function () {
       questions[currentQuestionId].style.display = "none";
       finalVerdictAnoDulezity.style.display = "block";
       updateFinalVerdictD();
+      localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
+
       // Velikost podniku je velký, proto subjekty ZÁKLADNÍ"
     } else if (entityStatus == "velky") {
       outerProgressBar.style.display = "none";
       questions[currentQuestionId].style.display = "none";
       finalVerdictAnoZakladni.style.display = "block";
       updateFinalVerdict();
+      localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
     }
   });
   // question8 - Poskytujete služby v jednom z uvedených odvětví? Odpadní voda
@@ -385,12 +419,16 @@ document.addEventListener("DOMContentLoaded", function () {
       questions[currentQuestionId].style.display = "none";
       finalVerdictAnoDulezity.style.display = "block";
       updateFinalVerdictD();
+      localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
+
       // Velikost podniku je velký, proto subjekty ZÁKLADNÍ"
     } else if (entityStatus == "velky") {
       outerProgressBar.style.display = "none";
       questions[currentQuestionId].style.display = "none";
       finalVerdictAnoZakladni.style.display = "block";
       updateFinalVerdict();
+      localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
+
     }
   });
   // VÝJIMKA U DIGITÁLNÍ 
@@ -414,6 +452,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questions[currentQuestionId].style.display = "none";
         finalVerdictAnoDulezity.style.display = "block";
         updateFinalVerdictD();
+        localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
 
         // Velikost podniku je velký, proto subjekty ZÁKLADNÍ"
       } else if (entityStatus == "velky") {
@@ -421,6 +460,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questions[currentQuestionId].style.display = "none";
         finalVerdictAnoZakladni.style.display = "block";
         updateFinalVerdict();
+        localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
       }
     });
   }
@@ -444,6 +484,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questions[currentQuestionId].style.display = "none";
         finalVerdictAnoDulezity.style.display = "block";
         updateFinalVerdictD();
+        localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
 
         // Velikost podniku je velký, proto subjekty ZÁKLADNÍ"
       } else if (entityStatus == "velky") {
@@ -451,6 +492,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questions[currentQuestionId].style.display = "none";
         finalVerdictAnoZakladni.style.display = "block";
         updateFinalVerdict();
+        localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
       }
     });
   }
@@ -461,24 +503,28 @@ document.addEventListener("DOMContentLoaded", function () {
     outerProgressBar.style.display = "none";
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoZakladni.style.display = "block";
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
   });
   // Služba DNS s výjimkou operátorů
   document.getElementById("activityDNS2").addEventListener("click", function () {
     outerProgressBar.style.display = "none";
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoZakladni.style.display = "block";
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
   });
   // Registry domén nejvyšší úrovně
   document.getElementById("activityTLD2").addEventListener("click", function () {
     outerProgressBar.style.display = "none";
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoZakladni.style.display = "block";
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
   });
   // Sítě elektronických komunikací 
   document.getElementById("activityElektro2").addEventListener("click", function () {
     outerProgressBar.style.display = "none";
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoZakladni.style.display = "block";
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
   });
   document.getElementById("activityJine2").addEventListener("click", function () {
     showNextQuestion("question11");
@@ -490,22 +536,26 @@ document.addEventListener("DOMContentLoaded", function () {
     outerProgressBar.style.display = "none";
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoDulezity.style.display = "block";;
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
   });
   document.getElementById("activityDataCentra").addEventListener("click", function () {
     outerProgressBar.style.display = "none";
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoDulezity.style.display = "block";;
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
   });
   document.getElementById("activityCDN").addEventListener("click", function () {
     outerProgressBar.style.display = "none";
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoDulezity.style.display = "block";;
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
   });
   document.getElementById("activityZadna").addEventListener("click", function () {
     outerProgressBar.style.display = "none";
     questions[currentQuestionId].style.display = "none";
     finalVerdictNe.style.display = "block";
     finalVerdictAno.style.display = "none";
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictNe');  // Uložení ID zobrazeného verdiktu
   });
 
   // --------------------------------------------------------------------------
@@ -533,6 +583,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questions[currentQuestionId].style.display = "none";
         finalVerdictAnoZakladni.style.display = "block";
         updateFinalVerdict();
+        localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
       }
     });
   }
@@ -546,12 +597,14 @@ document.addEventListener("DOMContentLoaded", function () {
       questions[currentQuestionId].style.display = "none";
       finalVerdictAnoDulezity.style.display = "block";
       updateFinalVerdictD();
+      localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
       // Velikost podniku je velký, proto subjekty ZÁKLADNÍ"
     } else if (entityStatus == "velky") {
       outerProgressBar.style.display = "none";
       questions[currentQuestionId].style.display = "none";
       finalVerdictAnoZakladni.style.display = "block";
       updateFinalVerdict();
+      localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
     }
   });
 
@@ -567,6 +620,7 @@ document.addEventListener("DOMContentLoaded", function () {
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoDulezity.style.display = "block";
     updateFinalVerdictD();
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
   });
   // Odpady
   document.getElementById("activityOdpady").addEventListener("click", function () {
@@ -575,6 +629,7 @@ document.addEventListener("DOMContentLoaded", function () {
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoDulezity.style.display = "block";
     updateFinalVerdictD();
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
   });
   // Výroba chemie
   document.getElementById("activityVyrobaCh").addEventListener("click", function () {
@@ -583,6 +638,7 @@ document.addEventListener("DOMContentLoaded", function () {
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoDulezity.style.display = "block";
     updateFinalVerdictD();
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
   });
   // Výroba potravin
   document.getElementById("activityPotraviny").addEventListener("click", function () {
@@ -591,6 +647,7 @@ document.addEventListener("DOMContentLoaded", function () {
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoDulezity.style.display = "block";
     updateFinalVerdictD();
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
   });
 
   // Výroba ostatní
@@ -610,6 +667,7 @@ document.addEventListener("DOMContentLoaded", function () {
       questions[currentQuestionId].style.display = "none";
       finalVerdictAnoDulezity.style.display = "block";
       updateFinalVerdictD();
+      localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
     });
   }
 
@@ -629,6 +687,7 @@ document.addEventListener("DOMContentLoaded", function () {
       questions[currentQuestionId].style.display = "none";
       finalVerdictAnoDulezity.style.display = "block";
       updateFinalVerdict();
+      localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
     });
   }
 
@@ -639,6 +698,7 @@ document.addEventListener("DOMContentLoaded", function () {
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoDulezity.style.display = "block";
     updateFinalVerdictD();
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
   });
 
   // Žádné z nabízených
@@ -647,6 +707,7 @@ document.addEventListener("DOMContentLoaded", function () {
     questions[currentQuestionId].style.display = "none";
     finalVerdictNe2.style.display = "block";
     finalVerdictAno.style.display = "none";
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictNe2');  // Uložení ID zobrazeného verdiktu
   });
 
   // ------------------------------------------------------------------------------- //
@@ -658,6 +719,7 @@ document.addEventListener("DOMContentLoaded", function () {
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoZakladni.style.display = "block";
     updateFinalVerdict();
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
   });
   // Služba DNS s výjimkou operátorů
   document.getElementById("activityDNS").addEventListener("click", function () {
@@ -666,6 +728,7 @@ document.addEventListener("DOMContentLoaded", function () {
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoZakladni.style.display = "block";
     updateFinalVerdict();
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
   });
 
   // Registry domén nejvyšší úrovně
@@ -675,6 +738,7 @@ document.addEventListener("DOMContentLoaded", function () {
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoZakladni.style.display = "block";
     updateFinalVerdict();
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
   });
 
   // Sítě elektronických komunikací 
@@ -684,6 +748,7 @@ document.addEventListener("DOMContentLoaded", function () {
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoDulezity.style.display = "block";
     updateFinalVerdictD();
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoDulezity');  // Uložení ID zobrazeného verdiktu
   });
   // Veřejná správa
   document.getElementById("activityVerejnost").addEventListener("click", function () {
@@ -693,6 +758,7 @@ document.addEventListener("DOMContentLoaded", function () {
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoZakladni.style.display = "block";
     updateFinalVerdict();
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
   });
 
   document.getElementById("activityNic").addEventListener("click", function () {
@@ -700,11 +766,13 @@ document.addEventListener("DOMContentLoaded", function () {
     questions[currentQuestionId].style.display = "none";
     finalVerdictNe2.style.display = "block";
     finalVerdictAno.style.display = "none";
+    localStorage.setItem('NIS2FinalVerdict', 'finalVerdictNe2');  // Uložení ID zobrazeného verdiktu
   });
 
 });
 
 endQuestionnaire();
+
 
 // Variable to track whether the user has started the questionnaire
 let hasStartedQuestionnaire = false;

@@ -35,7 +35,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-shield-virus"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">CyberComply    </div>
+                <div class="sidebar-brand-text mx-3">CyberComply </div>
             </a>
 
             <!-- Divider -->
@@ -267,8 +267,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -279,8 +278,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -291,8 +289,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -324,8 +321,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -371,75 +367,336 @@
                         <div class="col-xl-8 col-lg-7">
 
                             <!-- Area Chart -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Area Chart</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
+                            <!-- VERDIKT, Subjekt není v EU -> Nespadá pod NIS2 -->
+                            <div id="finalVerdictNe" style="display: none">
+                                <h3 class="h3 mb-4 text-gray-800">Výsledek samoidentifikace</h3>
+
+                                <!-- Tělo karty -  Verdikt NIS2-->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Spadá vaše organizace pod regulaci NIS2?
+                                        </h6>
                                     </div>
-                                    <hr>
-                                    Styling for the area chart can be found in the
-                                    <code>/js/demo/chart-area-demo.js</code> file.
+                                    <div class="card-body">
+                                        <p style="margin-bottom: 1.5rem">
+                                            Povinnosti vyplývající ze směrnice NIS 2 se vaší organizace
+                                            <b>týkají</b>.
+                                        </p>
+                                        <div class="card-body text-center">
+                                            <i class="fa fa-times-circle text-danger"
+                                                style="font-size: 3rem; margin-bottom: 0.3em"></i>
+                                            <p class="font-weight-bold text-danger text-center"
+                                                style="font-size: 1.2rem; text-decoration: underline">
+                                                NESPADÁ!
+                                            </p>
+                                        </div>
+                                        <div class="alert alert-warning" role="alert">
+                                            NIS 2 se vztahuje jak na organizace se sídlem v EU, tak na
+                                            organizace mimo EU, které však nabízejí své služby v rámci
+                                            EU. Pro organizace mimo EU je vyžadováno, aby jmenovaly
+                                            zástupce v jednom z členských států EU, kde nabízejí své
+                                            služby. Organizace s přítomností v několika členských
+                                            státech EU podléhají jurisdikci toho členského státu, ve
+                                            kterém se nachází jejich hlavní sídlo. Pokud je
+                                            infrastruktura umístěna v zahraničí a český subjekt reálně
+                                            nemá možnost zavádět do ní bezpečnostní opatření, bude
+                                            potřeba mít dostatečným způsobem ošetřeny vztahy mezi
+                                            povinným subjektem a reálným správcem systému.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /OSTATNÍ VERDIKT ------------------------------------------------------------- -->
+
+                            <!-- VERDIKT, Subjekt nespadá pod NIS2 -->
+                            <div id="finalVerdictNe2" style="display: none">
+
+                                <!-- Tělo karty -  Verdikt NIS2-->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Výsledek samoidentifikace
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p style="margin-bottom: 1.5rem">
+                                            Povinnosti vyplývající ze směrnice NIS 2 se vaší organizace
+                                            <b>netýkají</b>.
+                                        </p>
+                                        <div class="card-body text-center">
+                                            <i class="fa fa-times-circle text-danger"
+                                                style="font-size: 3rem; margin-bottom: 0.3em"></i>
+                                            <p class="font-weight-bold text-danger text-center"
+                                                style="font-size: 1.2rem; text-decoration: underline">
+                                                NESPADÁ!
+                                            </p>
+                                        </div>
+                                        <div class="alert alert-warning" role="alert">
+                                            Směrnice NIS 2 umožňuje Národnímu úřadu pro kybernetickou a
+                                            informační bezpečnost (NÚKIB) zařadit vaši organizaci do
+                                            kategorie "režimu nižších povinností" nebo "režimu vyšších povinností",
+                                            pokud
+                                            vyhodnotí, že poskytujete služby jejichž narušení by mohlo
+                                            mít významný dopad na společnost.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- /VERDIKT ------------------------------------------------------------- -->
+
+                            <!-- VERDIKT2, Subjekt je již regulovaný -> Spadá -->
+
+                            <div id="finalVerdictAno" style="display: none">
+
+                                <!-- Tělo karty -  Verdikt NIS2-->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Výsledek samoidentifikace
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p style="margin-bottom: 1.5rem">
+                                            Povinnosti vyplývající ze směrnice NIS 2 se vaší organizace a
+                                            <b>týkají</b>.
+                                        </p>
+                                        <!-- SPADÁ Fajfka-->
+                                        <div class="card-body text-center">
+                                            <i class="fa fa-check-circle text-success" style="
+                                                        font-size: 3rem;
+                                                        margin-bottom: 0.3em;
+                                                        color: green !important;
+                                                      "></i>
+                                            <p class="font-weight-bold text-success text-center" style="
+                                                        font-size: 1.2rem;
+                                                        text-decoration: underline;
+                                                        color: green !important;
+                                                      ">
+                                                SPADÁ!
+                                            </p>
+                                        </div>
+                                        <!-- /SPADÁ Fajfka-->
+                                    </div>
                                 </div>
                             </div>
 
-                            <!-- Bar Chart -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-bar">
-                                        <canvas id="myBarChart"></canvas>
+                            <!-------------------------------- /VERDIKT2 ------------------------------>
+
+                            <!-- VERDIKT - ZÁKLADNÍ subjekt -> Spadá -->
+                            <div id="finalVerdictAnoZakladni" style="display: none">
+                                <div class="row">
+                                    <!-- Tělo karty - Spadá organizace pod NIS2? -->
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="card shadow mb-4">
+                                            <div class="card-header py-3">
+                                                <h6 class="m-0 font-weight-bold text-primary">
+                                                    Výsledek samoidentifikace
+                                                </h6>
+                                            </div>
+                                            <div class="card-body">
+                                                <p style="margin-bottom: 1.5rem">
+                                                    Povinnosti vyplývající ze směrnice NIS 2 se vaší
+                                                    organizace <b>týkají</b>.
+                                                </p>
+                                                <!-- SPADÁ Fajfka-->
+                                                <div class="card-body text-center">
+                                                    <i class="fa fa-check-circle text-success" style="
+                                                            font-size: 3rem;
+                                                            margin-bottom: 0.3em;
+                                                            color: green !important;
+                                                          "></i>
+                                                    <p class="font-weight-bold text-success text-center" style="
+                                                            font-size: 1.2rem;
+                                                            text-decoration: underline;
+                                                            color: green !important;
+                                                          ">
+                                                        SPADÁ!
+                                                    </p>
+                                                </div>
+                                                <div class="alert alert-warning" id="dora" style="display: none"
+                                                    role="alert">
+                                                    Sektor, ve kterém se vaše organizace nachází bude
+                                                    regulován
+                                                    <a
+                                                        href="https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32022R2554">nařízením
+                                                        DORA</a>. Nařízení DORA tedy podrobně konkretizuje požadavky na
+                                                    digitální odolnost dotčených subjektů a tím de facto
+                                                    naplňuje rámcové požadavky směrnice NIS 2. Dohledovým
+                                                    orgánem je ČNB.
+                                                </div>
+                                                <div class="alert alert-warning" id="verejnasprava"
+                                                    style="display: none" role="alert">
+                                                    Směrnice NIS2 povinně vyžaduje regulaci centrální
+                                                    veřejné správy. Regionální a lokální autority (tzn. obce
+                                                    a kraje) mohou být regulovány, pokud to státy považují
+                                                    za vhodné. Nově připravovaný zákon počítá s tím, že bude
+                                                    zachována regulace krajů (které jsou dnes regulovány
+                                                    jako významné informační systémy). Regulace
+                                                    <a href="https://cs.wikipedia.org/wiki/Obec_s_pov%C4%9B%C5%99en%C3%BDm_obecn%C3%ADm_%C3%BA%C5%99adem"
+                                                        target="_blank" rel="noopener noreferrer">jedničkových a
+                                                        dvojkových
+                                                        obcí</a>
+                                                    v tuto chvíli plánována není. Do regulace spadají také
+                                                    <b>vysoké školy</b>.
+                                                </div>
+                                                <!-- /SPADÁ Fajfka-->
+                                                <!-- MEZERA-->
+                                                <hr>
+                                                <div class="card-body">
+                                                    <p style="margin-bottom: 1.5rem">
+                                                        Vaše organizace se nachází v kategorii subjektů
+                                                        <b>režim vyšších povinností</b>.
+                                                    </p>
+                                                    <!-- KATEGORIE Základní-->
+                                                    <div class="card-body text-center">
+                                                        <i class="fa fa-exclamation-triangle text-warning"
+                                                            style="font-size: 3rem; margin-bottom: 0.3em"></i>
+                                                        <p class="font-weight-bold text-warning text-center"
+                                                            style="font-size: 1.2rem; text-decoration: underline">
+                                                            REŽIM VYŠŠÍCH POVINNOSTÍ
+                                                        </p>
+                                                    </div>
+                                                    <!-- /KATEGORIE Základní -->
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <hr>
-                                    Styling for the bar chart can be found in the
-                                    <code>/js/demo/chart-bar-demo.js</code> file.
                                 </div>
+                                <!-- /Karty KATEGORIE -->
                             </div>
 
+                            <!-- VERDIKT - DŮLEŽITÝ subjekt -->
+                            <div id="finalVerdictAnoDulezity" style="display: none">
+                                <div class="row">
+                                    <!-- Tělo karty - Spadá organizace pod NIS2? -->
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="card shadow mb-4">
+                                            <div class="card-header py-3">
+                                                <h6 class="m-0 font-weight-bold text-primary">
+                                                    Výsledek samoidentifikace
+                                                </h6>
+                                            </div>
+                                            <div class="card-body">
+                                                <p style="margin-bottom: 1.5rem">
+                                                    Povinnosti vyplývající ze směrnice NIS 2 se vaší
+                                                    organizace <b>týkají</b>.
+                                                </p>
+                                                <!-- SPADÁ Fajfka-->
+                                                <div class="card-body text-center">
+                                                    <i class="fa fa-check-circle text-success" style="
+                                                            font-size: 3rem;
+                                                            margin-bottom: 0.3em;
+                                                            color: green !important;
+                                                          "></i>
+                                                    <p class="font-weight-bold text-success text-center" style="
+                                                            font-size: 1.2rem;
+                                                            text-decoration: underline;
+                                                            color: green !important;
+                                                          ">
+                                                        SPADÁ!
+                                                    </p>
+                                                </div>
+                                                <div class="alert alert-warning" id="dora" style="display: none"
+                                                    role="alert">
+                                                    Sektor, ve kterém se vaše organizace nachází bude
+                                                    regulován
+                                                    <a
+                                                        href="https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32022R2554">nařízením
+                                                        DORA</a>. Nařízení DORA tedy podrobně konkretizuje požadavky na
+                                                    digitální odolnost dotčených subjektů a tím de facto
+                                                    naplňuje rámcové požadavky směrnice NIS 2. Dohledovým
+                                                    orgánem je ČNB.
+                                                </div>
+                                                <!-- /SPADÁ Fajfka-->
+                                            </div>
+                                            <hr>
+                                            <div class="card-body">
+                                                <p style="margin-bottom: 1.5rem">
+                                                    Vaše organizace se nachází v kategorii subjektů
+                                                    <b>režim nižších povinností</b>.
+                                                </p>
+                                                <!-- KATEGORIE Důležitý-->
+                                                <div class="card-body text-center">
+                                                    <i class="fa fa-exclamation-triangle text-info"
+                                                        style="font-size: 3rem; margin-bottom: 0.3em"></i>
+                                                    <p class="font-weight-bold text-info text-center"
+                                                        style="font-size: 1.2rem; text-decoration: underline">
+                                                        REŽIM NIŽŠÍCH POVINNOSTÍ
+                                                    </p>
+                                                </div>
+                                                <div class="alert alert-warning" role="alert">
+                                                    Směrnice NIS 2 umožňuje Národnímu úřadu pro
+                                                    kybernetickou a informační bezpečnost (NÚKIB) zařadit
+                                                    vaši organizaci do kategorie "základní subjekt", pokud
+                                                    vyhodnotí, že poskytujete služby jejichž narušení by
+                                                    mohlo mít významný dopad na společnost.
+                                                </div>
+                                                <!-- /KATEGORIE Základní -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Karty KATEGORIE -->
+                            </div>
                         </div>
 
-                        <!-- Donut Chart -->
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Donut Chart</h6>
+                        <!-- Bar Chart -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-bar">
+                                    <canvas id="myBarChart"></canvas>
                                 </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-pie pt-4">
-                                        <canvas id="myPieChart"></canvas>
-                                    </div>
-                                    <hr>
-                                    Styling for the donut chart can be found in the
-                                    <code>/js/demo/chart-pie-demo.js</code> file.
+                                <hr>
+                                Styling for the bar chart can be found in the
+                                <code>/js/demo/chart-bar-demo.js</code> file.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Donut Chart -->
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="card shadow mb-4">
+                            <!-- Card Header - Dropdown -->
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Donut Chart</h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <div class="chart-pie pt-4">
+                                    <canvas id="myPieChart"></canvas>
                                 </div>
+                                <hr>
+                                Styling for the donut chart can be found in the
+                                <code>/js/demo/chart-pie-demo.js</code> file.
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <!-- /.container-fluid -->
 
             </div>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
+            <!-- /.container-fluid -->
 
         </div>
-        <!-- End of Content Wrapper -->
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright &copy; Your Website 2020</span>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
 
     </div>
     <!-- End of Page Wrapper -->
@@ -486,6 +743,38 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/chart-bar-demo.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <script src="progress_bar.js"></script>
+
+    <script src="progress-bar-ISO.js"></script>
+
+    <script src="odpovedi-ISO.js"></script>
+
+    <!-- Skripty pro Piecharty-->
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-pie-iso27.js"></script>
+    <!-- Pomocný skript pro ukládání otázek-->
+    <script src="ISO27k-otazky.js"></script>
+    <!-- Bar chart-->
+    <script src="js/demo/chart-bar-demo.js"></script>
+
+    <!-- Knihovny pro stahování reportu z dashboardu -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- Skript na stažení dashboardu-->
+    <script src="downloadPDF.js"></script>
+
+
+    <script>
+        const verdictToShow = localStorage.getItem('NIS2FinalVerdict');
+        if (verdictToShow) {
+            document.getElementById(verdictToShow).style.display = "block";
+        }
+    </script>
+
 
 </body>
 

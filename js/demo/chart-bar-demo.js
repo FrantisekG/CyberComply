@@ -151,7 +151,6 @@ function createBarChart() {
     });
 };
 // Funkce pro izolování odpovědí NE
-// Funkce pro izolování odpovědí NE
 function listUnansweredQuestions() {
     var barChartresults = JSON.parse(localStorage.getItem('isoResults'));
     var htmlOutput = '';
