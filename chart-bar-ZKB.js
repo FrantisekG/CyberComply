@@ -106,7 +106,7 @@ function createBarChart() {
                         drawBorder: false
                     },
                     ticks: {
-                        maxTicksLimit: 6
+                        maxTicksLimit: 10
                     },
                     // maxBarThickness: 40,
                 }],

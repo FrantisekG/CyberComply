@@ -1,36 +1,52 @@
 // Výchozí nastavení
-Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
-Chart.defaults.global.defaultFontColor = '#858796';
+(Chart.defaults.global.defaultFontFamily = "Nunito"),
+  '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+Chart.defaults.global.defaultFontColor = "#858796";
 
-const storedResults = localStorage.getItem('isoResults');
+const storedResults = localStorage.getItem("isoResults");
 const results = storedResults ? JSON.parse(storedResults) : null;
-console.log(results);  // Přidejte tento řádek, abyste zkontrolovali, jak vypadají uložené výsledky.
+console.log(results); // Přidejte tento řádek, abyste zkontrolovali, jak vypadají uložené výsledky.
 
 // Funkce pro zobrazení procentuální hodnoty uprostřed koláčového grafu
 function displayPercentage(chart) {
   var ctx = chart.chart.ctx;
   var fontSize = 24;
-  var fontWeight = 'bold';
-  var primaryColor = '#4e73df';
-  ctx.font = Chart.helpers.fontString(fontSize, fontWeight, Chart.defaults.global.defaultFontFamily);
-  ctx.textAlign = 'center';
-  ctx.textBaseline = 'bottom';
+  var fontWeight = "bold";
+  var primaryColor = "#4e73df";
+  ctx.font = Chart.helpers.fontString(
+    fontSize,
+    fontWeight,
+    Chart.defaults.global.defaultFontFamily
+  );
+  ctx.textAlign = "center";
+  ctx.textBaseline = "bottom";
   ctx.fillStyle = primaryColor;
-  var shodaPercentage = chart.data.datasets[0].data[0] / (chart.data.datasets[0].data[0] + chart.data.datasets[0].data[1]) * 100;
-  ctx.fillText(shodaPercentage.toFixed(1) + '%', chart.chart.width / 2, (chart.chart.height / 2) + 10);
+  var shodaPercentage =
+    (chart.data.datasets[0].data[0] /
+      (chart.data.datasets[0].data[0] + chart.data.datasets[0].data[1])) *
+    100;
+  ctx.fillText(
+    shodaPercentage.toFixed(1) + "%",
+    chart.chart.width / 2,
+    chart.chart.height / 2 + 10
+  );
 }
 
 // Pie Chart
 var ctx = document.getElementById("PieChartISO27");
 var PieChartISO27 = new Chart(ctx, {
-  type: 'doughnut',
+  type: "doughnut",
   data: {
     labels: ["Zavedeno", "Nezavedeno"],
-    datasets: [{
-      data: results ? [results.percentage, 100 - results.percentage] : [49, 51],
-      backgroundColor: ['#4e73df', '#d3dcf7'],
-      hoverBorderColor: "rgba(234, 236, 244, 1)",
-    }]
+    datasets: [
+      {
+        data: results
+          ? [results.percentage, 100 - results.percentage]
+          : [50, 50],
+        backgroundColor: ["#4e73df", "#d3dcf7"],
+        hoverBorderColor: "rgba(234, 236, 244, 1)",
+      },
+    ],
   },
   options: {
     maintainAspectRatio: false,
@@ -42,15 +58,15 @@ var PieChartISO27 = new Chart(ctx, {
         // Data pro vyplnění shrnutí pod graf
         var implementedValue = this.data.datasets[0].data[0].toFixed(1); // tofixed zaokrouhlí čísla
         var notImplementedValue = (100 - implementedValue).toFixed(1);
-        document.getElementById('zavedeno').textContent = implementedValue;
-        document.getElementById('nezavedeno').textContent = notImplementedValue;
-      }
+        document.getElementById("zavedeno").textContent = implementedValue;
+        document.getElementById("nezavedeno").textContent = notImplementedValue;
+      },
     },
     tooltips: {
-      enabled: false
+      enabled: false,
     },
     legend: {
-      display: false
+      display: false,
     },
     cutoutPercentage: 60,
   },
@@ -62,37 +78,53 @@ var PieChartISO27 = new Chart(ctx, {
 function displayMaxValue(chart) {
   var ctx = chart.chart.ctx;
   var fontSize = 24;
-  var fontWeight = 'bold';
-  var colors = ['#4e73df', '#36b9cc', '#d3dcf7'];  // Colors for "Ano", "Částečně", "Ne" respectively
-  ctx.font = Chart.helpers.fontString(fontSize, fontWeight, Chart.defaults.global.defaultFontFamily);
-  ctx.textAlign = 'center';
-  ctx.textBaseline = 'bottom';
+  var fontWeight = "bold";
+  var colors = ["#4e73df", "#36b9cc", "#d3dcf7"]; // Colors for "Ano", "Částečně", "Ne" respectively
+  ctx.font = Chart.helpers.fontString(
+    fontSize,
+    fontWeight,
+    Chart.defaults.global.defaultFontFamily
+  );
+  ctx.textAlign = "center";
+  ctx.textBaseline = "bottom";
 
   var maxValue = Math.max(...chart.data.datasets[0].data);
-  var maxIndex = chart.data.datasets[0].data.indexOf(maxValue);  // Get the index of the max value
-  ctx.fillStyle = colors[maxIndex];  // Set the color based on the index of the max value
+  var maxIndex = chart.data.datasets[0].data.indexOf(maxValue); // Get the index of the max value
+  ctx.fillStyle = colors[maxIndex]; // Set the color based on the index of the max value
 
-  ctx.fillText(maxValue.toFixed(1) + '%', chart.chart.width / 2, (chart.chart.height / 2) + 10);
+  ctx.fillText(
+    maxValue.toFixed(1) + "%",
+    chart.chart.width / 2,
+    chart.chart.height / 2 + 10
+  );
 }
 
 // Výpočet celkového počtu odpovědí a procentuálních hodnot
-var totalResponses = results ? (results.totalScores["Ano"] + results.totalScores["Částečně"] + results.totalScores["Ne"]) : 100;
-var percentageData = results ? [
-  (results.totalScores["Ano"] / totalResponses) * 100,
-  (results.totalScores["Částečně"] / totalResponses) * 100,
-  (results.totalScores["Ne"] / totalResponses) * 100
-] : [30, 20, 50];
+var totalResponses = results
+  ? results.totalScores["Ano"] +
+    results.totalScores["Částečně"] +
+    results.totalScores["Ne"]
+  : 100;
+var percentageData = results
+  ? [
+      (results.totalScores["Ano"] / totalResponses) * 100,
+      (results.totalScores["Částečně"] / totalResponses) * 100,
+      (results.totalScores["Ne"] / totalResponses) * 100,
+    ]
+  : [30, 20, 50];
 
 var ctxAnswers = document.getElementById("AnswersPieChart");
 var AnswersPieChart = new Chart(ctxAnswers, {
-  type: 'pie',
+  type: "pie",
   data: {
     labels: ["Ano", "Částečně", "Ne"],
-    datasets: [{
-      data: percentageData,  // Použití procentuálních hodnot
-      backgroundColor: ['#4e73df', '#36b9cc', '#d3dcf7'],
-      hoverBorderColor: "rgba(234, 236, 244, 1)",
-    }]
+    datasets: [
+      {
+        data: percentageData, // Použití procentuálních hodnot
+        backgroundColor: ["#4e73df", "#36b9cc", "#d3dcf7"],
+        hoverBorderColor: "rgba(234, 236, 244, 1)",
+      },
+    ],
   },
   options: {
     maintainAspectRatio: false,
@@ -106,29 +138,30 @@ var AnswersPieChart = new Chart(ctxAnswers, {
       duration: 1000,
       onComplete: function () {
         // Aktualizace hodnot ve shrnutí
-        var anoValue = this.data.datasets[0].data[0].toFixed(1);  // Zaokrouhlení na jedno desetinné místo
-        var castecneValue = this.data.datasets[0].data[1].toFixed(1);  // Zaokrouhlení na jedno desetinné místo
-        var neValue = this.data.datasets[0].data[2].toFixed(1);  // Zaokrouhlení na jedno desetinné místo
-        document.getElementById('ano').textContent = anoValue;
-        document.getElementById('castecne').textContent = castecneValue;
-        document.getElementById('ne').textContent = neValue;
-      }
+        var anoValue = this.data.datasets[0].data[0].toFixed(1); // Zaokrouhlení na jedno desetinné místo
+        var castecneValue = this.data.datasets[0].data[1].toFixed(1); // Zaokrouhlení na jedno desetinné místo
+        var neValue = this.data.datasets[0].data[2].toFixed(1); // Zaokrouhlení na jedno desetinné místo
+        document.getElementById("ano").textContent = anoValue;
+        document.getElementById("castecne").textContent = castecneValue;
+        document.getElementById("ne").textContent = neValue;
+      },
     },
     tooltips: {
       enabled: true,
       callbacks: {
         label: function (tooltipItem, data) {
-          return data.labels[tooltipItem.index] + ': ' + data.datasets[0].data[tooltipItem.index].toFixed(1) + '%';
-        }
-      }
+          return (
+            data.labels[tooltipItem.index] +
+            ": " +
+            data.datasets[0].data[tooltipItem.index].toFixed(1) +
+            "%"
+          );
+        },
+      },
     },
     legend: {
-      display: false
+      display: false,
     },
     //cutoutPercentage: 60,
   },
 });
-
-
-
-
