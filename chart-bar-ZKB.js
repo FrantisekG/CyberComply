@@ -77,7 +77,7 @@ function createBarChart() {
         data: {
             labels: labels,
             datasets: [{
-                label: "Zavedeno",
+                label: "Plnění",
                 backgroundColor: backgroundColors,
                 hoverBackgroundColor: backgroundColors,
                 borderColor: "#4e73df",

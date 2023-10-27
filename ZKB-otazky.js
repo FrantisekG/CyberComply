@@ -1172,6 +1172,13 @@ function displaySection(sectionId, containerId) {
                         hasStartedQuestionnaire = true;  // Nastaví hasStartedQuestionnaire na true, jakmile uživatel zvolí odpověď
                     }
                 });
+
+                          // Add tooltip attributes for "Neaplikováno" option
+  if (option === "Neaplikováno") {
+    radioElement.setAttribute("data-toggle", "tooltip");
+    radioElement.setAttribute("data-placement", "bottom");
+    radioElement.setAttribute("title", "Opatření není pro organizaci relevantní");
+  }
                 optionsWrapper.appendChild(radioElement);
 
                 const label = document.createElement('label');
@@ -1212,6 +1219,10 @@ window.onload = function () {
     displaySection('section8', 'questionnaireContainer8');
     displaySection('section9', 'questionnaireContainer9');
     displaySection('section10', 'questionnaireContainer10');
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
 }
 
 // Funkce, která zobrazí výzvu, pokud uživatel pokusí opustit stránku po zahájení vyplňování dotazníku

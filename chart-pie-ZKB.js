@@ -27,7 +27,7 @@ var PieChartZKB = new Chart(ctx, {
     data: {
         labels: ["Zavedeno", "Nezavedeno"],
         datasets: [{
-            data: results ? [results.percentage, 100 - results.percentage] : [49, 51],
+            data: results ? [results.percentage, 100 - results.percentage] : [49, 51], // Zbytek vyplňuje, když nejsou hodnoty
             backgroundColor: ['#4e73df', '#d3dcf7'],
             hoverBorderColor: ['#4e73df', '#d3dcf7'],
         }]
@@ -97,12 +97,6 @@ var AnswersPieChart = new Chart(ctxAnswers, {
     },
     options: {
         maintainAspectRatio: false,
-        //  animation: {
-        //    duration: 1000,
-        //   onComplete: function () {
-        //     displayMaxValue(this);
-        //   }
-        // },
         animation: {
             duration: 1000,
             onComplete: function () {

@@ -202,7 +202,7 @@
                     </span>
                     <span class="mr-2">
                       <i class="fas fa-circle" style="color: #d3dcf7"></i>
-                      Soulad
+                      Nesoulad
                     </span>
                   </div>
                   <hr />
@@ -214,7 +214,7 @@
                     v <b>souladu</b> s požadavky normy ISO/IEC 27001. Do
                     plného souladu Vám <b>chybí</b>
                     <span id="nezavedeno" style="font-weight: bold">0</span>
-                    <b>%</b>.
+                    <b>%</b>. Opatření, která nejsou pro organizaci relevantní ("Neaplikováno") se do míry souladu nezapočítávají. 
                   </div>
                 </div>
               </div>
@@ -246,6 +246,10 @@
                       <i class="fas fa-circle" style="color: #d3dcf7"></i>
                       Nezavedeno
                     </span>
+                    <span class="mr-2">
+                      <i class="fas fa-circle" style="color: #858796"></i>
+                      Neaplikováno
+                    </span>
                   </div>
                   <hr />
                   <div style="margin-top: 1.5rem">
@@ -257,7 +261,11 @@
                     <b>%</b>, a v
                     <span id="ne" style="font-weight: bold">0</span>
                     <b>%</b> případů nejsou zavedena<b>
-                      žádná bezpečnostní opatření</b>.
+                      žádná bezpečnostní opatření</b>. V organizaci máte <b>neaplikováno</b>
+                      <span id="neaplikovano" style="font-weight: bold"
+                        >0
+                      </span>
+                      <b>%</b> bezpečnostních opatření.
                   </div>
                 </div>
               </div>
@@ -358,11 +366,10 @@
 
   <!-- Page level plugins -->
   <script src="vendor/chart.js/Chart.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="js/demo/chart-pie-iso27.js"></script>
   <!-- Pomocný skript pro ukládání otázek-->
   <script src="ISO27k-otazky.js"></script>
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-pie-iso27.js"></script>
   <!-- Bar chart-->
   <script src="js/demo/chart-bar-demo.js"></script>
 

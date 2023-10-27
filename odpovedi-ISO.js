@@ -1,7 +1,7 @@
 let currentSectionIndex = 0;
-const maxSections = 7;  // Sekcí ISO v dotazníku
+const maxSections = 10;  // Sekcí ZKB v dotazníku
 const sections = document.querySelectorAll(".section");
-const progressBar = document.getElementById("progress-bar-ISO");
+const progressBar = document.getElementById("progress-bar-ISO"); // Myslím, že by mohlo jít pryč
 const nextButton = document.getElementById("nextButton");
 const prevButton = document.getElementById("prevButton");
 
@@ -109,24 +109,29 @@ function calculateScores() {
     const scoring = {
         "Ano": 2,
         "Částečně": 1,
-        "Ne": 0
+        "Ne": 0,
+        "Neaplikováno": 0
     };
     /* Každá odpověď na začátku začíná 0, poté celkový počet bodů pro každou možnou odpověď ve všech sekcích a otázkách*/
     let totalScores = {
         "Ano": 0,
         "Částečně": 0,
-        "Ne": 0
+        "Ne": 0,
+        "Neaplikováno": 0
     };
     /* Začíná na začátku dotazníku 0*/
     let maxScore = 0;
     /* Skore za každou sekci, začíná prázdný objekt */
     let sectionScores = {};
+    // Přidáme proměnnou pro sledování celkového počtu otázek
+    let totalQuestions = 0;
 
     questionnaireData.sections.forEach(section => {
         let sectionScore = {
             "Ano": 0,
             "Částečně": 0,
-            "Ne": 0
+            "Ne": 0,
+            "Neaplikováno": 0
         };
         let sectionMaxScore = 0;
 
@@ -134,12 +139,16 @@ function calculateScores() {
         section.subsections.forEach(subsection => {
             subsection.questions.forEach(question => {
                 //console.log(question.response);  // Debugging output
+                totalQuestions++; // Zvyšujeme počet otázek při každé iteraci
                 if (question.response in scoring) {
                     sectionScore[question.response]++;
                     totalScores[question.response]++;
                 }
-                sectionMaxScore += 2;
-                maxScore += 2;
+                // Přidáváme k max skóre pouze pokud otázka není označena jako "Neaplikováno"
+                if (question.response !== "Neaplikováno") {
+                    sectionMaxScore += 2;
+                    maxScore += 2;
+                }
             });
         });
         //console.log(totalScores);  // Debugging output
@@ -155,7 +164,9 @@ function calculateScores() {
         totalScores: totalScores,
         maxScore: maxScore,
         percentage: (totalScores["Ano"] * 2 / maxScore) * 100,
-        sections: sectionScores
+        sections: sectionScores,
+        // Procentuální hodnota otázek označených jako "Neaplikováno"
+        notApplicablePercentage: (totalScores["Neaplikováno"] / totalQuestions) * 100
     };
 
     // Uložení výsledků do localStorage
