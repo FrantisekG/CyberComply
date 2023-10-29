@@ -175,6 +175,13 @@ function listUnansweredQuestions() {
 
   questionnaireData.sections.forEach((section) => {
     var sectionKey = section.id;
+
+    // Ověřte, zda je section.id v rozsahu section8 až section21
+    var sectionNumber = parseInt(sectionKey.replace("section", ""));
+    if (sectionNumber < 1 || sectionNumber > 7) {
+      return; // Pokud ne, přeskočte tuto iteraci cyklu
+    }
+
     var sectionResults = barChartresults.sections[sectionKey];
     if (sectionResults && sectionResults.percentage < 50) {
       if (!messageDisplayed) {

@@ -214,7 +214,8 @@
                     v <b>souladu</b> s požadavky normy ISO/IEC 27001. Do
                     plného souladu Vám <b>chybí</b>
                     <span id="nezavedeno" style="font-weight: bold">0</span>
-                    <b>%</b>. Opatření, která nejsou pro organizaci relevantní ("Neaplikováno") se do míry souladu nezapočítávají. 
+                    <b>%</b>. Opatření, která nejsou pro organizaci relevantní ("Neaplikováno") se do míry souladu
+                    nezapočítávají.
                   </div>
                 </div>
               </div>
@@ -262,10 +263,9 @@
                     <span id="ne" style="font-weight: bold">0</span>
                     <b>%</b> případů nejsou zavedena<b>
                       žádná bezpečnostní opatření</b>. V organizaci máte <b>neaplikováno</b>
-                      <span id="neaplikovano" style="font-weight: bold"
-                        >0
-                      </span>
-                      <b>%</b> bezpečnostních opatření.
+                    <span id="neaplikovano" style="font-weight: bold">0
+                    </span>
+                    <b>%</b> bezpečnostních opatření.
                   </div>
                 </div>
               </div>
@@ -289,6 +289,23 @@
                   </div>
                   <hr />
                   <div id="otazkypod50"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <!-- Bar Chart - Prilohy -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">
+                    Plnění bezpečnostních požadavků stanovených v příloze A normy ISO/IEC 27001
+                  </h6>
+                </div>
+                <div class="card-body">
+                  <div class="chart-bar">
+                    <canvas id="myBarChart-Prilohy"></canvas>
+                  </div>
+                  <hr />
+                  <div id="otazkypod50-Prilohy"></div>
                 </div>
               </div>
             </div>
@@ -372,6 +389,8 @@
   <script src="js/demo/chart-pie-iso27.js"></script>
   <!-- Bar chart-->
   <script src="js/demo/chart-bar-demo.js"></script>
+
+  <script src="chart-bar-ISO_Pril.js"></script>
 
   <!-- Knihovny pro stahování reportu z dashboardu -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>

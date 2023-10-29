@@ -1172,13 +1172,6 @@ function displaySection(sectionId, containerId) {
                         hasStartedQuestionnaire = true;  // Nastaví hasStartedQuestionnaire na true, jakmile uživatel zvolí odpověď
                     }
                 });
-
-                          // Add tooltip attributes for "Neaplikováno" option
-  if (option === "Neaplikováno") {
-    radioElement.setAttribute("data-toggle", "tooltip");
-    radioElement.setAttribute("data-placement", "bottom");
-    radioElement.setAttribute("title", "Opatření není pro organizaci relevantní");
-  }
                 optionsWrapper.appendChild(radioElement);
 
                 const label = document.createElement('label');
@@ -1186,6 +1179,24 @@ function displaySection(sectionId, containerId) {
                 label.textContent = option;
                 label.style.marginRight = '80px';
                 optionsWrapper.appendChild(label);
+
+                // Tooltip vysvětlující "Neaplikováno"
+                if (option === "Neaplikováno") {
+                    const tooltipWrapper = document.createElement('div');
+                    tooltipWrapper.className = "info-tooltip";
+
+                    const iconElement = document.createElement('i');
+                    iconElement.className = "fas fa-info-circle";
+                    iconElement.style.marginLeft = '5px';  // Adjust as needed
+                    tooltipWrapper.appendChild(iconElement);
+
+                    const tooltipTextElement = document.createElement('span');
+                    tooltipTextElement.className = "tooltiptext bottom";
+                    tooltipTextElement.textContent = "Opatření není pro organizaci relevantní";
+                    tooltipWrapper.appendChild(tooltipTextElement);
+
+                    label.appendChild(tooltipWrapper);
+                }
             });
 
             questionWrapper.appendChild(optionsWrapper);
@@ -1219,10 +1230,6 @@ window.onload = function () {
     displaySection('section8', 'questionnaireContainer8');
     displaySection('section9', 'questionnaireContainer9');
     displaySection('section10', 'questionnaireContainer10');
-
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-      });
 }
 
 // Funkce, která zobrazí výzvu, pokud uživatel pokusí opustit stránku po zahájení vyplňování dotazníku

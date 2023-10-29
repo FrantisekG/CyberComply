@@ -1,5 +1,5 @@
 let currentSectionIndex = 0;
-const maxSections = 10;  // Sekcí ZKB v dotazníku
+const maxSections = 21;  // Sekcí
 const sections = document.querySelectorAll(".section");
 const progressBar = document.getElementById("progress-bar-ISO"); // Myslím, že by mohlo jít pryč
 const nextButton = document.getElementById("nextButton");

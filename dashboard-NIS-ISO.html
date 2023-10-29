@@ -36,50 +36,41 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0" />
 
-         <!-- Nav Item - Dashboard -->
-         <li class="nav-item">
-            <a class="nav-link" href="landing.html">
-              <i class="fa fa-home"></i>
-              <span>Hlavní stránka</span></a
-            >
-          </li>
-  
-          <!-- Nav Item - Dashboard -->
-          <li class="nav-item">
-            <a class="nav-link" href="dashboard-NIS-ISO.html">
-              <i class="fas fa-fw fa-tachometer-alt"></i>
-              <span>Informační přehled</span></a
-            >
-          </li>
-  
-          <!-- Nav Item - Posouzení NIS2-->
-          <li class="nav-item">
-            <a class="nav-link" href="nis2.html">
-              <i class="fa fa-gavel"></i>
-              <span>Směrnice NIS2</span></a
-            >
-          </li>
-  
-                  <!-- Nav Item - Posouzení NIS2-->
+            <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-            <a class="nav-link" href="nis2.html">
-              <i class="fa fa-folder"></i>
-              <span>Legislativa</span></a
-            >
-          </li>
-          <!-- Nav Item - Utilities Collapse Menu -->
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#"
-              data-target="#collapseUtilities"
-              aria-expanded="true"
-              aria-controls="collapseUtilities"
-            >
-              <i class="fa fa-graduation-cap"></i>
-              <span>FAQ</span>
-            </a>
-          </li>
+                <a class="nav-link" href="landing.html">
+                    <i class="fa fa-home"></i>
+                    <span>Hlavní stránka</span></a>
+            </li>
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="dashboard-NIS-ISO.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Informační přehled</span></a>
+            </li>
+
+            <!-- Nav Item - Posouzení NIS2-->
+            <li class="nav-item">
+                <a class="nav-link" href="nis2.html">
+                    <i class="fa fa-gavel"></i>
+                    <span>Směrnice NIS2</span></a>
+            </li>
+
+            <!-- Nav Item - Posouzení NIS2-->
+            <li class="nav-item">
+                <a class="nav-link" href="nis2.html">
+                    <i class="fa fa-folder"></i>
+                    <span>Legislativa</span></a>
+            </li>
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-target="#collapseUtilities" aria-expanded="true"
+                    aria-controls="collapseUtilities">
+                    <i class="fa fa-graduation-cap"></i>
+                    <span>FAQ</span>
+                </a>
+            </li>
 
 
             <!-- Divider -->
@@ -362,7 +353,7 @@
                                                 </h6>
                                             </a>
                                             <!-- Card Content - Collapse -->
-                                            <div class="collapse" id="collapseCardExample1">
+                                            <div class="show" id="collapseCardExample1">
                                                 <div class="card-body">
                                                     <p>
                                                         Směrnice NIS2 zdůrazňuje odpovědnost vedení organizací
@@ -639,7 +630,7 @@
                                                 </h6>
                                             </a>
                                             <!-- Card Content - Collapse -->
-                                            <div class="collapse" id="collapseCardExample1">
+                                            <div class="show" id="collapseCardExample1">
                                                 <div class="card-body">
                                                     <p>
                                                         Směrnice NIS2 zdůrazňuje odpovědnost vedení organizací
@@ -1155,6 +1146,79 @@
                                     <div id="otazkypod50"></div>
                                 </div>
                             </div>
+                            <!-- Bar Chart - Prilohy -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        Plnění bezpečnostních požadavků stanovených v příloze A normy ISO/IEC 27001
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-bar">
+                                        <canvas id="myBarChart-Prilohy"></canvas>
+                                    </div>
+                                    <hr />
+                                    <div id="otazkypod50-Prilohy"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">
+                                Soulad s bezpečnostními požadavky NIS 2
+                            </h6>
+                        </div>
+                        <div class="card-body">
+
+                            <div class="alert alert-warning" role="alert">
+                                Obsah směrnice NIS 2 stanovuje minimální požadavky a její
+                                platnost neznamená, že musíte ihned začít plnit všechny
+                                povinnosti, které přináší. NÚKIB v současnosti pracuje na
+                                nové podobě zákona č. 181/2014 Sb., o kybernetické
+                                bezpečnosti, který konkrétní požadavky na národní dále
+                                rozvádí. Nový zákon by podle transpoziční lhůty měl vejít v
+                                platnost v říjnu 2024. Nově regulovaným subjektům bude dána
+                                přechodná lhůta jednoho roku pro zahájení plnění povinností.
+                            </div>
+
+                            <h4 class="small font-weight-bold">
+                                Řízení rizik <span class="float-right">20%</span>
+                            </h4>
+                            <div class="progress mb-4">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
+                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="small font-weight-bold">
+                                E-mailová ochrana <span class="float-right">40%</span>
+                            </h4>
+                            <div class="progress mb-4">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
+                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="small font-weight-bold">
+                                Antivirus <span class="float-right">60%</span>
+                            </h4>
+                            <div class="progress mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="small font-weight-bold">
+                                Zálohování <span class="float-right">80%</span>
+                            </h4>
+                            <div class="progress mb-4">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="small font-weight-bold">
+                                Vzdálený přístup
+                                <span class="float-right">Zavedeno!</span>
+                            </h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
                     </div>
 
@@ -1235,8 +1299,8 @@
 
 
     <!-- Chart.js plugin -->
-        <!-- Pomocný skript pro ukládání otázek-->
-        <script src="ISO27k-otazky.js"></script>
+    <!-- Pomocný skript pro ukládání otázek-->
+    <script src="ISO27k-otazky.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
@@ -1253,6 +1317,8 @@
 
     <!-- Bar chart-->
     <script src="js/demo/chart-bar-demo.js"></script>
+
+    <script src="chart-bar-ISO_Pril.js"></script>
 
     <!-- Knihovny pro stahování reportu z dashboardu -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>

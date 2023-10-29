@@ -70,7 +70,7 @@ const questionnaireData = {
 
         {
           id: "4.4",
-          title: "Systém řízení bezpečnosti informací",
+          title: "Systém řízení bezpečnosti informací (4.4)",
           questions: [
             {
               id: "q4.4_1",
@@ -545,6 +545,502 @@ const questionnaireData = {
         },
       ],
     },
+    {
+      id: "section8",
+      title: "Příloha A: A.5",
+      subsections: [
+        {
+          id: "A5",
+          title: "Politiky bezpečnosti informací (A.5)",
+          questions: [
+            {
+              id: "A5_1",
+              text: "Jsou definovány a pravidelně přezkoumávány politiky bezpečnosti informací, které udávají směr řízení?",
+              comment:
+                "",
+              response: null,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "section9",
+      title: "Příloha A: A.6",
+      subsections: [
+        {
+          id: "A6",
+          title: "Organizace bezpečnosti informací (A.6)",
+          questions: [
+            {
+              id: "A6_1",
+              text: "Byl vytvořen rámec řízení pro kontrolu provádění a fungování bezpečnosti v rámci organizace, včetně přidělení odpovědností a oddělení protichůdných úkolů?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A6_2",
+              text: "Jsou udržovány vhodné kontakty s úřady a zájmovými skupinami?",
+              comment: "",
+              response: null,
+            },
+            {
+              id: "A6_3",
+              text: "Je v projektech řešena bezpečnost informací?",
+              comment: "",
+              response: null,
+            },
+            {
+              id: "A6_4",
+              text: "Je zavedena politika mobilních zařízení a práce na dálku?",
+              comment: "",
+              response: null,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "section10",
+      title: "Příloha A: A.7",
+      subsections: [
+        {
+          id: "A7",
+          title: "Bezpečnost lidských zdrojů (A.7)",
+          questions: [
+            {
+              id: "A7_1",
+              text: "Existuje soupis majetku spojeného s informacemi a jejich zpracováním, jsou určeni vlastníci a jsou definována pravidla pro přijatelné použití majetku a jeho vrácení?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A7_2",
+              text: "Jsou zaměstnanci povinni dodržovat zásady a postupy v oblasti bezpečnosti informací, pokud jsou informováni, vzděláváni a školeni, a existuje disciplinární řízení?",
+              comment: "",
+              response: null,
+            },
+            {
+              id: "A7_3",
+              text: "Jsou odpovědnosti a povinnosti v oblasti bezpečnosti informací sdělovány a vymáhány u zaměstnanců, kteří ukončují nebo mění zaměstnání?",
+              comment: "",
+              response: null,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "section11",
+      title: "Příloha A: A.8",
+      subsections: [
+        {
+          id: "A8",
+          title: "Řízení aktiv (A.8)",
+          questions: [
+            {
+              id: "A8_1",
+              text: "Existuje inventář aktiv spojených s informacemi a zpracováním informací, byli přiřazeni vlastníci a jsou definována pravidla pro přijatelné použití aktiv a vrácení aktiv?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A8_2",
+              text: "Jsou informace klasifikovány a odpovídajícím způsobem označeny?",
+              comment: "",
+              response: null,
+            },
+            {
+              id: "A8_3",
+              text: "Byly definovány postupy pro zacházení s aktivy v souladu s jejich klasifikací?",
+              comment: "",
+              response: null,
+            },
+            {
+              id: "A8_4",
+              text: "Existují postupy pro odstranění, likvidaci a přepravu médií obsahujících informace?",
+              comment: "",
+              response: null,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "section12",
+      title: "Příloha A: A.9",
+      subsections: [
+        {
+          id: "A9",
+          title: "Řízení přístupů (A.9)",
+          questions: [
+            {
+              id: "A9_1",
+              text: "Je definována a přezkoumána politika řízení přístupu a je uživatelský přístup do sítě kontrolován v souladu s touto politikou?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A9_2",
+              text: "Existuje formální proces registrace uživatelů, který přiřazuje a odebírá přístup a přístupová práva k systémům a službám?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A9_3",
+              text: "Jsou přístupová práva pravidelně přezkoumávána a odstraněna po ukončení zaměstnání?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A9_4",
+              text: "Jsou privilegovaná přístupová oprávnění omezena a kontrolována a je informace pro tajné ověření kontrolována?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A9_5",
+              text: "Jsou uživatelé seznámeni s postupy pro použití?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A9_6",
+              text: "Je přístup k informacím omezen v souladu s politikou řízení přístupů a je přístup kontrolován prostřednictvím bezpečného přihlašovacího postupu?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A9_7",
+              text: "Jsou systémy správy hesel interaktivní a vynucují kvalitní heslo?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A9_8",
+              text: "Je použití pomocných programů a přístup ke zdrojovému kódu programu omezeno?",
+              comment:
+                "",
+              response: null,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "section13",
+      title: "Příloha A: A.10",
+      subsections: [
+        {
+          id: "A10",
+          title: "Kryptografie (A.10)",
+          questions: [
+            {
+              id: "A10_1",
+              text: "Existuje politika pro použití kryptografie a správy klíčů?",
+              comment:
+                "",
+              response: null,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "section14",
+      title: "Příloha A: A.11",
+      subsections: [
+        {
+          id: "A11",
+          title: "Fyzická bezpečnost a bezpečnost prostředí (A.11)",
+          questions: [
+            {
+              id: "A11_1",
+              text: "Existují politiky a kontrolní mechanismy k zabránění neoprávněného fyzického přístupu a poškození informací a zařízení pro zpracování informací?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A11_2",
+              text: "Existují politiky a kontrolní mechanismy k zabránění ztrátě, poškození, krádeži nebo kompromitaci aktiv a přerušení provozu?",
+              comment: "",
+              response: null,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "section15",
+      title: "Příloha A: A.12",
+      subsections: [
+        {
+          id: "A12",
+          title: "Bezpečnost provozu (A.12)",
+          questions: [
+            {
+              id: "A12_1",
+              text: "Jsou provozní postupy zdokumentovány a jsou změny v organizaci, obchodních procesech a informačních systémech kontrolovány?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A12_2",
+              text: "Jsou zdroje monitorovány a jsou prováděny projekce budoucích kapacitních požadavků?",
+              comment: "",
+              response: null,
+            },
+            {
+              id: "A12_3",
+              text: "Existuje oddělení vývojového, testovacího a provozního prostředí?",
+              comment: "",
+              response: null,
+            },
+            {
+              id: "A12_4",
+              text: "Existuje ochrana proti škodlivému softwaru?",
+              comment: "",
+              response: null,
+            },
+            {
+              id: "A12_5",
+              text: "Jsou informace, software a systémy předmětem zálohování a pravidelného testování?",
+              comment: "",
+              response: null,
+            },
+            {
+              id: "A12_6",
+              text: "Existují kontrolní mechanismy pro zaznamenávání událostí a generování důkazů?",
+              comment: "",
+              response: null,
+            },
+            {
+              id: "A12_7",
+              text: "Jsou získávány informace o technických zranitelnostech a jsou přijímána vhodná opatření k mitigaci rizika?",
+              comment: "",
+              response: null,
+            },
+            {
+              id: "A12_8",
+              text: "Je implementace softwaru na provozních systémech kontrolována a existují pravidla upravující instalaci softwaru uživateli?",
+              comment: "",
+              response: null,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "section16",
+      title: "Příloha A: A.13",
+      subsections: [
+        {
+          id: "A13",
+          title: "Bezpečnost komunikací (A.13)",
+          questions: [
+            {
+              id: "A13_1",
+              text: "Jsou sítě spravovány, v případě potřeby segmentovány a kontrolovány k ochraně informačních systémů a jsou síťové služby předmětem služebních dohod?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A13_2",
+              text: "Existují politiky a dohody k zachování bezpečnosti informací přenášených v rámci organizace nebo mimo ni?",
+              comment: "",
+              response: null,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "section17",
+      title: "Příloha A: A.14",
+      subsections: [
+        {
+          id: "A14",
+          title: "Akvizice, vývoj a údržba systémů (A.14)",
+          questions: [
+            {
+              id: "A14_1",
+              text: "Jsou definovány požadavky na informační bezpečnost pro informační systémy?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A14_2",
+              text: "Je informace přenášená přes veřejné sítě a transakce aplikačních služeb chráněna?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A14_3",
+              text: "Jsou stanoveny systémy a pravidla pro vývoj softwaru a jsou změny v systémech během vývojového cyklu formálně kontrolovány?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A14_4",
+              text: "Jsou kritické podnikové aplikace prověřovány a testovány pro změny operačních systémových platforem?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A14_5",
+              text: "Existují omezení pro změny softwarových balíčků?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A14_6",
+              text: "Byly stanoveny principy bezpečného inženýrství a jsou udržovány a implementovány, včetně bezpečného vývojového prostředí, testování bezpečnosti, využití testovacích dat a testování přijetí systému?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A14_7",
+              text: "Je outsourcovaný vývoj softwaru dozorován a monitorován?",
+              comment:
+                "",
+              response: null,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "section18",
+      title: "Příloha A: A.15",
+      subsections: [
+        {
+          id: "A15",
+          title: "Dodavatelské vztahy (A.15)",
+          questions: [
+            {
+              id: "A15_1",
+              text: "Existují politiky a dohody k ochraně informačních aktiv, které jsou dostupné dodavatelům?",
+              comment:
+                "",
+              response: null,
+            },
+            {
+              id: "A15_2",
+              text: "Je dohodnutá úroveň informačního bezpečnosti a poskytování služeb monitorována a řízena, včetně změn v poskytování služeb?",
+              comment:
+                "",
+              response: null,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "section19",
+      title: "Příloha A: A.16",
+      subsections: [
+        {
+          id: "A16",
+          title: "Řízení incidentů bezpečnosti informací (A.16)",
+          questions: [
+            {
+              id: "A16_1",
+              text: "Je přístup k řízení bezpečnostních incidentů a zranitelností konzistentní?",
+              comment:
+                "Včetně přiřazení odpovědností, hlášení, hodnocení, reakce, analýzy a sběru důkazů.",
+              response: null,
+            },
+            {
+              id: "A16_2",
+              text: "Existují politiky a kontrolní mechanismy k zabránění ztrátě, poškození, krádeži nebo kompromitaci aktiv a přerušení provozu?",
+              comment: "",
+              response: null,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "section20",
+      title: "Příloha A: A.17",
+      subsections: [
+        {
+          id: "A17",
+          title: "Aspekty řízení kontinuity činností organizace (A.17)",
+          questions: [
+            {
+              id: "A17_1",
+              text: "Je kontinuita informačního bezpečnosti začleněna do systému řízení kontinuity podnikání? ",
+              comment:
+                "Včetně stanovení požadavků v nepříznivých situacích, postupů a kontrol a ověření účinnosti",
+              response: null,
+            },
+            {
+              id: "A17_2",
+              text: "Jsou informační zpracovávací zařízení implementovány s redundancí k splnění požadavků na dostupnost?",
+              comment: "",
+              response: null,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "section21",
+      title: "Příloha A: A.18",
+      subsections: [
+        {
+          id: "A18",
+          title: "Soulad s požadavky (A.18)",
+          questions: [
+            {
+              id: "A18_1",
+              text: "Byly definovány všechny legislativní, zákonné, regulační a smluvní požadavky a přístup k jejich splnění pro každý informační systém a organizaci?",
+              comment:
+                "Včetně, ale nejen, postupů pro autorská práva, ochranu záznamů, ochranu soukromí a ochranu osobních údajů a regulaci kryptografických kontrol",
+              response: null,
+            },
+            {
+              id: "A18_2",
+              text: "Provedl se nezávislý přezkum informačního bezpečnosti?",
+              comment: "",
+              response: null,
+            },
+            {
+              id: "A18_3",
+              text: "Prověřují manažeři pravidelně dodržování informačního zpracování a postupů v jejich odpovědných oblastech?",
+              comment: "",
+              response: null,
+            },
+            {
+              id: "A18_4",
+              text: "Jsou informační systémy pravidelně prověřovány z hlediska technického souladu s politikami a standardy?",
+              comment: "",
+              response: null,
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
 
@@ -624,13 +1120,6 @@ function displaySection(sectionId, containerId) {
 
         });
 
-          // Add tooltip attributes for "Neaplikováno" option
-  if (option === "Neaplikováno") {
-    radioElement.setAttribute("data-toggle", "tooltip");
-    radioElement.setAttribute("data-placement", "bottom");
-    radioElement.setAttribute("title", "Opatření není pro organizaci relevantní");
-  }
-        
         optionsWrapper.appendChild(radioElement);
 
         const label = document.createElement("label");
@@ -638,6 +1127,24 @@ function displaySection(sectionId, containerId) {
         label.textContent = option;
         label.style.marginRight = "100px";
         optionsWrapper.appendChild(label);
+
+        // Tooltip vysvětlující "Neaplikováno"
+        if (option === "Neaplikováno") {
+          const tooltipWrapper = document.createElement('div');
+          tooltipWrapper.className = "info-tooltip";
+
+          const iconElement = document.createElement('i');
+          iconElement.className = "fas fa-info-circle";
+          iconElement.style.marginLeft = '5px';  // Adjust as needed
+          tooltipWrapper.appendChild(iconElement);
+
+          const tooltipTextElement = document.createElement('span');
+          tooltipTextElement.className = "tooltiptext bottom";
+          tooltipTextElement.textContent = "Opatření není pro organizaci relevantní";
+          tooltipWrapper.appendChild(tooltipTextElement);
+
+          label.appendChild(tooltipWrapper);
+        }
       });
 
       questionWrapper.appendChild(optionsWrapper);
@@ -667,10 +1174,21 @@ window.onload = function () {
   displaySection("section5", "questionnaireContainer5");
   displaySection("section6", "questionnaireContainer6");
   displaySection("section7", "questionnaireContainer7");
-// Initialize the tooltip
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip();
-});
+  // Příloha A
+  displaySection("section8", "questionnaireContainer8");
+  displaySection("section9", "questionnaireContainer9");
+  displaySection("section10", "questionnaireContainer10");
+  displaySection("section11", "questionnaireContainer11");
+  displaySection("section12", "questionnaireContainer12");
+  displaySection("section13", "questionnaireContainer13");
+  displaySection("section14", "questionnaireContainer14");
+  displaySection("section15", "questionnaireContainer15");
+  displaySection("section16", "questionnaireContainer16");
+  displaySection("section17", "questionnaireContainer17");
+  displaySection("section18", "questionnaireContainer18");
+  displaySection("section19", "questionnaireContainer19");
+  displaySection("section20", "questionnaireContainer20");
+  displaySection("section21", "questionnaireContainer21");
 };
 
 // Funkce, která zobrazí výzvu, pokud uživatel pokusí opustit stránku po zahájení vyplňování dotazníku
