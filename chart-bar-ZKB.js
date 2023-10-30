@@ -82,7 +82,7 @@ function createBarChart() {
                 hoverBackgroundColor: backgroundColors,
                 borderColor: "#4e73df",
                 data: dataValues,
-                maxBarThickness: 30,
+                maxBarThickness: 50,
             },
             ],
         },
