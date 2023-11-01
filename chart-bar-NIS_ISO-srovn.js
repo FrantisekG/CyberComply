@@ -113,13 +113,13 @@ const sceneMessages = {
   "5.opatreni": "Nedostatečné postupy v pořízení, vývoji a údržbě systémů mohou vést k zavádění zranitelností do organizace, čímž se zvyšuje riziko útoků.",
   "6.opatreni": "Vaše organizace nemá adekvátně zavedené politiky a postupy pro hodnocení účinnosti bezpečnostních opatření (interní audit). To má za následek, že organizace nevidí jaké se v kritických systémech skýtají slabiny a kde je nutné zavést účinnější procesy.",
   "7.opatreni": "Ve vaší organizaci je určitá absence praktik základní počítačové hygieny a vzdělávání v oblasti kybernetické bezpečnosti, což zvyšuje riziko incidentů způsobených lidskou chybou.",
-  "8.opatreni": "Nemáte dostatečně nasazené kryptografické prostředky a šifrován, což znamená, že citlivé informace nejsou řádně chráněny a existuje značné riziko jejich kompromitace.",
+  "8.opatreni": "Nemáte dostatečně nasazené kryptografické prostředky a šifrování, což znamená, že citlivé informace nejsou řádně chráněny a existuje značné riziko jejich kompromitace.",
   "9.opatreni": "Dle výsledků je evidentní, že nemáte zavedené procesy pro dostatečné řízení bezpečnosti lidských zdrojů. Tato zranitelnost může vést k neoprávněnému přístupu k citlivým informacím a aktivům.",
   "10.opatreni": "Absence vícefaktorového ověření identity a bezpečných komunikačních nástrojů zvyšuje riziko úniku informací a neautorizovaného přístupu do systémů."
 };
 
-// Function to create messages based on the completion percentage
-function createMessages(dataValues, userFriendlyLabels) {
+// Function to create messages based on the completion percentage, 
+function createMessages(dataValues, userFriendlyLabels, containerID) {
   var warningBoxHtml = "";
 
   dataValues.forEach((value, index) => {
@@ -131,12 +131,16 @@ function createMessages(dataValues, userFriendlyLabels) {
     }
   });
   // Append the messages to the respective container
-  var warningBoxContainer = document.getElementById("warningBoxContainer");
+  var warningBoxContainer = document.getElementById(containerID);
   warningBoxContainer.innerHTML = warningBoxHtml;
 }
 
 // Call the function after you have the dataValues and userFriendlyLabels
-createMessages(dataValues, userFriendlyLabels);
+// Call the function with the desired container ID
+createMessages(dataValues, userFriendlyLabels, "warningBoxContainer1");
+createMessages(dataValues, userFriendlyLabels, "warningBoxContainer2");
+createMessages(dataValues, userFriendlyLabels, "warningBoxContainer3");
+createMessages(dataValues, userFriendlyLabels, "warningBoxContainer4");
 
 
 // Funkce pro vytvoření grafu

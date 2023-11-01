@@ -180,7 +180,7 @@
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <h6 class="m-0 font-weight-bold text-primary">
-                                            Spadá vaše organizace pod regulaci NIS2?
+                                            Výsledek samoidentifikace vaší organizace
                                         </h6>
                                     </div>
                                     <div class="card-body">
@@ -211,17 +211,70 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="alert alert-info">
+                                    <b>Ačkoliv vaše organizace v současnosti nepůsobí na trhu EU, můžete níže nalézt
+                                        orientační
+                                        výsledek plnění bezpečnostních požadavků směrnice NIS 2.</b>
+                                </div>
+                                <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 ---------------------------------------->
+                                <!-- NIS2 srovnávač - Pie chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Celková míra plnění bezpečnostních požadavků stanovených NIS 2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-body">
+                                            <div class="chart-pie pt-4 pb-2">
+                                                <canvas class="PieChartNISsrovnavac"></canvas>
+                                            </div>
+                                            <div class="mt-4 text-center small">
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #36b9cc;"></i> Soulad
+                                                </span>
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #b0e3eb;"></i> Nesoulad
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div style="margin-top: 1.5rem;">
+                                                Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí
+                                                v
+                                                dotazníku, nereflektuje požadavky vybrané normy.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- NIS 2 Srovnávač - Bar Chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS
+                                            2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-bar">
+                                            <canvas class="myBarChartNISBar"></canvas>
+                                        </div>
+                                        <hr>
+                                        <!-- Containers for messages -->
+                                        <div id="warningBoxContainer4"></div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- /VERDIKT finalVerdictNe------------------------------------------------------------- -->
 
                             <!-- VERDIKT, Subjekt nespadá pod NIS2 -->
                             <div id="finalVerdictNe2" style="display: none">
-
                                 <!-- Tělo karty -  Verdikt NIS2-->
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <h6 class="m-0 font-weight-bold text-primary">
-                                            Výsledek samoidentifikace
+                                            Výsledek samoidentifikace vaší organizace
                                         </h6>
                                     </div>
                                     <div class="card-body">
@@ -247,6 +300,61 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="alert alert-info">
+                                    <b>Ačkoliv vaše organizace by v současnosti neměla spadat pod směrnici NIS 2, můžete
+                                        níže nalézt
+                                        orientační
+                                        výsledek plnění bezpečnostních požadavků, která tato směrnice stanovuje.</b>
+                                </div>
+                                <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 ---------------------------------------->
+                                <!-- NIS2 srovnávač - Pie chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Celková míra plnění bezpečnostních požadavků stanovených NIS 2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-body">
+                                            <div class="chart-pie pt-4 pb-2">
+                                                <canvas class="PieChartNISsrovnavac"></canvas>
+                                            </div>
+                                            <div class="mt-4 text-center small">
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #36b9cc;"></i> Soulad
+                                                </span>
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #b0e3eb;"></i> Nesoulad
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div style="margin-top: 1.5rem;">
+                                                Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí
+                                                v
+                                                dotazníku, nereflektuje požadavky vybrané normy.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- NIS 2 Srovnávač - Bar Chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS
+                                            2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-bar">
+                                            <canvas class="myBarChartNISBar"></canvas>
+                                        </div>
+                                        <hr>
+                                        <!-- Containers for messages -->
+                                        <div id="warningBoxContainer3"></div>
+                                    </div>
+                                </div>
 
                             </div>
                             <!-- /VERDIKT ------------------------------------------------------------- -->
@@ -259,7 +367,7 @@
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <h6 class="m-0 font-weight-bold text-primary">
-                                            Výsledek samoidentifikace
+                                            Výsledek samoidentifikace vaší organizace
                                         </h6>
                                     </div>
                                     <div class="card-body">
@@ -285,6 +393,59 @@
                                         <!-- /SPADÁ Fajfka-->
                                     </div>
                                 </div>
+                                <div class="alert alert-info">
+                                    <b>Ačkoliv je vaše organizace již regulována, můžete níže nalézt orientační
+                                        výsledek plnění bezpečnostních požadavků směrnice NIS 2.</b>
+                                </div>
+                                <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 ---------------------------------------->
+                                <!-- NIS2 srovnávač - Pie chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Celková míra plnění bezpečnostních požadavků stanovených NIS 2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-body">
+                                            <div class="chart-pie pt-4 pb-2">
+                                                <canvas class="PieChartNISsrovnavac"></canvas>
+                                            </div>
+                                            <div class="mt-4 text-center small">
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #36b9cc;"></i> Soulad
+                                                </span>
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #b0e3eb;"></i> Nesoulad
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div style="margin-top: 1.5rem;">
+                                                Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí
+                                                v
+                                                dotazníku, nereflektuje požadavky vybrané normy.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- NIS 2 Srovnávač - Bar Chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS
+                                            2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-bar">
+                                            <canvas class="myBarChartNISBar"></canvas>
+                                        </div>
+                                        <hr>
+                                        <!-- Containers for messages -->
+                                        <div id="warningBoxContainer3"></div>
+                                    </div>
+                                </div>
                             </div>
 
                             <!-------------------------------- /VERDIKT2 ------------------------------>
@@ -295,7 +456,7 @@
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <h6 class="m-0 font-weight-bold text-primary">
-                                            Výsledek samoidentifikace
+                                            Výsledek samoidentifikace vaší organizace
                                         </h6>
                                     </div>
                                     <div class="card-body">
@@ -346,22 +507,21 @@
                                         <!-- /SPADÁ Fajfka-->
                                         <!-- MEZERA-->
                                         <hr>
-                                        <div class="card-body">
-                                            <p style="margin-bottom: 1.5rem">
-                                                Vaše organizace se nachází v kategorii subjektů
-                                                <b>režim vyšších povinností</b>.
+                                        <p style="margin-bottom: 1.5rem">
+                                            Vaše organizace se nachází v kategorii subjektů
+                                            <b>režim vyšších povinností</b>.
+                                        </p>
+                                        <!-- KATEGORIE Základní-->
+                                        <div class="card-body text-center">
+                                            <i class="fa fa-exclamation-triangle text-warning"
+                                                style="font-size: 3rem; margin-bottom: 0.3em"></i>
+                                            <p class="font-weight-bold text-warning text-center"
+                                                style="font-size: 1.2rem; text-decoration: underline">
+                                                REŽIM VYŠŠÍCH POVINNOSTÍ
                                             </p>
-                                            <!-- KATEGORIE Základní-->
-                                            <div class="card-body text-center">
-                                                <i class="fa fa-exclamation-triangle text-warning"
-                                                    style="font-size: 3rem; margin-bottom: 0.3em"></i>
-                                                <p class="font-weight-bold text-warning text-center"
-                                                    style="font-size: 1.2rem; text-decoration: underline">
-                                                    REŽIM VYŠŠÍCH POVINNOSTÍ
-                                                </p>
-                                            </div>
-                                            <!-- /KATEGORIE Základní -->
                                         </div>
+                                        <!-- /KATEGORIE Základní -->
+
                                     </div>
                                 </div>
 
@@ -389,7 +549,8 @@
                                             <hr>
                                             <div style="margin-top: 1.5rem;">
                                                 Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
-                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí v
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí
+                                                v
                                                 dotazníku, nereflektuje požadavky vybrané normy.
                                             </div>
                                         </div>
@@ -400,7 +561,8 @@
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <h6 class="m-0 font-weight-bold text-primary">
-                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS 2
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS
+                                            2
                                         </h6>
                                     </div>
                                     <div class="card-body">
@@ -409,8 +571,7 @@
                                         </div>
                                         <hr>
                                         <!-- Containers for messages -->
-                                        <div id="alarmBoxContainer"></div>
-                                        <div id="warningBoxContainer"></div>
+                                        <div id="warningBoxContainer1"></div>
                                     </div>
                                 </div>
                             </div>
@@ -458,8 +619,9 @@
                                         </div>
                                         <!-- /SPADÁ Fajfka-->
                                     </div>
-                                    <hr>
+
                                     <div class="card-body">
+                                        <hr>
                                         <p style="margin-bottom: 1.5rem">
                                             Vaše organizace se nachází v kategorii subjektů
                                             <b>režim nižších povinností</b>.
@@ -508,7 +670,8 @@
                                             <hr>
                                             <div style="margin-top: 1.5rem;">
                                                 Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
-                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí v
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí
+                                                v
                                                 dotazníku, nereflektuje požadavky vybrané normy.
                                             </div>
                                         </div>
@@ -519,7 +682,8 @@
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <h6 class="m-0 font-weight-bold text-primary">
-                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS 2
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS
+                                            2
                                         </h6>
                                     </div>
                                     <div class="card-body">
@@ -527,6 +691,8 @@
                                             <canvas class="myBarChartNISBar"></canvas>
                                         </div>
                                         <hr>
+                                        <!-- Containers for messages -->
+                                        <div id="warningBoxContainer2"></div>
                                     </div>
                                 </div>
                                 <!-- /Karty KATEGORIE -->
