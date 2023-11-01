@@ -301,6 +301,7 @@ function calculateScoresForMeasure(measureName) {
 }
 
 submitButton.addEventListener("click", function () {
+    event.preventDefault(); // Prevent default form submission if necessary
     if (!validateSectionAnswers()) {
         alert("Prosím vyplňte všechny otázky.");
         return;
@@ -312,6 +313,9 @@ submitButton.addEventListener("click", function () {
         let scoresForMeasure = calculateScoresForMeasure(measureName);
         localStorage.setItem(`${measureName}Scores`, JSON.stringify(scoresForMeasure));
     }
+
+    // Update progress bars and calculate overall percentage
+    updateProgressBarsAndCalculateOverallPercentage();
 
     calculateScoreAndRedirect();
 });
