@@ -144,46 +144,6 @@
                                 <!-- Counter - Alerts -->
                                 <span class="badge badge-danger badge-counter"></span>
                             </a>
-                            <!-- Dropdown - Alerts -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="alertsDropdown">
-                                <h6 class="dropdown-header">Alerts Center</h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-primary">
-                                            <i class="fas fa-file-alt text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 12, 2019</div>
-                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-success">
-                                            <i class="fas fa-donate text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 7, 2019</div>
-                                        $290.29 has been deposited into your account!
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-warning">
-                                            <i class="fas fa-exclamation-triangle text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 2, 2019</div>
-                                        Spending Alert: We've noticed unusually high spending for
-                                        your account.
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                            </div>
                         </li>
 
                         <div class="topbar-divider d-none d-sm-block"></div>
@@ -252,7 +212,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- /OSTATNÍ VERDIKT ------------------------------------------------------------- -->
+                            <!-- /VERDIKT finalVerdictNe------------------------------------------------------------- -->
 
                             <!-- VERDIKT, Subjekt nespadá pod NIS2 -->
                             <div id="finalVerdictNe2" style="display: none">
@@ -291,7 +251,7 @@
                             </div>
                             <!-- /VERDIKT ------------------------------------------------------------- -->
 
-                            <!-- VERDIKT2, Subjekt je již regulovaný -> Spadá -->
+                            <!--------------- VERDIKT2, Subjekt je již regulovaný -> Spadá --------------->
 
                             <div id="finalVerdictAno" style="display: none">
 
@@ -405,8 +365,8 @@
                                     </div>
                                 </div>
 
-                            <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 --------------------------------------------------------------------->    
-                            <!-- NIS2 srovnávač - Pie chart -->
+                                <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 ---------------------------------------->
+                                <!-- NIS2 srovnávač - Pie chart -->
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <h6 class="m-0 font-weight-bold text-primary">
@@ -416,7 +376,7 @@
                                     <div class="card-body">
                                         <div class="card-body">
                                             <div class="chart-pie pt-4 pb-2">
-                                                <canvas id="PieChartNISsrovnavac"></canvas>
+                                                <canvas class="PieChartNISsrovnavac"></canvas>
                                             </div>
                                             <div class="mt-4 text-center small">
                                                 <span class="mr-2">
@@ -428,29 +388,34 @@
                                             </div>
                                             <hr>
                                             <div style="margin-top: 1.5rem;">
-                                                Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí v dotazníku, nereflektuje požadavky vybrané normy.
+                                                Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí v
+                                                dotazníku, nereflektuje požadavky vybrané normy.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            
-                           <!-- NIS 2 Srovnávač - Bar Chart -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">
-                                        Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS 2
-                                    </h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-bar">
-                                        <canvas id="myBarChartNISBar"></canvas>
+
+                                <!-- NIS 2 Srovnávač - Bar Chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS 2
+                                        </h6>
                                     </div>
-                                    <hr>
+                                    <div class="card-body">
+                                        <div class="chart-bar">
+                                            <canvas class="myBarChartNISBar"></canvas>
+                                        </div>
+                                        <hr>
+                                        <!-- Containers for messages -->
+                                        <div id="alarmBoxContainer"></div>
+                                        <div id="warningBoxContainer"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                    <!------------------------------------ /Karty KATEGORIE ---------------------------------------------------->
+                            <!------------------------------------ /Karty KATEGORIE ---------------------------------------------------->
 
                             <!-- VERDIKT - DŮLEŽITÝ subjekt -->
                             <div id="finalVerdictAnoDulezity" style="display: none">
@@ -519,54 +484,56 @@
                                     </div>
                                 </div>
 
-                            <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 --------------------------------------------------------------------->    
-                            <!-- NIS2 srovnávač - Pie chart -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">
-                                        Celková míra plnění bezpečnostních požadavků stanovených NIS 2
-                                    </h6>
-                                </div>
-                                <div class="card-body">
+                                <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 ---------------------------------------->
+                                <!-- NIS2 srovnávač - Pie chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Celková míra plnění bezpečnostních požadavků stanovených NIS 2
+                                        </h6>
+                                    </div>
                                     <div class="card-body">
-                                        <div class="chart-pie pt-4 pb-2">
-                                            <canvas id="PieChartNISsrovnavac"></canvas>
-                                        </div>
-                                        <div class="mt-4 text-center small">
-                                            <span class="mr-2">
-                                                <i class="fas fa-circle" style="color: #36b9cc;"></i> Soulad
-                                            </span>
-                                            <span class="mr-2">
-                                                <i class="fas fa-circle" style="color: #b0e3eb;"></i> Nesoulad
-                                            </span>
-                                        </div>
-                                        <hr>
-                                        <div style="margin-top: 1.5rem;">
-                                            Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí v dotazníku, nereflektuje požadavky vybrané normy.
+                                        <div class="card-body">
+                                            <div class="chart-pie pt-4 pb-2">
+                                                <canvas class="PieChartNISsrovnavac"></canvas>
+                                            </div>
+                                            <div class="mt-4 text-center small">
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #36b9cc;"></i> Soulad
+                                                </span>
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #b0e3eb;"></i> Nesoulad
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div style="margin-top: 1.5rem;">
+                                                Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí v
+                                                dotazníku, nereflektuje požadavky vybrané normy.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        
-                       <!-- NIS 2 Srovnávač - Bar Chart -->
-                        <div class="card shadow mb-4">
-                            <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">
-                                    Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS 2
-                                </h6>
-                            </div>
-                            <div class="card-body">
-                                <div class="chart-bar">
-                                    <canvas id="myBarChartNISBar"></canvas>
-                                </div>
-                                <hr>
-                            </div>
-                        </div>
 
+                                <!-- NIS 2 Srovnávač - Bar Chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS 2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-bar">
+                                            <canvas class="myBarChartNISBar"></canvas>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </div>
                                 <!-- /Karty KATEGORIE -->
                             </div>
                         </div>
                         <!----------------------- /KONEC VERDIKT DŮLEŽITÝ ---------------------------------------->
+                        <!----------------------- /KONEC VERDIKTŮ ---------------------------------------->
 
                         <!-- Sloupec pro první Piechart -->
                         <div class="col-md-6">
@@ -645,8 +612,8 @@
                         platnost v říjnu 2024. Nově regulovaným subjektům bude dána
                         přechodná lhůta jednoho roku pro zahájení plnění povinností.
                     </div>
-
                 </div>
+
             </div>
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
@@ -697,6 +664,8 @@
         </div>
     </div>
 
+
+
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -716,9 +685,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
-    <!--<script src="progress_bar.js"></script>
+    <script src="progress_bar.js"></script>
 
-    <script src="progress-bar-ISO.js"></script>-->
+    <!--<script src="progress-bar-ISO.js"></script>-->
 
     <script src="odpovedi-ISO.js"></script>
 
@@ -730,26 +699,65 @@
     <!-- Bar chart-->
     <script src="js/demo/chart-bar-demo.js"></script>
 
-
     <!-- Knihovny pro stahování reportu z dashboardu -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <!-- Skript na stažení dashboardu-->
     <script src="downloadPDF.js"></script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const verdictToShow = localStorage.getItem('NIS2FinalVerdict');
+            console.log('NIS2FinalVerdict:', verdictToShow);
+            if (verdictToShow) {
+                const element = document.getElementById(verdictToShow);
+                console.log('Element:', element);
+                if (element) {
+                    element.style.display = "block";
+                } else {
+                    console.error('Element with ID ' + verdictToShow + ' not found.');
+                }
+            }
+        });
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const doraToShow = localStorage.getItem('DoraFinalVerdict');
+            console.log('DoraFinalVerdict:', doraToShow);
+            if (doraToShow) {
+                const element = document.getElementById(doraToShow);
+                console.log('Element:', element);
+                if (element) {
+                    element.style.display = "block";
+                } else {
+                    console.error('Element with ID ' + doraToShow + ' not found.');
+                }
+            }
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const verejnaSpravaToShow = localStorage.getItem('VerejnaSpravaFinalVerdict');
+            console.log('VerejnaSpravaFinalVerdict:', verejnaSpravaToShow);
+            if (verejnaSpravaToShow) {
+                const element = document.getElementById(verejnaSpravaToShow);
+                console.log('Element:', element);
+                if (element) {
+                    element.style.display = "block";
+                } else {
+                    console.error('Element with ID ' + verejnaSpravaToShow + ' not found.');
+                }
+            }
+        });
+
+    </script>
+
     <script src="chart-bar-ISO_Pril.js"></script>
     <script src="chart-pie-NIS_ISO-srovn.js"></script>
     <script src="chart-bar-NIS_ISO-srovn.js"></script>
-
-    <script>
-        const verdictToShow = localStorage.getItem('NIS2FinalVerdict');
-        if (verdictToShow) {
-            document.getElementById(verdictToShow).style.display = "block";
-        }
-    </script>
-
-
-    </script>
 </body>
 
 </html>

@@ -30,55 +30,52 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 }
 
 
-// Sloupcový graf
-var ctx = document.getElementById("myBarChartNISBar");
-
 // Mapping of internal representation to user-friendly labels
 const labelMap = {
-    "1.opatreni": "1. Opatření",
-    "2.opatreni": "2. Opatření",
-    "3.opatreni": "3. Opatření",
-    "4.opatreni": "4. Opatření",
-    "5.opatreni": "5. Opatření",
-    "6.opatreni": "6. Opatření",
-    "7.opatreni": "7. Opatření",
-    "8.opatreni": "8. Opatření",
-    "9.opatreni": "9. Opatření",
-    "10.opatreni": "10. Opatření"
-  };
+  "1.opatreni": "1. Opatření",
+  "2.opatreni": "2. Opatření",
+  "3.opatreni": "3. Opatření",
+  "4.opatreni": "4. Opatření",
+  "5.opatreni": "5. Opatření",
+  "6.opatreni": "6. Opatření",
+  "7.opatreni": "7. Opatření",
+  "8.opatreni": "8. Opatření",
+  "9.opatreni": "9. Opatření",
+  "10.opatreni": "10. Opatření"
+};
 
 // Mapping of user-friendly labels back to internal representation
 const reverseLabelMap = {};
 for (const key in labelMap) {
-    reverseLabelMap[labelMap[key]] = key;
+  reverseLabelMap[labelMap[key]] = key;
 }
 
 // Mapping of internal representation to user-friendly labels
 const hoverLabelMap = {
-    "1.opatreni": "Analýza rizik a politiky bezpečnosti informací",
-    "2.opatreni": "Zvládání incidentů",
-    "3.opatreni": "Kontinuita činností, krizové řízení, zálohování, zotavení",
-    "4.opatreni": "Bezpečnost dodavatelského řetězce",
-    "5.opatreni": "Bezpečnost v rámci pořízení, vývoje a údržby systémů",
-    "6.opatreni": "Interní audit a postupy hodnocení",
-    "7.opatreni": "Počítačová hygiena a vzdělávání",
-    "8.opatreni": "Využívání kryptografie",
-    "9.opatreni": "Bezpečnost lidských zdrojů, řízení přístupů a aktiv",
-    "10.opatreni": "Vícefaktorová autentizace, bezpečné komunikační nástroje a nástroje pro nouzovou komunikaci"
-  };
+  "1.opatreni": "Analýza rizik a politiky bezpečnosti informací",
+  "2.opatreni": "Zvládání incidentů",
+  "3.opatreni": "Kontinuita činností, krizové řízení, zálohování, zotavení",
+  "4.opatreni": "Bezpečnost dodavatelského řetězce",
+  "5.opatreni": "Bezpečnost v rámci pořízení, vývoje a údržby systémů",
+  "6.opatreni": "Interní audit a postupy hodnocení",
+  "7.opatreni": "Počítačová hygiena a vzdělávání",
+  "8.opatreni": "Využívání kryptografie",
+  "9.opatreni": "Bezpečnost lidských zdrojů, řízení přístupů a aktiv",
+  "10.opatreni": "Vícefaktorová autentizace, bezpečné komunikační nástroje a nástroje pro nouzovou komunikaci"
+};
 
 // Statický seznam názvů os
 var labels = [
-    "1.opatreni",
-    "2.opatreni",
-    "3.opatreni",
-    "4.opatreni",
-    "5.opatreni",
-    "6.opatreni",
-    "7.opatreni",
-    "8.opatreni",
-    "9.opatreni",
-    "10.opatreni",
+  "1.opatreni",
+  "2.opatreni",
+  "3.opatreni",
+  "4.opatreni",
+  "5.opatreni",
+  "6.opatreni",
+  "7.opatreni",
+  "8.opatreni",
+  "9.opatreni",
+  "10.opatreni",
 ];
 
 // Získání výsledků z localStorage
@@ -87,11 +84,12 @@ var barChartNISSrovnavacresults = JSON.parse(localStorage.getItem('individualMea
 // Now, when you create the chart, map your internal labels to the user-friendly ones
 var userFriendlyLabels = labels.map(label => labelMap[label] || label); // Fallback to the original label if not found in the map
 
+
 // Vytvoření pole hodnot z výsledků, které odpovídají statickým názvům os
 var dataValues = labels.map((label) => {
-    var percentageNISBar = barChartNISSrovnavacresults[label];
-    return percentageNISBar || 0; // Return 0 if percentage is undefined
-  });
+  var percentageNISBar = barChartNISSrovnavacresults[label];
+  return percentageNISBar || 0; // Return 0 if percentage is undefined
+});
 
 // Výpis dat do konzole
 console.log(JSON.parse(localStorage.getItem('individualMeasurePercentages')));
@@ -107,9 +105,43 @@ var backgroundColors = dataValues.map((value) => {
   }
 });
 
+const sceneMessages = {
+  "1.opatreni": "Vaše organizace nemá zavedená opatření a procesy pro efektivní analýzu rizik a řízení bezpečnostní politiky informací. Analýza rizik je klíčová pro odhalení hrozeb a zranitelností s ohledem na dostupná aktiva. ",
+  "2.opatreni": "Proces zvládání incidentů je ve vaší organizaci nedostatečný, což znamená, že v případě bezpečnostního incidentu může dojít k prodloužení doby obnovy a zvýšeným finančním a reputačním ztrátám.",
+  "3.opatreni": "Nedostatečná kontinuita činností, včetně zálohování a disaster recovery, znamená, že vaše organizace není připravena efektivně reagovat na mimořádné události, což ohrožuje její dlouhodobou udržitelnost.",
+  "4.opatreni": "Bezpečnost v rámci dodavatelského řetězce není ve vaší organizaci dostatečně řešena, což zvyšuje riziko infiltrace škodlivými aktéry do vašich systému.",
+  "5.opatreni": "Nedostatečné postupy v pořízení, vývoji a údržbě systémů mohou vést k zavádění zranitelností do organizace, čímž se zvyšuje riziko útoků.",
+  "6.opatreni": "Vaše organizace nemá adekvátně zavedené politiky a postupy pro hodnocení účinnosti bezpečnostních opatření (interní audit). To má za následek, že organizace nevidí jaké se v kritických systémech skýtají slabiny a kde je nutné zavést účinnější procesy.",
+  "7.opatreni": "Ve vaší organizaci je určitá absence praktik základní počítačové hygieny a vzdělávání v oblasti kybernetické bezpečnosti, což zvyšuje riziko incidentů způsobených lidskou chybou.",
+  "8.opatreni": "Nemáte dostatečně nasazené kryptografické prostředky a šifrován, což znamená, že citlivé informace nejsou řádně chráněny a existuje značné riziko jejich kompromitace.",
+  "9.opatreni": "Dle výsledků je evidentní, že nemáte zavedené procesy pro dostatečné řízení bezpečnosti lidských zdrojů. Tato zranitelnost může vést k neoprávněnému přístupu k citlivým informacím a aktivům.",
+  "10.opatreni": "Absence vícefaktorového ověření identity a bezpečných komunikačních nástrojů zvyšuje riziko úniku informací a neautorizovaného přístupu do systémů."
+};
+
+// Function to create messages based on the completion percentage
+function createMessages(dataValues, userFriendlyLabels) {
+  var warningBoxHtml = "";
+
+  dataValues.forEach((value, index) => {
+    var userFriendlyLabel = userFriendlyLabels[index];
+    var internalLabel = reverseLabelMap[userFriendlyLabel] || userFriendlyLabel; // Map back to internal representation
+    var sceneMessage = sceneMessages[internalLabel]; // Get the specific scene message
+    if (value < 50) {
+      warningBoxHtml += `<div class="alert alert-danger"> U <b>${userFriendlyLabel}</b> máte míru souladu s požadavky směrnice NIS 2 pod <b>50 %</b>. <br><span style="display: block; padding-top: 10px;">${sceneMessage}</span></div>`;
+    }
+  });
+  // Append the messages to the respective container
+  var warningBoxContainer = document.getElementById("warningBoxContainer");
+  warningBoxContainer.innerHTML = warningBoxHtml;
+}
+
+// Call the function after you have the dataValues and userFriendlyLabels
+createMessages(dataValues, userFriendlyLabels);
+
+
 // Funkce pro vytvoření grafu
-function createBarChartNISBar() {
-  var myBarChartNISBar = new Chart(ctx, {
+document.querySelectorAll('.myBarChartNISBar').forEach(function (canvas) {
+  var myBarChartNISBar = new Chart(canvas, {
     type: "bar",
     data: {
       labels: userFriendlyLabels,
@@ -188,22 +220,20 @@ function createBarChartNISBar() {
         displayColors: false,
         caretPadding: 10,
         callbacks: {
-            title: function(tooltipItem, data) {
-                var label = data.labels[tooltipItem[0].index];
-                var internalLabel = reverseLabelMap[label] || label; // Map back to internal representation
-                var hoverLabel = hoverLabelMap[internalLabel] || label; // Get the detailed hover label
-                return hoverLabel; // This will be displayed as the title
-            },
+          title: function (tooltipItem, data) {
+            var label = data.labels[tooltipItem[0].index];
+            var internalLabel = reverseLabelMap[label] || label; // Map back to internal representation
+            var hoverLabel = hoverLabelMap[internalLabel] || label; // Get the detailed hover label
+            return hoverLabel; // This will be displayed as the title
+          },
           label: function (tooltipItem, data) {
             var value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index].toFixed(1);
-            return value + '%'; // Display only the percentage value here
+            return "Plnění: " + value + ' %'; // Display only the percentage value here
           },
         },
       },
     },
   });
-}
+});
 
-// Volání funkce pro vytvoření grafu
-createBarChartNISBar();
 

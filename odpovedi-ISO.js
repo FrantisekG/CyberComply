@@ -156,7 +156,10 @@ function calculateScores() {
         sectionScores[section.id] = {
             score: sectionScore,
             maxScore: sectionMaxScore,
-            percentage: (sectionScore["Ano"] * 2 / sectionMaxScore) * 100
+            percentage: (
+                (sectionScore["Ano"] * scoring["Ano"] + sectionScore["Částečně"] * scoring["Částečně"]) /
+                sectionMaxScore
+            ) * 100
         };
     });
 
@@ -313,7 +316,7 @@ submitButton.addEventListener("click", function () {
     calculateScoreAndRedirect();
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     updateProgressBarsAndCalculateOverallPercentage();
 });
 

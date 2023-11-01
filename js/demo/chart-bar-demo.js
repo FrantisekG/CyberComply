@@ -186,7 +186,7 @@ function listUnansweredQuestions() {
     if (sectionResults && sectionResults.percentage < 50) {
       if (!messageDisplayed) {
         // Kontrola, zda byla zpráva již zobrazena
-        htmlOutput += `<div class="alert alert-warning">Na následující oblasti by se vaše organizace měla zaměřit, jelikož zde máte zavedeno <b>méně než 50 %</b> požadovaných bezpečnostních opatření:`;
+        htmlOutput += `<div class="alert alert-danger">Na následující oblasti by se vaše organizace měla zaměřit, jelikož zde máte zavedeno <b>méně než 50 %</b> požadovaných bezpečnostních opatření:`;
         messageDisplayed = true; // Nastavení, že zpráva byla zobrazena
       }
       htmlOutput += `<li><strong>${section.title}</strong></li>`;

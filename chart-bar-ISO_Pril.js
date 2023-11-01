@@ -50,6 +50,7 @@ var labels = [
     "A.18",
 ];
 
+
 // Získání výsledků z localStorage
 var barChartresults = JSON.parse(localStorage.getItem("isoResults"));
 
@@ -169,6 +170,29 @@ function createBarChartPrilohy() {
                 displayColors: false,
                 caretPadding: 10,
                 callbacks: {
+                    title: function (tooltipItems, data) {
+                        // Assuming tooltipItems[0] is available
+                        var index = tooltipItems[0].index;
+                        var label = data.labels[index];
+                        // Custom labels for each bar
+                        var customLabels = {
+                            "A.5": "Politiky bezpečnosti informací",
+                            "A.6": "Organizace bezpečnosti informací",
+                            "A.7": "Bezpečnost lidských zdrojů",
+                            "A.8": "Řízení aktiv",
+                            "A.9": "Řízení přístupů",
+                            "A.10": "Kryptografie",
+                            "A.11": "Fyzická bezpečnost a bezpečnost prostředí",
+                            "A.12": "Bezpečnost provozu",
+                            "A.13": "Bezpečnost komunikací",
+                            "A.14": "Akvizice, vývoj a údržba systémů",
+                            "A.15": "Dodavatelské vztahy",
+                            "A.16": "Řízení incidentů bezpečnosti informací",
+                            "A.17": "Aspekty řízení kontinuity činností organizace z hlediska bezpečnosti informací",
+                            "A.18": "Soulad s požadavky",
+                        };
+                        return customLabels[label] || label; // Fallback to the original label if custom label is not found
+                    },
                     label: function (tooltipItem, chart) {
                         var datasetLabel =
                             chart.datasets[tooltipItem.datasetIndex].label || "";
@@ -185,31 +209,48 @@ function createBarChartPrilohy() {
 function listUnansweredQuestionsPrilohy() {
     var barChartresults = JSON.parse(localStorage.getItem("isoResults"));
     var htmlOutput = "";
-    let messageDisplayed = false; // Přidejte tuto novou proměnnou
+    var nonApplicableOutput = "";
+    let messageDisplayed = false;
+    let nonApplicableMessageDisplayed = false;
 
     questionnaireData.sections.forEach((section) => {
         var sectionKey = section.id;
 
-        // Ověřte, zda je section.id v rozsahu section8 až section21
         var sectionNumber = parseInt(sectionKey.replace("section", ""));
         if (sectionNumber < 8 || sectionNumber > 21) {
-            return; // Pokud ne, přeskočte tuto iteraci cyklu
+            return;
         }
 
         section.subsections.forEach((subsection) => {
-            var subsectionResults = barChartresults.sections[sectionKey]; // Struktura výsledků zahrnuje podsekce
-            if (subsectionResults && subsectionResults.percentage < 50) {
-                if (!messageDisplayed) {
-                    htmlOutput += `<div class="alert alert-warning">Na následující oblasti by se vaše organizace měla zaměřit, jelikož zde máte zavedeno <b>méně než 50 %</b> požadovaných bezpečnostních opatření:`;
-                    messageDisplayed = true;
+            var subsectionResults = barChartresults.sections[sectionKey];
+            if (subsectionResults) {
+                if (subsectionResults.percentage === null) {
+                    if (!nonApplicableMessageDisplayed) {
+                        nonApplicableOutput += `<div class="alert alert-info">Následující oblasti nejsou pro vaši organizaci relevantní ("Neaplikováno"):`;
+                        nonApplicableMessageDisplayed = true;
+                    }
+                    nonApplicableOutput += `<li><strong> ${subsection.title} </strong></li>`;
+                } else if (subsectionResults.percentage < 50) {
+                    if (!messageDisplayed) {
+                        htmlOutput += `<div class="alert alert-danger">Na následující oblasti by se vaše organizace měla zaměřit, jelikož zde máte zavedeno <b>méně než 50 %</b> požadovaných bezpečnostních opatření:`;
+                        messageDisplayed = true;
+                    }
+                    htmlOutput += `<li><strong>${subsection.title}</strong></li>`;
                 }
-                htmlOutput += `<li><strong>${subsection.title}</strong></li>`;
             }
         });
     });
 
+    if (messageDisplayed) {
+        htmlOutput += "</ul></div>";
+    }
+
+    if (nonApplicableMessageDisplayed) {
+        nonApplicableOutput += "</ul></div>";
+    }
+
     var outputContainer = document.getElementById("otazkypod50-Prilohy");
-    outputContainer.innerHTML = htmlOutput;
+    outputContainer.innerHTML = htmlOutput + nonApplicableOutput;
 }
 
 // Volání funkce pro vytvoření grafu

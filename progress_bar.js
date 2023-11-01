@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questions[currentQuestionId].style.display = "none";
         finalVerdictAnoZakladni.style.display = "block";
         updateFinalVerdict();
-        localStorage.setItem('NIS2FinalVerdict', 'finalVerdictZakladni');  // Uložení ID zobrazeného verdiktu
+        localStorage.setItem('NIS2FinalVerdict', 'finalVerdictAnoZakladni');  // Uložení ID zobrazeného verdiktu
       }
     });
   }
@@ -335,6 +335,8 @@ document.addEventListener("DOMContentLoaded", function () {
       outerProgressBar.style.display = "none";
       questions[currentQuestionId].style.display = "none";
       document.getElementById("dora").style.display = "block";
+      // Store the ID of the dora element in localStorage
+      localStorage.setItem('DoraFinalVerdict', 'dora');
 
       // Kontrola velikosti entity - pro střední podnik výsledek DŮLEŽITÝ
       if (entityStatus === "stredni") {
@@ -576,6 +578,8 @@ document.addEventListener("DOMContentLoaded", function () {
       outerProgressBar.style.display = "none";
       questions[currentQuestionId].style.display = "none";
       document.getElementById("verejnasprava").style.display = "block";
+      // Store the ID of the verejnasprava element in localStorage
+      localStorage.setItem('VerejnaSpravaFinalVerdict', 'verejnasprava');
 
       // Velikost podniku je velký, proto subjekty ZÁKLADNÍ"
       if (entityStatus == "velky" || entityStatus == "stredni") {
@@ -754,6 +758,8 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("activityVerejnost").addEventListener("click", function () {
     sector = "Veřejná správa";
     document.getElementById("verejnasprava").style.display = "block";
+    // Store the ID of the verejnasprava element in localStorage
+    localStorage.setItem('VerejnaSpravaFinalVerdict', 'verejnasprava');
     outerProgressBar.style.display = "none";
     questions[currentQuestionId].style.display = "none";
     finalVerdictAnoZakladni.style.display = "block";
