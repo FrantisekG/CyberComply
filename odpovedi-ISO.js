@@ -313,6 +313,11 @@ submitButton.addEventListener("click", function () {
     calculateScoreAndRedirect();
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    updateProgressBarsAndCalculateOverallPercentage();
+});
+
+
 function updateProgressBarsAndCalculateOverallPercentage() {
     let overallTotalPercentage = 0;
     let overallCount = 0;
@@ -351,6 +356,8 @@ function updateProgressBarsAndCalculateOverallPercentage() {
             if (progressBar) {
                 progressBar.style.width = `${averagePercentage}%`;
                 progressBar.setAttribute('aria-valuenow', averagePercentage);
+            } else {
+                console.log('ProgressBar not found:', progressBarId); // Debug output
             }
 
             // Update the percentage text
@@ -358,12 +365,14 @@ function updateProgressBarsAndCalculateOverallPercentage() {
             const percentageText = document.getElementById(percentageTextId);
             if (percentageText) {
                 percentageText.textContent = `${averagePercentage.toFixed(2)}%`;
+            } else {
+                console.log('PercentageText not found:', percentageTextId); // Debug output
             }
         }
     }
 
     // Calculate the overall average percentage for all measures
-    const overallAveragePercentage = (overallCount > 0 ? overallTotalPercentage / overallCount : 0) * 100;
+    const overallAveragePercentage = overallCount > 0 ? overallTotalPercentage / overallCount : 0;
 
     // Store the overall and individual percentages for use in the pie chart
     localStorage.setItem('overallAveragePercentage', overallAveragePercentage);
@@ -371,10 +380,6 @@ function updateProgressBarsAndCalculateOverallPercentage() {
 
     // Now you can use these stored values to create your pie chart
 }
-
-// Call the updated function when the page loads
-document.addEventListener('DOMContentLoaded', updateProgressBarsAndCalculateOverallPercentage);
-
 
 
 // Initialize
