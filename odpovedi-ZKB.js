@@ -156,7 +156,10 @@ function calculateScores() {
         sectionScores[section.id] = {
             score: sectionScore,
             maxScore: sectionMaxScore,
-            percentage: (sectionScore["Ano"] * 2 / sectionMaxScore) * 100
+            percentage: (
+                (sectionScore["Ano"] * scoring["Ano"] + sectionScore["Částečně"] * scoring["Částečně"]) /
+                sectionMaxScore
+            ) * 100
         };
     });
 
@@ -184,14 +187,205 @@ function calculateScoreAndRedirect() {
     window.location.href = 'dashboard-ZKB.html';
 }
 
+// Mapování ZKB na NIS2 - DODĚLAT
+
+const measureMappings = {
+    "1.opatreni": {
+        subsections: ["5.2", "6.1", "8.2", "8.3"],
+        sections: ["section8"]
+    },
+    "2.opatreni": {
+        subsections: [], // Nejsou žádné 
+        sections: ["section19"]
+    },
+    "3.opatreni": {
+        subsections: [],
+        sections: ["section20", "section15"]
+    },
+    "4.opatreni": {
+        subsections: [],
+        sections: ["section18"]
+    },
+    "5.opatreni": {
+        subsections: [],
+        sections: ["section15", "section16", "section21"]
+    },
+    "6.opatreni": {
+        subsections: ["9.1", "9.2", "9.3"],
+        sections: ["section9"]
+    },
+    "7.opatreni": {
+        subsections: ["7.3", "7.4"],
+        sections: ["section10"]
+    },
+    "8.opatreni": {
+        subsections: [],
+        sections: ["section13"]
+    },
+    "9.opatreni": {
+        subsections: [],
+        sections: ["section10", "section11", "section12", "section16"]
+    },
+    "10.opatreni": {
+        subsections: [],
+        sections: ["section12", "section16"]
+    },
+
+};
+
+// Funkce pro NIS2 srovnávač
+
+function calculateScoresForMeasure(measureName) {
+    const subsectionIds = measureMappings[measureName].subsections;
+    const sectionIds = measureMappings[measureName].sections;
+    console.log(subsectionIds);
+    console.log(sectionIds);
+    // Objekt pro ukládání skóre z odpovědí
+    let measureScores = {
+        subsections: {},
+        sections: {}
+    };
+
+    questionnaireData.sections.forEach(section => {
+        let sectionScore = 0;
+        let sectionMaxScore = 0;
+
+        section.subsections.forEach(subsection => {
+            let subsectionScore = 0;
+            let subsectionMaxScore = subsection.questions.length * 2; // Assuming max score per question is 2
+
+            subsection.questions.forEach(question => {
+                // Scores based on responses
+                switch (question.response) {
+                    case "Ano":
+                        subsectionScore += 2;
+                        break;
+                    case "Částečně":
+                        subsectionScore += 1;
+                        break;
+                    case "Ne":
+                    case "Neaplikováno":
+                    default:
+                        subsectionScore += 0;
+                        break;
+                }
+            });
+
+            // If the subsection is relevant to the measure, store its score
+            if (subsectionIds.includes(subsection.id)) {
+                measureScores.subsections[subsection.id] = {
+                    score: subsectionScore,
+                    maxScore: subsectionMaxScore,
+                    percentage: (subsectionScore / subsectionMaxScore) * 100
+                };
+            }
+
+            // Accumulate scores for the section
+            sectionScore += subsectionScore;
+            sectionMaxScore += subsectionMaxScore;
+        });
+
+        // If the section is relevant to the measure, store its score
+        if (sectionIds.includes(section.id)) {
+            measureScores.sections[section.id] = {
+                score: sectionScore,
+                maxScore: sectionMaxScore,
+                percentage: (sectionScore / sectionMaxScore) * 100
+            };
+        }
+    });
+
+    // Handle the measure scores as needed, e.g., store in localStorage, display to the user, etc.
+    localStorage.setItem('measureScores', JSON.stringify(measureScores));
+
+    return measureScores;
+}
+
 submitButton.addEventListener("click", function () {
+    event.preventDefault(); // Prevent default form submission if necessary
     if (!validateSectionAnswers()) {
         alert("Prosím vyplňte všechny otázky.");
         return;
     }
     storeAnswers();
+
+        // Calculate and store the scores for each measure
+        for (const measureName in measureMappings) {
+            let scoresForMeasure = calculateScoresForMeasure(measureName);
+            localStorage.setItem(`${measureName}Scores`, JSON.stringify(scoresForMeasure));
+        }
+    
+        // Update progress bars and calculate overall percentage
+    updateProgressBarsAndCalculateOverallPercentage();
     calculateScoreAndRedirect();
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    updateProgressBarsAndCalculateOverallPercentage();
+});
+
+function updateProgressBarsAndCalculateOverallPercentage() {
+    let overallTotalPercentage = 0;
+    let overallCount = 0;
+    let individualMeasurePercentages = {};
+
+    console.log('measureMappings', measureMappings); // Debug output
+
+    // Loop through each measure and update its progress bar
+    for (const measureName in measureMappings) {
+        console.log('measureName', measureName); // Debug output
+
+        const measureScores = JSON.parse(localStorage.getItem(`${measureName}Scores`));
+        console.log('measureScores', measureScores); // Debug output
+
+        if (measureScores && measureScores.sections) {
+            let totalPercentage = 0;
+            let count = 0;
+
+            // Sum up the percentage of each section
+            for (const sectionId in measureScores.sections) {
+                console.log('sectionId', sectionId); // Debug output
+
+                totalPercentage += measureScores.sections[sectionId].percentage;
+                overallTotalPercentage += measureScores.sections[sectionId].percentage;
+                count++;
+                overallCount++;
+            }
+
+            // Calculate the average percentage for the individual measure
+            const averagePercentage = count > 0 ? totalPercentage / count : 0;
+            individualMeasurePercentages[measureName] = averagePercentage;
+
+            // Update the individual measure progress bar
+            const progressBarId = `${measureName}ProgressBar`; // Construct the ID for the progress bar
+            const progressBar = document.getElementById(progressBarId);
+            if (progressBar) {
+                progressBar.style.width = `${averagePercentage}%`;
+                progressBar.setAttribute('aria-valuenow', averagePercentage);
+            } else {
+                console.log('ProgressBar not found:', progressBarId); // Debug output
+            }
+
+            // Update the percentage text
+            const percentageTextId = `${measureName}Percentage`; // Construct the ID for the percentage text
+            const percentageText = document.getElementById(percentageTextId);
+            if (percentageText) {
+                percentageText.textContent = `${averagePercentage.toFixed(2)}%`;
+            } else {
+                console.log('PercentageText not found:', percentageTextId); // Debug output
+            }
+        }
+    }
+
+    // Calculate the overall average percentage for all measures
+    const overallAveragePercentage = overallCount > 0 ? overallTotalPercentage / overallCount : 0;
+
+    // Store the overall and individual percentages for use in the pie chart
+    localStorage.setItem('overallAveragePercentage', overallAveragePercentage);
+    localStorage.setItem('individualMeasurePercentages', JSON.stringify(individualMeasurePercentages));
+
+    // Now you can use these stored values to create your pie chart
+}
 
 // Initialize
 updateButtonVisibility();
