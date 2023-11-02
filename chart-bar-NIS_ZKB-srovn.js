@@ -137,11 +137,11 @@ function createMessages(dataValues, userFriendlyLabels, containerID) {
 
 // Call the function after you have the dataValues and userFriendlyLabels
 // Call the function with the desired container ID
-createMessages(dataValues, userFriendlyLabels, "warningBoxContainer1");
-createMessages(dataValues, userFriendlyLabels, "warningBoxContainer2");
-createMessages(dataValues, userFriendlyLabels, "warningBoxContainer3");
-createMessages(dataValues, userFriendlyLabels, "warningBoxContainer4");
-
+createMessages(dataValues, userFriendlyLabels, "warningContainer1");
+createMessages(dataValues, userFriendlyLabels, "warningContainer2");
+createMessages(dataValues, userFriendlyLabels, "warningContainer3");
+createMessages(dataValues, userFriendlyLabels, "warningContainer4");
+createMessages(dataValues, userFriendlyLabels, "warningContainer5");
 
 // Funkce pro vytvoření grafu
 document.querySelectorAll('.myBarChartNISZKBBar').forEach(function (canvas) {

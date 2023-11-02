@@ -151,7 +151,13 @@ function calculateScores() {
                 }
             });
         });
-        //console.log(totalScores);  // Debugging output
+
+        /* Starý výpočet
+                sectionScores[section.id] = {
+            score: sectionScore,
+            maxScore: sectionMaxScore,
+            percentage: (sectionScore["Ano"] * 2 / sectionMaxScore) * 100
+        };*/
 
         sectionScores[section.id] = {
             score: sectionScore,
@@ -161,6 +167,7 @@ function calculateScores() {
                 sectionMaxScore
             ) * 100
         };
+        console.log("Upravený výpočet před Neaplikováno", percentage);
     });
 
     const results = {
@@ -191,44 +198,44 @@ function calculateScoreAndRedirect() {
 
 const measureMappings = {
     "1.opatreni": {
-        subsections: ["5.2", "6.1", "8.2", "8.3"],
-        sections: ["section8"]
+        subsections: [],
+        sections: ["section1"]
     },
     "2.opatreni": {
-        subsections: [], // Nejsou žádné 
-        sections: ["section19"]
+        subsections: ["§ 14"], // Nejsou žádné 
+        sections: [""]
     },
     "3.opatreni": {
-        subsections: [],
-        sections: ["section20", "section15"]
+        subsections: ["§ 10", "§ 15"],
+        sections: []
     },
     "4.opatreni": {
-        subsections: [],
-        sections: ["section18"]
+        subsections: ["§ 8"],
+        sections: []
     },
     "5.opatreni": {
         subsections: [],
-        sections: ["section15", "section16", "section21"]
+        sections: ["section3"]
     },
     "6.opatreni": {
-        subsections: ["9.1", "9.2", "9.3"],
-        sections: ["section9"]
+        subsections: ["§3", "§ 16"], //3d konkrétně
+        sections: []
     },
     "7.opatreni": {
-        subsections: ["7.3", "7.4"],
-        sections: ["section10"]
+        subsections: ["§ 9"],
+        sections: [],
     },
     "8.opatreni": {
-        subsections: [],
-        sections: ["section13"]
+        subsections: ["§ 26"],
+        sections: []
     },
     "9.opatreni": {
-        subsections: [],
-        sections: ["section10", "section11", "section12", "section16"]
+        subsections: ["§4", "§ 9", "§ 12"],
+        sections: []
     },
     "10.opatreni": {
-        subsections: [],
-        sections: ["section12", "section16"]
+        subsections: ["§ 19"],
+        sections: []
     },
 
 };
@@ -238,7 +245,7 @@ const measureMappings = {
 function calculateScoresForMeasure(measureName) {
     const subsectionIds = measureMappings[measureName].subsections;
     const sectionIds = measureMappings[measureName].sections;
-    console.log(subsectionIds);
+    console.log("Toto se z mapování zobrazuje", subsectionIds);
     console.log(sectionIds);
     // Objekt pro ukládání skóre z odpovědí
     let measureScores = {
@@ -309,13 +316,13 @@ submitButton.addEventListener("click", function () {
     }
     storeAnswers();
 
-        // Calculate and store the scores for each measure
-        for (const measureName in measureMappings) {
-            let scoresForMeasure = calculateScoresForMeasure(measureName);
-            localStorage.setItem(`${measureName}Scores`, JSON.stringify(scoresForMeasure));
-        }
-    
-        // Update progress bars and calculate overall percentage
+    // Calculate and store the scores for each measure
+    for (const measureName in measureMappings) {
+        let scoresForMeasure = calculateScoresForMeasure(measureName);
+        localStorage.setItem(`${measureName}Scores`, JSON.stringify(scoresForMeasure));
+    }
+
+    // Update progress bars and calculate overall percentage
     updateProgressBarsAndCalculateOverallPercentage();
     calculateScoreAndRedirect();
 });
@@ -338,19 +345,28 @@ function updateProgressBarsAndCalculateOverallPercentage() {
         const measureScores = JSON.parse(localStorage.getItem(`${measureName}Scores`));
         console.log('measureScores', measureScores); // Debug output
 
-        if (measureScores && measureScores.sections) {
+        // ZMĚNY NAROZDÍL OD ISO
+        if (measureScores) {
             let totalPercentage = 0;
             let count = 0;
 
             // Sum up the percentage of each section
             for (const sectionId in measureScores.sections) {
                 console.log('sectionId', sectionId); // Debug output
-
                 totalPercentage += measureScores.sections[sectionId].percentage;
                 overallTotalPercentage += measureScores.sections[sectionId].percentage;
                 count++;
                 overallCount++;
             }
+
+            // NOVINKA  - Sum up the percentage of each subsection
+            for (const subsectionId in measureScores.subsections) {
+                // ...
+                totalPercentage += measureScores.subsections[subsectionId].percentage;
+                overallTotalPercentage += measureScores.subsections[subsectionId].percentage;
+                count++;
+                overallCount++;
+            } // KONEC NOVINKY
 
             // Calculate the average percentage for the individual measure
             const averagePercentage = count > 0 ? totalPercentage / count : 0;

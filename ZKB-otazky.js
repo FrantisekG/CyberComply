@@ -101,13 +101,13 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "6a",
-                            "text": "Je vytvořena politika organizační bezpečnosti",
+                            "text": "Je vytvořena politika organizační bezpečnosti?",
                             "comment": "Příloha 5 1.3",
                             "response": null
                         },
                         {
                             "id": "6b",
-                            "text": "Je kybernetická bezpečnost součástí ostatních procesů organizace",
+                            "text": "Je kybernetická bezpečnost součástí ostatních procesů organizace?",
                             "comment": "",
                             "response": null
                         },
@@ -1177,7 +1177,7 @@ function displaySection(sectionId, containerId) {
                 const label = document.createElement('label');
                 label.htmlFor = radioElement.id;
                 label.textContent = option;
-                label.style.marginRight = '80px';
+                label.style.marginRight = '100px';
                 optionsWrapper.appendChild(label);
 
                 // Tooltip vysvětlující "Neaplikováno"

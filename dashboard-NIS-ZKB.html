@@ -221,13 +221,13 @@
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <h6 class="m-0 font-weight-bold text-primary">
-                                            Spadá vaše organizace pod regulaci NIS2?
+                                            Výsledek samoidentifikace vaší organizace
                                         </h6>
                                     </div>
                                     <div class="card-body">
                                         <p style="margin-bottom: 1.5rem">
                                             Povinnosti vyplývající ze směrnice NIS 2 se vaší organizace
-                                            <b>týkají</b>.
+                                            <b>netýkají</b>.
                                         </p>
                                         <div class="card-body text-center">
                                             <i class="fa fa-times-circle text-danger"
@@ -252,6 +252,60 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="alert alert-info">
+                                    <b>Ačkoliv vaše organizace v současnosti nepůsobí na trhu EU, můžete níže nalézt
+                                        orientační
+                                        výsledek plnění bezpečnostních požadavků směrnice NIS 2.</b>
+                                </div>
+                                <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 ---------------------------------------->
+                                <!-- NIS2 srovnávač - Pie chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Celková míra plnění bezpečnostních požadavků stanovených NIS 2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-body">
+                                            <div class="chart-pie pt-4 pb-2">
+                                                <canvas class="PieChartNISZKBsrv"></canvas>
+                                            </div>
+                                            <div class="mt-4 text-center small">
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #36b9cc;"></i> Soulad
+                                                </span>
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #b0e3eb;"></i> Nesoulad
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div style="margin-top: 1.5rem;">
+                                                Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí
+                                                v
+                                                dotazníku, nereflektuje požadavky vybrané normy.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- NIS 2 Srovnávač - Bar Chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS
+                                            2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-bar">
+                                            <canvas class="myBarChartNISZKBBar"></canvas>
+                                        </div>
+                                        <hr>
+                                        <!-- Containers for messages -->
+                                        <div id="warningContainer1"></div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- /OSTATNÍ VERDIKT ------------------------------------------------------------- -->
 
@@ -262,7 +316,7 @@
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <h6 class="m-0 font-weight-bold text-primary">
-                                            Výsledek samoidentifikace
+                                            Výsledek samoidentifikace vaší organizace
                                         </h6>
                                     </div>
                                     <div class="card-body">
@@ -288,7 +342,61 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="alert alert-info">
+                                    <b>Ačkoliv vaše organizace by v současnosti neměla spadat pod směrnici NIS 2, můžete
+                                        níže nalézt
+                                        orientační
+                                        výsledek plnění bezpečnostních požadavků, která tato směrnice stanovuje.</b>
+                                </div>
+                                <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 ---------------------------------------->
+                                <!-- NIS2 srovnávač - Pie chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Celková míra plnění bezpečnostních požadavků stanovených NIS 2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-body">
+                                            <div class="chart-pie pt-4 pb-2">
+                                                <canvas class="PieChartNISZKBsrv"></canvas>
+                                            </div>
+                                            <div class="mt-4 text-center small">
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #36b9cc;"></i> Soulad
+                                                </span>
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #b0e3eb;"></i> Nesoulad
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div style="margin-top: 1.5rem;">
+                                                Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí
+                                                v
+                                                dotazníku, nereflektuje požadavky vybrané normy.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <!-- NIS 2 Srovnávač - Bar Chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS
+                                            2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-bar">
+                                            <canvas class="myBarChartNISZKBBar"></canvas>
+                                        </div>
+                                        <hr>
+                                        <!-- Containers for messages -->
+                                        <div id="warningContainer2"></div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- /VERDIKT ------------------------------------------------------------- -->
 
@@ -300,12 +408,12 @@
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <h6 class="m-0 font-weight-bold text-primary">
-                                            Výsledek samoidentifikace
+                                            Výsledek samoidentifikace vaší organizace
                                         </h6>
                                     </div>
                                     <div class="card-body">
                                         <p style="margin-bottom: 1.5rem">
-                                            Povinnosti vyplývající ze směrnice NIS 2 se vaší organizace a
+                                            Povinnosti vyplývající ze směrnice NIS 2 se vaší organizace
                                             <b>týkají</b>.
                                         </p>
                                         <!-- SPADÁ Fajfka-->
@@ -326,203 +434,57 @@
                                         <!-- /SPADÁ Fajfka-->
                                     </div>
                                 </div>
-
-                                <!-- Tělo karty - Informační přehled -->
+                                <div class="alert alert-info">
+                                    <b>Ačkoliv je vaše organizace již regulována, můžete níže nalézt orientační
+                                        výsledek plnění bezpečnostních požadavků směrnice NIS 2.</b>
+                                </div>
+                                <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 ---------------------------------------->
+                                <!-- NIS2 srovnávač - Pie chart -->
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <h6 class="m-0 font-weight-bold text-primary">
-                                            Informační přehled vaší organizace
+                                            Celková míra plnění bezpečnostních požadavků stanovených NIS 2
                                         </h6>
                                     </div>
                                     <div class="card-body">
-                                        <p style="margin-bottom: 1.5rem">
-                                            Hlavním cílem směrnice NIS 2 je dosáhnout toho, aby
-                                            organizace zaváděly preventivní kroky k posílení své
-                                            kybernetické bezpečnosti. A ačkoliv je vaše organizace již
-                                            regulována podle ZKB, je nutné počítat s dílčími změnami,
-                                            které směrnice NIS 2 přináší. Ty lze shrnout do
-                                            následujících pilířů:
-                                        </p>
-                                        <!-- Karta 1. Bezpečnostní opatření -->
-                                        <div class="card shadow mb-4">
-                                            <!-- Card Header - Accordion -->
-                                            <a href="#collapseCardExample1" class="d-block card-header py-3"
-                                                data-toggle="collapse" role="button" aria-expanded="true"
-                                                aria-controls="collapseCardExample1">
-                                                <h6 class="m-0 font-weight-bold text-primary">
-                                                    Bezpečnostní opatření
-                                                </h6>
-                                            </a>
-                                            <!-- Card Content - Collapse -->
-                                            <div class="collapse" id="collapseCardExample1">
-                                                <div class="card-body">
-                                                    <p>
-                                                        Směrnice NIS2 zdůrazňuje odpovědnost vedení organizací
-                                                        za schválení a zavádění bezpečnostních opatření ke
-                                                        snížení rizik pro kybernetickou bezpečnost. Součástí
-                                                        těchto požadavků je také to, že vedení organizací má
-                                                        povinnost osobně absolvovat školení na téma
-                                                        kybernetické bezpečnosti a podporovat v těchto
-                                                        školeních také své zaměstnance. Mezi klíčové opatření
-                                                        patří:
-                                                    </p>
+                                        <div class="card-body">
+                                            <div class="chart-pie pt-4 pb-2">
+                                                <canvas class="PieChartNISsrovnavac"></canvas>
+                                            </div>
+                                            <div class="mt-4 text-center small">
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #36b9cc;"></i> Soulad
+                                                </span>
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #b0e3eb;"></i> Nesoulad
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div style="margin-top: 1.5rem;">
+                                                Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí
+                                                v
+                                                dotazníku, nereflektuje požadavky vybrané normy.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                                    <ul>
-                                                        <li>
-                                                            Analýza rizik a politiky bezpečnosti informací;
-                                                        </li>
-                                                        <li>Zvládání incidentů;</li>
-                                                        <li>
-                                                            Kontinuita činností (tj. business kontinuita),
-                                                            přičemž směrnice tento okruh ještě rozvádí o příklad
-                                                            zálohování, zotavení (disaster recovery) a krizové
-                                                            řízení;
-                                                        </li>
-                                                        <li>Bezpečnost v rámci dodavatelského řetězce;</li>
-                                                        <li>
-                                                            Bezpečnost v rámci pořízení, vývoje a údržby
-                                                            systémů;
-                                                        </li>
-                                                        <li>
-                                                            Politiky a postupy pro hodnocení účinnosti
-                                                            bezpečnostních opatření (tj. audit);
-                                                        </li>
-                                                        <li>
-                                                            Praktiky základní počítačové hygieny a vzdělávání v
-                                                            oblasti kybernetické bezpečnosti;
-                                                        </li>
-                                                        <li>
-                                                            Politiky a postupy týkající se využívání
-                                                            kryptografie a tam, kde je to vhodné, také
-                                                            šifrování;
-                                                        </li>
-                                                        <li>
-                                                            Bezpečnost lidských zdrojů, řízení přístupů a aktiv;
-                                                        </li>
-                                                        <li>
-                                                            Využívání vícefaktorového ověření identity,
-                                                            bezpečných komunikačních nástrojů a nástrojů pro
-                                                            nouzovou komunikaci.
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                <!-- NIS 2 Srovnávač - Bar Chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS
+                                            2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-bar">
+                                            <canvas class="myBarChartNISZKBBar"></canvas>
                                         </div>
-                                        <!-- Karta 2. Hlášení incidentů -->
-                                        <div class="card shadow mb-4">
-                                            <!-- Card Header - Accordion -->
-                                            <a href="#collapseCardExample2" class="d-block card-header py-3"
-                                                data-toggle="collapse" role="button" aria-expanded="true"
-                                                aria-controls="collapseCardExample2">
-                                                <h6 class="m-0 font-weight-bold text-primary">
-                                                    Hlášení incidentů
-                                                </h6>
-                                            </a>
-                                            <!-- Card Content - Collapse -->
-                                            <div class="collapse" id="collapseCardExample2">
-                                                <div class="card-body">
-                                                    <p>
-                                                        Vedle zavádění bezpečnostních opatření je vaší další
-                                                        významnou povinností hlášení a zvládání kybernetických
-                                                        bezpečnostních incidentů. Požadavky na hlášení
-                                                        incidentů jsou:
-                                                    </p>
-
-                                                    <ul>
-                                                        <li>
-                                                            <b>Včasné varování</b>: Incident s významným dopadem
-                                                            na poskytování služby je nutné bez zbytečného
-                                                            odkladu oznámit nejpozději do 24 hodin. Obsahem
-                                                            tohoto včasného varování by měly být základní známé
-                                                            údaje, především to, zda je incident způsoben
-                                                            nezákonným jednáním nebo že by mohl mít přeshraniční
-                                                            dopad;
-                                                        </li>
-                                                        <li>
-                                                            <b>Oznámení incidentu</b>: Tyto informace by měly
-                                                            být co nejdříve, avšak nejpozději do 72 hodin,
-                                                            zpřesněny ve formě tzn. prvotního posouzení. Obsahem
-                                                            je nejen doplnění informací o incidentu, ale také
-                                                            posouzení jeho závažnosti a dopadu a dodání – pokud
-                                                            jsou k dispozici – indikátorů kompromitace;
-                                                        </li>
-                                                        <li>
-                                                            <b>Průběžná zpráva</b>: Po tomto prvotním posouzení
-                                                            může příslušný tým CERT sám iniciovat žádost o
-                                                            doplnění informací.;
-                                                        </li>
-                                                        <li>
-                                                            <b>Závěrečná zpráva</b>: Do jednoho měsíce od
-                                                            prvotního posouzení má organizace zaslat také
-                                                            závěrečnou zprávu, která by měla obsahovat podrobný
-                                                            popis incidentu včetně jeho závažnosti a dopadu,
-                                                            druh hrozby nebo základní příčinu, která incident
-                                                            pravděpodobně spustila, učiněná a probíhající
-                                                            opatření ke zmírnění následků a případně informaci o
-                                                            přeshraničním dopadu incidentu. Pokud by tou dobou
-                                                            ještě incident nebyl vyřešen, má organizace za úkol
-                                                            informovat tým CERT o vývoji celé věci a zaslat
-                                                            závěrečnou zprávu do jednoho měsíce od vyřešení
-                                                            incidentu.
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Karta 3. Dohled a sankce -->
-                                        <div class="card shadow mb-4">
-                                            <!-- Card Header - Accordion -->
-                                            <a href="#collapseCardExample3" class="d-block card-header py-3"
-                                                data-toggle="collapse" role="button" aria-expanded="true"
-                                                aria-controls="collapseCardExample3">
-                                                <h6 class="m-0 font-weight-bold text-primary">
-                                                    Dohled a sankce
-                                                </h6>
-                                            </a>
-                                            <!-- Card Content - Collapse -->
-                                            <div class="collapse" id="collapseCardExample3">
-                                                <div class="card-body">
-                                                    <p>
-                                                        NÚKIB může využívat množství různých metod a postupů v
-                                                        rámci své dozorové činnosti. Ty mohou zahrnovat
-                                                        kontroly přímo na místě, provádění bezpečnostních
-                                                        auditů, skenování zranitelností a nebo uložení pokut.
-                                                        Níže je souhrn dalších skutečností souvisejících s
-                                                        regulací NIS 2:
-                                                    </p>
-                                                    <div class="alert alert-warning" role="alert">
-                                                        <ul>
-                                                            <li>
-                                                                V případě porušení povinností hrozí pokuty,
-                                                                jejichž horní hranice sazby je stanovena na
-                                                                <u>10 milionů EUR nebo 2 % ze světového obratu</u>;
-                                                            </li>
-                                                            <li>
-                                                                Pravomoce NÚKIB provést jak preventivní kontroly
-                                                                (ex-ante), tak kontroly na základě podezření z
-                                                                neplnění povinností (ex-post);
-                                                            </li>
-                                                            <li>
-                                                                Odpovědnost vedení organizací za schválení a
-                                                                zavádění bezpečnostních opatření ke snížení rizik
-                                                                pro kybernetickou bezpečnost. Součástí těchto
-                                                                požadavků je také to, že vedení organizací má
-                                                                povinnost osobně absolvovat školení na téma
-                                                                kybernetické bezpečnosti a podporovat v těchto
-                                                                školeních také své zaměstnanc;
-                                                            </li>
-                                                            <li>
-                                                                Povinnosti se nahlásit. Pokud organizaci ze
-                                                                samoidentifikace vyplyne, že by měla být
-                                                                regulována podle NIS 2, respektive nového zákona o
-                                                                kybernetické bezpečnosti, musí se do 30 dní
-                                                                nahlásit NÚKIB.
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <hr>
+                                        <!-- Containers for messages -->
+                                        <div id="warningContainer3"></div>
                                     </div>
                                 </div>
                             </div>
@@ -535,7 +497,7 @@
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <h6 class="m-0 font-weight-bold text-primary">
-                                            Výsledek samoidentifikace
+                                            Výsledek samoidentifikace vaší organizace
                                         </h6>
                                     </div>
                                     <div class="card-body">
@@ -585,8 +547,9 @@
                                         </div>
                                         <!-- /SPADÁ Fajfka-->
                                         <!-- MEZERA-->
-                                        <hr>
+
                                         <div class="card-body">
+                                            <hr>
                                             <p style="margin-bottom: 1.5rem">
                                                 Vaše organizace se nachází v kategorii subjektů
                                                 <b>režim vyšších povinností</b>.
@@ -604,220 +567,55 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- Tělo karty - Informační přehled -->
+                                <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 ---------------------------------------->
+                                <!-- NIS2 srovnávač - Pie chart -->
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <h6 class="m-0 font-weight-bold text-primary">
-                                            Informační přehled povinností
+                                            Celková míra plnění bezpečnostních požadavků stanovených NIS 2
                                         </h6>
                                     </div>
                                     <div class="card-body">
-                                        <p style="margin-bottom: 1.5rem">
-                                            Hlavním cílem směrnice NIS 2 je dosáhnout toho, aby
-                                            organizace zaváděly preventivní kroky k posílení své
-                                            kybernetické bezpečnosti. Z toho důvodu se dá směrnice
-                                            shrnout do tří klíčových pilířů, v nichž by vaše organizace
-                                            měla zvýšit své úsilí, aby byla v souladu s požadavky.
-                                        </p>
-                                        <!-- Karta 1. Bezpečnostní opatření -->
-                                        <div class="card shadow mb-4">
-                                            <!-- Card Header - Accordion -->
-                                            <a href="#collapseCardExample1" class="d-block card-header py-3"
-                                                data-toggle="collapse" role="button" aria-expanded="true"
-                                                aria-controls="collapseCardExample1">
-                                                <h6 class="m-0 font-weight-bold text-primary">
-                                                    Bezpečnostní opatření
-                                                </h6>
-                                            </a>
-                                            <!-- Card Content - Collapse -->
-                                            <div class="collapse" id="collapseCardExample1">
-                                                <div class="card-body">
-                                                    <p>
-                                                        Směrnice NIS2 zdůrazňuje odpovědnost vedení organizací
-                                                        za schválení a zavádění bezpečnostních opatření ke
-                                                        snížení rizik pro kybernetickou bezpečnost. Součástí
-                                                        těchto požadavků je také to, že vedení organizací má
-                                                        povinnost osobně absolvovat školení na téma
-                                                        kybernetické bezpečnosti a podporovat v těchto
-                                                        školeních také své zaměstnance. Mezi klíčové opatření
-                                                        patří:
-                                                    </p>
-
-                                                    <ul>
-                                                        <li>
-                                                            Analýza rizik a politiky bezpečnosti informací;
-                                                        </li>
-                                                        <li>Zvládání incidentů;</li>
-                                                        <li>
-                                                            Kontinuita činností (tj. business kontinuita),
-                                                            přičemž směrnice tento okruh ještě rozvádí o příklad
-                                                            zálohování, zotavení (disaster recovery) a krizové
-                                                            řízení;
-                                                        </li>
-                                                        <li>Bezpečnost v rámci dodavatelského řetězce;</li>
-                                                        <li>
-                                                            Bezpečnost v rámci pořízení, vývoje a údržby
-                                                            systémů;
-                                                        </li>
-                                                        <li>
-                                                            Politiky a postupy pro hodnocení účinnosti
-                                                            bezpečnostních opatření (tj. audit);
-                                                        </li>
-                                                        <li>
-                                                            Praktiky základní počítačové hygieny a vzdělávání v
-                                                            oblasti kybernetické bezpečnosti;
-                                                        </li>
-                                                        <li>
-                                                            Politiky a postupy týkající se využívání
-                                                            kryptografie a tam, kde je to vhodné, také
-                                                            šifrování;
-                                                        </li>
-                                                        <li>
-                                                            Bezpečnost lidských zdrojů, řízení přístupů a aktiv;
-                                                        </li>
-                                                        <li>
-                                                            Využívání vícefaktorového ověření identity,
-                                                            bezpečných komunikačních nástrojů a nástrojů pro
-                                                            nouzovou komunikaci.
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                                        <div class="card-body">
+                                            <div class="chart-pie pt-4 pb-2">
+                                                <canvas class="PieChartNISZKBsrv"></canvas>
                                             </div>
-                                        </div>
-                                        <!-- Karta 2. Hlášení incidentů -->
-                                        <div class="card shadow mb-4">
-                                            <!-- Card Header - Accordion -->
-                                            <a href="#collapseCardExample2" class="d-block card-header py-3"
-                                                data-toggle="collapse" role="button" aria-expanded="true"
-                                                aria-controls="collapseCardExample2">
-                                                <h6 class="m-0 font-weight-bold text-primary">
-                                                    Hlášení incidentů
-                                                </h6>
-                                            </a>
-                                            <!-- Card Content - Collapse -->
-                                            <div class="collapse" id="collapseCardExample2">
-                                                <div class="card-body">
-                                                    <p>
-                                                        Vedle zavádění bezpečnostních opatření je vaší další
-                                                        významnou povinností hlášení a zvládání kybernetických
-                                                        bezpečnostních incidentů. Požadavky na hlášení
-                                                        incidentů jsou:
-                                                    </p>
-
-                                                    <ul>
-                                                        <li>
-                                                            <b>Včasné varování</b>: Incident s významným dopadem
-                                                            na poskytování služby je nutné bez zbytečného
-                                                            odkladu oznámit nejpozději do 24 hodin. Obsahem
-                                                            tohoto včasného varování by měly být základní známé
-                                                            údaje, především to, zda je incident způsoben
-                                                            nezákonným jednáním nebo že by mohl mít přeshraniční
-                                                            dopad;
-                                                        </li>
-                                                        <li>
-                                                            <b>Oznámení incidentu</b>: Tyto informace by měly
-                                                            být co nejdříve, avšak nejpozději do 72 hodin,
-                                                            zpřesněny ve formě tzn. prvotního posouzení. Obsahem
-                                                            je nejen doplnění informací o incidentu, ale také
-                                                            posouzení jeho závažnosti a dopadu a dodání – pokud
-                                                            jsou k dispozici – indikátorů kompromitace;
-                                                        </li>
-                                                        <li>
-                                                            <b>Průběžná zpráva</b>: Po tomto prvotním posouzení
-                                                            může příslušný tým CERT sám iniciovat žádost o
-                                                            doplnění informací.;
-                                                        </li>
-                                                        <li>
-                                                            <b>Závěrečná zpráva</b>: Do jednoho měsíce od
-                                                            prvotního posouzení má organizace zaslat také
-                                                            závěrečnou zprávu, která by měla obsahovat podrobný
-                                                            popis incidentu včetně jeho závažnosti a dopadu,
-                                                            druh hrozby nebo základní příčinu, která incident
-                                                            pravděpodobně spustila, učiněná a probíhající
-                                                            opatření ke zmírnění následků a případně informaci o
-                                                            přeshraničním dopadu incidentu. Pokud by tou dobou
-                                                            ještě incident nebyl vyřešen, má organizace za úkol
-                                                            informovat tým CERT o vývoji celé věci a zaslat
-                                                            závěrečnou zprávu do jednoho měsíce od vyřešení
-                                                            incidentu.
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                                            <div class="mt-4 text-center small">
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #36b9cc;"></i> Soulad
+                                                </span>
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #b0e3eb;"></i> Nesoulad
+                                                </span>
                                             </div>
-                                        </div>
-                                        <!-- Karta 3. Dohled a sankce -->
-                                        <div class="card shadow mb-4">
-                                            <!-- Card Header - Accordion -->
-                                            <a href="#collapseCardExample3" class="d-block card-header py-3"
-                                                data-toggle="collapse" role="button" aria-expanded="true"
-                                                aria-controls="collapseCardExample3">
-                                                <h6 class="m-0 font-weight-bold text-primary">
-                                                    Dohled a sankce
-                                                </h6>
-                                            </a>
-                                            <!-- Card Content - Collapse -->
-                                            <div class="collapse" id="collapseCardExample3">
-                                                <div class="card-body">
-                                                    <p>
-                                                        NÚKIB může využívat množství různých metod a postupů v
-                                                        rámci své dozorové činnosti. Ty mohou zahrnovat
-                                                        kontroly přímo na místě, provádění bezpečnostních
-                                                        auditů, skenování zranitelností a uložení pokut. V
-                                                        souladu s českým právním řádem může NÚKIB také
-                                                        požadovat soudní rozhodnutí, kterým bude konkrétní
-                                                        fyzické osobě v řídicí pozici zabráněno dočasně
-                                                        vykonávat řídicí funkce v regulované organizaci.
-                                                    </p>
-                                                    <div class="card-body text-center">
-                                                        <i class="fa fa-exclamation-triangle text-warning"
-                                                            style="font-size: 2rem; margin-bottom: 0.3em"></i>
-                                                        <p class="font-weight-bold text-warning text-center"
-                                                            style="font-size: 1rem; text-decoration: underline">
-                                                            REŽIM VYŠŠÍCH POVINNOSTÍ
-                                                        </p>
-                                                    </div>
-                                                    <div class="alert alert-warning" role="alert">
-                                                        Vzhledem k tomu, že se vaše organizace nachází v
-                                                        kategorii subjektů
-                                                        <b> <u>režim vyšších povinností</u>,</b> tak se na vás vztahují
-                                                        následující skutečnosti:
-                                                        <ul>
-                                                            <li>
-                                                                V případě porušení povinností hrozí pokuty,
-                                                                jejichž horní hranice sazby je stanovena na
-                                                                <u>10 milionů EUR nebo 2 % ze světového obratu</u>;
-                                                            </li>
-                                                            <li>
-                                                                Pravomoce NÚKIB provést jak preventivní kontroly
-                                                                (ex-ante), tak kontroly na základě podezření z
-                                                                neplnění povinností (ex-post);
-                                                            </li>
-                                                            <li>
-                                                                Odpovědnost vedení organizací za schválení a
-                                                                zavádění bezpečnostních opatření ke snížení rizik
-                                                                pro kybernetickou bezpečnost. Součástí těchto
-                                                                požadavků je také to, že vedení organizací má
-                                                                povinnost osobně absolvovat školení na téma
-                                                                kybernetické bezpečnosti a podporovat v těchto
-                                                                školeních také své zaměstnanc;
-                                                            </li>
-                                                            <li>
-                                                                Povinnosti se nahlásit. Pokud organizaci ze
-                                                                samoidentifikace vyplyne, že by měla být
-                                                                regulována podle NIS 2, respektive nového zákona o
-                                                                kybernetické bezpečnosti, musí se do 30 dní
-                                                                nahlásit NÚKIB.
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
+                                            <hr>
+                                            <div style="margin-top: 1.5rem;">
+                                                Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí
+                                                v
+                                                dotazníku, nereflektuje požadavky vybrané normy.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- /Karty KATEGORIE -->
+                                <!-- NIS 2 Srovnávač - Bar Chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS
+                                            2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-bar">
+                                            <canvas class="myBarChartNISZKBBar"></canvas>
+                                        </div>
+                                        <hr>
+                                        <!-- Containers for messages -->
+                                        <div id="warningContainer4"></div>
+                                    </div>
+                                </div>
                             </div>
 
                             <!-- VERDIKT - DŮLEŽITÝ subjekt -->
@@ -826,7 +624,7 @@
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <h6 class="m-0 font-weight-bold text-primary">
-                                            Výsledek samoidentifikace
+                                            Výsledek samoidentifikace vaší organizace
                                         </h6>
                                     </div>
                                     <div class="card-body">
@@ -861,8 +659,9 @@
                                         </div>
                                         <!-- /SPADÁ Fajfka-->
                                     </div>
-                                    <hr>
+
                                     <div class="card-body">
+                                        <hr>
                                         <p style="margin-bottom: 1.5rem">
                                             Vaše organizace se nachází v kategorii subjektů
                                             <b>režim nižších povinností</b>.
@@ -886,136 +685,131 @@
                                         <!-- /KATEGORIE Základní -->
                                     </div>
                                 </div>
+                                <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 ---------------------------------------->
+                                <!-- NIS2 srovnávač - Pie chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Celková míra plnění bezpečnostních požadavků stanovených NIS 2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-body">
+                                            <div class="chart-pie pt-4 pb-2">
+                                                <canvas class="PieChartNISZKBsrv"></canvas>
+                                            </div>
+                                            <div class="mt-4 text-center small">
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #36b9cc;"></i> Soulad
+                                                </span>
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #b0e3eb;"></i> Nesoulad
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div style="margin-top: 1.5rem;">
+                                                Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí
+                                                v
+                                                dotazníku, nereflektuje požadavky vybrané normy.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- NIS 2 Srovnávač - Bar Chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS
+                                            2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-bar">
+                                            <canvas class="myBarChartNISZKBBar"></canvas>
+                                        </div>
+                                        <hr>
+                                        <!-- Containers for messages -->
+                                        <div id="warningContainer5"></div>
+                                    </div>
+                                </div>
                                 <!-- /Karty KATEGORIE -->
                             </div>
                         </div>
-
-                        <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 ---------------------------------------->
-                        <!-- NIS2 srovnávač - Pie chart -->
-                        <div class="card shadow mb-4">
-                            <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">
-                                    Celková míra plnění bezpečnostních požadavků stanovených NIS 2
-                                </h6>
-                            </div>
-                            <div class="card-body">
+                        <!----------------------- /KONEC VERDIKT DŮLEŽITÝ ---------------------------------------->
+                        <!-- Sloupec pro první Piechart -->
+                        <div class="col-md-6">
+                            <!-- První Piechart -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        Celkové plnění bezpečnostních požadavků stanovených VKB
+                                    </h6>
+                                </div>
                                 <div class="card-body">
                                     <div class="chart-pie pt-4 pb-2">
-                                        <canvas class="PieChartNISsrovnavac"></canvas>
+                                        <canvas id="PieChartZKB"></canvas>
                                     </div>
                                     <div class="mt-4 text-center small">
                                         <span class="mr-2">
-                                            <i class="fas fa-circle" style="color: #36b9cc;"></i> Soulad
+                                            <i class="fas fa-circle text-primary"></i> Soulad
                                         </span>
                                         <span class="mr-2">
-                                            <i class="fas fa-circle" style="color: #b0e3eb;"></i> Nesoulad
+                                            <i class="fas fa-circle" style="color: #d3dcf7;"></i> Nesoulad
                                         </span>
                                     </div>
                                     <hr>
                                     <div style="margin-top: 1.5rem;">
-                                        Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
-                                        stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí
-                                        v
-                                        dotazníku, nereflektuje požadavky vybrané normy.
+                                        Na základě vyhodnocených odpovědí z dotazníku je vaše organizace z <span
+                                            id="zavedeno" style="font-weight:bold">0</span> <b>%</b>
+                                        v <b>souladu</b> s požadavky vyhlášky o kybernetické bezpečnosti (VKB). Do
+                                        plného souladu Vám <b>chybí</b>
+                                        <span id="nezavedeno" style="font-weight:bold">0</span> <b>%</b>.
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- NIS 2 Srovnávač - Bar Chart -->
-                        <div class="card shadow mb-4">
-                            <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">
-                                    Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS
-                                    2
-                                </h6>
-                            </div>
-                            <div class="card-body">
-                                <div class="chart-bar">
-                                    <canvas class="myBarChartNISBar"></canvas>
+                            <!-- Bar Chart -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Míra plnění požadovaných
+                                        bezpečnostních požadavků VKB </h6>
                                 </div>
-                                <hr>
-                                <!-- Containers for messages -->
-                                <div id="warningBoxContainer2"></div>
-                            </div>
-                        </div>
-                        <!-- /Karty KATEGORIE -->
-                    </div>
-                </div>
-
-                <!----------------------- /KONEC VERDIKT DŮLEŽITÝ ---------------------------------------->
-
-                <!-- Sloupec pro první Piechart -->
-                <div class="col-md-6">
-                    <!-- První Piechart -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                                Celkové plnění bezpečnostních požadavků stanovených VKB
-                            </h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="chart-pie pt-4 pb-2">
-                                <canvas id="PieChartZKB"></canvas>
-                            </div>
-                            <div class="mt-4 text-center small">
-                                <span class="mr-2">
-                                    <i class="fas fa-circle text-primary"></i> Soulad
-                                </span>
-                                <span class="mr-2">
-                                    <i class="fas fa-circle" style="color: #d3dcf7;"></i> Nesoulad
-                                </span>
-                            </div>
-                            <hr>
-                            <div style="margin-top: 1.5rem;">
-                                Na základě vyhodnocených odpovědí z dotazníku je vaše organizace z <span id="zavedeno"
-                                    style="font-weight:bold">0</span> <b>%</b>
-                                v <b>souladu</b> s požadavky vyhlášky o kybernetické bezpečnosti (VKB). Do
-                                plného souladu Vám <b>chybí</b>
-                                <span id="nezavedeno" style="font-weight:bold">0</span> <b>%</b>.
+                                <div class="card-body">
+                                    <div class="chart-bar">
+                                        <canvas id="ZKBBarChart"></canvas>
+                                    </div>
+                                    <hr>
+                                    <div id="otazkypod50"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Bar Chart -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Míra plnění požadovaných
-                                bezpečnostních požadavků VKB </h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="chart-bar">
-                                <canvas id="ZKBBarChart"></canvas>
-                            </div>
-                            <hr>
-                            <div id="otazkypod50"></div>
-                        </div>
+                    <div class="alert alert-warning" role="alert">
+                        <p><b>Dosažené výsledky jsou čistě orientační a návodné. Neslouží jako předcertifikační
+                                příprava.</b></p>
+
+                        Obsah směrnice NIS 2 stanovuje minimální požadavky a její
+                        platnost neznamená, že musíte ihned začít plnit všechny
+                        povinnosti, které přináší. NÚKIB v současnosti pracuje na
+                        nové podobě zákona č. 181/2014 Sb., o kybernetické
+                        bezpečnosti, který konkrétní požadavky na národní dále
+                        rozvádí. Nový zákon by podle transpoziční lhůty měl vejít v
+                        platnost v říjnu 2024. Nově regulovaným subjektům bude dána
+                        přechodná lhůta jednoho roku pro zahájení plnění povinností.
                     </div>
                 </div>
             </div>
-
-            <div class="alert alert-warning" role="alert">
-                <p><b>Dosažené výsledky jsou čistě orientační a návodné. Neslouží jako předcertifikační
-                        příprava.</b></p>
-
-                Obsah směrnice NIS 2 stanovuje minimální požadavky a její
-                platnost neznamená, že musíte ihned začít plnit všechny
-                povinnosti, které přináší. NÚKIB v současnosti pracuje na
-                nové podobě zákona č. 181/2014 Sb., o kybernetické
-                bezpečnosti, který konkrétní požadavky na národní dále
-                rozvádí. Nový zákon by podle transpoziční lhůty měl vejít v
-                platnost v říjnu 2024. Nově regulovaným subjektům bude dána
-                přechodná lhůta jednoho roku pro zahájení plnění povinností.
-            </div>
-
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; František Grossmann 2023</span>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
-    <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-                <span>Copyright &copy; František Grossmann 2023</span>
-            </div>
-        </div>
-    </footer>
+
     </div>
     <!-- /.container-fluid -->
     <!-- Footer -->
@@ -1084,8 +878,39 @@
         }
     </script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const verejnaSpravaToShow = localStorage.getItem('VerejnaSpravaFinalVerdict');
+            console.log('VerejnaSpravaFinalVerdict:', verejnaSpravaToShow);
+            if (verejnaSpravaToShow) {
+                const element = document.getElementById(verejnaSpravaToShow);
+                console.log('Element:', element);
+                if (element) {
+                    element.style.display = "block";
+                } else {
+                    console.error('Element with ID ' + verejnaSpravaToShow + ' not found.');
+                } // asi by tu měl být else at není displayed?
+            }
+        });
 
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const doraToShow = localStorage.getItem('DoraFinalVerdict');
+            console.log('DoraFinalVerdict:', doraToShow);
+            if (doraToShow) {
+                const element = document.getElementById(doraToShow);
+                console.log('Element:', element);
+                if (element) {
+                    element.style.display = "block";
+                } else {
+                    console.error('Element with ID ' + doraToShow + ' not found.');
+                }
+            }
+        });
+    </script>
+
 </body>
 
 </html>
