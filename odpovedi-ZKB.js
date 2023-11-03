@@ -17,8 +17,6 @@ function storeAnswers() {
                 if (radios[i].checked) {
                     const oldValue = question.response;  // Stará hodnota pro srovnání
                     question.response = radios[i].value;
-                    // Ladící výstup pro každou změnu odpovědi
-                    console.log(`Question ${qIndex} in subsection ${subsection.id} changed from ${oldValue} to ${radios[i].value}`);
                     break;
                 }
             }
@@ -134,6 +132,7 @@ function calculateScores() {
             "Neaplikováno": 0
         };
         let sectionMaxScore = 0;
+        console.log(`Processing section ${section.id}:`, section);
 
         // Nový vnější cyklus pro projití všech podsekcí
         section.subsections.forEach(subsection => {
@@ -149,6 +148,7 @@ function calculateScores() {
                     sectionMaxScore += 2;
                     maxScore += 2;
                 }
+                console.log(`Question response: ${question.response}, Section Score:`, sectionScore);
             });
         });
 
@@ -167,13 +167,14 @@ function calculateScores() {
                 sectionMaxScore
             ) * 100
         };
-        console.log("Upravený výpočet před Neaplikováno", percentage);
+        console.log(`Completed section ${section.id}, Section Scores:`, sectionScore);
     });
 
+    // Celkový výpočet skóre
     const results = {
         totalScores: totalScores,
         maxScore: maxScore,
-        percentage: (totalScores["Ano"] * 2 / maxScore) * 100,
+        percentage: (totalScores["Ano"] * 2 + totalScores["Částečně"] / maxScore) * 100,
         sections: sectionScores,
         // Procentuální hodnota otázek označených jako "Neaplikováno"
         notApplicablePercentage: (totalScores["Neaplikováno"] / totalQuestions) * 100
@@ -181,7 +182,8 @@ function calculateScores() {
 
     // Uložení výsledků do localStorage
     localStorage.setItem('zkbResults', JSON.stringify(results));
-
+    // Log before returning results
+    console.log('Final Results:', results);
     return results;
 }
 
@@ -340,10 +342,8 @@ function updateProgressBarsAndCalculateOverallPercentage() {
 
     // Loop through each measure and update its progress bar
     for (const measureName in measureMappings) {
-        console.log('measureName', measureName); // Debug output
 
         const measureScores = JSON.parse(localStorage.getItem(`${measureName}Scores`));
-        console.log('measureScores', measureScores); // Debug output
 
         // ZMĚNY NAROZDÍL OD ISO
         if (measureScores) {
@@ -379,7 +379,6 @@ function updateProgressBarsAndCalculateOverallPercentage() {
                 progressBar.style.width = `${averagePercentage}%`;
                 progressBar.setAttribute('aria-valuenow', averagePercentage);
             } else {
-                console.log('ProgressBar not found:', progressBarId); // Debug output
             }
 
             // Update the percentage text
