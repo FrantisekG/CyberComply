@@ -2,92 +2,104 @@ const questionnaireData = {
     "sections": [
         {
             "id": "section1",
-            "title": "Organizační opatření - ISMS, řízení aktiv a rizik",
+            "title": "1. Bezpečnost (Common criteria)",
             "subsections": [
                 {
-                    "id": "§3",
-                    "title": "Systém řízení bezpečnosti informací (§ 3)",
+                    "id": "CC1.1",
+                    "title": "Kontrola prostředí (CC1.1)",
                     "questions": [
                         {
-                            "id": "3a",
-                            "text": "Je vytvořena politika systému řízení bezpečnosti informací včetně stanovených cílů ISMS?",
-                            "comment": "Obsah bezpečnostní politiky a bezpečnostní dokumentace je uveden v příloze č. 5 vyhlášky č. 82/2018 Sb.",
+                            "id": "CC1.1-1",
+                            "text": "Organizace prokazuje závazek k integritě a etickým hodnotám?",
+                            "comment": "Je vytvořen etický kodex, který je sdělován všem zaměstnancům a jeho dodržování je pravidelně revidováno",
                             "response": null
                         },
                         {
-                            "id": "3b",
-                            "text": "Je stanoven rozsah ISMS?",
-                            "comment": "Smyslem stanovení rozsahuje určit organizační části a aktiva, jichž se ISMS týká, tedy fyzický perimetr, organizační celky, zainteresované osoby(zaměstnanci, dodavatelé a další) a technologie",
-                            "response": null
-                        },
-                        {
-                            "id": "3c",
-                            "text": "Je vytvořena kompletní bezpečnostní politika, která je schválena, řízena, pravidelně aktualizována a přiměřeně dostupná relevantním rolím?",
+                            "id": "CC1.1-2",
+                            "text": "Představenstvo prokazuje nezávislost na vedení a vykonává dohled nad vývojem a výkonem vnitřní kontroly?",
                             "comment": "",
                             "response": null
                         },
                         {
-                            "id": "3d",
-                            "text": "Je prováděno pravidelné vyhodnocování a přezkoumávání ISMS?",
+                            "id": "CC1.1-3",
+                            "text": "Stanovuje vedení společnosti, pod dohledem představentsva, struktury, hlášení a odpovídající pravomoci a zodpovědnosti pro dosahování cílů?",
+                            "comment": "",
+                            "response": null
+                        },
+                        {
+                            "id": "CC1.1-4",
+                            "text": "Prosazuje organizace metody pro získání, rozvíjení a udržení kompetentních osob?",
+                            "comment": "Např. formou školení stávajícíh zaměstnanců",
+                            "response": null
+                        },
+                        {
+                            "id": "CC1.1-5",
+                            "text": "Vede organizace jednotlivce k odpovědnosti za jejich povinnosti v oblasti vnitřní kontroly?",
                             "comment": "",
                             "response": null
                         },
                     ]
                 },
                 {
-                    "id": "§4",
-                    "title": "Řízení aktiv (§ 4)",
+                    "id": "CC2.1",
+                    "title": "Komunikace a informace (CC2.1)",
                     "questions": [
                         {
-                            "id": "4a",
-                            "text": "Je vytvořena politika řízení aktiv?",
-                            "comment": "Např. metodika identifikace a hodnocení aktiv, pravidla ochrany, manipualce, likvidace",
+                            "id": "CC2.1-1",
+                            "text": "Má organizace zavedeny postupy pro zjišťování a získávání potřebných informací na podporu fungování vnitřní kontroly?",
+                            "comment": "To může zahrnovat postupy pro shromažďování a ověřování finančních údajů nebo mechanismy pro získávání zpětné vazby o účinnosti vnitřní kontroly.",
                             "response": null
                         },
                         {
-                            "id": "4b",
-                            "text": "Dochází k identifikaci, evidenci a hodnocení aktiv včetně jejich vazeb?",
-                            "comment": "Např. hodnocení primárních aktiv, zohledňuje oblasti dle § 4 odst. 2",
+                            "id": "CC2.2-2",
+                            "text": "Existuje formální komunikační proces, který zajišťuje, aby si všichni zaměstnanci byli vědomi svých rolí a povinností v oblasti vnitřní kontroly?",
+                            "comment": "Např. pravidelná školení, sdělení nebo příspěvky na intranetu, které informují zaměstnance o postupech vnitřní kontroly a jejich konkrétních povinnostech.",
                             "response": null
                         },
                         {
-                            "id": "4c",
-                            "text": "Je vytvořena politika ochrany osobních údajů?",
-                            "comment": "Více informací je v příloze 5 1.14 vyhlášky č. 82/2018 Sb.",
+                            "id": "CC2.2-3",
+                            "text": "Jsou zavedeny kanály pro komunikaci s externími stranami, jako jsou zákazníci, regulační orgány a dodavatelé, o otázkách ovlivňujících fungování vnitřní kontroly?",
+                            "comment": "Např. struktury pro podávání zpráv za účelem dodržování právních předpisů nebo mechanismy zpětné vazby pro zákazníky, kteří mohou hlásit obavy o bezpečnost.",
                             "response": null
                         },
                         {
-                            "id": "4d",
-                            "text": "Organizace má přehled o všech zákonech a nařízení týkajících se funkce jejího ISMS?",
-                            "comment": "Např. GDPR, Zákon č. 412/2005 Sb.",
+                            "id": "CC2.2-4",
+                            "text": "Existuje mechanismus pro rychlou identifikaci, vyhodnocení a sdělení nedostatků vnitřní kontroly příslušným stranám za účelem přijetí nápravných opatření?",
+                            "comment": "Může se jednat například o systém hlášení incidentů.",
+                            "response": null
+                        },
+                        {
+                            "id": "CC2.2-5",
+                            "text": "Provádí vaše organizace pravidelnou revizi a úpravu svých interních kontrolních komunikačních a informačních procesů v reakci na změny v podnikatelském a provozním prostředí?",
+                            "comment": "Především po zavedení významných změn, nových technologií atd.",
                             "response": null
                         },
                     ]
                 },
                 {
-                    "id": "§5",
-                    "title": "Řízení rizik (§ 5)",
+                    "id": "CC3.1",
+                    "title": "Posuzování rizik (CC3.1)",
                     "questions": [
                         {
-                            "id": "5a",
-                            "text": "Je vytvořena politika řízení rizik",
-                            "comment": "Např. metodika identifikace a hodnocení rizik, kritéria pro akceptovatelnost, SoA, RTP, zpráva o hodnocení rizik",
+                            "id": "CC3.1-1",
+                            "text": "Definuje vaše organizace jasně cíle na různých úrovních, aby bylo možné identifikovat a posoudit rizika související s cíli?",
+                            "comment": "Cíle by měly být konkrétní, měřitelné, dosažitelné, relevantní a časově omezené (SMART), aby se usnadnilo účinné hodnocení rizik.",
                             "response": null
                         },
                         {
-                            "id": "5b",
+                            "id": "CC3.1-2",
                             "text": "Dochází k identifikaci, evidenci a hodnocení rizik včetně jejich relevantních hrozeb, zranitelnosti a dopadů",
                             "comment": "Včetně rizik spojených s dodavateli, více v příloze 2 a 3 VKB",
                             "response": null
                         },
                         {
-                            "id": "5c",
+                            "id": "CC3.1-3",
                             "text": "Dochází k identifikaci, evidenci a hodnocení rizik včetně jejich relevantních hrozeb, zranitelnosti a dopadů",
                             "comment": "Včetně rizik spojených s dodavateli, více v příloze 2 a 3 VKB",
                             "response": null
                         },
                         {
-                            "id": "5d",
+                            "id": "CC3.1-4",
                             "text": "Jsou bezpečnostní opatřená zaváděna v souladu s RTP",
                             "comment": "",
                             "response": null

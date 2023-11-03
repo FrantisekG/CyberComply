@@ -152,13 +152,6 @@ function calculateScores() {
             });
         });
 
-        /* Starý výpočet
-                sectionScores[section.id] = {
-            score: sectionScore,
-            maxScore: sectionMaxScore,
-            percentage: (sectionScore["Ano"] * 2 / sectionMaxScore) * 100
-        };*/
-
         sectionScores[section.id] = {
             score: sectionScore,
             maxScore: sectionMaxScore,
@@ -174,7 +167,7 @@ function calculateScores() {
     const results = {
         totalScores: totalScores,
         maxScore: maxScore,
-        percentage: (((totalScores["Ano"] * 2) + totalScores["Částečně"])/ maxScore) * 100,
+        percentage: (((totalScores["Ano"] * 2) + totalScores["Částečně"]) / maxScore) * 100,
         sections: sectionScores,
         // Procentuální hodnota otázek označených jako "Neaplikováno"
         notApplicablePercentage: (totalScores["Neaplikováno"] / totalQuestions) * 100
