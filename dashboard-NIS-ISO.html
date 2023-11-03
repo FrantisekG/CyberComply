@@ -871,6 +871,14 @@
     <!-- Skript na stažení dashboardu-->
     <script src="downloadPDF.js"></script>
 
+    <!-- Skript zobrazující sloupcový graf přílohy A ISO 27001-->
+    <script src="chart-bar-ISO_Pril.js"></script>
+
+    <!-- Skripty NIS2 srovnávače-->
+    <script src="chart-pie-NIS_ISO-srovn.js"></script>
+    <script src="chart-bar-NIS_ISO-srovn.js"></script>
+
+    <!-- Tyhle skripty by se asi mohly klidně smazat -->
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             const verdictToShow = localStorage.getItem('NIS2FinalVerdict');
@@ -881,9 +889,14 @@
                 if (element) {
                     element.style.display = "block";
                 } else {
-                    console.error('Element with ID ' + verdictToShow + ' not found.');
+                    element.style.display = "none";
                 }
             }
+            // New code to clear localStorage when the button is clicked
+            const startAssessmentButton = document.getElementById('startAssessmentButton');
+            startAssessmentButton.addEventListener('click', () => {
+                localStorage.removeItem('NIS2FinalVerdict');
+            });
         });
 
     </script>
@@ -898,9 +911,15 @@
                 if (element) {
                     element.style.display = "block";
                 } else {
-                    console.error('Element with ID ' + doraToShow + ' not found.');
+                    element.style.display = "none";
+                    //console.error('Element with ID ' + doraToShow + ' not found.');
                 }
             }
+            // New code to clear localStorage when the Dora assessment button is clicked
+            const startDoraAssessmentButton = document.getElementById('startDoraAssessmentButton');
+            startDoraAssessmentButton.addEventListener('click', () => {
+                localStorage.removeItem('DoraFinalVerdict');
+            });
         });
     </script>
 
@@ -914,16 +933,18 @@
                 if (element) {
                     element.style.display = "block";
                 } else {
-                    console.error('Element with ID ' + verejnaSpravaToShow + ' not found.');
+                    element.style.display = "none";
+                    //console.error('Element with ID ' + verejnaSpravaToShow + ' not found.');
                 }
             }
+            // New code to clear localStorage when the Dora assessment button is clicked
+            const startDoraAssessmentButton = document.getElementById('startDoraAssessmentButton');
+            startDoraAssessmentButton.addEventListener('click', () => {
+                localStorage.removeItem('VerejnaSpravaFinalVerdict');
+            });
         });
 
     </script>
-
-    <script src="chart-bar-ISO_Pril.js"></script>
-    <script src="chart-pie-NIS_ISO-srovn.js"></script>
-    <script src="chart-bar-NIS_ISO-srovn.js"></script>
 </body>
 
 </html>

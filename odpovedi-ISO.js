@@ -166,7 +166,7 @@ function calculateScores() {
     const results = {
         totalScores: totalScores,
         maxScore: maxScore,
-        percentage: (totalScores["Ano"] * 2 / maxScore) * 100,
+        percentage: (((totalScores["Ano"] * 2) + totalScores["Částečně"])/ maxScore) * 100,
         sections: sectionScores,
         // Procentuální hodnota otázek označených jako "Neaplikováno"
         notApplicablePercentage: (totalScores["Neaplikováno"] / totalQuestions) * 100
