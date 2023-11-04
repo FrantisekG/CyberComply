@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>CyberComply</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+
+    <!-- Custom styles for this template-->
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../landing.html">
+                <div class="sidebar-brand-icon">
+                    <i class="fas fa-shield-virus"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">CyberComply</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0" />
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="../landing.html">
+                    <i class="fa fa-home"></i>
+                    <span>Hlavní stránka</span></a>
+            </li>
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="../dashboard-NIS-ZKB.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Informační přehled</span></a>
+            </li>
+
+            <!-- Nav Item - Posouzení NIS2-->
+            <li class="nav-item">
+                <a class="nav-link" href="../nis2.html">
+                    <i class="fa fa-gavel"></i>
+                    <span>Směrnice NIS2</span></a>
+            </li>
+
+            <!-- Nav Item - Posouzení NIS2-->
+            <li class="nav-item">
+                <a class="nav-link" href="../nis2.html">
+                    <i class="fa fa-folder"></i>
+                    <span>Legislativa</span></a>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-target="#collapseUtilities" aria-expanded="true"
+                    aria-controls="collapseUtilities">
+                    <i class="fa fa-graduation-cap"></i>
+                    <span>FAQ</span>
+                </a>
+            </li>
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block" />
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+            <!-- Sidebar Message -->
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Hledat..."
+                                aria-label="Hledat" aria-describedby="basic-addon2" />
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2" />
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter"></span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">Alerts Center</h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for
+                                        your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Tomáš Novák</span>
+                                <img class="img-profile rounded-circle" src="../img/undraw_profile.svg" />
+                            </a>
+                    </ul>
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div id="dashboard-NIS-SOC2" class="container-fluid">
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Informační přehled - Dashboard NIS2 a SOC 2</h1>
+                        <a href="#" onclick="downloadPDF('dashboard-NIS-ZKB', 'NIS-ZKB-dashboard.pdf')"
+                            class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i>Stáhnout report</a>
+                    </div>
+                    <!-- Page Heading -->
+
+                    <!---*--------------------- KARTA NIS2 -------------------------------->
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- VERDIKT, Subjekt není v EU -> Nespadá pod NIS2 -->
+                            <div id="finalVerdictNe" style="display: none">
+
+                                <!-- Tělo karty -  Verdikt NIS2-->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Výsledek samoidentifikace vaší organizace
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p style="margin-bottom: 1.5rem">
+                                            Povinnosti vyplývající ze směrnice NIS 2 se vaší organizace
+                                            <b>netýkají</b>.
+                                        </p>
+                                        <div class="card-body text-center">
+                                            <i class="fa fa-times-circle text-danger"
+                                                style="font-size: 3rem; margin-bottom: 0.3em"></i>
+                                            <p class="font-weight-bold text-danger text-center"
+                                                style="font-size: 1.2rem; text-decoration: underline">
+                                                NESPADÁ!
+                                            </p>
+                                        </div>
+                                        <div class="alert alert-warning" role="alert">
+                                            NIS 2 se vztahuje jak na organizace se sídlem v EU, tak na
+                                            organizace mimo EU, které však nabízejí své služby v rámci
+                                            EU. Pro organizace mimo EU je vyžadováno, aby jmenovaly
+                                            zástupce v jednom z členských států EU, kde nabízejí své
+                                            služby. Organizace s přítomností v několika členských
+                                            státech EU podléhají jurisdikci toho členského státu, ve
+                                            kterém se nachází jejich hlavní sídlo. Pokud je
+                                            infrastruktura umístěna v zahraničí a český subjekt reálně
+                                            nemá možnost zavádět do ní bezpečnostní opatření, bude
+                                            potřeba mít dostatečným způsobem ošetřeny vztahy mezi
+                                            povinným subjektem a reálným správcem systému.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert alert-info">
+                                    <b>Ačkoliv vaše organizace v současnosti nepůsobí na trhu EU, můžete níže nalézt
+                                        orientační
+                                        výsledek plnění bezpečnostních požadavků směrnice NIS 2.</b>
+                                </div>
+                                <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 ---------------------------------------->
+                                <!-- NIS2 srovnávač - Pie chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Celková míra plnění bezpečnostních požadavků stanovených NIS 2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-body">
+                                            <div class="chart-pie pt-4 pb-2">
+                                                <canvas class="PieChartNISSOC2srv"></canvas>
+                                            </div>
+                                            <div class="mt-4 text-center small">
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #36b9cc;"></i> Soulad
+                                                </span>
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #b0e3eb;"></i> Nesoulad
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div style="margin-top: 1.5rem;">
+                                                Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí
+                                                v
+                                                dotazníku, nereflektuje požadavky vybrané normy.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- NIS 2 Srovnávač - Bar Chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS
+                                            2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-bar">
+                                            <canvas class="myBarChartNISSOC2Bar"></canvas>
+                                        </div>
+                                        <hr>
+                                        <!-- Containers for messages -->
+                                        <div id="SOC2warningContainer1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /OSTATNÍ VERDIKT ------------------------------------------------------------- -->
+
+                            <!-- VERDIKT, Subjekt nespadá pod NIS2 -->
+                            <div id="finalVerdictNe2" style="display: none">
+
+                                <!-- Tělo karty -  Verdikt NIS2-->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Výsledek samoidentifikace vaší organizace
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p style="margin-bottom: 1.5rem">
+                                            Povinnosti vyplývající ze směrnice NIS 2 se vaší organizace
+                                            <b>netýkají</b>.
+                                        </p>
+                                        <div class="card-body text-center">
+                                            <i class="fa fa-times-circle text-danger"
+                                                style="font-size: 3rem; margin-bottom: 0.3em"></i>
+                                            <p class="font-weight-bold text-danger text-center"
+                                                style="font-size: 1.2rem; text-decoration: underline">
+                                                NESPADÁ!
+                                            </p>
+                                        </div>
+                                        <div class="alert alert-warning" role="alert">
+                                            Směrnice NIS 2 umožňuje Národnímu úřadu pro kybernetickou a
+                                            informační bezpečnost (NÚKIB) zařadit vaši organizaci do
+                                            kategorie "režimu nižších povinností" nebo "režimu vyšších povinností",
+                                            pokud
+                                            vyhodnotí, že poskytujete služby jejichž narušení by mohlo
+                                            mít významný dopad na společnost.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert alert-info">
+                                    <b>Ačkoliv vaše organizace by v současnosti neměla spadat pod směrnici NIS 2, můžete
+                                        níže nalézt
+                                        orientační
+                                        výsledek plnění bezpečnostních požadavků, která tato směrnice stanovuje.</b>
+                                </div>
+                                <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 ---------------------------------------->
+                                <!-- NIS2 srovnávač - Pie chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Celková míra plnění bezpečnostních požadavků stanovených NIS 2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-body">
+                                            <div class="chart-pie pt-4 pb-2">
+                                                <canvas class="PieChartNISSOC2srv"></canvas>
+                                            </div>
+                                            <div class="mt-4 text-center small">
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #36b9cc;"></i> Soulad
+                                                </span>
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #b0e3eb;"></i> Nesoulad
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div style="margin-top: 1.5rem;">
+                                                Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí
+                                                v
+                                                dotazníku, nereflektuje požadavky vybrané normy.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- NIS 2 Srovnávač - Bar Chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS
+                                            2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-bar">
+                                            <canvas class="myBarChartNISSOC2Bar"></canvas>
+                                        </div>
+                                        <hr>
+                                        <!-- Containers for messages -->
+                                        <div id="SOC2warningContainer2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /VERDIKT ------------------------------------------------------------- -->
+
+                            <!-- VERDIKT2, Subjekt je již regulovaný -> Spadá -->
+
+                            <div id="finalVerdictAno" style="display: none">
+
+                                <!-- Tělo karty -  Verdikt NIS2-->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Výsledek samoidentifikace vaší organizace
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p style="margin-bottom: 1.5rem">
+                                            Povinnosti vyplývající ze směrnice NIS 2 se vaší organizace
+                                            <b>týkají</b>.
+                                        </p>
+                                        <!-- SPADÁ Fajfka-->
+                                        <div class="card-body text-center">
+                                            <i class="fa fa-check-circle text-success" style="
+                                                        font-size: 3rem;
+                                                        margin-bottom: 0.3em;
+                                                        color: green !important;
+                                                      "></i>
+                                            <p class="font-weight-bold text-success text-center" style="
+                                                        font-size: 1.2rem;
+                                                        text-decoration: underline;
+                                                        color: green !important;
+                                                      ">
+                                                SPADÁ!
+                                            </p>
+                                        </div>
+                                        <!-- /SPADÁ Fajfka-->
+                                    </div>
+                                </div>
+                                <div class="alert alert-info">
+                                    <b>Ačkoliv je vaše organizace již regulována, můžete níže nalézt orientační
+                                        výsledek plnění bezpečnostních požadavků směrnice NIS 2.</b>
+                                </div>
+                                <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 ---------------------------------------->
+                                <!-- NIS2 srovnávač - Pie chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Celková míra plnění bezpečnostních požadavků stanovených NIS 2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-body">
+                                            <div class="chart-pie pt-4 pb-2">
+                                                <canvas class="PieChartNISsrovnavac"></canvas>
+                                            </div>
+                                            <div class="mt-4 text-center small">
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #36b9cc;"></i> Soulad
+                                                </span>
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #b0e3eb;"></i> Nesoulad
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div style="margin-top: 1.5rem;">
+                                                Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí
+                                                v
+                                                dotazníku, nereflektuje požadavky vybrané normy.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- NIS 2 Srovnávač - Bar Chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS
+                                            2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-bar">
+                                            <canvas class="myBarChartNISSOC2Bar"></canvas>
+                                        </div>
+                                        <hr>
+                                        <!-- Containers for messages -->
+                                        <div id="SOC2warningContainer3"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-------------------------------- /VERDIKT2 ------------------------------>
+
+                            <!-- VERDIKT - ZÁKLADNÍ subjekt -> Spadá -->
+                            <div id="finalVerdictAnoZakladni" style="display: none">
+                                <!-- Tělo karty - Spadá organizace pod NIS2? -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Výsledek samoidentifikace vaší organizace
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p style="margin-bottom: 1.5rem">
+                                            Povinnosti vyplývající ze směrnice NIS 2 se vaší
+                                            organizace <b>týkají</b>.
+                                        </p>
+                                        <!-- SPADÁ Fajfka-->
+                                        <div class="card-body text-center">
+                                            <i class="fa fa-check-circle text-success" style="
+                                                            font-size: 3rem;
+                                                            margin-bottom: 0.3em;
+                                                            color: green !important;
+                                                          "></i>
+                                            <p class="font-weight-bold text-success text-center" style="
+                                                            font-size: 1.2rem;
+                                                            text-decoration: underline;
+                                                            color: green !important;
+                                                          ">
+                                                SPADÁ!
+                                            </p>
+                                        </div>
+                                        <div class="alert alert-warning" id="dora" style="display: none" role="alert">
+                                            Sektor, ve kterém se vaše organizace nachází bude
+                                            regulován
+                                            <a
+                                                href="https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32022R2554">nařízením
+                                                DORA</a>. Nařízení DORA tedy podrobně konkretizuje požadavky na
+                                            digitální odolnost dotčených subjektů a tím de facto
+                                            naplňuje rámcové požadavky směrnice NIS 2. Dohledovým
+                                            orgánem je ČNB.
+                                        </div>
+                                        <div class="alert alert-warning" id="verejnasprava" style="display: none"
+                                            role="alert">
+                                            Směrnice NIS2 povinně vyžaduje regulaci centrální
+                                            veřejné správy. Regionální a lokální autority (tzn. obce
+                                            a kraje) mohou být regulovány, pokud to státy považují
+                                            za vhodné. Nově připravovaný zákon počítá s tím, že bude
+                                            zachována regulace krajů (které jsou dnes regulovány
+                                            jako významné informační systémy). Regulace
+                                            <a href="https://cs.wikipedia.org/wiki/Obec_s_pov%C4%9B%C5%99en%C3%BDm_obecn%C3%ADm_%C3%BA%C5%99adem"
+                                                target="_blank" rel="noopener noreferrer">jedničkových a
+                                                dvojkových
+                                                obcí</a>
+                                            v tuto chvíli plánována není. Do regulace spadají také
+                                            <b>vysoké školy</b>.
+                                        </div>
+                                        <!-- /SPADÁ Fajfka-->
+                                        <!-- MEZERA-->
+
+                                        <div class="card-body">
+                                            <hr>
+                                            <p style="margin-bottom: 1.5rem">
+                                                Vaše organizace se nachází v kategorii subjektů
+                                                <b>režim vyšších povinností</b>.
+                                            </p>
+                                            <!-- KATEGORIE Základní-->
+                                            <div class="card-body text-center">
+                                                <i class="fa fa-exclamation-triangle text-warning"
+                                                    style="font-size: 3rem; margin-bottom: 0.3em"></i>
+                                                <p class="font-weight-bold text-warning text-center"
+                                                    style="font-size: 1.2rem; text-decoration: underline">
+                                                    REŽIM VYŠŠÍCH POVINNOSTÍ
+                                                </p>
+                                            </div>
+                                            <!-- /KATEGORIE Základní -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 ---------------------------------------->
+                                <!-- NIS2 srovnávač - Pie chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Celková míra plnění bezpečnostních požadavků stanovených NIS 2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-body">
+                                            <div class="chart-pie pt-4 pb-2">
+                                                <canvas class="PieChartNISSOC2srv"></canvas>
+                                            </div>
+                                            <div class="mt-4 text-center small">
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #36b9cc;"></i> Soulad
+                                                </span>
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #b0e3eb;"></i> Nesoulad
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div style="margin-top: 1.5rem;">
+                                                Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí
+                                                v
+                                                dotazníku, nereflektuje požadavky vybrané normy.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- NIS 2 Srovnávač - Bar Chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS
+                                            2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-bar">
+                                            <canvas class="myBarChartNISSOC2Bar"></canvas>
+                                        </div>
+                                        <hr>
+                                        <!-- Containers for messages -->
+                                        <div id="SOC2warningContainer4"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- VERDIKT - DŮLEŽITÝ subjekt -->
+                            <div id="finalVerdictAnoDulezity" style="display: none">
+                                <!-- Tělo karty - Spadá organizace pod NIS2? -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Výsledek samoidentifikace vaší organizace
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p style="margin-bottom: 1.5rem">
+                                            Povinnosti vyplývající ze směrnice NIS 2 se vaší
+                                            organizace <b>týkají</b>.
+                                        </p>
+                                        <!-- SPADÁ Fajfka-->
+                                        <div class="card-body text-center">
+                                            <i class="fa fa-check-circle text-success" style="
+                                                            font-size: 3rem;
+                                                            margin-bottom: 0.3em;
+                                                            color: green !important;
+                                                          "></i>
+                                            <p class="font-weight-bold text-success text-center" style="
+                                                            font-size: 1.2rem;
+                                                            text-decoration: underline;
+                                                            color: green !important;
+                                                          ">
+                                                SPADÁ!
+                                            </p>
+                                        </div>
+                                        <div class="alert alert-warning" id="dora" style="display: none" role="alert">
+                                            Sektor, ve kterém se vaše organizace nachází bude
+                                            regulován
+                                            <a
+                                                href="https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32022R2554">nařízením
+                                                DORA</a>. Nařízení DORA tedy podrobně konkretizuje požadavky na
+                                            digitální odolnost dotčených subjektů a tím de facto
+                                            naplňuje rámcové požadavky směrnice NIS 2. Dohledovým
+                                            orgánem je ČNB.
+                                        </div>
+                                        <!-- /SPADÁ Fajfka-->
+                                    </div>
+
+                                    <div class="card-body">
+                                        <hr>
+                                        <p style="margin-bottom: 1.5rem">
+                                            Vaše organizace se nachází v kategorii subjektů
+                                            <b>režim nižších povinností</b>.
+                                        </p>
+                                        <!-- KATEGORIE Důležitý-->
+                                        <div class="card-body text-center">
+                                            <i class="fa fa-exclamation-triangle text-info"
+                                                style="font-size: 3rem; margin-bottom: 0.3em"></i>
+                                            <p class="font-weight-bold text-info text-center"
+                                                style="font-size: 1.2rem; text-decoration: underline">
+                                                REŽIM NIŽŠÍCH POVINNOSTÍ
+                                            </p>
+                                        </div>
+                                        <div class="alert alert-warning" role="alert">
+                                            Směrnice NIS 2 umožňuje Národnímu úřadu pro
+                                            kybernetickou a informační bezpečnost (NÚKIB) zařadit
+                                            vaši organizaci do kategorie "základní subjekt", pokud
+                                            vyhodnotí, že poskytujete služby jejichž narušení by
+                                            mohlo mít významný dopad na společnost.
+                                        </div>
+                                        <!-- /KATEGORIE Základní -->
+                                    </div>
+                                </div>
+                                <!---------------------------------------------- SLOUP SROVNÁVAČ NIS 2 ---------------------------------------->
+                                <!-- NIS2 srovnávač - Pie chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Celková míra plnění bezpečnostních požadavků stanovených NIS 2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-body">
+                                            <div class="chart-pie pt-4 pb-2">
+                                                <canvas class="PieChartNISSOC2srv"></canvas>
+                                            </div>
+                                            <div class="mt-4 text-center small">
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #36b9cc;"></i> Soulad
+                                                </span>
+                                                <span class="mr-2">
+                                                    <i class="fas fa-circle" style="color: #b0e3eb;"></i> Nesoulad
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div style="margin-top: 1.5rem;">
+                                                Graf shrnuje celkovou míru plnění (souladu) bezpečnostních požadavků
+                                                stanových ve směrnici NIS 2. Výsledek je sestaven z vašich odpovědí
+                                                v
+                                                dotazníku, nereflektuje požadavky vybrané normy.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- NIS 2 Srovnávač - Bar Chart -->
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">
+                                            Plnění jednotlivých bezpečnostních požadavků stanovených ve směrnici NIS
+                                            2
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-bar">
+                                            <canvas class="myBarChartNISSOC2Bar"></canvas>
+                                        </div>
+                                        <hr>
+                                        <!-- Containers for messages -->
+                                        <div id="SOC2warningContainer5"></div>
+                                    </div>
+                                </div>
+                                <!-- /Karty KATEGORIE -->
+                            </div>
+                        </div>
+                        <!----------------------- /KONEC VERDIKT DŮLEŽITÝ ---------------------------------------->
+                        <!-- Sloupec pro první Piechart -->
+                        <div class="col-md-6">
+                            <!-- První Piechart -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        Celkové plnění bezpečnostních požadavků stanovených standardem SOC 2
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-pie pt-4 pb-2">
+                                        <canvas id="PieChartSOC2"></canvas>
+                                    </div>
+                                    <div class="mt-4 text-center small">
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle text-primary"></i> Soulad
+                                        </span>
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle" style="color: #d3dcf7;"></i> Nesoulad
+                                        </span>
+                                    </div>
+                                    <hr>
+                                    <div style="margin-top: 1.5rem;">
+                                        Na základě vyhodnocených odpovědí z dotazníku je vaše organizace z <span
+                                            id="zavedeno" style="font-weight:bold">0</span> <b>%</b>
+                                        v <b>souladu</b> s požadavky standardu SOC 2. Do
+                                        plného souladu Vám <b>chybí</b>
+                                        <span id="nezavedeno" style="font-weight:bold">0</span> <b>%</b>.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Bar Chart -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Míra plnění požadovaných
+                                        bezpečnostních požadavků SOC 2 </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-bar">
+                                        <canvas id="SOC2BarChart"></canvas>
+                                    </div>
+                                    <hr>
+                                    <div id="otazkypod50"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                        <p><b>Dosažené výsledky jsou čistě orientační a návodné. Neslouží jako předcertifikační
+                                příprava.</b></p>
+
+                        Obsah směrnice NIS 2 stanovuje minimální požadavky a její
+                        platnost neznamená, že musíte ihned začít plnit všechny
+                        povinnosti, které přináší. NÚKIB v současnosti pracuje na
+                        nové podobě zákona č. 181/2014 Sb., o kybernetické
+                        bezpečnosti, který konkrétní požadavky na národní dále
+                        rozvádí. Nový zákon by podle transpoziční lhůty měl vejít v
+                        platnost v říjnu 2024. Nově regulovaným subjektům bude dána
+                        přechodná lhůta jednoho roku pro zahájení plnění povinností.
+                    </div>
+                </div>
+            </div>
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; František Grossmann 2023</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    </div>
+    <!-- /.container-fluid -->
+    <!-- Footer -->
+    </div>
+    <!-- End of Main Content -->
+
+
+    <!-- End of Footer -->
+    </div>
+    <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Knihovny pro stahování reportu z dashboardu -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Pomocný skript pro ukládání otázek-->
+    <script src="SOC2-otazky.js"></script>
+
+    <!-- Chart.js plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <script src="../progress_bar.js"></script>
+
+    <script src="../progress-bar-ISO.js"></script>
+
+    <script src="odpovedi-SOC2.js"></script>
+
+    <!-- Skripty NIS2-ZKB srovnávač-->
+    <script src="chart-pie-NIS_SOC2-srovn.js"></script>
+    <script src="chart-bar-NIS_SOC2-srovn.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="chart-pie-SOC2.js"></script>
+
+    <!-- Bar chart-->
+    <script src="chart-bar-SOC2.js"></script>
+
+    <!-- Skript na stažení dashboardu-->
+    <script src="../downloadPDF.js"></script>
+
+
+    <script>
+        const verdictToShow = localStorage.getItem('NIS2FinalVerdict');
+        if (verdictToShow) {
+            document.getElementById(verdictToShow).style.display = "block";
+        }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const verejnaSpravaToShow = localStorage.getItem('VerejnaSpravaFinalVerdict');
+            console.log('VerejnaSpravaFinalVerdict:', verejnaSpravaToShow);
+            if (verejnaSpravaToShow) {
+                const element = document.getElementById(verejnaSpravaToShow);
+                console.log('Element:', element);
+                if (element) {
+                    element.style.display = "block";
+                } else {
+                    console.error('Element with ID ' + verejnaSpravaToShow + ' not found.');
+                } // asi by tu měl být else at není displayed?
+            }
+        });
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const doraToShow = localStorage.getItem('DoraFinalVerdict');
+            console.log('DoraFinalVerdict:', doraToShow);
+            if (doraToShow) {
+                const element = document.getElementById(doraToShow);
+                console.log('Element:', element);
+                if (element) {
+                    element.style.display = "block";
+                } else {
+                    console.error('Element with ID ' + doraToShow + ' not found.');
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

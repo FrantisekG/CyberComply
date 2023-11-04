@@ -2,38 +2,38 @@ const questionnaireData = {
     "sections": [
         {
             "id": "section1",
-            "title": "1. Bezpečnost (Common criteria)",
+            "title": "Kritérium: Bezpečnost (Common criteria)",
             "subsections": [
                 {
                     "id": "CC1.1",
                     "title": "Kontrola prostředí (CC1.1)",
                     "questions": [
                         {
-                            "id": "CC1.1-1",
+                            "id": "CC1.1",
                             "text": "Organizace prokazuje závazek k integritě a etickým hodnotám?",
                             "comment": "Je vytvořen etický kodex, který je sdělován všem zaměstnancům a jeho dodržování je pravidelně revidováno",
                             "response": null
                         },
                         {
-                            "id": "CC1.1-2",
+                            "id": "CC1.2",
                             "text": "Představenstvo prokazuje nezávislost na vedení a vykonává dohled nad vývojem a výkonem vnitřní kontroly?",
                             "comment": "",
                             "response": null
                         },
                         {
-                            "id": "CC1.1-3",
+                            "id": "CC1.3",
                             "text": "Stanovuje vedení společnosti, pod dohledem představentsva, struktury, hlášení a odpovídající pravomoci a zodpovědnosti pro dosahování cílů?",
                             "comment": "",
                             "response": null
                         },
                         {
-                            "id": "CC1.1-4",
+                            "id": "CC1.4",
                             "text": "Prosazuje organizace metody pro získání, rozvíjení a udržení kompetentních osob?",
                             "comment": "Např. formou školení stávajícíh zaměstnanců",
                             "response": null
                         },
                         {
-                            "id": "CC1.1-5",
+                            "id": "CC1.5",
                             "text": "Vede organizace jednotlivce k odpovědnosti za jejich povinnosti v oblasti vnitřní kontroly?",
                             "comment": "",
                             "response": null
@@ -41,35 +41,35 @@ const questionnaireData = {
                     ]
                 },
                 {
-                    "id": "CC2.1",
-                    "title": "Komunikace a informace (CC2.1)",
+                    "id": "CC2",
+                    "title": "Komunikace a informace (CC2)",
                     "questions": [
                         {
-                            "id": "CC2.1-1",
+                            "id": "CC2.1",
                             "text": "Má organizace zavedeny postupy pro zjišťování a získávání potřebných informací na podporu fungování vnitřní kontroly?",
                             "comment": "To může zahrnovat postupy pro shromažďování a ověřování finančních údajů nebo mechanismy pro získávání zpětné vazby o účinnosti vnitřní kontroly.",
                             "response": null
                         },
                         {
-                            "id": "CC2.2-2",
+                            "id": "CC2.2",
                             "text": "Existuje formální komunikační proces, který zajišťuje, aby si všichni zaměstnanci byli vědomi svých rolí a povinností v oblasti vnitřní kontroly?",
                             "comment": "Např. pravidelná školení, sdělení nebo příspěvky na intranetu, které informují zaměstnance o postupech vnitřní kontroly a jejich konkrétních povinnostech.",
                             "response": null
                         },
                         {
-                            "id": "CC2.2-3",
+                            "id": "CC2.3",
                             "text": "Jsou zavedeny kanály pro komunikaci s externími stranami, jako jsou zákazníci, regulační orgány a dodavatelé, o otázkách ovlivňujících fungování vnitřní kontroly?",
                             "comment": "Např. struktury pro podávání zpráv za účelem dodržování právních předpisů nebo mechanismy zpětné vazby pro zákazníky, kteří mohou hlásit obavy o bezpečnost.",
                             "response": null
                         },
                         {
-                            "id": "CC2.2-4",
+                            "id": "CC2.4",
                             "text": "Existuje mechanismus pro rychlou identifikaci, vyhodnocení a sdělení nedostatků vnitřní kontroly příslušným stranám za účelem přijetí nápravných opatření?",
                             "comment": "Může se jednat například o systém hlášení incidentů.",
                             "response": null
                         },
                         {
-                            "id": "CC2.2-5",
+                            "id": "CC2.5",
                             "text": "Provádí vaše organizace pravidelnou revizi a úpravu svých interních kontrolních komunikačních a informačních procesů v reakci na změny v podnikatelském a provozním prostředí?",
                             "comment": "Především po zavedení významných změn, nových technologií atd.",
                             "response": null
@@ -77,80 +77,31 @@ const questionnaireData = {
                     ]
                 },
                 {
-                    "id": "CC3.1",
-                    "title": "Posuzování rizik (CC3.1)",
+                    "id": "CC3",
+                    "title": "Posuzování rizik (CC3)",
                     "questions": [
                         {
-                            "id": "CC3.1-1",
+                            "id": "CC3.1",
                             "text": "Definuje vaše organizace jasně cíle na různých úrovních, aby bylo možné identifikovat a posoudit rizika související s cíli?",
                             "comment": "Cíle by měly být konkrétní, měřitelné, dosažitelné, relevantní a časově omezené (SMART), aby se usnadnilo účinné hodnocení rizik.",
                             "response": null
                         },
                         {
-                            "id": "CC3.1-2",
-                            "text": "Dochází k identifikaci, evidenci a hodnocení rizik včetně jejich relevantních hrozeb, zranitelnosti a dopadů",
-                            "comment": "Včetně rizik spojených s dodavateli, více v příloze 2 a 3 VKB",
+                            "id": "CC3.2",
+                            "text": "Jsou zavedeny postupy pro identifikaci rizik, které mohou ohrozit organizaci a její dosažení cílů?",
+                            "comment": "To může zahrnovat pravidelné strategické revize, analýzy SWOT nebo sledování trendů v odvětví.",
                             "response": null
                         },
                         {
-                            "id": "CC3.1-3",
-                            "text": "Dochází k identifikaci, evidenci a hodnocení rizik včetně jejich relevantních hrozeb, zranitelnosti a dopadů",
-                            "comment": "Včetně rizik spojených s dodavateli, více v příloze 2 a 3 VKB",
-                            "response": null
-                        },
-                        {
-                            "id": "CC3.1-4",
-                            "text": "Jsou bezpečnostní opatřená zaváděna v souladu s RTP",
-                            "comment": "",
-                            "response": null
-                        },
-                    ]
-                },
-
-                {
-                    "id": "§6",
-                    "title": "Organizační bezpečnost (§ 6)",
-                    "questions": [
-                        {
-                            "id": "6a",
-                            "text": "Je vytvořena politika organizační bezpečnosti?",
-                            "comment": "Příloha 5 1.3",
-                            "response": null
-                        },
-                        {
-                            "id": "6b",
-                            "text": "Je kybernetická bezpečnost součástí ostatních procesů organizace?",
+                            "id": "CC3.3",
+                            "text": "Je zohledňován potenciál dopad podvodu na organizaci při hodnocení rizik?",
                             "comment": "",
                             "response": null
                         },
                         {
-                            "id": "6c",
-                            "text": "Jsou zajištěny dostatečné zdroje na kybernetickou bezpečnost",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "6d",
-                            "text": "Je zajištěna mlčenlivost administrátorů a osob zastávajících bezpečnostní role",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "6e",
-                            "text": "Mají osoby zastávající bezpečnostní role dostatečné pravomoci",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "6f",
-                            "text": "Je zajištěna zastupitelnost bezpečnostních rolí",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "6g",
-                            "text": "Je určeno složení výboru KB, včetně jeho práv a povinnosti a výbor pro KB je ustanoven a vykonává svou činnosti",
-                            "comment": "",
+                            "id": "CC3.4",
+                            "text": "Jsou zavedeny procesy pro identifikaci a vyhodnocování změn ve vnějším a vnitřním prostředí, které by mohly významně ovlivnit systém vnitřní kontroly?",
+                            "comment": "Např. sledování regulačních předpisů nebo interních změn jako restrukturalizace.",
                             "response": null
                         },
                     ]
@@ -161,143 +112,101 @@ const questionnaireData = {
         {
 
             "id": "section2",
-            "title": "Organizační opatření - Řízení dodavatelů a lidské zdroj",
+            "title": "Kritérium: Bezpečnost (Common criteria)",
             "subsections": [
                 {
-                    "id": "§ 7",
-                    "title": "Bezpečnostní role (§ 7)",
+                    "id": "CC4",
+                    "title": "Monitoring aktivit (CC4)",
                     "questions": [
                         {
-                            "id": "7a",
-                            "text": "Je určen manažer KB a zároveň splňuje požadavky stanoveny ve VKB",
-                            "comment": "Popis je uveden v příloze 6, tabulce 2",
+                            "id": "CC4.1",
+                            "text": "Provádí vaše organizace pravidelná hodnocení, aby zajistila účinnost vnitřních kontrol?",
+                            "comment": "Např. formou interních auditů a systémů průběžného monitorování.",
                             "response": null
                         },
                         {
-                            "id": "7b",
-                            "text": "Je určen architekt KB, který splňuje požadavky VKB",
-                            "comment": "Popis je uveden v příloze 6, tabulce 3",
-                            "response": null
-                        },
-                        {
-                            "id": "7c",
-                            "text": "Je určen auditor KB, který splňuje požadavky VKB",
-                            "comment": "Popis je uveden v příloze 6, tabulce 4",
+                            "id": "CC4.2",
+                            "text": "Jsou nedostatky ve vnitřní kontrole neprodleně sdělovány osobám odpovědným za nápravná opatření, včetně vrcholového vedení a představenstva?",
+                            "comment": "Může se jednat o systémy hlášení incidentů a další obdobné procesy.",
                             "response": null
                         },
                     ]
                 },
 
                 {
-                    "id": "§ 8",
-                    "title": "Řízení dodavatelů (§ 8)",
+                    "id": "CC5",
+                    "title": "Kontrolní činnost (CC5)",
                     "questions": [
                         {
-                            "id": "8a",
-                            "text": "Je vytvořena politika řízení dodavatelů včetně pravidel",
-                            "comment": "Popis je uveden v příloze 1.4",
+                            "id": "CC5.1",
+                            "text": "Zavedla vaše organizace kontrolní činnosti, které jsou nezbytné pro zmírnění rizik a dosažení cílů?",
+                            "comment": "Hledejte konkrétní kontrolní mechanismy, jako jsou kontroly přístupu, schvalování, ověřování, odsouhlasování a oddělení povinností.",
                             "response": null
                         },
                         {
-                            "id": "8b",
-                            "text": "Jsou významní dodavatelé evidování a jsou prokazatelně informování dle VKB",
-                            "comment": "",
+                            "id": "CC5.2",
+                            "text": "Jsou zavedeny obecné kontrolní činnosti pro řízení technologií a podporu dosahování cílů?",
+                            "comment": "Zvažte kontroly, jako je zabezpečení sítě, zálohování dat a plánování obnovy po havárii.",
                             "response": null
                         },
                         {
-                            "id": "8c",
-                            "text": "Jsou dodavatelé seznamování s pravidly a je požadováno plnění těchto pravidel",
-                            "comment": "Např. jsou poučování o svých povinnostech a odpovědnost",
-                            "response": null
-                        },
-                        {
-                            "id": "8d",
-                            "text": "Je ve smlouvě s významnými dodavateli zohledněna příloha č. 7 a jsou smlouvy pravidelně přezkoumávany",
-                            "comment": "Více v příloze 7",
-                            "response": null
-                        },
-                        {
-                            "id": "8e",
-                            "text": "Probíhá předsmluvní hodnocení rizik",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "8f",
-                            "text": "Je určena smluvní odpovědnost za zavedení bezpečnostních opatření a jejich",
-                            "comment": "Je kontrolováno dodržování těchto požadavků.",
-                            "response": null
-                        },
-                        {
-                            "id": "8g",
-                            "text": "Je reagováno na nedostatky při řízení dodavatelů a jsou tyto nedostatky odstraňovány",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "8h",
-                            "text": "Jsou stanoveným způsobem institucím podle § 34 hlášeny aktuální kontaktní údaje",
-                            "comment": "",
+                            "id": "CC5.3",
+                            "text": "Jsou kontrolní činnosti prováděny prostřednictvím dobře zdokumentovaných zásad a postupů, které jsou sdělovány příslušným zaměstnancům a jsou pro ně srozumitelné?",
+                            "comment": "Zkontrolujte, zda existují a jsou šířeny jasné politické dokumenty a procesní pokyny.",
                             "response": null
                         },
                     ]
                 },
                 {
-                    "id": "§ 9",
-                    "title": "Bezpečnost lidských zdrojů (§ 9)",
+                    "id": "CC6",
+                    "title": "Řízení fyzického a logického přístupu (CC6)",
                     "questions": [
                         {
-                            "id": "9a",
-                            "text": "Je vytvořena politika řízení lidských zdrojů?",
+                            "id": "CC6.1",
+                            "text": "Je účinně implementováno zabezpečení logického přístupu k identifikaci, ověřování a omezování přístupu uživatelů k systémovým komponentám?",
+                            "comment": "Zaměřte se na software, infrastrukturu a architekturu, které podporují identifikaci, ověřování a omezování přístupu uživatelů.",
+                            "response": null
+                        },
+                        {
+                            "id": "CC6.2",
+                            "text": "Jsou noví uživatelé před udělením přístupu do systému autorizováni, v případě ukončení jsou ze systému odebráni?",
                             "comment": "",
                             "response": null
                         },
                         {
-                            "id": "9b",
-                            "text": "Existuje plán rozvoje bezpečenostního povědomí s určenými odpovědnými osobami za jeho realizaci a hodnocení jeho účinnosti?",
-                            "comment": "",
+                            "id": "CC6.3",
+                            "text": "Jsou uživatelé při přístupu k systémovým komponentám důsledně identifikováni a ověřováni?",
+                            "comment": "To by se mělo týkat jak interních, tak externích uživatelů, kteří přistupují k infrastruktuře, softwaru a datům.",
                             "response": null
                         },
                         {
-                            "id": "9c",
-                            "text": "Obsahuje plán všechny mandatorní školení podle VKB?",
-                            "comment": "Jsou vedeny přehledy absolvovaných školení?",
+                            "id": "CC6.4",
+                            "text": "Je přístup ke zdrojům IT povolen, upraven nebo odebrán na základě rolí, odpovědností nebo návrhu systému?",
+                            "comment": "Změny by měly být v souladu s požadavky na zabezpečení, dostupnost a důvěrnost.",
                             "response": null
                         },
                         {
-                            "id": "9d",
-                            "text": "Jsou prováděna vstupní a pravidelná školení administrátorů, uživatelů a osob zástavajících bezpečnostní role?",
-                            "comment": "Probíhá ověřování získaných znalostí?",
+                            "id": "CC6.5",
+                            "text": "Je fyzický přístup do prostor, v nichž je systém umístěn, omezen pouze na oprávněné pracovníky?",
+                            "comment": "Zahrnuje datová centra, úložiště záložních médií a další citlivá místa.",
                             "response": null
                         },
                         {
-                            "id": "9e",
-                            "text": "Je vytvořena politika bezpečného chování uživatelů?",
-                            "comment": "Např. bezpečné nakládání s aktivy, použití přístupových hesel, bezpečené chování na sociálních sítích. Více v příloze 5 1.8.",
+                            "id": "CC6.6",
+                            "text": "Jsou zavedena bezpečnostní opatření logického přístupu na ochranu před vnějšími hrozbami?",
+                            "comment": "Především hrozby pocházející z vnějšího prostředí systému.",
                             "response": null
                         },
                         {
-                            "id": "9f",
-                            "text": "Účastní se osoby zastávající bezpečností role odborných školení v souladu s plánem rozvoje bezpečnostního povědomí?",
-                            "comment": "",
+                            "id": "CC6.7",
+                            "text": "Je přenos, pohyb a odstranění informací omezeno na oprávněné uživatele a chráněno?",
+                            "comment": "Měla by být zajištěna ochrana při přenosu, přemísťování nebo odstraňování.",
                             "response": null
                         },
                         {
-                            "id": "9g",
-                            "text": "Je kontrolováno dodržování bezpečnostních politik?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "9h",
-                            "text": "Je zajištěno předání odpovědností v případě ukončení smluvního vztahu a řešení v případě porušení bezpečnostních pravidel?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "9i",
-                            "text": "Jsou zaměstnanci upozorňování na nové hrozby a trendy v oblasti kybernetické bezpečnosti?",
-                            "comment": "",
+                            "id": "CC6.8",
+                            "text": "Jsou zavedeny kontrolní mechanismy, které zabraňují zavedení neoprávněného nebo škodlivého softwaru nebo jej odhalují a reagují na něj?",
+                            "comment": "Zaměřte se na mechanismy detekce a reakce na bezpečnostní hrozby související se škodlivým softwarem.",
                             "response": null
                         },
                     ]
@@ -306,155 +215,71 @@ const questionnaireData = {
         },
         {
             "id": "section3",
-            "title": "Organizační opatření - Řízení provozu, přístupů a změn",
+            "title": "Kritérium: Bezpečnost (Common criteria)",
             "subsections": [
                 {
-                    "id": "§ 10",
-                    "title": "Řízení provozu a komunikací (§ 10)",
+                    "id": "CC7",
+                    "title": "Provoz informačního systému (CC7)",
                     "questions": [
                         {
-                            "id": "10a",
-                            "text": "Je vytvořena politika řízení provozu a komunikací včetně pravidel a postuů dle § 10 odst. 1) VKB?",
-                            "comment": "Je tato politika dodržována a aktualizována? Více informací v příloze 5.",
+                            "id": "CC7.1",
+                            "text": "Používá váš subjekt postupy detekce a monitorování k identifikaci nových zranitelností a náchylností vyplývajících ze změn konfigurace nebo nově objevených zranitelností?",
+                            "comment": "Zaměřte se na mechanismy včasné detekce a reakce na provozní anomálie, např. IDS, IPS",
                             "response": null
                         },
                         {
-                            "id": "10b",
-                            "text": "Je vytvořena politika zálohování a obnovy a dlouhodobého ukládání?",
-                            "comment": "Více informací naleznete v příloze 5 1.9.",
+                            "id": "CC7.2",
+                            "text": "Monitoruje váš subjekt systémové komponenty a operace, zda nedochází k anomáliím naznačujícím bezpečnostní incidenty, přírodní katastrofy nebo chyby?",
+                            "comment": "Využívejte nástroje jako SIEM (Security Information and Event Management), IDS (Intrusion Detection System) a software pro detekci anomálií k monitorování a analýze neobvyklých aktivit a hledání potenciálních bezpečnostních událostí.",
                             "response": null
                         },
                         {
-                            "id": "10c",
-                            "text": "Je vytvořena politika bezpečeného předávání a výměny informací?",
-                            "comment": "Více informací naleznete v příloze 5 1.10.",
+                            "id": "CC7.3",
+                            "text": "Vyhodnocuje váš subjekt bezpečnostní události, aby zjistil, zda mohou vést nebo vedly k nesplnění cílů, a přijímá příslušná opatření?",
+                            "comment": "Využívejte protokoly pro reakci na incidenty a nástroje, jako je digitální forenzní software a platformy pro vyhodnocování hrozeb, k vyhodnocování bezpečnostních událostí.",
                             "response": null
                         },
                         {
-                            "id": "10d",
-                            "text": "Je vytvořena politika řízení technických zranitelností?",
-                            "comment": "Více informací naleznete v příloze 5 1.11.",
+                            "id": "CC7.4",
+                            "text": "Má váš subjekt definovaný program reakce na incidenty, který je aktivně prováděn za účelem porozumění bezpečnostním incidentům, jejich řešení, nápravy a komunikace o nich?",
+                            "comment": "Zajistěte, aby program zahrnoval postupy pro okamžité zamezení šíření, eliminaci hrozeb, opatření pro obnovu a komunikační plány.",
                             "response": null
                         },
                         {
-                            "id": "10e",
-                            "text": "Je vytvořena politika bezpečeného používání mobilních zařízení?",
-                            "comment": "Více informací naleznete v příloze 5 1.12.",
-                            "response": null
-                        },
-                        {
-                            "id": "10f",
-                            "text": "Jsou stanoveny pravidla a postupy pro řízení technických zranitelností a zálohování?",
-                            "comment": "Včetně kontroly použitelnosti záloh v pravidelných intervalech.",
-                            "response": null
-                        },
-                        {
-                            "id": "10g",
-                            "text": "Jsou stanoveny pravidla a postupy pro připojení zařízení do sítě?",
-                            "comment": "",
+                            "id": "CC7.5",
+                            "text": "Má váš subjekt zavedeny postupy pro zotavení po identifikovaných bezpečnostních incidentech?",
+                            "comment": "Zaměřte se na vývoj a implementaci plánů obnovy po havárii a strategií kontinuity provozu.",
                             "response": null
                         },
                     ],
                 },
                 {
-                    "id": "§ 11",
-                    "title": "Řízení změn (§ 11)",
+                    "id": "CC8",
+                    "title": "Řízení změn (CC8)",
                     "questions": [
                         {
-                            "id": "11a",
-                            "text": "Je vytvořena politika řízení změn včetně definice významné změny?",
-                            "comment": "Více informací naleznete v příloze 5 1.21.",
-                            "response": null
-                        },
-                        {
-                            "id": "11b",
-                            "text": "Jsou přezkoumávány možné dopady změn a určování významné změny?",
-                            "comment": "Včetně jejich dokumentování.",
-                            "response": null
-                        },
-                        {
-                            "id": "11c",
-                            "text": "Je řízen proces změny včetně bezpečnostního testování a možnosti navrácení do původního stavu?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "11d",
-                            "text": "Je prováděno penetrační testování a skenování zranitelností a je adekvátně reagováno na zjištěné nedostatky?",
-                            "comment": "",
+                            "id": "CC8.1",
+                            "text": "Má váš subjekt komplexní proces řízení změn infrastruktury, dat, softwaru a postupů, který zahrnuje autorizaci, dokumentaci, testování a schvalování?",
+                            "comment": "Tyto procesy mohou podpořit nástroje, jako jsou systémy pro správu verzí, software pro automatizované testování a platformy pro správu změn.",
                             "response": null
                         },
                     ]
 
                 },
                 {
-                    "id": "§ 12",
-                    "title": "Řízení přístupů (§ 12)",
+                    "id": "CC9",
+                    "title": "Zvládání rizika (CC9)",
                     "questions": [
                         {
-                            "id": "12a",
-                            "text": "Je vytvořena politika řízení přístupů včetně pravidel pro ochranu přihlašovacích údajů?",
-                            "comment": "Zároveň dochází k evidenci přidělených a odebraných ",
+                            "id": "CC9.1",
+                            "text": "Identifikuje, vybírá a vyvíjí váš subjekt proaktivně činnosti ke zmírnění rizik v případě možného narušení provozu?",
+                            "comment": "Zaměřte se na implementaci strategií plánování kontinuity provozu (BCP) a obnovy po havárii (DR).",
                             "response": null
                         },
                         {
-                            "id": "12b",
-                            "text": "Je přístup řízen na základě skupin a rolí?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "12c",
-                            "text": "Jsou uživatelům a administrátorům přidělovány jedinečné identifikátory?",
-                            "comment": "Například nejsou používány sdílené účty.",
-                            "response": null
-                        },
-                        {
-                            "id": "12d",
-                            "text": "Jsou řízeny identifikátory, přístupová práva a oprávnění aplikací a technických účtů?",
-                            "comment": "Příklad",
-                            "response": null
-                        },
-                        {
-                            "id": "12e",
-                            "text": "Je zavedena centrální správa mobilních zařízení?",
-                            "comment": "Příklad",
-                            "response": null
-                        },
-                        {
-                            "id": "12f",
-                            "text": "Dochází k odebrání nebo změně přístupových oprávnění u interních a externích rolí?",
-                            "comment": "Příklad",
-                            "response": null
-                        },
-                        {
-                            "id": "12g",
-                            "text": "Jsou stanoveny jednoznačná pravidla a postupy u zaměstnanců, kteří používají k pracovním účelům vlastní zařízení?",
-                            "comment": "BYOD",
-                            "response": null
-                        },
-                        {
-                            "id": "12h",
-                            "text": "Je zaveden princip need-to-know?",
-                            "comment": "Jednotlivci by měli mít přístup pouze k těm informacím, které jsou nezbytné pro vykonávání jejich pracovních úkolů.",
-                            "response": null
-                        },
-                        {
-                            "id": "12i",
-                            "text": "Je zaveden princip minimálních oprávnění?",
-                            "comment": "Uživatelům, aplikacím nebo systémům by měla být udělena pouze ta nejnutnější oprávnění, která potřebují k vykonávání svých úkolů.",
-                            "response": null
-                        },
-                        {
-                            "id": "12j",
-                            "text": "Je zavedena centrální správa možného instalovaného SW?",
-                            "comment": "Uživatelé si nemohou sami nainstalovat neschválené aplikace.",
-                            "response": null
-                        },
-                        {
-                            "id": "12k",
-                            "text": "Probíhá revize přidělených oprávnění?",
-                            "comment": "",
+                            "id": "CC9.2",
+                            "text": "Posuzuje a řídí váš subjekt aktivně rizika spojená s dodavateli a obchodními partnery?",
+                            "comment": "Zajistěte, aby byly stanoveny požadavky na zakázky, pravidelná hodnocení rizik, jasné odpovědnosti vedení a komunikační protokoly. Potvrďte také existenci postupů pro řešení problémů, ukončení vztahů a získání a posouzení závazků týkajících se důvěrnosti a ochrany osobních údajů.",
                             "response": null
                         },
                     ]
@@ -465,101 +290,28 @@ const questionnaireData = {
         {
 
             "id": "section4",
-            "title": "Organizační opatření - Akvizice a zvládání incidentů",
+            "title": "Kritérium: Dostupnost",
             "subsections": [
                 {
-                    "id": "§ 13",
-                    "title": "Akvizice, vývoj a údržba (§ 13)",
+                    "id": "A1",
+                    "title": "Dodatečná kritéria pro dostupnost (A1)",
                     "questions": [
                         {
-                            "id": "13a",
-                            "text": "Je vytvořena politika akvizice vývoje a údržby?",
-                            "comment": "Více informací naleznete v příloze 5 1.13",
+                            "id": "A1.1",
+                            "text": "Udržuje, monitoruje a vyhodnocuje váš subjekt aktuální zpracovatelskou kapacitu a využití systémových komponent za účelem efektivního řízení poptávky po kapacitě?",
+                            "comment": "Zaměřte se na postupy monitorování infrastruktury, dat a softwaru, abyste zajistili, že zvládnou současnou a plánovanou pracovní zátěž.",
                             "response": null
                         },
                         {
-                            "id": "13b",
-                            "text": "Jsou stanoveny bezpečnostní požadavky a jsou tyto požadavky zahrnuty do projektu akvizice, vývoje a údržby?",
-                            "comment": "",
+                            "id": "A1.2",
+                            "text": "Má váš subjekt komplexní přístup k ochraně životního prostředí, procesům zálohování dat a infrastruktuře pro obnovu, aby byla zajištěna dostupnost systému?",
+                            "comment": "V tomto ohledu jsou zásadní nástroje, jako jsou systémy monitorování prostředí, zálohovací řešení a infrastruktura pro obnovení po havárii.",
                             "response": null
                         },
                         {
-                            "id": "13c",
-                            "text": "Je zajištěna bezpečnost a oddělení vývojového, provozního a testovacícho prostředí a to včetně ochrany testovacích dat?",
-                            "comment": "",
-                            "response": null
-                        },
-                    ],
-                },
-                {
-
-                    "id": "§ 14",
-                    "title": "Zvládání kybernetických bezpečnostních událostí a incidentů (§ 14)",
-                    "questions": [
-                        {
-                            "id": "14a",
-                            "text": "Jsou vytvořeny politiky pro nasazení a používání nástroje pro detekci kybernetických bezpečnostních událostí?",
-                            "comment": "Školení je prováděno v adekvátní době po nástupu a poté v pravidelných intervalech",
-                            "response": null
-                        },
-                        {
-                            "id": "14b",
-                            "text": "Jsou vytvořeny politiky pro využití a údržbu nástroje pro sběr a vyhodnocování kybernetických bezpečnostních událostí a zvládání kybernetických bezpečnostních incidentů?",
-                            "comment": "Např. protokoly o školení, informace z pohovorů",
-                            "response": null
-                        },
-                        {
-                            "id": "14c",
-                            "text": "Jsou stanoveny procesy a postupy pro detekci a vyhodnocování kybernetických bezpečnostních událostí a zvládání kybernetických bezpečnostních incidentů?",
-                            "comment": "Např. protokoly o školení, informace z pohovorů",
-                            "response": null
-                        },
-                        {
-                            "id": "14d",
-                            "text": "Je zajištěno, aby interní  i externí zaměstnanci oznamovali nestandartní chování zařízeních a systémů?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "14e",
-                            "text": "Jsou incidenty posuzovány a kategorizovány dle požadavků VKB?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "14f",
-                            "text": "Jsou pro odvrácení a zmínění dopadu kybernetických bezpečnostních incidentů přijímána opatření?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "14g",
-                            "text": "Je hodnocena účinnost řešení kybernetických bezpečnostních incidentů?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "14h",
-                            "text": "Jsou v závislosti na výsledcích tohoto hodnocení stanovena nová bezpečnostní opatření, případně aktualizována ta stávající?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "14i",
-                            "text": "Jsou incidenty řádně hlášeny dle požadavků VKB?",
-                            "comment": "NÚKIB, CZ.NIC",
-                            "response": null
-                        },
-                        {
-                            "id": "14j",
-                            "text": "Jsou vedeny záznamy o kybernetických bezpečnostních incidentech a jejich zvládání?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "14k",
-                            "text": "Jsou prošetřovány a určovány příčiny incidentů?",
-                            "comment": "",
+                            "id": "A1.3",
+                            "text": "Testuje váš subjekt pravidelně postupy plánu obnovy, aby zajistil jejich účinnost při podpoře obnovy systému?",
+                            "comment": "Zaměřte se na četnost a komplexnost testování plánu obnovy.",
                             "response": null
                         },
                     ],
@@ -569,65 +321,22 @@ const questionnaireData = {
         {
 
             "id": "section5",
-            "title": "Organizační opatření - Kontinuita a audit",
+            "title": "Kritérium: Důvěrnost",
             "subsections": [
                 {
-                    "id": "§ 15",
-                    "title": "Řízení kontinuity činností (§ 15)",
+                    "id": "C1",
+                    "title": "Dodatečná kritéria pro důvěrnost (C1)",
                     "questions": [
                         {
-                            "id": "15a",
-                            "text": "Je vytvořena politika řízení kontinuity činností včetně cílů kontinuity a havarijních plánů?",
-                            "comment": "Minimální úroveň poskytovaných služeb, RTO a RPO.",
+                            "id": "C1.1",
+                            "text": "Vaše společnost efektivně identifikuje a udržuje důvěrné informace, aby zajistila splnění cílů týkajících se důvěrnosti?",
+                            "comment": "Zaměřte se na procesy a nástroje používané pro klasifikaci dat, řízení přístupu a šifrování, aby byly důvěrné informace chráněny.",
                             "response": null
                         },
                         {
                             "id": "15b",
-                            "text": "Je zpracována analýza dopadů?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "15c",
-                            "text": "Je zajištěno pravidelné testování havarijních plánů a plánů kontinuity činností?",
-                            "comment": "",
-                            "response": null
-                        },
-                    ],
-                },
-                {
-
-                    "id": "§ 16",
-                    "title": "Audit kybernetické bezpečnosti (§ 16)",
-                    "questions": [
-                        {
-                            "id": "16a",
-                            "text": "Je prováděn audit KB v pravidelných intervalech dle VKB?",
-                            "comment": "Při významných změnách, u osob uvedených v § 3 písm. e) zákona po 3 letech, po 2 letech u osob neuvedených v písmenu b).",
-                            "response": null
-                        },
-                        {
-                            "id": "16b",
-                            "text": "Je stanoven proces a plán provádění auditů KB?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "16c",
-                            "text": "Jsou zpracovávány zprávy z auditu KB?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "16d",
-                            "text": "Existují záznamy o provedených auditech, kontrolách a přezkoumání ISMS?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "16e",
-                            "text": "Jsou výsledky přezkoumání ISMS a auditů KB zohledněny v plánování na další období?",
-                            "comment": "",
+                            "text": "Likviduje vaše společnost důvěrné informace tak, aby splnila cíle týkající se důvěrnosti?",
+                            "comment": "Ujistěte se, že existují procesy a nástroje pro bezpečné odstranění nebo zničení důvěrných informací, které jsou již nadále potřebné.",
                             "response": null
                         },
                     ],
@@ -637,88 +346,40 @@ const questionnaireData = {
         {
 
             "id": "section6",
-            "title": "Technická opatření - Fyzická bezpečnost",
+            "title": "Kritérium: Integrita zpracování",
             "subsections": [
                 {
-                    "id": "§ 17",
-                    "title": "Fyzická bezpečnost (§ 17)",
+                    "id": "PI1",
+                    "title": "Dodatečná kritéria pro integritu zpracování (PI1)",
                     "questions": [
                         {
-                            "id": "17a",
-                            "text": "Je vytvořena politika fyzické bezpečnosti?",
-                            "comment": "Více informací naleznete v příloze 5 1.15.",
-                            "response": null
-                        },
-                        {
-                            "id": "17b",
-                            "text": "Je vymezen a chráněn fyzický bezpečnostní perimetr?",
-                            "comment": "Zahrnující serverovny, rozvodny, racky, kabely, prostory IT správců, trezory, úložiště zálohd atd.",
-                            "response": null
-                        },
-                        {
-                            "id": "17c",
-                            "text": "Je zabezpečen fyzický perimetr dle potřeb organizace?",
-                            "comment": "Například pomocí PZTS, EPS, CCTV kamer atd.",
-                            "response": null
-                        },
-                        {
-                            "id": "17d",
-                            "text": "Jsou nainstalovány a kontrolovány čidla detekující vznik požáru a funkční hasící prostředky?",
+                            "id": "PI1.1",
+                            "text": "Zajišťuje vaše společnost správné získávání, používání a sdílení informací týkajících se zpracování dat?",
                             "comment": "",
                             "response": null
                         },
                         {
-                            "id": "17e",
-                            "text": "Jsou chráněné prostory zabezpečeny mechanickými zábranami a pravidelně kontrolovány?",
-                            "comment": "Např. silné stěny, okna nad úrovní terénu, mříže, fólie na skle, zámky.",
+                            "id": "PI1.2",
+                            "text": "Implementuje vaše společnost politiky a postupy pro systémové vstupy, včetně kontrol úplnosti a přesnosti?",
+                            "comment": "Ujistěte se, že existují efektivní mechanismy pro ověřování a zabezpečení vstupních dat do systému.",
                             "response": null
                         },
                         {
-                            "id": "17f",
-                            "text": "Jsou nainstalovány a kontrolovány systémy detekce pohybu a průniku?",
-                            "comment": "Např. detektory pohybu, detektory rozbití skla, magnetické detektory.",
+                            "id": "PI1.3",
+                            "text": "Implementuje vaše společnost politiky a postupy, které povedou k produktům a službám odpovídajícím požadovaným cílům?",
+                            "comment": "Zaměřte se na to, zda jsou procesy a postupy pro zpracování dat v systému navrženy tak, aby byly zajištěny správné výstupy v podobě produktů, služeb a reportů.",
                             "response": null
                         },
                         {
-                            "id": "17g",
-                            "text": "Je použit a pravidelně kontrolován systém pro kontrolu vstupu?",
-                            "comment": "",
+                            "id": "PI1.4",
+                            "text": "Implementuje vaše společnost politiky a postupy, aby byly výstupy systému poskytovány nebo doručovány úplně, přesně a včas podle specifikací?",
+                            "comment": "Ujistěte se, že výstupy, jako jsou reporty, produkty a služby, jsou distribuovány v souladu s požadavky a termíny, což je klíčové pro splnění cílů společnosti",
                             "response": null
                         },
                         {
-                            "id": "17h",
-                            "text": "Jsou důležitá aktiva chráněna pomocí pravidelně kontrolovaného kamerového systému, s ukládáním záznamů?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "17i",
-                            "text": "Je prováděna identifikace osob na vstupu?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "17j",
-                            "text": "Jsou zmapována a ošetřena rizika související s fyzickým umístěním důležitých aktiv?",
-                            "comment": "Např. hořlavý materiál, elektro a vodoinstalace u serveroven, archivů, atd.",
-                            "response": null
-                        },
-                        {
-                            "id": "17k",
-                            "text": "Jsou zmapována a ošetřena rizika související s fyzickým umístěním důležitých aktiv?",
-                            "comment": "Např. hořlavý materiál, elektro a vodoinstalace u serveroven, archivů, atd.",
-                            "response": null
-                        },
-                        {
-                            "id": "17l",
-                            "text": "Jsou aplikovány standardy bezpečenostních opatření proti přírodním katastrofám?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "17m",
-                            "text": "Je vedena evidence přístupů do zabezpečených prostor?",
-                            "comment": "Např. serverovna",
+                            "id": "PI1.5",
+                            "text": "Implementuje vaše společnost politiky a postupy pro úplné, přesné a včasné ukládání vstupů, položek ve zpracování a výstupů podle specifikací systému?",
+                            "comment": "Zaměřte se na to, zda jsou data během celého zpracovatelského cyklu uchovávána bezpečně a správně, což zahrnuje vstupy, aktuální zpracování i výstupy.",
                             "response": null
                         },
                     ],
@@ -728,88 +389,28 @@ const questionnaireData = {
         {
 
             "id": "section7",
-            "title": "Technická opatření - Bezpečnost sítí, identity a přístupy",
+            "title": "Kritérium: Ochrana osobních údajů",
             "subsections": [
                 {
-                    "id": "§ 18",
-                    "title": "Bezpečnost komunikačních sítí (§ 18)",
+                    "id": "P1.0",
+                    "title": "Dodatečná kritéria pro ochranu osobních údajů - Oznámení a komunikace (P1.0)",
                     "questions": [
                         {
-                            "id": "18a",
-                            "text": "Je vytvořena politika bezpečnosti komunikačních sítí?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "10b",
-                            "text": "Je provedena dostatečná segmentace sítě?",
-                            "comment": "Např. uživatelské, speciální, DMZ, serverové, modality a analyzátory.",
-                            "response": null
-                        },
-                        {
-                            "id": "10c",
-                            "text": "Je řízena komunikace uvnitř i vně perimetru sítě?",
-                            "comment": "Např. pomocí firewall a jeho pravidel, IDS, obrana proti DDoS.",
-                            "response": null
-                        },
-                        {
-                            "id": "10d",
-                            "text": "Je při vzdáleném přístupu do vnitřní sítě zřízena VPN?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "10e",
-                            "text": "Dochází k aktivní blokaci nežádoucí komunikace?",
-                            "comment": "Např. zakázané adresní rozsahy, filtrace URL, IPS.",
-                            "response": null
-                        },
-                        {
-                            "id": "10f",
-                            "text": "Je komunikace mezi jednotlivými segmenty sítě řízena?",
-                            "comment": "Např. ACL, pravidla na firewallech, routovací tabulky.",
+                            "id": "P1.1",
+                            "text": "Poskytuje vaše společnost subjektům údajů informace o praktikách ochrany osobních údajů, včetně účelu sběru, typu sběraných údajů a metod sběru?",
+                            "comment": "Ujistěte se, že subjekty údajů jsou informovány o všech klíčových aspektech ochrany osobních údajů, včetně volby a souhlasu, použití, uchování, likvidace, přístupu, zveřejnění třetím stranám, zabezpečení, kvality a metodách sledování a vynucování pravidel ochrany osobních údajů.",
                             "response": null
                         },
                     ],
                 },
                 {
 
-                    "id": "§ 19",
-                    "title": "Správa a ověřování identit (§ 19)",
+                    "id": "P2.0",
+                    "title": "Dodatečná kritéria pro ochranu osobních údajů - Možnost volby a souhlasu (P2.0)",
                     "questions": [
                         {
-                            "id": "19a",
-                            "text": "Je implentován nástroj pro ověření identity uživatele, který současně zajišťuje řízení počtu neúspěšných pokusů o přihlášení, centralizovanou správu identit a další požadavky dle § 19 odst. 2 VKB",
-                            "comment": "Např. Active Directory (AD), IDM.",
-                            "response": null
-                        },
-                        {
-                            "id": "19b",
-                            "text": "Je zavedena dvoufaktorová autentizace uživatelů, administrátorů a aplikací s nejméně dvěma různými typy faktorů?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "19c",
-                            "text": "V případě, že není zavedena dvoufaktorová autentizace, je zaveden nástroj pro ověření identity pomocí kryptografických klíčů?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "19d",
-                            "text": "V případě, že není zavedena dvoufaktorová autentizace, jsou dodrženy minimální požadavky na hesla dlě § 19 odst. 5 VKB?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "19e",
-                            "text": "Jsou autentizační údaje přenášeny se zachováním důvěrnosti a ukládány ve formě odolné proti offline útokům?",
-                            "comment": "Komunikace je šifrovaná",
-                            "response": null
-                        },
-                        {
-                            "id": "19f",
-                            "text": "Je vynucena bezodkladná změna u prvotních, výchozí a obnovovacích hesel?",
+                            "id": "P2.1",
+                            "text": "Komunikuje vaše společnost subjektům údajů dostupné možnosti týkající se sběru, využití, uchování, zveřejnění a likvidace osobních údajů a získává jejich výslovný souhlas, pokud je to vyžadováno?",
                             "comment": "",
                             "response": null
                         },
@@ -817,25 +418,112 @@ const questionnaireData = {
                 },
                 {
 
-                    "id": "§ 20",
-                    "title": "Řízení přístupových oprávnění (§ 20)",
+                    "id": "P3.0",
+                    "title": "Dodatečná kritéria pro ochranu osobních údajů - Sběr (P3.0)",
                     "questions": [
                         {
-                            "id": "20a",
-                            "text": "Je nastaven proces bezpečeného přístupu dodavatelů do vnitřní sítě?",
-                            "comment": "Např. pomocí VPN, segmentace, řízeného oprávnění atd.",
+                            "id": "P3.1",
+                            "text": "Sbírá vaše společnost osobní údaje v souladu s cíli týkajícími se ochrany soukromí?",
+                            "comment": "Pouze za účelem a v rozsahu, který je v souladu s definovanými cíli ochrany soukromí vaší společnosti.",
                             "response": null
                         },
                         {
-                            "id": "20b",
-                            "text": "Je zavedeno oddělení administrátorských oprávnění pro správu systému od uživatelských oprávnění?",
-                            "comment": "Např. oddělené účty, PIM/PAM, jump server.",
+                            "id": "P3.2",
+                            "text": "Informuje vaše společnost subjekty údajů o potřebě výslovného souhlasu a důsledcích jeho neposkytnutí před sběrem osobních údajů?",
+                            "comment": "",
+                            "response": null
+                        },
+                    ],
+                },
+                {
+
+                    "id": "P4.0",
+                    "title": "Dodatečná kritéria pro ochranu osobních údajů - Use, retention, and disposal (P4.0)",
+                    "questions": [
+                        {
+                            "id": "P4.1",
+                            "text": "Omezuje vaše společnost použití osobních údajů pouze na účely identifikované v cílech týkajících se ochrany soukromí?",
+                            "comment": "Ujistěte se, že využívání osobních údajů je striktně omezeno na deklarované účely a že nedochází k jejich zneužití pro jiné aktivity",
                             "response": null
                         },
                         {
-                            "id": "20c",
-                            "text": "Je zavedeno centralizované řízení přístupových oprávnění?",
-                            "comment": "Např. ACL, nastavení skupin v AD",
+                            "id": "P4.2",
+                            "text": "Uchovává vaše společnost osobní údaje v souladu s cíli týkajícími se ochrany soukromí?",
+                            "comment": "",
+                            "response": null
+                        },
+                        {
+                            "id": "P4.3",
+                            "text": "Likviduje vaše společnost osobní údaje bezpečným způsobem, aby splnila cíle týkající se ochrany soukromí?",
+                            "comment": "",
+                            "response": null
+                        },
+                    ],
+                },
+                {
+
+                    "id": "P5.0",
+                    "title": "Dodatečná kritéria pro ochranu osobních údajů - Přístupy (P5.0)",
+                    "questions": [
+                        {
+                            "id": "P5.1",
+                            "text": "Poskytuje vaše společnost identifikovaným a autentizovaným subjektům údajů přístup k jejich uloženým osobním údajům a na vyžádání jim poskytuje fyzické nebo elektronické kopie těchto údajů?",
+                            "comment": "",
+                            "response": null
+                        },
+                        {
+                            "id": "P5.2",
+                            "text": "Opravuje, upravuje nebo doplňuje vaše společnost osobní údaje na základě informací poskytnutých subjekty údajů a komunikuje tyto informace třetím stranám, pokud je to požadováno nebo slíbeno?",
+                            "comment": "Ujistěte se, že subjekty údajů mají možnost požádat o korekci svých osobních údajů a že jsou informovány o důvodech zamítnutí takového požadavku.",
+                            "response": null
+                        },
+                    ],
+                },
+                {
+
+                    "id": "P6.0",
+                    "title": "Dodatečná kritéria pro ochranu osobních údajů - Zveřejnění a oznámení (P6.0)",
+                    "questions": [
+                        {
+                            "id": "P6.1",
+                            "text": "Zveřejňuje vaše společnost osobní údaje třetím stranám s výslovným souhlasem subjektů údajů, který je získán před zveřejněním?",
+                            "comment": "Ujistěte se, že před předáním jakýchkoli osobních údajů třetím stranám je získán explicitní souhlas od subjektů údajů.",
+                            "response": null
+                        },
+                        {
+                            "id": "P6.2",
+                            "text": "Vytváří a uchovává vaše společnost úplný, přesný a včasný záznam o autorizovaných zveřejněních osobních údajů?",
+                            "comment": "Zaměřte se na to, zda je vedena důkladná evidence o všech zveřejněních osobních údajů, včetně informací o tom, komu, kdy a za jakých podmínek byly údaje poskytnuty.",
+                            "response": null
+                        },
+                        {
+                            "id": "P6.3",
+                            "text": "Vytváří a uchovává vaše společnost úplný, přesný a včasný záznam o zjištěných nebo nahlášených neoprávněných zveřejněních osobních údajů?",
+                            "comment": "Ujistěte se, že máte proces pro detekci a zaznamenávání bezpečnostních incidentů, včetně úniků a neoprávněného zveřejnění osobních údajů, a že tyto informace jsou správně a včas evidovány.",
+                            "response": null
+                        },
+                        {
+                            "id": "P6.4",
+                            "text": "Získává vaše společnost závazky k ochraně soukromí od dodavatelů a dalších třetích stran, které mají přístup k osobním údajům, a pravidelně hodnotí jejich dodržování?",
+                            "comment": "Ujistěte se, že máte procesy pro získávání a pravidelné hodnocení závazků k ochraně soukromí od třetích stran, které mají přístup k osobním údajům, a že přijímáte nápravná opatření v případě nedostatků.",
+                            "response": null
+                        },
+                        {
+                            "id": "P6.5",
+                            "text": "Získává vaše společnost závazky od dodavatelů a dalších třetích stran s přístupem k osobním údajům, že vás upozorní v případě skutečného nebo podezřelého neoprávněného zveřejnění osobních údajů?",
+                            "comment": "Ujistěte se, že existují procesy, podle kterých třetí strany informují vaši společnost o jakýchkoli incidentech souvisejících s únikem osobních údajů, a že tato upozornění jsou řádně zpracovávána v souladu s postupy pro reakci na incidenty.",
+                            "response": null
+                        },
+                        {
+                            "id": "P6.6",
+                            "text": "Poskytuje vaše společnost oznámení o porušeních a incidentech dotčeným subjektům údajů, regulátorům a dalším stranám v souladu s cíli týkajícími se ochrany soukromí?",
+                            "comment": "Ujistěte se, že máte postupy pro informování dotčených stran, včetně subjektů údajů a regulačních orgánů, o jakýchkoli bezpečnostních incidentech nebo únicích dat, které by mohly ovlivnit jejich soukromí.",
+                            "response": null
+                        },
+                        {
+                            "id": "P6.7",
+                            "text": "Poskytuje vaše společnost subjektům údajů přehled o držených osobních údajích a informace o zveřejnění jejich osobních údajů na jejich žádost?",
+                            "comment": "Ujistěte se, že subjekty údajů mají možnost požádat o korekci svých osobních údajů a že jsou informovány o důvodech zamítnutí takového požadavku.",
                             "response": null
                         },
                     ],
@@ -845,270 +533,34 @@ const questionnaireData = {
         {
 
             "id": "section8",
-            "title": "Technická opatření - Detekce, logování a ochrana aktiv",
+            "title": "Kritérium: Ochrana osobních údajů",
             "subsections": [
                 {
-                    "id": "§ 21",
-                    "title": "Ochrana před škodlivým kódem (§ 21)",
+                    "id": "P7.0",
+                    "title": "Dodatečná kritéria pro ochranu osobních údajů - Kvalita (P7.0)",
                     "questions": [
                         {
-                            "id": "21a",
-                            "text": "Je vytvořena politika ochrany před škodlivým kódem?",
-                            "comment": "Více informací naleznete v příloze 5 1.17.",
-                            "response": null
-                        },
-                        {
-                            "id": "21b",
-                            "text": "Je antivirová ochrana nasazena na všech důležitých aktivech?",
-                            "comment": "Včetně koncových stanic, mobilních zařízení, serverů atd.",
-                            "response": null
-                        },
-                        {
-                            "id": "21c",
-                            "text": "Je antivirová ochrana pravidelně aktualizována?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "21d",
-                            "text": "Jsou prováděny pravidelné antivirové testy záloh?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "21e",
-                            "text": "Jsou nastavena pravidla pro používání výměnných zařízení a datových nosičů?",
-                            "comment": "Např. zákaz automatického spouštění obsahu",
-                            "response": null
-                        },
-                        {
-                            "id": "21f",
-                            "text": "Je řízeno oprávnění ke spouštění kódu?",
-                            "comment": "Např. nastavení AD, aplikační whitelist.",
+                            "id": "P7.1",
+                            "text": "Sbírá a udržuje vaše společnost přesné, aktuální, úplné a relevantní osobní údaje?",
+                            "comment": "Zajistěte, že procesy sběru a udržování osobních údajů jsou navrženy tak, aby zajistily jejich přesnost, aktuálnost, úplnost a relevanci v souladu s cíli ochrany soukromí vaší společnosti.",
                             "response": null
                         },
                     ],
                 },
                 {
-                    "id": "§ 22",
-                    "title": "Záznamenování událostí informačního a komunikačního systému, je uživatelů a adminstrátorů (§ 22)",
+                    "id": "P8.0",
+                    "title": "Dodatečná kritéria pro ochranu osobních údajů - Monitorování a prosazování (P8.0)",
                     "questions": [
                         {
-                            "id": "22a",
-                            "text": "Jsou nastavena pravidla pro logování a v praxi zavedena?",
-                            "comment": "Pravidla stanovující obsah logů, aktiv ze kterých se logy uchovávají.",
-                            "response": null
-                        },
-                        {
-                            "id": "22b",
-                            "text": "Jsou logy bezpečně uchovávány po dobu nezbytnou dle požadavku VKB?",
-                            "comment": "Konkrétně dle § 22 odst. 3,4.",
-                            "response": null
-                        },
-                        {
-                            "id": "22c",
-                            "text": "Je prováděna synchronizace jednotného času technických aktiv nejméně jednou za 24 hodin?",
-                            "comment": "Např. pomocí NTP serveru.",
-                            "response": null
-                        },
-                    ],
-                },
-                {
-                    "id": "§ 23",
-                    "title": "Detekce kybernetických bezpečnostních událostí (§ 23)",
-                    "questions": [
-                        {
-                            "id": "23a",
-                            "text": "Jsou nastavena dostatečná pravidla pro detekci KBU pomocí sondy/IDS/IPS/NBA?",
-                            "comment": "Např. aktuální pravidla, prahy, signatury.",
-                            "response": null
-                        },
-                        {
-                            "id": "23b",
-                            "text": "Pravidla pro sledování provozu jsou vhodně nastaveny?",
-                            "comment": "Zvolené rozsahy, aktivita, komunikační kanály, perimetr",
+                            "id": "P8.1",
+                            "text": "Má vaše společnost proces pro přijímání, řešení a komunikaci výsledků dotazů, stížností a sporů od subjektů údajů a dalších stran a pravidelně monitoruje dodržování pravidel?",
+                            "comment": "Ujistěte se, že existuje efektivní proces pro řešení dotazů a stížností souvisejících s ochranou soukromí a že jsou případné nedostatky řešeny včas.",
                             "response": null
                         },
                     ],
                 },
             ],
         },
-        {
-
-            "id": "section9",
-            "title": "Technická opatření - SIEM, dostupnost a kryptografrie",
-            "subsections": [
-                {
-                    "id": "§ 24",
-                    "title": "Sběr a vyhodnocování kybernetických bezpečnostních událostí (§ 24)",
-                    "questions": [
-                        {
-                            "id": "24a",
-                            "text": "Je využíván log management?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "24b",
-                            "text": "Je využíván SIEM?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "24c",
-                            "text": "Jsou nástroje pro sběr a vyhodnocování KBI dostatečně ošetřeny personálními kapacitami a aktivně se s nimi a jejich výstupy pracuje?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "24d",
-                            "text": "Je nasazeno řešení pro ochranu před únikem dat?",
-                            "comment": "Např. DLP",
-                            "response": null
-                        },
-                    ],
-                },
-                {
-                    "id": "§ 25",
-                    "title": "Aplikační bezpečnost (§ 25)",
-                    "questions": [
-                        {
-                            "id": "25a",
-                            "text": "Jsou prováděny penetráční testy před uvedením důležitých aktiv do provozu?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "25b",
-                            "text": "Je zajištěna ochrana aplikací, informací a transakcí před neoprávněnou činností a před popřením provedených činností?",
-                            "comment": "",
-                            "response": null
-                        },
-                    ],
-                },
-                {
-                    "id": "§ 26",
-                    "title": "Kryptografické prostředky (§ 26)",
-                    "questions": [
-                        {
-                            "id": "26a",
-                            "text": "Je vytvořena politika bezpečného používání kryptografické ochrany?",
-                            "comment": "Více informací naleznete v příloze 5 1.20.",
-                            "response": null
-                        },
-                        {
-                            "id": "26b",
-                            "text": "Jsou používány aktuálně odolné kryptografické algoritmy?",
-                            "comment": "S ohledem na doporučení vydané NÚKIB.",
-                            "response": null
-                        },
-                        {
-                            "id": "26c",
-                            "text": "Je prosazováno bezpečné nakládání s kryptografickými prostředky?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "26d",
-                            "text": "Je využíván systém pro správu klíčů a certifikátů?",
-                            "comment": "",
-                            "response": null
-                        },
-                    ],
-                },
-                {
-                    "id": "§ 27",
-                    "title": "Zajišťování úrovně dostupnosti informací (§ 27)",
-                    "questions": [
-                        {
-                            "id": "27a",
-                            "text": "Je nasazena ochrana proti DDoS útokům?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "27b",
-                            "text": "Je konektivita do internetu zajištěna od 2 různých poskytovatelů?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "27c",
-                            "text": "Jsou k dispozici 2 nezávislé přívody elektrické energie?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "27d",
-                            "text": "Je k dispozici alternativní zdroj napájení?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "27e",
-                            "text": "Je nainstalována přepěťová ochrana?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "27f",
-                            "text": "Je zajištěna redundance důležitých aktiv?",
-                            "comment": "",
-                            "response": null
-                        },
-                    ],
-                },
-                {
-                    "id": "§ 28",
-                    "title": "Půmyslové, řídící a obdobné specifické systémy (§ 28)",
-                    "questions": [
-                        {
-                            "id": "28a",
-                            "text": "Jsou bezpečnostní pravidla a opatření aplikována i na průmyslová a specifická zařízení, pokud je v organizaci máte (SCADA)?",
-                            "comment": "",
-                            "response": null
-                        },
-                    ],
-                },
-            ],
-        },
-        {
-
-            "id": "section10",
-            "title": "Bezpečnostní politika a bezpečnostní dokumentace, Reaktivní opatření a kontaktní údaje",
-            "subsections": [
-                {
-                    "id": "§ 30",
-                    "title": "Bezpečnostní politika a bezpečnostní dokumentace (§ 30)",
-                    "questions": [
-                        {
-                            "id": "30a",
-                            "text": "Jsou stanoveny bezpečnostní politiky a je vedena v rozsahu přílohy č. 5 VKB?",
-                            "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "30b",
-                            "text": "Probíha pravidelné přezkoumání bezpečnostní politiky a bezpečnostní dokumentace?",
-                            "comment": "",
-                            "response": null
-                        },
-                    ],
-                },
-                {
-                    "id": "§ 33",
-                    "title": "Reaktivní opatření a kontaktní údaje (§ 33)",
-                    "questions": [
-                        {
-                            "id": "33a",
-                            "text": "Jsou plněna bezpečnostní opatření uložená reaktivním opatřením vydaným NÚKIB?",
-                            "comment": "Včetně hlášení o výsledku.",
-                            "response": null
-                        },
-                    ],
-                },
-            ],
-        }
     ],
 }
 
@@ -1240,8 +692,6 @@ window.onload = function () {
     displaySection('section6', 'questionnaireContainer6');
     displaySection('section7', 'questionnaireContainer7');
     displaySection('section8', 'questionnaireContainer8');
-    displaySection('section9', 'questionnaireContainer9');
-    displaySection('section10', 'questionnaireContainer10');
 }
 
 // Funkce, která zobrazí výzvu, pokud uživatel pokusí opustit stránku po zahájení vyplňování dotazníku

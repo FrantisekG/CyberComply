@@ -1,7 +1,7 @@
 let currentSectionIndex = 0;
-const maxSections = 10;  // Sekcí ZKB v dotazníku
+const maxSections = 8;
 const sections = document.querySelectorAll(".section");
-const progressBar = document.getElementById("progress-bar-ISO"); // Myslím, že by mohlo jít pryč
+const progressBar = document.getElementById("progress-bar-ISO");
 const nextButton = document.getElementById("nextButton");
 const prevButton = document.getElementById("prevButton");
 
@@ -174,14 +174,14 @@ function calculateScores() {
     const results = {
         totalScores: totalScores,
         maxScore: maxScore,
-        percentage: (((totalScores["Ano"] * 2) + totalScores["Částečně"])/ maxScore) * 100,
+        percentage: (((totalScores["Ano"] * 2) + totalScores["Částečně"]) / maxScore) * 100,
         sections: sectionScores,
         // Procentuální hodnota otázek označených jako "Neaplikováno"
         notApplicablePercentage: (totalScores["Neaplikováno"] / totalQuestions) * 100
     };
 
     // Uložení výsledků do localStorage
-    localStorage.setItem('zkbResults', JSON.stringify(results));
+    localStorage.setItem('SOC2Results', JSON.stringify(results));
     // Log before returning results
     console.log('Final Results:', results);
     return results;
@@ -191,12 +191,12 @@ function calculateScores() {
 function calculateScoreAndRedirect() {
     const scores = calculateScores();
 
-    localStorage.setItem('zkbScores', JSON.stringify(scores));
+    localStorage.setItem('SOC2Scores', JSON.stringify(scores));
     console.log(scores);
-    window.location.href = 'dashboard-ZKB.html';
+    window.location.href = 'dashboard-SOC2.html';
 }
 
-// Mapování ZKB na NIS2 - DODĚLAT
+// Mapování SOC2 na NIS2 - DODĚLAT
 
 const measureMappings = {
     "1.opatreni": {
