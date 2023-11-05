@@ -200,43 +200,43 @@ function calculateScoreAndRedirect() {
 
 const measureMappings = {
     "1.opatreni": {
-        subsections: [],
-        sections: ["section1"]
-    },
-    "2.opatreni": {
-        subsections: ["§ 14"], // Nejsou žádné 
-        sections: [""]
-    },
-    "3.opatreni": {
-        subsections: ["§ 10", "§ 15"],
+        subsections: ["CC1", "CC3"], // CC1.1
         sections: []
     },
+    "2.opatreni": {
+        subsections: ["CC7"], // CC7.1,CC7.2
+        sections: []
+    },
+    "3.opatreni": {
+        subsections: [],
+        sections: ["section4"] // A1.1
+    },
     "4.opatreni": {
-        subsections: ["§ 8"],
+        subsections: ["A1", "CC2"], // konkrétně CC2.3, A1.2
         sections: []
     },
     "5.opatreni": {
-        subsections: [],
-        sections: ["section3"]
+        subsections: ["CC3", "CC8"], //CC3.1,CC8.1
+        sections: [""]
     },
     "6.opatreni": {
-        subsections: ["§3", "§ 16"], //3d konkrétně
+        subsections: ["CC4"], // CC4.1
         sections: []
     },
     "7.opatreni": {
-        subsections: ["§ 9"],
+        subsections: ["CC1", "CC5"], // CC1.4, CC5.1
         sections: [],
     },
     "8.opatreni": {
-        subsections: ["§ 26"],
+        subsections: [""], // nejsou uvedeny
         sections: []
     },
     "9.opatreni": {
-        subsections: ["§4", "§ 9", "§ 12"],
+        subsections: ["CC6"],
         sections: []
     },
     "10.opatreni": {
-        subsections: ["§ 19"],
+        subsections: ["CC6"], // chybí MFA
         sections: []
     },
 

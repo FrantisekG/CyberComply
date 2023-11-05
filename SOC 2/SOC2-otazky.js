@@ -334,7 +334,7 @@ const questionnaireData = {
                             "response": null
                         },
                         {
-                            "id": "15b",
+                            "id": "C1.2",
                             "text": "Likviduje vaše společnost důvěrné informace tak, aby splnila cíle týkající se důvěrnosti?",
                             "comment": "Ujistěte se, že existují procesy a nástroje pro bezpečné odstranění nebo zničení důvěrných informací, které jsou již nadále potřebné.",
                             "response": null

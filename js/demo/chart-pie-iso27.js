@@ -27,7 +27,7 @@ var PieChartISO27 = new Chart(ctx, {
     data: {
         labels: ["Zavedeno", "Nezavedeno"],
         datasets: [{
-            data: results ? [results.percentage, 100 - results.percentage] : [49, 51], // Zbytek vyplňuje, když nejsou hodnoty
+            data: results ? [results.percentage, 100 - results.percentage] : [], // Zbytek vyplňuje, když nejsou hodnoty
             backgroundColor: ['#4e73df', '#d3dcf7'],
             hoverBorderColor: ['#4e73df', '#d3dcf7'],
         }]

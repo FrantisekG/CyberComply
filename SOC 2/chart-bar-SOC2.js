@@ -32,21 +32,21 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 var ctx = document.getElementById("SOC2BarChart");
 
 // Statický seznam názvů os
-var labels = ["Bezpečnost - Řízení organizace a rizik", "Bezpečnost - Monitorování a správa přístupů", "Bezpečnost - Řízení systémů a změn", "Dostupnost", "Důvěrnost", "Integrita zpracování", "Ochrana osobních údajů - Zásady, Souhlas a Sdílení Osobních Údajů", "Ochrana osobních údajů - Kvalita a dohled v oblasti ochrany soukromí"];
+var labels = ["Řízení organizace a rizik", "Monitorování a správa přístupů", "Řízení systémů a změn", "Dostupnost a kontinuita provozu", "Důvěrnost informací", "Integrita procesů a dat", "Ochrana osobních údajů: Zásady, souhlas a sdílení osobních údajů", "Ochrana osobních údajů: Kvalita a dohled v oblasti ochrany soukromí"];
 
 // Získání výsledků z localStorage
 var barChartresults = JSON.parse(localStorage.getItem('SOC2Results'));
 
 // Mapování názvů na klíče
 var sectionKeyMap = {
-    "ISMS, řízení aktiv a rizik": "section1",
-    "Řízení dodavatelů a lidské zdroj": "section2",
-    "Řízení provozu, přístupů a změn": "section3",
-    "Akvizice a zvládání incidentů": "section4",
-    "Kontinuita a audit": "section5",
-    "Fyzická bezpečnost": "section6",
-    "Bezpečnost sítí, identity a přístupy": "section7",
-    "Detekce, logování a ochrana aktiv": "section8",
+    "Řízení organizace a rizik": "section1",
+    "Monitorování a správa přístupů": "section2",
+    "Řízení systémů a změn": "section3",
+    "Dostupnost a kontinuita provozu": "section4",
+    "Důvěrnost informací": "section5",
+    "Integrita procesů a dat": "section6",
+    "Ochrana osobních údajů: Zásady, souhlas a sdílení osobních údajů": "section7",
+    "Ochrana osobních údajů: Kvalita a dohled v oblasti ochrany soukromí": "section8",
 };
 
 // Vytvoření pole hodnot z výsledků, které odpovídají statickým názvům os
@@ -157,22 +157,59 @@ function createBarChart() {
 function listUnansweredQuestions() {
     var barChartresults = JSON.parse(localStorage.getItem('SOC2Results'));
     var htmlOutput = '';
+    var nonApplicableOutput = ''; // Output for "Neaplikováno" sections
     let messageDisplayed = false;  // Přidejte tuto novou proměnnou
+    let nonApplicableMessageDisplayed = false;
+
+    // Map section IDs to custom messages
+    var customMessages = {
+        "section1": "Kritérium: Bezpečnost CC1-CC3 - Řízení organizace a rizik",
+        "section2": "Kritérium: Bezpečnost CC4-CC6 - Monitorování a správa přístupů",
+        "section3": "Kritérium: Bezpečnost CC7-CC9 - Řízení systémů a změn",
+        "section4": "Kritérium: Dostupnost A1 - Dostupnost a kontinuita provozu",
+        "section5": "Kritérium: Důvěrnost C1 - Důvěrnost informací",
+        "section6": "Kritérium: Integrita zpracování PI1 - Integrita procesů a dat",
+        "section7": "Kritérium: Ochrana osobních údajů P1-P6 - Zásady, souhlas a sdílení osobních údajů",
+        "section8": "Kritérium: Bezpečnost P7-P8 - Kvalita a dohled v oblasti ochrany soukromí",
+
+    };
 
     questionnaireData.sections.forEach(section => {
         var sectionKey = section.id;
         var sectionResults = barChartresults.sections[sectionKey];
-        if (sectionResults && sectionResults.percentage < 50) {
-            if (!messageDisplayed) {  // Kontrola, zda byla zpráva již zobrazena
-                htmlOutput += `<div class="alert alert-danger">Na následující oblasti by se vaše organizace měla zaměřit, jelikož zde máte zavedeno <b>méně než 50 %</b> požadovaných bezpečnostních opatření:`;
-                messageDisplayed = true;  // Nastavení, že zpráva byla zobrazena
+        console.log(`Checking section ${sectionKey}`, sectionResults); // Debugging output
+
+        if (sectionResults) {
+            if (sectionResults.percentage === null) {
+                console.log(`Section ${sectionKey} is 'Neaplikováno'`); // Debugging output
+                if (!nonApplicableMessageDisplayed) {
+                    nonApplicableOutput += `<div class="alert alert-info">Následující oblasti nejsou pro vaši organizaci relevantní ("Neaplikováno"):`;
+                    nonApplicableMessageDisplayed = true;
+                }
+                nonApplicableOutput += `<li><strong>${customMessages[sectionKey] || section.title}</strong></li>`;
             }
-            htmlOutput += `<li><strong>${section.title}</strong></li>`;
+            else if (sectionResults.percentage < 50) {
+                if (!messageDisplayed) {
+                    htmlOutput += `<div class="alert alert-danger">Na následující oblasti by se vaše organizace měla zaměřit, jelikož zde máte zavedeno <b>méně než 50 %</b> požadovaných bezpečnostních opatření:`;
+                    messageDisplayed = true;
+                }
+                htmlOutput += `<li><strong>${customMessages[sectionKey]}</strong></li>`;
+            }
         }
     });
 
+    if (nonApplicableMessageDisplayed) {
+        nonApplicableOutput += "</ul></div>";
+    }
+
+    if (messageDisplayed) {
+        htmlOutput += "</ul></div>";
+    }
+
     var outputContainer = document.getElementById('otazkypod50');
-    outputContainer.innerHTML = htmlOutput;
+    outputContainer.innerHTML = htmlOutput + nonApplicableOutput; // Ensure both messages are combined
+    console.log(htmlOutput); // Debugging output
+    console.log(nonApplicableOutput); // Debugging output
 }
 
 // Volání funkce pro vytvoření grafu
