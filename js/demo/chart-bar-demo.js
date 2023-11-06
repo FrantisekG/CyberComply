@@ -76,7 +76,7 @@ var backgroundColors = dataValues.map((value) => {
 
 // Funkce pro vytvoření grafu
 function createBarChart() {
-  var myBarChart = new Chart(ctx, {
+  window.myBarChart = new Chart(ctx, {
     type: "bar",
     data: {
       labels: labels,
@@ -200,3 +200,26 @@ function listUnansweredQuestions() {
 // Volání funkce pro vytvoření grafu
 createBarChart();
 listUnansweredQuestions();
+
+// Function to update the bar chart with new data
+function updateBarChart() {
+  // Make sure your chart variable is accessible globally or within this scope
+  var isoScores = JSON.parse(localStorage.getItem('isoScores'));
+  if (isoScores && window.myBarChart) {
+    // Update each data point in the bar chart
+    window.myBarChart.data.datasets[0].data = labels.map(label => {
+      var sectionKey = sectionKeyMap[label];
+      var section = isoScores.sections[sectionKey];
+      return section ? section.percentage : 0;
+    });
+
+    // Finally, update the chart to reflect the new data
+    window.myBarChart.update();
+  }
+}
+
+// This should be called after the chart is confirmed to be created
+document.addEventListener('DOMContentLoaded', function () {
+  updateISODashboardCharts(); // This function should call createBarChart internally
+  updateBarChart(); // This function should be called after the above function
+});

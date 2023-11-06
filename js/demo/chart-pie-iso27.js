@@ -126,6 +126,14 @@ var AnswersPieChart = new Chart(ctxAnswers, {
     },
 });
 
+// Function to update the pie chart with new data
+function updatePieChart() {
+    var isoScores = JSON.parse(localStorage.getItem('isoScores'));
+    if (isoScores && PieChartISO27) {
+        PieChartISO27.data.datasets[0].data = [isoScores.percentage, 100 - isoScores.percentage];
+        PieChartISO27.update();
+    }
+}
 
 
 

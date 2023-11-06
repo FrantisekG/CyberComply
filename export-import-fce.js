@@ -2,7 +2,7 @@ function handleFileSelect(event) {
     var file = event.target.files[0];
     if (file) {
         var reader = new FileReader();
-        reader.onload = function(e) {
+        reader.onload = function (e) {
             var contents = e.target.result;
             var json;
             try {
@@ -26,19 +26,43 @@ function handleFileSelect(event) {
             }
 
             // Provide feedback to the user
-            alert("Data has been successfully imported.");
+            alert("Soubor byl úspěšně nahrán.");
 
             // Hide the text and the upload button
             document.getElementById('uploadText').style.display = 'none';
             document.getElementById('uploadButton').style.display = 'none';
 
             // Show the "Create Dashboard" button
-            document.getElementById('createDashboardButton').style.display = 'block';
+            document.getElementById('createDashboardContainer').style.display = 'block';
         };
         reader.readAsText(file);
     }
 }
 
+// Function to identify and redirect to the appropriate dashboard
+function redirectToDashboard() {
+    var dashboardURL = "";
+
+    // Check which dashboard to load based on the critical keys present in the local storage
+    if (localStorage.getItem("isoScores")) {
+        dashboardURL = "dashboard-NIS-ISO.html";
+    } else if (localStorage.getItem("SOC2Scores")) {
+        dashboardURL = "dashboard-NIS-SOC2.html";
+    } else if (localStorage.getItem("ZKBScores")) {
+        dashboardURL = "dashboard-NIS-ZKB.html";
+    }
+    // ... and so on for other dashboards
+
+    // Redirect to the identified dashboard
+    if (dashboardURL) {
+        window.location.href = dashboardURL;
+    } else {
+        alert("No matching dashboard found for the imported data.");
+    }
+}
+
+// Add event listener to the "Create Dashboard" button
+document.getElementById('createDashboardButton').addEventListener('click', redirectToDashboard);
 
 // Function to export data from localStorage based on the dashboard type
 function exportLocalStorageDataByDashboard(dashboardType) {
@@ -70,7 +94,7 @@ function exportLocalStorageDataByDashboard(dashboardType) {
     var keysToExport = commonKeys.concat(dashboardSpecificKeys[dashboardType] || []);
 
     var dataToExport = {};
-    keysToExport.forEach(function(key) {
+    keysToExport.forEach(function (key) {
         var rawData = localStorage.getItem(key);
 
         try {

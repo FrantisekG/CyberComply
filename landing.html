@@ -386,13 +386,16 @@
             <input type="file" id="fileInput" style="display: none;" />
             <div class="text-center">
               <button onclick="document.getElementById('fileInput').click();" id="uploadButton"
-                class="btn btn-success mr-5" style="padding: 10px 20px; margin-top: 10px;">Vybrat soubor</button>
+                class="btn btn-success mr-5" style="margin-top: 10px;">Vybrat soubor</button>
             </div>
-            <button class="btn btn-success mr-5" id="createDashboardButton" style="display: none;">Vytvořit přehledový
-              dashboard</button>
+            <div class="text-center" style="display: none;" id="createDashboardContainer">
+              <button class="btn btn-success mr-5" id="createDashboardButton"
+                onclick="window.location.href='dashboard-import.html';">Vytvořit přehledový dashboard</button>
+            </div>
           </div>
 
-          <div class="alert alert-warning" role="alert" style="margin-top: 5rem">
+
+          <div class=" alert alert-warning" role="alert" style="margin-top: 5rem">
             <p>
               <b>Nejsme vašimi právními zástupci a informace, které tu
                 poskytujeme, nepředstavují právní doporučení. Pokračováním v
