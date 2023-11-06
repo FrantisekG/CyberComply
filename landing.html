@@ -44,21 +44,21 @@
       </li>
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
+      <li class="nav-item" id="dashboardNISISO">
         <a class="nav-link" href="dashboard-NIS-ISO.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Informační přehled NIS2/ISO</span></a>
       </li>
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
+      <li class="nav-item" id="dashboardNISZKB">
         <a class="nav-link" href="dashboard-NIS-ZKB.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Informační přehled NIS2/ZKB</span></a>
       </li>
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
+      <li class="nav-item" id="dashboardNISSOC2">
         <a class="nav-link" href="SOC 2/dashboard-NIS-SOC2.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Informační přehled NIS2/SOC2</span></a>
@@ -371,6 +371,26 @@
               </div>
             </div>
           </div>
+          <h1 class="h3 mb-4 text-gray-800" style="margin-top: 2em;">Pokud se vracíte</h1>
+          <p class="mb-5">
+            V rámci vyrovnání se s dopady požadavků NIS 2 na fungování
+            společnosti doporučujeme nejprve zahájit sebeposouzení. Následně
+            budete vyzvání k provedení rozdílové analýzy, která vám zmapuje
+            vaše zavedená bezpečnostní opatření a poukáže na nedostatky. Díky
+            těmto dvěma krokům získáte přehled o tom, zda se vás budou týkat
+            požadavky NIS2 a do jakého režimu budete zařazeni a do jaké míry
+            jste v souladu s danou normou či zákonem.
+          </p>
+          <div class="card" style="border: 2px dashed #1cc88a; padding: 20px; background-color: #f9fff9;">
+            <h5 id="uploadText" class="text-center">Zde vložte "json" soubor z předešlého zhodnocení vašeho stavu</h5>
+            <input type="file" id="fileInput" style="display: none;" />
+            <div class="text-center">
+              <button onclick="document.getElementById('fileInput').click();" id="uploadButton"
+                class="btn btn-success mr-5" style="padding: 10px 20px; margin-top: 10px;">Vybrat soubor</button>
+            </div>
+            <button class="btn btn-success mr-5" id="createDashboardButton" style="display: none;">Vytvořit přehledový
+              dashboard</button>
+          </div>
 
           <div class="alert alert-warning" role="alert" style="margin-top: 5rem">
             <p>
@@ -446,6 +466,10 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+
+  <script src="zobrazeni-dashboards.js"></script>
+
+  <script src="export-import-fce.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {

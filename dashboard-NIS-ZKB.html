@@ -202,12 +202,36 @@
 
                 <!-- Begin Page Content -->
                 <div id="dashboard-NIS-ZKB" class="container-fluid">
+                    <!-- Export -->
+
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Informační přehled - Dashboard NIS2 a ZKB</h1>
-                        <a href="#" onclick="downloadPDF('dashboard-NIS-ZKB', 'NIS-ZKB-dashboard.pdf')"
-                            class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i>Stáhnout report</a>
+                        <div>
+                            <!-- Download Dashboard Image Button -->
+                            <a href="#" onclick="downloadPDF('dashboard-NIS-ZKB', 'NIS-ZKB-dashboard.pdf')"
+                                class="btn btn-primary btn-icon-split shadow-sm mr-2">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-download"></i>
+                                </span>
+                                <span class="text">Stáhnout obraz dashboardu</span>
+                            </a>
+
+                            <!-- Export ISO Data Button -->
+                            <button id="exportZKBButton" class="btn btn-danger btn-icon-split">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-download"></i>
+                                </span>
+                                <span class="text">Export ZKB dat</span>
+                            </button>
+
+                            <script>
+                                document.getElementById('exportZKBButton').addEventListener('click', function () {
+                                    exportLocalStorageDataByDashboard("ZKB");
+                                });
+                            </script>
+                        </div>
                     </div>
+
                     <!-- Page Heading -->
 
                     <!---*--------------------- KARTA NIS2 -------------------------------->
@@ -785,6 +809,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="alert alert-warning" role="alert">
                         <p><b>Dosažené výsledky jsou čistě orientační a návodné. Neslouží jako předcertifikační
                                 příprava.</b></p>
@@ -797,6 +822,7 @@
                         rozvádí. Nový zákon by podle transpoziční lhůty měl vejít v
                         platnost v říjnu 2024. Nově regulovaným subjektům bude dána
                         přechodná lhůta jednoho roku pro zahájení plnění povinností.
+
                     </div>
                 </div>
             </div>
@@ -869,6 +895,8 @@
 
     <!-- Skript na stažení dashboardu-->
     <script src="downloadPDF.js"></script>
+
+    <script src="export-import-fce.js"></script>
 
 
     <script>
