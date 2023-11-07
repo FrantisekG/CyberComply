@@ -35,7 +35,7 @@ var ctx = document.getElementById("ZKBBarChart");
 var labels = ["ISMS, řízení aktiv a rizik", "Řízení dodavatelů a lidské zdroj", "Řízení provozu, přístupů a změn", "Akvizice a zvládání incidentů", "Kontinuita a audit", "Fyzická bezpečnost", "Bezpečnost sítí, identity a přístupy", "Detekce, logování a ochrana aktiv", "SIEM, dostupnost a kryptografrie", "Bezpečnostní politika a reaktivní opatření"];
 
 // Získání výsledků z localStorage
-var barChartresults = JSON.parse(localStorage.getItem('zkbResults'));
+var barChartresults = JSON.parse(localStorage.getItem('zkbScores'));
 
 // Mapování názvů na klíče
 var sectionKeyMap = {
@@ -50,6 +50,9 @@ var sectionKeyMap = {
     "SIEM, dostupnost a kryptografrie": "section9",
     "Bezpečnostní politika a reaktivní opatření": "section10"
 };
+
+// Set a minimum value for the bar height so a sliver is shown for zero values
+const MIN_BAR_HEIGHT = 2;
 
 // Vytvoření pole hodnot z výsledků, které odpovídají statickým názvům os
 var dataValues = labels.map(label => {
@@ -147,8 +150,11 @@ function createBarChart() {
                 caretPadding: 10,
                 callbacks: {
                     label: function (tooltipItem, chart) {
+                        var value = tooltipItem.yLabel;
+                        // If the value is exactly MIN_BAR_HEIGHT, display "N/A"
+                        var displayValue = (value === MIN_BAR_HEIGHT) ? "0 %" : number_format(value) + " %";
                         var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-                        return datasetLabel + ': ' + number_format(tooltipItem.yLabel) + ' %';
+                        return datasetLabel + ": " + displayValue;
                     }
                 }
             },
@@ -158,7 +164,7 @@ function createBarChart() {
 };
 // Funkce pro izolování odpovědí NE
 function listUnansweredQuestions() {
-    var barChartresults = JSON.parse(localStorage.getItem('zkbResults'));
+    var barChartresults = JSON.parse(localStorage.getItem('zkbScores'));
     var htmlOutput = '';
     let messageDisplayed = false;  // Přidejte tuto novou proměnnou
 

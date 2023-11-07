@@ -35,7 +35,7 @@ var ctx = document.getElementById("SOC2BarChart");
 var labels = ["Řízení organizace a rizik", "Monitorování a správa přístupů", "Řízení systémů a změn", "Dostupnost a kontinuita provozu", "Důvěrnost informací", "Integrita procesů a dat", "Ochrana osobních údajů: Zásady, souhlas a sdílení osobních údajů", "Ochrana osobních údajů: Kvalita a dohled v oblasti ochrany soukromí"];
 
 // Získání výsledků z localStorage
-var barChartresults = JSON.parse(localStorage.getItem('SOC2Results'));
+var barChartresults = JSON.parse(localStorage.getItem('SOC2Scores'));
 
 // Mapování názvů na klíče
 var sectionKeyMap = {
@@ -49,11 +49,15 @@ var sectionKeyMap = {
     "Ochrana osobních údajů: Kvalita a dohled v oblasti ochrany soukromí": "section8",
 };
 
+// Set a minimum value for the bar height so a sliver is shown for zero values
+const MIN_BAR_HEIGHT = 2;
+
 // Vytvoření pole hodnot z výsledků, které odpovídají statickým názvům os
 var dataValues = labels.map(label => {
     var sectionKey = sectionKeyMap[label];
     var section = barChartresults.sections[sectionKey];
-    return section ? section.percentage : 0;
+    // Ensure a minimum value for the bar to be visible
+    return section ? (section.percentage > 0 ? section.percentage : MIN_BAR_HEIGHT) : MIN_BAR_HEIGHT;
 });
 
 var backgroundColors = dataValues.map(value => {
@@ -69,8 +73,7 @@ var backgroundColors = dataValues.map(value => {
 
 // Funkce pro vytvoření grafu
 function createBarChart() {
-
-    var SOC2BarChart = new Chart(ctx, {
+    window.SOC2BarChart = new Chart(ctx, {
         type: 'bar',
         data: {
             labels: labels,
@@ -144,8 +147,11 @@ function createBarChart() {
                 caretPadding: 10,
                 callbacks: {
                     label: function (tooltipItem, chart) {
+                        var value = tooltipItem.yLabel;
+                        // If the value is exactly MIN_BAR_HEIGHT, display "N/A"
+                        var displayValue = (value === MIN_BAR_HEIGHT) ? "0 %" : number_format(value) + " %";
                         var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-                        return datasetLabel + ': ' + number_format(tooltipItem.yLabel) + ' %';
+                        return datasetLabel + ": " + displayValue;
                     }
                 }
             },
@@ -155,7 +161,7 @@ function createBarChart() {
 };
 // Funkce pro izolování odpovědí NE
 function listUnansweredQuestions() {
-    var barChartresults = JSON.parse(localStorage.getItem('SOC2Results'));
+    var barChartresults = JSON.parse(localStorage.getItem('SOC2Scores'));
     var htmlOutput = '';
     var nonApplicableOutput = ''; // Output for "Neaplikováno" sections
     let messageDisplayed = false;  // Přidejte tuto novou proměnnou

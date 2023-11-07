@@ -2,7 +2,7 @@
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#858796';
 
-const storedResults = localStorage.getItem('SOC2Results');
+const storedResults = localStorage.getItem('SOC2Scores');
 const results = storedResults ? JSON.parse(storedResults) : null;
 console.log(results);  // Přidejte tento řádek, abyste zkontrolovali, jak vypadají uložené výsledky.
 

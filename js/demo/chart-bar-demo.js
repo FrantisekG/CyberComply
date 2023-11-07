@@ -44,7 +44,7 @@ var labels = [
 ];
 
 // Získání výsledků z localStorage
-var barChartresults = JSON.parse(localStorage.getItem("isoResults"));
+var barChartresults = JSON.parse(localStorage.getItem("isoScores"));
 
 // Mapování názvů na klíče
 var sectionKeyMap = {
@@ -56,6 +56,9 @@ var sectionKeyMap = {
   "Hodnocení výkonnosti": "section6",
   "Zlepšování": "section7",
 };
+
+// Set a minimum value for the bar height so a sliver is shown for zero values
+const MIN_BAR_HEIGHT = 2;
 
 // Vytvoření pole hodnot z výsledků, které odpovídají statickým názvům os
 var dataValues = labels.map((label) => {
@@ -156,11 +159,11 @@ function createBarChart() {
         caretPadding: 10,
         callbacks: {
           label: function (tooltipItem, chart) {
-            var datasetLabel =
-              chart.datasets[tooltipItem.datasetIndex].label || "";
-            return (
-              datasetLabel + ": " + number_format(tooltipItem.yLabel) + " %"
-            );
+            var value = tooltipItem.yLabel;
+            // If the value is exactly MIN_BAR_HEIGHT, display "N/A"
+            var displayValue = (value === MIN_BAR_HEIGHT) ? "N/A" : number_format(value) + " %";
+            var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
+            return datasetLabel + ": " + displayValue;
           },
         },
       },
@@ -169,7 +172,7 @@ function createBarChart() {
 }
 // Funkce pro izolování odpovědí NE
 function listUnansweredQuestions() {
-  var barChartresults = JSON.parse(localStorage.getItem("isoResults"));
+  var barChartresults = JSON.parse(localStorage.getItem("isoScores"));
   var htmlOutput = "";
   let messageDisplayed = false; // Přidejte tuto novou proměnnou
 
@@ -201,25 +204,3 @@ function listUnansweredQuestions() {
 createBarChart();
 listUnansweredQuestions();
 
-// Function to update the bar chart with new data
-function updateBarChart() {
-  // Make sure your chart variable is accessible globally or within this scope
-  var isoScores = JSON.parse(localStorage.getItem('isoScores'));
-  if (isoScores && window.myBarChart) {
-    // Update each data point in the bar chart
-    window.myBarChart.data.datasets[0].data = labels.map(label => {
-      var sectionKey = sectionKeyMap[label];
-      var section = isoScores.sections[sectionKey];
-      return section ? section.percentage : 0;
-    });
-
-    // Finally, update the chart to reflect the new data
-    window.myBarChart.update();
-  }
-}
-
-// This should be called after the chart is confirmed to be created
-document.addEventListener('DOMContentLoaded', function () {
-  updateISODashboardCharts(); // This function should call createBarChart internally
-  updateBarChart(); // This function should be called after the above function
-});

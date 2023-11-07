@@ -1145,6 +1145,57 @@ function displaySection(sectionId, containerId) {
 
           label.appendChild(tooltipWrapper);
         }
+        // Tooltip vysvětlující "Ano"
+        if (option === "Ano") {
+          const tooltipWrapper = document.createElement('div');
+          tooltipWrapper.className = "info-tooltip";
+
+          const iconElement = document.createElement('i');
+          iconElement.className = "fas fa-info-circle";
+          iconElement.style.marginLeft = '5px';  // Adjust as needed
+          tooltipWrapper.appendChild(iconElement);
+
+          const tooltipTextElement = document.createElement('span');
+          tooltipTextElement.className = "tooltiptext bottom";
+          tooltipTextElement.textContent = "Opatření máte plně zavedeno a dokumentováno";
+          tooltipWrapper.appendChild(tooltipTextElement);
+
+          label.appendChild(tooltipWrapper);
+        }
+        // Tooltip vysvětlující "Ano"
+        if (option === "Částečně") {
+          const tooltipWrapper = document.createElement('div');
+          tooltipWrapper.className = "info-tooltip";
+
+          const iconElement = document.createElement('i');
+          iconElement.className = "fas fa-info-circle";
+          iconElement.style.marginLeft = '5px';  // Adjust as needed
+          tooltipWrapper.appendChild(iconElement);
+
+          const tooltipTextElement = document.createElement('span');
+          tooltipTextElement.className = "tooltiptext bottom";
+          tooltipTextElement.textContent = "Některé aspekty opatření jsou zavedeny, ale ne všechny";
+          tooltipWrapper.appendChild(tooltipTextElement);
+
+          label.appendChild(tooltipWrapper);
+        }
+        // Tooltip vysvětlující "Ano"
+        if (option === "Ne") {
+          const tooltipWrapper = document.createElement('div');
+          tooltipWrapper.className = "info-tooltip";
+
+          const iconElement = document.createElement('i');
+          iconElement.className = "fas fa-info-circle";
+          iconElement.style.marginLeft = '5px';  // Adjust as needed
+          tooltipWrapper.appendChild(iconElement);
+
+          const tooltipTextElement = document.createElement('span');
+          tooltipTextElement.className = "tooltiptext bottom";
+          tooltipTextElement.textContent = "Opatření není vůbec zavedeno";
+          tooltipWrapper.appendChild(tooltipTextElement);
+
+          label.appendChild(tooltipWrapper);
+        }
       });
 
       questionWrapper.appendChild(optionsWrapper);

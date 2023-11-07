@@ -973,13 +973,12 @@
 
     <script>
 
-        // Function to update charts on the ISO dashboard
+        //  NOVÉ KVŮLI UPLOAD: Function to update charts on the ISO dashboard
         function updateISODashboardCharts() {
             const isoResults = localStorage.getItem('isoScores');
             if (isoResults) {
                 const parsedIsoResults = JSON.parse(isoResults);
                 updatePieChart(parsedIsoResults);
-                updateBarChart(parsedIsoResults); // Add this to update the bar chart
                 console.log("Takhle vypadají data tekoucí do pie chart", parsedIsoResults);
             }
         }

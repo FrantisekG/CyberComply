@@ -52,7 +52,7 @@ var labels = [
 
 
 // Získání výsledků z localStorage
-var barChartresults = JSON.parse(localStorage.getItem("isoResults"));
+var barChartresults = JSON.parse(localStorage.getItem("isoScores"));
 
 // Mapování názvů na klíče
 var sectionKeyMap = {
@@ -91,7 +91,7 @@ var backgroundColors = dataValues.map((value) => {
 
 // Funkce pro vytvoření grafu
 function createBarChartPrilohy() {
-    var myBarChartPrilohy = new Chart(ctx, {
+    window.myBarChartPrilohy = new Chart(ctx, {
         type: "bar",
         data: {
             labels: labels,
@@ -207,7 +207,7 @@ function createBarChartPrilohy() {
 }
 // Funkce pro izolování odpovědí NE
 function listUnansweredQuestionsPrilohy() {
-    var barChartresults = JSON.parse(localStorage.getItem("isoResults"));
+    var barChartresults = JSON.parse(localStorage.getItem("isoScores"));
     var htmlOutput = "";
     var nonApplicableOutput = "";
     let messageDisplayed = false;

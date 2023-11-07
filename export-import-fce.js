@@ -47,8 +47,8 @@ function redirectToDashboard() {
     if (localStorage.getItem("isoScores")) {
         dashboardURL = "dashboard-NIS-ISO.html";
     } else if (localStorage.getItem("SOC2Scores")) {
-        dashboardURL = "dashboard-NIS-SOC2.html";
-    } else if (localStorage.getItem("ZKBScores")) {
+        dashboardURL = "SOC 2/dashboard-NIS-SOC2.html";
+    } else if (localStorage.getItem("zkbScores")) {
         dashboardURL = "dashboard-NIS-ZKB.html";
     }
     // ... and so on for other dashboards
@@ -88,7 +88,7 @@ function exportLocalStorageDataByDashboard(dashboardType) {
     var dashboardSpecificKeys = {
         "ISO": ["isoScores"],
         "SOC2": ["SOC2Scores"],
-        "ZKB": ["ZKBScores"],
+        "ZKB": ["zkbScores"],
     };
 
     var keysToExport = commonKeys.concat(dashboardSpecificKeys[dashboardType] || []);
@@ -111,7 +111,7 @@ function exportLocalStorageDataByDashboard(dashboardType) {
     var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(dataToExport, null, 2));
     var downloadAnchorNode = document.createElement('a');
     downloadAnchorNode.setAttribute("href", dataStr);
-    downloadAnchorNode.setAttribute("download", dashboardType + "_exportedData.json");
+    downloadAnchorNode.setAttribute("download", dashboardType + "_export-dat-cybercomply.json");
     document.body.appendChild(downloadAnchorNode); // required for firefox
     downloadAnchorNode.click();
     downloadAnchorNode.remove();

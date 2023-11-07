@@ -126,7 +126,7 @@ var AnswersPieChart = new Chart(ctxAnswers, {
     },
 });
 
-// Function to update the pie chart with new data
+// NOVÉ KVŮLI UPLOAD: Function to update the pie chart with new data
 function updatePieChart() {
     var isoScores = JSON.parse(localStorage.getItem('isoScores'));
     if (isoScores && PieChartISO27) {

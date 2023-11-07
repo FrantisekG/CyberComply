@@ -2,7 +2,7 @@
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#858796';
 
-const storedResults = localStorage.getItem('zkbResults');
+const storedResults = localStorage.getItem('zkbScores');
 const results = storedResults ? JSON.parse(storedResults) : null;
 console.log(results);  // Přidejte tento řádek, abyste zkontrolovali, jak vypadají uložené výsledky.
 
@@ -22,7 +22,7 @@ function displayPercentage(chart) {
 
 // Pie Chart
 var ctx = document.getElementById("PieChartZKB");
-var PieChartZKB = new Chart(ctx, {
+window.PieChartZKB = new Chart(ctx, {
     type: 'doughnut',
     data: {
         labels: ["Zavedeno", "Nezavedeno"],
