@@ -17,7 +17,7 @@ const questionnaireData = {
                         {
                             "id": "3b",
                             "text": "Je stanoven rozsah ISMS?",
-                            "comment": "Smyslem stanovení rozsahuje určit organizační části a aktiva, jichž se ISMS týká, tedy fyzický perimetr, organizační celky, zainteresované osoby(zaměstnanci, dodavatelé a další) a technologie",
+                            "comment": "Smyslem stanovení rozsahu je určit organizační části a aktiva, jichž se ISMS týká, tedy fyzický perimetr, organizační celky, zainteresované osoby(zaměstnanci, dodavatelé a další) a technologie.",
                             "response": null
                         },
                         {
@@ -41,13 +41,13 @@ const questionnaireData = {
                         {
                             "id": "4a",
                             "text": "Je vytvořena politika řízení aktiv?",
-                            "comment": "Např. metodika identifikace a hodnocení aktiv, pravidla ochrany, manipualce, likvidace",
+                            "comment": "Např. metodika identifikace a hodnocení aktiv, pravidla ochrany, manipualce, likvidace.",
                             "response": null
                         },
                         {
                             "id": "4b",
                             "text": "Dochází k identifikaci, evidenci a hodnocení aktiv včetně jejich vazeb?",
-                            "comment": "Např. hodnocení primárních aktiv, zohledňuje oblasti dle § 4 odst. 2",
+                            "comment": "Např. hodnocení primárních aktiv, zohledňuje oblasti dle § 4 odst. 2.",
                             "response": null
                         },
                         {
@@ -70,14 +70,14 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "5a",
-                            "text": "Je vytvořena politika řízení rizik",
-                            "comment": "Např. metodika identifikace a hodnocení rizik, kritéria pro akceptovatelnost, SoA, RTP, zpráva o hodnocení rizik",
+                            "text": "Je vytvořena politika řízení rizik?",
+                            "comment": "Např. metodika identifikace a hodnocení rizik, kritéria pro akceptovatelnost, SoA, RTP, zpráva o hodnocení rizik.",
                             "response": null
                         },
                         {
                             "id": "5b",
-                            "text": "Dochází k identifikaci, evidenci a hodnocení rizik včetně jejich relevantních hrozeb, zranitelnosti a dopadů",
-                            "comment": "Včetně rizik spojených s dodavateli, více v příloze 2 a 3 VKB",
+                            "text": "Dochází k identifikaci, evidenci a hodnocení rizik včetně jejich relevantních hrozeb, zranitelnosti a dopadů?",
+                            "comment": "Včetně rizik spojených s dodavateli, více v příloze 2 a 3 VKB.",
                             "response": null
                         },
                         {
