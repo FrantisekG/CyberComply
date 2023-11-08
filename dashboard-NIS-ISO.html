@@ -44,28 +44,43 @@
             </li>
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+            <li class="nav-item" id="dashboardNISISO">
                 <a class="nav-link" href="dashboard-NIS-ISO.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Informační přehled</span></a>
+                    <span>Informační dashboard NIS 2/ISO</span></a>
+            </li>
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item" id="dashboardNISZKB">
+                <a class="nav-link" href="dashboard-NIS-ZKB.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Informační dashboard NIS 2/ZKB</span></a>
+            </li>
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item" id="dashboardNISSOC2">
+                <a class="nav-link" href="SOC 2/dashboard-NIS-SOC2.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Informační dashboard NIS 2/SOC2</span></a>
             </li>
 
             <!-- Nav Item - Posouzení NIS2-->
             <li class="nav-item">
-                <a class="nav-link" href="nis2.html">
+                <a class="nav-link" href="smernice-nis2.html">
                     <i class="fa fa-gavel"></i>
-                    <span>Směrnice NIS2</span></a>
+                    <span>Směrnice NIS 2</span></a>
             </li>
 
             <!-- Nav Item - Posouzení NIS2-->
             <li class="nav-item">
-                <a class="nav-link" href="">
-                    <i class=" fa fa-folder"></i>
+                <a class="nav-link" href="legislativa.html">
+                    <i class="fa fa-folder"></i>
                     <span>Legislativa</span></a>
             </li>
+
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="#" data-target="#collapseUtilities" aria-expanded="true"
+                <a class="nav-link" href="FAQ.html" data-target="#collapseUtilities" aria-expanded="true"
                     aria-controls="collapseUtilities">
                     <i class="fa fa-graduation-cap"></i>
                     <span>FAQ</span>
@@ -145,15 +160,44 @@
                                 <span class="badge badge-danger badge-counter"></span>
                             </a>
                         </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter"></span>
+                            </a>
+                        </li>
+
                         <div class="topbar-divider d-none d-sm-block"></div>
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Tomáš Novák</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Uživatel</span>
                                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg" />
                             </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profil
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Nastavení
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
                 <!-- End of Topbar -->
@@ -161,7 +205,7 @@
                 <!-- Begin Page Content -->
                 <div id="dashboard-NIS-ISO" class="container-fluid">
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Informační přehled - Dashboard NIS2 a ISO/IEC 27001</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Informační přehled - Dashboard NIS 2 a ISO/IEC 27001</h1>
                         <div>
                             <!-- Download Dashboard Image Button -->
                             <a href="#" onclick="downloadPDF('dashboard-NIS-ISO', 'NIS-ISO-dashboard.pdf')"
@@ -512,7 +556,7 @@
                                         </div>
                                         <div class="alert alert-warning" id="verejnasprava" style="display: none"
                                             role="alert">
-                                            Směrnice NIS2 povinně vyžaduje regulaci centrální
+                                            Směrnice NIS 2 povinně vyžaduje regulaci centrální
                                             veřejné správy. Regionální a lokální autority (tzn. obce
                                             a kraje) mohou být regulovány, pokud to státy považují
                                             za vhodné. Nově připravovaný zákon počítá s tím, že bude
@@ -902,6 +946,8 @@
     <script src="chart-bar-NIS_ISO-srovn.js"></script>
 
     <script src="export-import-fce.js"></script>
+
+    <script src="zobrazeni-dashboards.js"></script>
 
     <!-- Tyhle skripty by se asi mohly klidně smazat -->
     <script>
