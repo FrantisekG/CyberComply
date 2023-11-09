@@ -82,13 +82,13 @@ const questionnaireData = {
                         },
                         {
                             "id": "5c",
-                            "text": "Dochází k identifikaci, evidenci a hodnocení rizik včetně jejich relevantních hrozeb, zranitelnosti a dopadů",
-                            "comment": "Včetně rizik spojených s dodavateli, více v příloze 2 a 3 VKB",
+                            "text": "Dochází k identifikaci, evidenci a hodnocení rizik včetně jejich relevantních hrozeb, zranitelnosti a dopadů?",
+                            "comment": "Včetně rizik spojených s dodavateli, více v příloze 2 a 3 VKB.",
                             "response": null
                         },
                         {
                             "id": "5d",
-                            "text": "Jsou bezpečnostní opatřená zaváděna v souladu s RTP",
+                            "text": "Jsou bezpečnostní opatřená zaváděna v souladu s RTP?",
                             "comment": "",
                             "response": null
                         },
@@ -113,31 +113,31 @@ const questionnaireData = {
                         },
                         {
                             "id": "6c",
-                            "text": "Jsou zajištěny dostatečné zdroje na kybernetickou bezpečnost",
-                            "comment": "",
+                            "text": "Jsou zajištěny dostatečné zdroje na kybernetickou bezpečnost?",
+                            "comment": "Finanční, lidské atd.",
                             "response": null
                         },
                         {
                             "id": "6d",
-                            "text": "Je zajištěna mlčenlivost administrátorů a osob zastávajících bezpečnostní role",
+                            "text": "Je zajištěna mlčenlivost administrátorů a osob zastávajících bezpečnostní role?",
                             "comment": "",
                             "response": null
                         },
                         {
                             "id": "6e",
-                            "text": "Mají osoby zastávající bezpečnostní role dostatečné pravomoci",
+                            "text": "Mají osoby zastávající bezpečnostní role dostatečné pravomoci?",
                             "comment": "",
                             "response": null
                         },
                         {
                             "id": "6f",
-                            "text": "Je zajištěna zastupitelnost bezpečnostních rolí",
+                            "text": "Je zajištěna zastupitelnost bezpečnostních rolí?",
                             "comment": "",
                             "response": null
                         },
                         {
                             "id": "6g",
-                            "text": "Je určeno složení výboru KB, včetně jeho práv a povinnosti a výbor pro KB je ustanoven a vykonává svou činnosti",
+                            "text": "Je určeno složení výboru KB, včetně jeho práv a povinnosti a výbor pro KB je ustanoven a vykonává svou činnosti?",
                             "comment": "",
                             "response": null
                         },
@@ -157,20 +157,20 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "7a",
-                            "text": "Je určen manažer KB a zároveň splňuje požadavky stanoveny ve VKB",
-                            "comment": "Popis je uveden v příloze 6, tabulce 2",
+                            "text": "Je určen manažer KB a zároveň splňuje požadavky stanoveny ve VKB?",
+                            "comment": "Popis je uveden v příloze 6, tabulce 2.",
                             "response": null
                         },
                         {
                             "id": "7b",
-                            "text": "Je určen architekt KB, který splňuje požadavky VKB",
-                            "comment": "Popis je uveden v příloze 6, tabulce 3",
+                            "text": "Je určen architekt KB, který splňuje požadavky vyplývající z VKB?",
+                            "comment": "Popis je uveden v příloze 6, tabulce 3.",
                             "response": null
                         },
                         {
                             "id": "7c",
-                            "text": "Je určen auditor KB, který splňuje požadavky VKB",
-                            "comment": "Popis je uveden v příloze 6, tabulce 4",
+                            "text": "Je určen auditor KB, který splňuje požadavky vyplývající z VKB?",
+                            "comment": "Popis je uveden v příloze 6, tabulce 4.",
                             "response": null
                         },
                     ]
@@ -182,49 +182,49 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "8a",
-                            "text": "Je vytvořena politika řízení dodavatelů včetně pravidel",
-                            "comment": "Popis je uveden v příloze 1.4",
+                            "text": "Je vytvořena politika řízení dodavatelů včetně pravidel?",
+                            "comment": "Popis je uveden v příloze 1.4.",
                             "response": null
                         },
                         {
                             "id": "8b",
-                            "text": "Jsou významní dodavatelé evidování a jsou prokazatelně informování dle VKB",
+                            "text": "Jsou významní dodavatelé evidování a jsou prokazatelně informování dle VKB?",
                             "comment": "",
                             "response": null
                         },
                         {
                             "id": "8c",
-                            "text": "Jsou dodavatelé seznamování s pravidly a je požadováno plnění těchto pravidel",
-                            "comment": "Např. jsou poučování o svých povinnostech a odpovědnost",
+                            "text": "Jsou dodavatelé seznamování s pravidly a je požadováno plnění těchto pravidel?",
+                            "comment": "Např. dodavatelé jsou poučování o svých povinnostech a odpovědnostech.",
                             "response": null
                         },
                         {
                             "id": "8d",
-                            "text": "Je ve smlouvě s významnými dodavateli zohledněna příloha č. 7 a jsou smlouvy pravidelně přezkoumávany",
-                            "comment": "Více v příloze 7",
+                            "text": "Je ve smlouvě s významnými dodavateli zohledněna příloha č. 7 a jsou smlouvy pravidelně přezkoumávány?",
+                            "comment": "Více v příloze 7.",
                             "response": null
                         },
                         {
                             "id": "8e",
-                            "text": "Probíhá předsmluvní hodnocení rizik",
+                            "text": "Probíhá předsmluvní hodnocení rizik?",
                             "comment": "",
                             "response": null
                         },
                         {
                             "id": "8f",
-                            "text": "Je určena smluvní odpovědnost za zavedení bezpečnostních opatření a jejich",
+                            "text": "Je určena smluvní odpovědnost za zavedení bezpečnostních opatření a jejich?",
                             "comment": "Je kontrolováno dodržování těchto požadavků.",
                             "response": null
                         },
                         {
                             "id": "8g",
-                            "text": "Je reagováno na nedostatky při řízení dodavatelů a jsou tyto nedostatky odstraňovány",
+                            "text": "Je reagováno na nedostatky při řízení dodavatelů a jsou tyto nedostatky odstraňovány?",
                             "comment": "",
                             "response": null
                         },
                         {
                             "id": "8h",
-                            "text": "Jsou stanoveným způsobem institucím podle § 34 hlášeny aktuální kontaktní údaje",
+                            "text": "Jsou stanoveným způsobem institucím podle § 34 hlášeny aktuální kontaktní údaje?",
                             "comment": "",
                             "response": null
                         },
@@ -249,13 +249,13 @@ const questionnaireData = {
                         {
                             "id": "9c",
                             "text": "Obsahuje plán všechny mandatorní školení podle VKB?",
-                            "comment": "Jsou vedeny přehledy absolvovaných školení?",
+                            "comment": "Např. přehledy absolvovaných školení.",
                             "response": null
                         },
                         {
                             "id": "9d",
                             "text": "Jsou prováděna vstupní a pravidelná školení administrátorů, uživatelů a osob zástavajících bezpečnostní role?",
-                            "comment": "Probíhá ověřování získaných znalostí?",
+                            "comment": "Včetně ověřování získaných znalostí.",
                             "response": null
                         },
                         {
@@ -303,7 +303,7 @@ const questionnaireData = {
                         {
                             "id": "10a",
                             "text": "Je vytvořena politika řízení provozu a komunikací včetně pravidel a postuů dle § 10 odst. 1) VKB?",
-                            "comment": "Je tato politika dodržována a aktualizována? Více informací v příloze 5.",
+                            "comment": "Politika je zároveň dodržována a aktualizována.",
                             "response": null
                         },
                         {
@@ -382,7 +382,7 @@ const questionnaireData = {
                         {
                             "id": "12a",
                             "text": "Je vytvořena politika řízení přístupů včetně pravidel pro ochranu přihlašovacích údajů?",
-                            "comment": "Zároveň dochází k evidenci přidělených a odebraných ",
+                            "comment": "",
                             "response": null
                         },
                         {
@@ -400,25 +400,25 @@ const questionnaireData = {
                         {
                             "id": "12d",
                             "text": "Jsou řízeny identifikátory, přístupová práva a oprávnění aplikací a technických účtů?",
-                            "comment": "Příklad",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "12e",
                             "text": "Je zavedena centrální správa mobilních zařízení?",
-                            "comment": "Příklad",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "12f",
                             "text": "Dochází k odebrání nebo změně přístupových oprávnění u interních a externích rolí?",
-                            "comment": "Příklad",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "12g",
                             "text": "Jsou stanoveny jednoznačná pravidla a postupy u zaměstnanců, kteří používají k pracovním účelům vlastní zařízení?",
-                            "comment": "BYOD",
+                            "comment": "Např. mobilní zařízení.",
                             "response": null
                         },
                         {
@@ -487,24 +487,24 @@ const questionnaireData = {
                         {
                             "id": "14a",
                             "text": "Jsou vytvořeny politiky pro nasazení a používání nástroje pro detekci kybernetických bezpečnostních událostí?",
-                            "comment": "Školení je prováděno v adekvátní době po nástupu a poté v pravidelných intervalech",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "14b",
                             "text": "Jsou vytvořeny politiky pro využití a údržbu nástroje pro sběr a vyhodnocování kybernetických bezpečnostních událostí a zvládání kybernetických bezpečnostních incidentů?",
-                            "comment": "Např. protokoly o školení, informace z pohovorů",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "14c",
                             "text": "Jsou stanoveny procesy a postupy pro detekci a vyhodnocování kybernetických bezpečnostních událostí a zvládání kybernetických bezpečnostních incidentů?",
-                            "comment": "Např. protokoly o školení, informace z pohovorů",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "14d",
-                            "text": "Je zajištěno, aby interní  i externí zaměstnanci oznamovali nestandartní chování zařízeních a systémů?",
+                            "text": "Je zajištěno, aby interní i externí zaměstnanci oznamovali nestandartní chování zařízeních a systémů?",
                             "comment": "",
                             "response": null
                         },
@@ -516,7 +516,7 @@ const questionnaireData = {
                         },
                         {
                             "id": "14f",
-                            "text": "Jsou pro odvrácení a zmínění dopadu kybernetických bezpečnostních incidentů přijímána opatření?",
+                            "text": "Jsou pro odvrácení a zmírnění dopadů kybernetických bezpečnostních incidentů přijímána opatření?",
                             "comment": "",
                             "response": null
                         },
@@ -535,7 +535,7 @@ const questionnaireData = {
                         {
                             "id": "14i",
                             "text": "Jsou incidenty řádně hlášeny dle požadavků VKB?",
-                            "comment": "NÚKIB, CZ.NIC",
+                            "comment": "NÚKIB, CZ.NIC.",
                             "response": null
                         },
                         {
@@ -640,7 +640,7 @@ const questionnaireData = {
                         {
                             "id": "17b",
                             "text": "Je vymezen a chráněn fyzický bezpečnostní perimetr?",
-                            "comment": "Zahrnující serverovny, rozvodny, racky, kabely, prostory IT správců, trezory, úložiště zálohd atd.",
+                            "comment": "Zahrnující serverovny, rozvodny, racky, kabely, prostory IT správců, trezory, úložiště záloh atd.",
                             "response": null
                         },
                         {
@@ -731,7 +731,7 @@ const questionnaireData = {
                         {
                             "id": "10b",
                             "text": "Je provedena dostatečná segmentace sítě?",
-                            "comment": "Např. uživatelské, speciální, DMZ, serverové, modality a analyzátory.",
+                            "comment": "Např. na uživatelské, speciální, DMZ, serverové.",
                             "response": null
                         },
                         {
@@ -767,13 +767,13 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "19a",
-                            "text": "Je implentován nástroj pro ověření identity uživatele, který současně zajišťuje řízení počtu neúspěšných pokusů o přihlášení, centralizovanou správu identit a další požadavky dle § 19 odst. 2 VKB",
-                            "comment": "Např. Active Directory (AD), IDM.",
+                            "text": "Je implentován nástroj pro ověření identity uživatele, který současně zajišťuje řízení počtu neúspěšných pokusů o přihlášení, centralizovanou správu identit a další požadavky dle § 19 odst. 2 VKB?",
+                            "comment": "Např. Active Directory (AD), IdM.",
                             "response": null
                         },
                         {
                             "id": "19b",
-                            "text": "Je zavedena dvoufaktorová autentizace uživatelů, administrátorů a aplikací s nejméně dvěma různými typy faktorů?",
+                            "text": "Je zavedena dvoufaktorová autentizace uživatelů, administrátorů a do aplikací s nejméně dvěma různými typy faktorů?",
                             "comment": "",
                             "response": null
                         },
@@ -786,13 +786,13 @@ const questionnaireData = {
                         {
                             "id": "19d",
                             "text": "V případě, že není zavedena dvoufaktorová autentizace, jsou dodrženy minimální požadavky na hesla dlě § 19 odst. 5 VKB?",
-                            "comment": "",
+                            "comment": "U uživatelů 12 znaků, u administrátorů 17 znaků.",
                             "response": null
                         },
                         {
                             "id": "19e",
                             "text": "Jsou autentizační údaje přenášeny se zachováním důvěrnosti a ukládány ve formě odolné proti offline útokům?",
-                            "comment": "Komunikace je šifrovaná",
+                            "comment": "Např. pomocí šifrování.",
                             "response": null
                         },
                         {
@@ -866,7 +866,7 @@ const questionnaireData = {
                         {
                             "id": "21e",
                             "text": "Jsou nastavena pravidla pro používání výměnných zařízení a datových nosičů?",
-                            "comment": "Např. zákaz automatického spouštění obsahu",
+                            "comment": "Např. zákaz automatického spouštění obsahu.",
                             "response": null
                         },
                         {
@@ -914,7 +914,7 @@ const questionnaireData = {
                         {
                             "id": "23b",
                             "text": "Pravidla pro sledování provozu jsou vhodně nastaveny?",
-                            "comment": "Zvolené rozsahy, aktivita, komunikační kanály, perimetr",
+                            "comment": "Zvolené rozsahy, aktivita, komunikační kanály, perimetr.",
                             "response": null
                         },
                     ],
@@ -986,7 +986,7 @@ const questionnaireData = {
                         },
                         {
                             "id": "26b",
-                            "text": "Jsou používány aktuálně odolné kryptografické algoritmy?",
+                            "text": "Jsou používány aktuálně odolné kryptografické prostředky?",
                             "comment": "S ohledem na doporučení vydané NÚKIB.",
                             "response": null
                         },
@@ -1016,13 +1016,13 @@ const questionnaireData = {
                         },
                         {
                             "id": "27b",
-                            "text": "Je konektivita do internetu zajištěna od 2 různých poskytovatelů?",
+                            "text": "Je konektivita do internetu zajištěna od dvou různých poskytovatelů?",
                             "comment": "",
                             "response": null
                         },
                         {
                             "id": "27c",
-                            "text": "Jsou k dispozici 2 nezávislé přívody elektrické energie?",
+                            "text": "Jsou k dispozici dva nezávislé přívody elektrické energie?",
                             "comment": "",
                             "response": null
                         },

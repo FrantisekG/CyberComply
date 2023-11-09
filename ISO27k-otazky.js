@@ -10,9 +10,9 @@ const questionnaireData = {
           questions: [
             {
               id: "q4.1_1",
-              text: "Organizace si je vědoma všech vlivů, které působí na její systém řízení bezpečnosti informací",
+              text: "Jsou evidovány všechny vlivy, které působí na systém řízení bezpečnosti informací?",
               comment:
-                "Např. kulturní, společenské, politické, regulační, finanční, technologické, ekonomické, přírodní a konkurenční",
+                "Např. kulturní, společenské, politické, regulační, finanční, technologické, ekonomické, přírodní a konkurenční.",
               response: null,
             },
           ],
@@ -23,27 +23,27 @@ const questionnaireData = {
           questions: [
             {
               id: "q4.2_1",
-              text: "Organizace si je vědoma všech zainteresovaných stran, které může zajímat fungování její ISMS",
+              text: "Jsou určeny všechny zainteresované strany, které mají zájem o fungování ISMS organizace?",
               comment:
-                "Strany mohou být zainteresovány pozitivně (např. zákazník) nebo negativně (např. hacker)",
+                "Strany mohou být zainteresovány pozitivně (např. zákazník) nebo negativně (např. hacker).",
               response: null,
             },
             {
               id: "q4.2_2",
-              text: "Organizace má přehled o všech smlouvách, dohodách a úmluvách týkajících se funkce jejího ISMS",
+              text: "Má organizace přehled o všech smlouvách, dohodách a úmluvách týkajících se funkce jejího ISMS?",
               comment:
-                "Sem může patřit například dohoda se zákazníkem o nakládání s informacemi po ukončení smlouvy",
+                "Sem může patřit například dohoda se zákazníkem o nakládání s informacemi po ukončení smlouvy.",
               response: null,
             },
             {
               id: "q4.2_3",
-              text: "Organizace dodržuje všechny smlouvy, dohody a úmluvy týkající se jejího ISMS",
+              text: "Jsou dodržovány všechny smlouvy, dohody a úmluvy týkající se ISMS?",
               comment: "",
               response: null,
             },
             {
               id: "q4.2_4",
-              text: "Organizace má přehled o všech zákonech a nařízení týkajících se funkce jejího ISMS",
+              text: "Má organizace přehled o všech zákonech a nařízení týkajících se funkce jejího ISMS?",
               comment: "Např. GDPR, Zákon č. 412/2005 Sb.",
               response: null,
             },
@@ -55,14 +55,14 @@ const questionnaireData = {
           questions: [
             {
               id: "q4.3_1",
-              text: "Organizace má dokumentaci rozsahu svého ISMS",
-              comment: "Může obsahovat např. databáze, seznamy dokumentů",
+              text: "Je k dispozici dokumentace o rozsahu ISMS?",
+              comment: "Může obsahovat např. aktivní prvky, databáze, seznamy dokumentů.",
               response: null,
             },
             {
               id: "q4.3_2",
-              text: "Organizace má přehled o všech rozšiřujících částech sahajících mimo rozsah ISMS",
-              comment: "Může obsahovat např. databáze, seznamy dokumentů",
+              text: "Má organiazce přehled o všech rozšiřujících částech sahajících mimo rozsah ISMS?",
+              comment: "",
               response: null,
             },
           ],
@@ -74,13 +74,13 @@ const questionnaireData = {
           questions: [
             {
               id: "q4.4_1",
-              text: "Organizace se zavazuje k manipulaci se svým ISMS dle standardu ISO/IEC 27001",
-              comment: "Může obsahovat např. databáze, seznamy dokumentů",
+              text: "Jsou nastaveny procesy, které zaručují implementaci, údžbu a zlepšování ISMS dle ISO/IEC 27001?",
+              comment: "",
               response: null,
             },
             {
               id: "q4.4_2",
-              text: "Organizace má plnou autoritu, zodpovědnost a autonomii při plnění požadavků ISMS",
+              text: "Má organizace plnou autoritu, zodpovědnost a autonomii při plnění požadavků ISMS?",
               comment:
                 'Pokud o ISMS organizace rozhoduje např. její mateřská společnost, vyplňte "ne"',
               response: null,
@@ -92,36 +92,36 @@ const questionnaireData = {
 
     {
       id: "section2",
-      title: "Vedoucí role",
+      title: "Vůdčí role",
       subsections: [
         {
           id: "5.1",
-          title: "Vedoucí role a závazek (5.1)",
+          title: "Vůdčí role a závazek (5.1)",
           questions: [
             {
               id: "q5.1_1",
-              text: "Organizace má plnou autoritu, zodpovědnost a autonomii při plnění požadavků ISMS",
+              text: "Je zajišťováno vedením organizace, aby politika bezpečnosti informací byla shodná se strategickým směřováním?",
               comment:
-                'Pokud o ISMS organizace rozhoduje např. její mateřská společnost, vyplňte "ne"',
+                'Při tvorbě bezpečnostní politiky je přihlíženo k tomu, kam organizace směruje.',
               response: null,
             },
             {
               id: "q5.1_2",
-              text: "V organizaci jsou zavedeny procesy na neustálé zlepšování ISMS",
-              comment: "Např. upgrade systému, školení zaměstnanců",
+              text: "Jsou zavedeny procesy na neustálé zlepšování ISMS?",
+              comment: "Např. upgrade systému, školení zaměstnanců.",
               response: null,
             },
             {
               id: "q5.1_3",
-              text: "Vedení organizace zajišťuje dostupnost všech zdrojů potřebných pro správné fungování ISMS",
-              comment: "Např. finanční nebo lidské zdroje",
+              text: "Je zajišťována vedením organizace dostupnost všech zdrojů potřebných pro správné fungování ISMS?",
+              comment: "Např. finanční nebo lidské zdroje.",
               response: null,
             },
             {
               id: "q5.1_4",
-              text: "Podniková kultura vede zaměstnance k dodržování požadavků informační bezpečnosti",
+              text: "Je podniková kultura nastavena tak, aby vedla zaměstnance k dodržování požadavků informační bezpečnosti?",
               comment:
-                "Např. pravidelná školení o bezpečnosti informací nebo postihy při nedodržování bezpečnostních požadavků",
+                "Např. pravidelná školení o bezpečnosti informací nebo postihy při nedodržování bezpečnostních požadavků.",
               response: null,
             },
           ],
@@ -133,23 +133,23 @@ const questionnaireData = {
           questions: [
             {
               id: "q5.2_1",
-              text: "Organizace má jasně specifikovanou bezpečnostní politiku informací",
+              text: "Je jasně specifikována bezpečnostní politiku informací?",
               comment:
-                "Informační bezpečnostní politika existuje v písemné nebo elektronické podobě",
+                "Informační bezpečnostní politika existuje v písemné nebo elektronické podobě.",
               response: null,
             },
             {
               id: "q5.2_2",
-              text: "Informační bezpečnostní politika organizace je pravidelně udržována a kontrolována",
+              text: "Je informační bezpečnostní politika organizace pravidelně udržována a kontrolována?",
               comment:
-                "Např. pravidelná školení o bezpečnosti informací nebo postihy při nedodržování bezpečnostních požadavků",
+                "Např. pravidelná školení o bezpečnosti informací nebo postihy při nedodržování bezpečnostních požadavků.",
               response: null,
             },
             {
               id: "q5.2_3",
-              text: "Informační bezpečnostní politika organizace je dostupná všem zainteresovaným stranám",
+              text: "Je informační bezpečnostní politika dostupná všem zainteresovaným stranám?",
               comment:
-                "Předpokládají se pouze pozitivně zainteresované strany, viz. bod 4.2",
+                "Předpokládají se pouze pozitivně zainteresované strany, viz. bod 4.2.",
               response: null,
             },
           ],
@@ -160,16 +160,16 @@ const questionnaireData = {
           questions: [
             {
               id: "q5.3_1",
-              text: "V organizaci existují osoby zodpovědné za provoz a údržbu ISMS",
+              text: "Jsou v organizaci osoby zodpovědné za provoz a údržbu ISMS?",
               comment:
-                'Vyplňte "ano", pokud v organizaci existuje osoba s rolí CIO (Chief Information Officer) nebo rolí podobnou',
+                'Vyplňte "ano", pokud v organizaci existuje osoba s rolí CIO (Chief Information Officer) nebo obdobnou rolí.',
               response: null,
             },
             {
               id: "q5.3_2",
-              text: "Vrcholové vedení má přehled o aktuálním fungování ISMS",
+              text: "Má vrcholové vedení přehled o aktuálním fungování ISMS?",
               comment:
-                'Vychází z komunikace vedení a CIO, "ano" v případě pravidelných schůzek, "ne" v případě nepravidelných',
+                'Vychází z komunikace vedení a CIO, "ano" v případě pravidelných schůzek, "ne" v případě nepravidelných.',
               response: null,
             },
           ],
@@ -186,28 +186,28 @@ const questionnaireData = {
           questions: [
             {
               id: "q6.1_1",
-              text: "Organizace je připravena čelit scénářům, které mohou mít dopad na funkci ISMS",
+              text: "Je organizace připravena čelit scénářům, které mohou mít dopad na funkci ISMS?",
               comment:
-                "Např. Delší výpadek elektrického proudu, hackerský útok, úprava zákonů",
+                "Např. Delší výpadek elektrického proudu, hackerský útok, úprava zákonů.",
               response: null,
             },
             {
               id: "q6.1_2",
-              text: "Organizace má plány pro údržbu a zlepšování ISMS",
+              text: "Jsou dostupné plány pro údržbu a zlepšování ISMS?",
               comment:
-                "Plány mohou být v elektronické nebo písemné podobě. Předpokládá se existence krátkodobých, střednědobých i dlouhodobých plánů",
+                "Plány mohou být v elektronické nebo písemné podobě. Předpokládá se existence krátkodobých, střednědobých i dlouhodobých plánů.",
               response: null,
             },
             {
               id: "q6.1_3",
-              text: "Organizace vlastní dokumentaci všech rizik týkajících se ISMS a jejich hodnocení",
+              text: "Je dostupná dokumentace se seznamem všech rizik týkajících se ISMS a jejich hodnocení?",
               comment:
-                "Plány mohou být v elektronické nebo písemné podobě. Předpokládá se existence krátkodobých, střednědobých i dlouhodobých plánů",
+                "Plány mohou být v elektronické nebo písemné podobě. Předpokládá se existence krátkodobých, střednědobých i dlouhodobých plánů.",
               response: null,
             },
             {
               id: "q6.1_4",
-              text: "Dokumentace rizik, plánů a rizikových scénářů je pravidelně udržována",
+              text: "Je dokumentace rizik, plánů a rizikových scénářů pravidelně udržována?",
               comment: "",
               response: null,
             },
@@ -220,19 +220,19 @@ const questionnaireData = {
             {
               id: "q6.2_1",
               text: "Organizace má definované cíle jejího ISMS",
-              comment: "Existují v písemné nebo elektronické formě",
+              comment: "Existují v písemné nebo elektronické formě.",
               response: null,
             },
             {
               id: "q6.2_2",
               text: "Všechny cíle ISMS jsou měřitelné a dá se zjistit míra jejich naplnění",
               comment:
-                "Měřitelné např. dle standardu ISO/IEC 27004 nebo vlastních měřítek",
+                "Měřitelné např. dle standardu ISO/IEC 27004 nebo vlastních měřítek.",
               response: null,
             },
             {
               id: "q6.2_3",
-              text: "Cíle ISMS organizace jsou pravidelně udržovány",
+              text: "Jsou cíle ISMS pravidelně hodnoceny?",
               comment: "",
               response: null,
             },
@@ -250,14 +250,14 @@ const questionnaireData = {
           questions: [
             {
               id: "q7.1_1",
-              text: "Organizace má dostatečné zdroje pro fungování ISMS",
+              text: "Jsou zajištěny dostatečné zdroje pro fungování ISMS?",
               comment:
-                '"Ano" v případě nadbytku zdrojů, "ne" v případě nedostatku zdrojů',
+                '"Ano" v případě nadbytku zdrojů, "ne" v případě nedostatku zdrojů.',
               response: null,
             },
             {
               id: "q7.1_2",
-              text: "Organizace má dostatečné zdroje pro údržbu a neustálé zlepšování ISMS",
+              text: "Jsou zajištěné dostatečné zdroje pro údržbu a neustálé zlepšování ISMS?",
               comment:
                 '"Ano" v případě nadbytku zdrojů, "ne" v případě nedostatku zdrojů',
               response: null,
@@ -270,15 +270,15 @@ const questionnaireData = {
           questions: [
             {
               id: "q7.2_1",
-              text: "Organizace zajišťuje adekvátní trénink, vzdělání a školení zaměstnanců z hlediska bezpečnosti informací",
+              text: "Je zajišťováno adekvátní vzdělání a školení zaměstnanců z hlediska bezpečnosti informací?",
               comment:
-                "Školení je prováděno v adekvátní době po nástupu a poté v pravidelných intervalech",
+                "Školení je prováděno v adekvátní době po nástupu a poté v pravidelných intervalech.",
               response: null,
             },
             {
               id: "q7.2_2",
-              text: "Organizace udržuje dokumentaci o schopnostech zaměstnanců zabezpečit informace organizace",
-              comment: "Např. protokoly o školení, informace z pohovorů",
+              text: "je vedená dokumentace o kompetenci zaměstnanců zabezpečit informace organizace?",
+              comment: "Např. protokoly o školení, informace z pohovorů.",
               response: null,
             },
           ],
@@ -289,16 +289,16 @@ const questionnaireData = {
           questions: [
             {
               id: "q7.3_1",
-              text: "Všichni lidé pracující pro organizaci si jsou vědomi bezpečnostní politiky organizace",
+              text: "Jsou zaměstnanci informováni a vědomi bezpečnostní politiky organizace?",
               comment:
-                "Kladen důraz na osoby pracující s PII (Personally Identifiable Information)",
+                "Kladen důraz na osoby pracující s PII (Personally Identifiable Information).",
               response: null,
             },
             {
               id: "q7.3_2",
-              text: "Lidé pracující v organizaci rozumí možným následkům při nedodržování požadavků ISMS",
+              text: "Jsou zaměstnanci obeznámeni s možnými následky při nedodržování požadavků ISMS?",
               comment:
-                "Následky mohou být sděleny na bezpečnostním školení nebo jinou formou",
+                "Následky mohou být sděleny na bezpečnostním školení nebo jinou formou.",
               response: null,
             },
           ],
@@ -309,16 +309,16 @@ const questionnaireData = {
           questions: [
             {
               id: "q7.4_1",
-              text: "Organizace má definované role pro externí a interní komunikaci",
+              text: "Jsou definované role pro externí a interní komunikaci?",
               comment:
-                "Interní - V rámci podniku, Externí - Mimo podnik (např.zákazník)",
+                "Interní - V rámci podniku, Externí - Mimo podnik (např.zákazník).",
               response: null,
             },
             {
               id: "q7.4_2",
-              text: "Organizace má formální komunikační plán",
+              text: "Je nastaven formální komunikační plán?",
               comment:
-                "Formální plán komunikace v tištěné nebo elektronické formě obsahující postupy pro interní a externí komunikaci",
+                "Formální plán komunikace v tištěné nebo elektronické formě obsahující postupy pro interní a externí komunikaci.",
               response: null,
             },
           ],
@@ -329,27 +329,27 @@ const questionnaireData = {
           questions: [
             {
               id: "q7.5_1",
-              text: "Veškerá dokumentace organizace je identifikovatelná podle nějakého klíče",
+              text: "Je veškerá dokumentace identifikovatelná podle definovaného klíče?",
               comment:
-                "Může se jednat o unikátní ID, datum, jméno zadávajícího a jiné",
+                "Může se jednat o unikátní ID, datum, jméno zadávajícího a jiné.",
               response: null,
             },
             {
               id: "q7.5_2",
-              text: "Dokumentace je dostupná všem zaměstnancům, kteří k ní potřebují přístup",
-              comment: "Případně je přístup udělen v odpovídajícím čase",
+              text: "Dokumentace je dostupná všem zaměstnancům, kteří k ní potřebují přístup?",
+              comment: "Případně je přístup udělen v odpovídajícím čase.",
               response: null,
             },
             {
               id: "q7.5_3",
-              text: "Dokumentace je zabezpečená proti nechtěnému přístupu nebo nevhodné manipulaci",
-              comment: "Zabezpečení jak fyzické, tak elektronické dokumentace",
+              text: "Je dokumentace zabezpečená proti neautorizovanému přístupu nebo nevhodné manipulaci?",
+              comment: "Zabezpečení jak fyzické, tak elektronické dokumentace.",
               response: null,
             },
             {
               id: "q7.5_4",
-              text: "Změny v dokumentaci jsou dohledatelné a lze je vrátit zpět",
-              comment: "Je zaveden např. verzovací systém s historií změn",
+              text: "Jsou změny v dokumentaci dohledatelné a lze je vrátit do původního stavu?",
+              comment: "Je zaveden např. verzovací systém s historií změn.",
               response: null,
             },
           ],
@@ -366,8 +366,8 @@ const questionnaireData = {
           questions: [
             {
               id: "q8.1_1",
-              text: "Organizace má seznam plánovaných změn a možných následků, které mohou tyto změny způsobit",
-              comment: "Např. upgrade systému, zvýšení počtu zaměstnanců",
+              text: "Je k dispozici seznam plánovaných změn a možných následků, které mohou tyto změny způsobit?",
+              comment: "Např. upgrade systému, zvýšení počtu zaměstnanců.",
               response: null,
             },
             {
