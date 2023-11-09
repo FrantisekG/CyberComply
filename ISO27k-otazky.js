@@ -372,16 +372,16 @@ const questionnaireData = {
             },
             {
               id: "q8.1_2",
-              text: "Organizace je připravena vyřešit negativní následky způsobené provedením změny procesů",
+              text: "Je organizace připravena vyřešit negativní následky způsobené provedením změny procesů?",
               comment:
-                "Předpokládá se řešení následků v odpovídající době od jejich vzniku",
+                "Předpokládá se řešení následků v odpovídající době od jejich vzniku.",
               response: null,
             },
             {
               id: "q8.1_3",
-              text: "Všechny outsourcované procesy jsou kontrolovány",
+              text: "Jsou všechny outsourcované procesy kontrolovány?",
               comment:
-                'Pokud v organizaci tyto procesy neexistují, zvolte "ano',
+                'Pokud v organizaci tyto procesy neexistují, zvolte "ne".',
               response: null,
             },
           ],
@@ -392,15 +392,15 @@ const questionnaireData = {
           questions: [
             {
               id: "q8.2_1",
-              text: "Organizace provádí vyhodnocení rizik bezpečnosti informací v pravidelných intervalech nebo po každé větší změně",
-              comment: "Může být součástí interního auditu",
+              text: "Jsou v pravidelných intervalech hodnoceny rizika bezpečenosti informací nebo po každé větší změně?",
+              comment: "Může být součástí interního auditu.",
               response: null,
             },
             {
               id: "q8.2_2",
-              text: "Organizace udržuje dokumentaci výsledků hodnocení rizik bezpečnosti informací",
+              text: "Je udržována dokumentace výsledků hodnocení rizik bezpečnosti informací?",
               comment:
-                '"Ano" v případě pravidelné údržby, "Částečně" v případě nepravidelné údržby, "Ne" v případě žádné údržby',
+                '"Ano" v případě pravidelné údržby, "Částečně" v případě nepravidelné údržby, "Ne" v případě žádné údržby.',
               response: null,
             },
           ],
@@ -411,15 +411,15 @@ const questionnaireData = {
           questions: [
             {
               id: "q8.3_1",
-              text: "Organizace má plán řešení rizik bezpečnosti informací",
-              comment: "V tištěné nebo elektronické podobě",
+              text: "Je k dispozici plán pro ošetření rizik bezpečnosti informací?",
+              comment: "V tištěné nebo elektronické podobě.",
               response: null,
             },
             {
               id: "q8.3_2",
-              text: "Organizace udržuje dokumentaci výsledků řešení rizik bezpečnosti informací",
+              text: "Je uchovávána dokumentace o výsledcích ošetření rizik bezepčnosti informací?",
               comment:
-                '"Ano" v případě pravidelné údržby, "Částečně" v případě nepravidelné údržby, "Ne" v případě žádné údržby',
+                '"Ano" v případě pravidelné údržby, "Částečně" v případě nepravidelné údržby, "Ne" v případě žádné údržby.',
               response: null,
             },
           ],
@@ -436,14 +436,14 @@ const questionnaireData = {
           questions: [
             {
               id: "q9.1_1",
-              text: "Organizace vyhodnotila bezpečnost informací a efektivnost ISMS",
+              text: "Je vyhodnocována bezpečnost informací a efektivnost ISMS?",
               comment: "",
               response: null,
             },
             {
               id: "q9.1_2",
-              text: "Organizace má aktuální seznam procesů a kontrol, které se musí monitorovat a měřit ",
-              comment: "V písemné nebo elektronické formě",
+              text: "Je k dispozici aktuální seznam procesů a kontrol, které se dle požadavků normy musí monitorovat a měřit?",
+              comment: "V písemné nebo elektronické formě.",
               response: null,
             },
           ],
@@ -454,21 +454,21 @@ const questionnaireData = {
           questions: [
             {
               id: "q9.2_1",
-              text: "Organizace provádí pravidelný interní audit bezpečnosti informací",
-              comment: "Standard požaduje minimálně 1x ročně",
+              text: "Je prováděn pravidelný interní audit bezpečnosti informací?",
+              comment: "Standard požaduje minimálně 1x ročně.",
               response: null,
             },
             {
               id: "q9.2_2",
-              text: "Výsledky interních auditů jsou zaznamenány a uchovávány",
-              comment: "V písemné nebo elektronické formě",
+              text: "Jsou výsledky interních auditů jsou zaznamenány a uchovávány?",
+              comment: "V písemné nebo elektronické formě.",
               response: null,
             },
             {
               id: "q9.2_3",
-              text: "Interní audit je prováděn dostatečně zaškolenými osobami",
+              text: "Je interní audit prováděn adekvátně zkušenými a proškolenými osobami?",
               comment:
-                "Auditorům bylo poskytnuto dostatečné školení příp. kurzy",
+                "Auditorům bylo poskytnuto dostatečné školení příp. kurzy.",
               response: null,
             },
           ],
@@ -479,21 +479,21 @@ const questionnaireData = {
           questions: [
             {
               id: "q9.3_1",
-              text: "Vedení organizace pravidelně přezkoumává bezpečnost informací a efektivitu ISMS v organizaci ",
+              text: "Je vedením organizace pravidelně přezkoumávána bezpečnost informací a efektivita ISMS? ",
               comment:
-                '"Ano" v případě častého přezkoumání, "Ne" v případě žádného přezkoumání',
+                '"Ano" v případě častého přezkoumání, "Ne" v případě žádného přezkoumání.',
               response: null,
             },
             {
               id: "q9.3_2",
-              text: "Vedení organizace reaguje na odhalené nedostatky v ISMS organizace",
-              comment: "Předpokládá se včasná reakce při zjištění nedostatku",
+              text: "Reaguje vedení organizace na odhalené nedostatky v ISMS?",
+              comment: "Předpokládá se včasná reakce při zjištění nedostatku.",
               response: null,
             },
             {
               id: "q9.3_3",
-              text: "Závěry z přezkoumání jsou zaznamenány a uchovávány",
-              comment: "V písemné nebo elektronické formě",
+              text: "Jsou závěry z přezkoumání zaznamenány a uchovávány?",
+              comment: "V písemné nebo elektronické formě.",
               response: null,
             },
           ],
@@ -510,16 +510,16 @@ const questionnaireData = {
           questions: [
             {
               id: "q10.1_1",
-              text: "Organizace v rozumné době reaguje na neshody jejího ISMS se standardem ISO/IEC 27001",
+              text: "Reaguje organizace v rozumné době na neshody jejího ISMS se standardem ISO/IEC 27001?",
               comment:
-                "Dle velikosti neshody může být rozumná doba brána různě, nutno rozhoudnout z pohledu CIO",
+                "Dle velikosti neshody může být rozumná doba brána různě, nutno rozhoudnout z pohledu CIO.",
               response: null,
             },
             {
               id: "q10.1_2",
-              text: "Po odstranění neshody je vytvořená dokumentace a je zajištěno, že se neshoda nebude opakovat",
+              text: "Je po odstranění neshody vytvořená dokumentace a je zajištěno, že se neshoda nebude opakovat?",
               comment:
-                '"Ano" v případě, že dokumentace je vytvářena, "Ne" v případě, že dokumentace není vytvářena',
+                '"Ano" v případě, že dokumentace je vytvářena, "Ne" v případě, že dokumentace není vytvářena.',
               response: null,
             },
           ],
@@ -530,14 +530,14 @@ const questionnaireData = {
           questions: [
             {
               id: "q10.2_1",
-              text: "Má plán zlepšování jejího ISMS",
+              text: "Existuje plán zlepšování ISMS?",
               comment:
-                "Plán může obsahovat např. upgrade systému, školení zaměstnanců",
+                "Plán může obsahovat např. upgrade systému, školení zaměstnanců.",
               response: null,
             },
             {
               id: "q10.2_2",
-              text: "Organizace pravidelně vylepšuje svůj ISMS",
+              text: "Vylepšuje organizace pravidelně ISMS?",
               comment: "",
               response: null,
             },
@@ -574,7 +574,7 @@ const questionnaireData = {
           questions: [
             {
               id: "A6_1",
-              text: "Byl vytvořen rámec řízení pro kontrolu provádění a fungování bezpečnosti v rámci organizace, včetně přidělení odpovědností a oddělení protichůdných úkolů?",
+              text: "Byl vytvořen rámec řízení pro kontrolu provádění a fungování bezpečnosti informací v rámci organizace, včetně přidělení odpovědností a oddělení protichůdných úkolů?",
               comment:
                 "",
               response: null,
@@ -587,13 +587,13 @@ const questionnaireData = {
             },
             {
               id: "A6_3",
-              text: "Je v projektech řešena bezpečnost informací?",
+              text: "Je v projektech organizace řešena bezpečnost informací?",
               comment: "",
               response: null,
             },
             {
               id: "A6_4",
-              text: "Je zavedena politika mobilních zařízení a práce na dálku?",
+              text: "Je zavedena politika pro užívání mobilních zařízení a práce na dálku?",
               comment: "",
               response: null,
             },
@@ -611,14 +611,14 @@ const questionnaireData = {
           questions: [
             {
               id: "A7_1",
-              text: "Existuje soupis majetku spojeného s informacemi a jejich zpracováním, jsou určeni vlastníci a jsou definována pravidla pro přijatelné použití majetku a jeho vrácení?",
+              text: "Existuje soupis majetku a jsou určeni vlastníci, včetně pravidel pro přijatelné použití majetku a jeho vrácení?",
               comment:
                 "",
               response: null,
             },
             {
               id: "A7_2",
-              text: "Jsou zaměstnanci povinni dodržovat zásady a postupy v oblasti bezpečnosti informací, pokud jsou informováni, vzděláváni a školeni, a existuje disciplinární řízení?",
+              text: "Jsou zaměstnanci adekvátně proškolení o povinostech, zásadách a postupech bezpečnosti informací?",
               comment: "",
               response: null,
             },
