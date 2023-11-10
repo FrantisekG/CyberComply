@@ -229,26 +229,26 @@ const questionnaireData = {
                         },
                         {
                             "id": "CC7.2",
-                            "text": "",
-                            "comment": "Využívejte nástroje jako SIEM (Security Information and Event Management), IDS (Intrusion Detection System) a software pro detekci anomálií k monitorování a analýze neobvyklých aktivit a hledání potenciálních bezpečnostních událostí.",
+                            "text": "Jsou vytvořeny politiky a zavedeny nástroje pro detekci anomálií, hrozeb a obvyklé aktivity?",
+                            "comment": "Např. za pomocí SIEM, IDS.",
                             "response": null
                         },
                         {
                             "id": "CC7.3",
-                            "text": "Vyhodnocuje váš subjekt bezpečnostní události, aby zjistil, zda mohou vést nebo vedly k nesplnění cílů, a přijímá příslušná opatření?",
-                            "comment": "Využívejte protokoly pro reakci na incidenty a nástroje, jako je digitální forenzní software a platformy pro vyhodnocování hrozeb, k vyhodnocování bezpečnostních událostí.",
+                            "text": "Jsou bezpečnostní události posuzovány z hlediska možného nebo skutečného dopadu na organizaci a jsou zavedeny procesy, jak tyto dopady mitigovat?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "CC7.4",
-                            "text": "Má váš subjekt definovaný program reakce na incidenty, který je aktivně prováděn za účelem porozumění bezpečnostním incidentům, jejich řešení, nápravy a komunikace o nich?",
-                            "comment": "Zajistěte, aby program zahrnoval postupy pro okamžité zamezení šíření, eliminaci hrozeb, opatření pro obnovu a komunikační plány.",
+                            "text": "Je zaveden komplexní program pro řešení bezpečnostních incidentů? ",
+                            "comment": "Program by měl jednoznačně určit role, odpovědnosti, nápravy, komunikační kanály.",
                             "response": null
                         },
                         {
                             "id": "CC7.5",
-                            "text": "Má váš subjekt zavedeny postupy pro zotavení po identifikovaných bezpečnostních incidentech?",
-                            "comment": "Zaměřte se na vývoj a implementaci plánů obnovy po havárii a strategií kontinuity provozu.",
+                            "text": "Jsou vytvořeny postupy pro obnovu procesů a systémů po bezpečnostním incidentu? ",
+                            "comment": "Např. plán obnovy po incidentu.",
                             "response": null
                         },
                     ],
@@ -259,8 +259,8 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "CC8.1",
-                            "text": "Má váš subjekt komplexní proces řízení změn infrastruktury, dat, softwaru a postupů, který zahrnuje autorizaci, dokumentaci, testování a schvalování?",
-                            "comment": "Tyto procesy mohou podpořit nástroje, jako jsou systémy pro správu verzí, software pro automatizované testování a platformy pro správu změn.",
+                            "text": "Jsou vytvořeny principy a způsoby pro řízení významných změn?",
+                            "comment": "Návrhy a postupy změn u infrastruktury jsou dokumentovány.",
                             "response": null
                         },
                     ]
@@ -272,14 +272,14 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "CC9.1",
-                            "text": "Identifikuje, vybírá a vyvíjí váš subjekt proaktivně činnosti ke zmírnění rizik v případě možného narušení provozu?",
-                            "comment": "Zaměřte se na implementaci strategií plánování kontinuity provozu (BCP) a obnovy po havárii (DR).",
+                            "text": "Jsou zavedeny postupy pro identifikaci a zmírnění rizik, které by mohly mít dopad na fungování organizace?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "CC9.2",
-                            "text": "Posuzuje a řídí váš subjekt aktivně rizika spojená s dodavateli a obchodními partnery?",
-                            "comment": "Zajistěte, aby byly stanoveny požadavky na zakázky, pravidelná hodnocení rizik, jasné odpovědnosti vedení a komunikační protokoly. Potvrďte také existenci postupů pro řešení problémů, ukončení vztahů a získání a posouzení závazků týkajících se důvěrnosti a ochrany osobních údajů.",
+                            "text": "Jsou vytvořena pravidla pro hodnocení rizik souvisejících s dodavateli?",
+                            "comment": "Je nutné zrevidovat uzavřené smlouvy a SLA.",
                             "response": null
                         },
                     ]
