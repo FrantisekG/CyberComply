@@ -58,7 +58,7 @@ const questionnaireData = {
                         },
                         {
                             "id": "CC2.3",
-                            "text": "Jsou zavedeny kanály pro komunikaci s externími stranami, jako jsou zákazníci, regulační orgány a dodavatelé, o otázkách ovlivňujících fungování vnitřní kontroly?",
+                            "text": "Jsou zavedeny komunikační kanály s externími stranami, jako jsou zákazníci, regulační orgány a dodavatelé, o otázkách ovlivňujících fungování vnitřní kontroly?",
                             "comment": "Např. struktury pro podávání zpráv za účelem dodržování právních předpisů nebo mechanismy zpětné vazby pro zákazníky, kteří mohou hlásit obavy o bezpečnost.",
                             "response": null
                         },
@@ -70,7 +70,7 @@ const questionnaireData = {
                         },
                         {
                             "id": "CC2.5",
-                            "text": "Provádí vaše organizace pravidelnou revizi a úpravu svých interních kontrolních komunikačních a informačních procesů v reakci na změny v podnikatelském a provozním prostředí?",
+                            "text": "Provádí vaše organizace pravidelnou revizi a úpravu svých interních komunikačních a informačních procesů v reakci na změny v podnikatelském a provozním prostředí?",
                             "comment": "Především po zavedení významných změn, nových technologií atd.",
                             "response": null
                         },
@@ -82,7 +82,7 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "CC3.1",
-                            "text": "Definuje vaše organizace jasně cíle na různých úrovních, aby bylo možné identifikovat a posoudit rizika související s cíli?",
+                            "text": "Jsou cíle dostatečně definovány, aby bylo možné posoudit a identifikovat rizika s nimi spojenými?",
                             "comment": "Cíle by měly být konkrétní, měřitelné, dosažitelné, relevantní a časově omezené (SMART), aby se usnadnilo účinné hodnocení rizik.",
                             "response": null
                         },
@@ -94,13 +94,13 @@ const questionnaireData = {
                         },
                         {
                             "id": "CC3.3",
-                            "text": "Je zohledňován potenciál dopad podvodu na organizaci při hodnocení rizik?",
+                            "text": "Je zohledňován potenciál dopad podvodu v hodnocení rizik?",
                             "comment": "",
                             "response": null
                         },
                         {
                             "id": "CC3.4",
-                            "text": "Jsou zavedeny procesy pro identifikaci a vyhodnocování změn ve vnějším a vnitřním prostředí, které by mohly významně ovlivnit systém vnitřní kontroly?",
+                            "text": "Jsou zavedeny procesy pro identifikaci a vyhodnocování změn ve vnějším i vnitřním prostředí, které by mohly významně ovlivnit systém vnitřní kontroly?",
                             "comment": "Např. sledování regulačních předpisů nebo interních změn jako restrukturalizace.",
                             "response": null
                         },
@@ -120,7 +120,7 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "CC4.1",
-                            "text": "Provádí vaše organizace pravidelná hodnocení, aby zajistila účinnost vnitřních kontrol?",
+                            "text": "Je pravidelně hodnocena účinnost vnitřních kontrol?",
                             "comment": "Např. formou interních auditů a systémů průběžného monitorování.",
                             "response": null
                         },
@@ -140,19 +140,19 @@ const questionnaireData = {
                         {
                             "id": "CC5.1",
                             "text": "Zavedla vaše organizace kontrolní činnosti, které jsou nezbytné pro zmírnění rizik a dosažení cílů?",
-                            "comment": "Hledejte konkrétní kontrolní mechanismy, jako jsou kontroly přístupu, schvalování, ověřování, odsouhlasování a oddělení povinností.",
+                            "comment": "Např. kontrolní mechanismy, jako je schvalování, ověřování, odsouhlasování a oddělení povinností.",
                             "response": null
                         },
                         {
                             "id": "CC5.2",
-                            "text": "Jsou zavedeny obecné kontrolní činnosti pro řízení technologií a podporu dosahování cílů?",
-                            "comment": "Zvažte kontroly, jako je zabezpečení sítě, zálohování dat a plánování obnovy po havárii.",
+                            "text": "Jsou zavedeny obecné kontrolní činnosti pro řízení technologií?",
+                            "comment": "Např. zabezpečení sítě, zálohování dat a plánování obnovy po havárii.",
                             "response": null
                         },
                         {
                             "id": "CC5.3",
-                            "text": "Jsou kontrolní činnosti prováděny prostřednictvím dobře zdokumentovaných zásad a postupů, které jsou sdělovány příslušným zaměstnancům a jsou pro ně srozumitelné?",
-                            "comment": "Zkontrolujte, zda existují a jsou šířeny jasné politické dokumenty a procesní pokyny.",
+                            "text": "Jsou kontrolní činnosti prováděny prostřednictvím dobře zdokumentovaných zásad a postupů, které jsou sdělovány příslušným zaměstnancům?",
+                            "comment": "Tyto zásady a pokyny musí být sdělovány.",
                             "response": null
                         },
                     ]
@@ -163,50 +163,50 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "CC6.1",
-                            "text": "Je účinně implementováno zabezpečení logického přístupu k identifikaci, ověřování a omezování přístupu uživatelů k systémovým komponentám?",
-                            "comment": "Zaměřte se na software, infrastrukturu a architekturu, které podporují identifikaci, ověřování a omezování přístupu uživatelů.",
+                            "text": "Jsou u kritických aktiv zavedená bezpečnostní opatření na úrovni softwaru a infrastruktury, která je adekvátně chrání před narušením?",
+                            "comment": "Např. řízením přístupových oprávnění, jednoznačnou identifikací uživatelů, nasazení kryptografie, ACL",
                             "response": null
                         },
                         {
                             "id": "CC6.2",
-                            "text": "Jsou noví uživatelé před udělením přístupu do systému autorizováni, v případě ukončení jsou ze systému odebráni?",
+                            "text": "Jsou noví uživatelé před udělením přístupu do systému autorizováni a v případě ukončení úvazku ze systému odebráni?",
                             "comment": "",
                             "response": null
                         },
                         {
                             "id": "CC6.3",
                             "text": "Jsou uživatelé při přístupu k systémovým komponentám důsledně identifikováni a ověřováni?",
-                            "comment": "To by se mělo týkat jak interních, tak externích uživatelů, kteří přistupují k infrastruktuře, softwaru a datům.",
+                            "comment": "Týká se jak interních, tak externích uživatelů, kteří přistupují k infrastruktuře, softwaru a datům.",
                             "response": null
                         },
                         {
                             "id": "CC6.4",
-                            "text": "Je přístup ke zdrojům IT povolen, upraven nebo odebrán na základě rolí, odpovědností nebo návrhu systému?",
+                            "text": "Je přístup ke zdrojům IT povolen, upraven nebo odebrán na základě rolí a odpovědností?",
                             "comment": "Změny by měly být v souladu s požadavky na zabezpečení, dostupnost a důvěrnost.",
                             "response": null
                         },
                         {
                             "id": "CC6.5",
-                            "text": "Je fyzický přístup do prostor, v nichž je systém umístěn, omezen pouze na oprávněné pracovníky?",
-                            "comment": "Zahrnuje datová centra, úložiště záložních médií a další citlivá místa.",
+                            "text": "Je fyzický přístup do prostor, v nichž jsou kritická aktiva umístěna, omezen pouze na oprávněné pracovníky?",
+                            "comment": "Zahrnuje datová centra, úložiště záložních médií a další citlivé oblasti.",
                             "response": null
                         },
                         {
                             "id": "CC6.6",
-                            "text": "Jsou zavedena bezpečnostní opatření logického přístupu na ochranu před vnějšími hrozbami?",
-                            "comment": "Především hrozby pocházející z vnějšího prostředí systému.",
+                            "text": "Jsou zavedena bezpečnostní opatření proti vnějším hrozbám?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "CC6.7",
-                            "text": "Je přenos, pohyb a odstranění informací omezeno na oprávněné uživatele a chráněno?",
-                            "comment": "Měla by být zajištěna ochrana při přenosu, přemísťování nebo odstraňování.",
+                            "text": "Je přenos, uložení a odstranění informací a dat omezeno pouze na oprávněné uživatele?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "CC6.8",
-                            "text": "Jsou zavedeny kontrolní mechanismy, které zabraňují zavedení neoprávněného nebo škodlivého softwaru nebo jej odhalují a reagují na něj?",
-                            "comment": "Zaměřte se na mechanismy detekce a reakce na bezpečnostní hrozby související se škodlivým softwarem.",
+                            "text": "Jsou dostupná opatření, která detekují a chrání před škodlivým kódem?",
+                            "comment": "Např. antivirus, antimalware.",
                             "response": null
                         },
                     ]
@@ -223,13 +223,13 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "CC7.1",
-                            "text": "Používá váš subjekt postupy detekce a monitorování k identifikaci nových zranitelností a náchylností vyplývajících ze změn konfigurace nebo nově objevených zranitelností?",
-                            "comment": "Zaměřte se na mechanismy včasné detekce a reakce na provozní anomálie, např. IDS, IPS",
+                            "text": "Jsou zavedené mechanismy, které detekují možné zranitelnosti a anomálie vzniklé při významné změně?",
+                            "comment": "Např. pravidelné skenování zranitelností.",
                             "response": null
                         },
                         {
                             "id": "CC7.2",
-                            "text": "Monitoruje váš subjekt systémové komponenty a operace, zda nedochází k anomáliím naznačujícím bezpečnostní incidenty, přírodní katastrofy nebo chyby?",
+                            "text": "",
                             "comment": "Využívejte nástroje jako SIEM (Security Information and Event Management), IDS (Intrusion Detection System) a software pro detekci anomálií k monitorování a analýze neobvyklých aktivit a hledání potenciálních bezpečnostních událostí.",
                             "response": null
                         },
