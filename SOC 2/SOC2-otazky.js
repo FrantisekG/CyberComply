@@ -11,7 +11,7 @@ const questionnaireData = {
                         {
                             "id": "CC1.1",
                             "text": "Organizace prokazuje závazek k integritě a etickým hodnotám?",
-                            "comment": "Je vytvořen etický kodex, který je sdělován všem zaměstnancům a jeho dodržování je pravidelně revidováno",
+                            "comment": "Je vytvořen etický kodex, který je sdělován všem zaměstnancům a jeho dodržování je pravidelně revidováno.",
                             "response": null
                         },
                         {
@@ -22,14 +22,14 @@ const questionnaireData = {
                         },
                         {
                             "id": "CC1.3",
-                            "text": "Stanovuje vedení společnosti, pod dohledem představentsva, struktury, hlášení a odpovídající pravomoci a zodpovědnosti pro dosahování cílů?",
+                            "text": "Stanovuje vedení společnosti, pod dohledem představentsva, struktury, hlášení a odpovídající pravomoci a odpovědnosti pro dosahování cílů?",
                             "comment": "",
                             "response": null
                         },
                         {
                             "id": "CC1.4",
                             "text": "Prosazuje organizace metody pro získání, rozvíjení a udržení kompetentních osob?",
-                            "comment": "Např. formou školení stávajícíh zaměstnanců",
+                            "comment": "Např. formou školení stávajícíh zaměstnanců.",
                             "response": null
                         },
                         {
