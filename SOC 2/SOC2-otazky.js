@@ -53,7 +53,7 @@ const questionnaireData = {
                         {
                             "id": "CC2.2",
                             "text": "Existuje formální komunikační proces, který zajišťuje, aby si všichni zaměstnanci byli vědomi svých rolí a povinností v oblasti vnitřní kontroly?",
-                            "comment": "Např. pravidelná školení, sdělení nebo příspěvky na intranetu, které informují zaměstnance o postupech vnitřní kontroly a jejich konkrétních povinnostech.",
+                            "comment": "Např. formou příspěvků na intranetu, které informují zaměstnance o postupech vnitřní kontroly a jejich konkrétních povinnostech.",
                             "response": null
                         },
                         {
