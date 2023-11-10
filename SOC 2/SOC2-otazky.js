@@ -348,26 +348,26 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "PI1.1",
-                            "text": "Zajišťuje vaše společnost správné získávání, používání a sdílení informací týkajících se zpracování dat?",
-                            "comment": "",
+                            "text": "Jsou sbírány, využívány a sdíleny jasné a přesné informace o zpracovaných datech, a o specifikacích produktů a služeb s ohledem na plnění cílů?",
+                            "comment": "Data a informace musí být přesná, zabezpečená a odpovídat stanoveným požadavkům.",
                             "response": null
                         },
                         {
                             "id": "PI1.2",
-                            "text": "Implementuje vaše společnost politiky a postupy pro systémové vstupy, včetně kontrol úplnosti a přesnosti?",
-                            "comment": "Ujistěte se, že existují efektivní mechanismy pro ověřování a zabezpečení vstupních dat do systému.",
+                            "text": "Jsou zavedené zásady a postupy, které zajišťují úplnost a přesnost vstupních údajů do systému, což v konečném důsledku přispívá ke spolehlivosti produktů a služeb?",
+                            "comment": "Měly by být dosupné záznamy a mechanismy pro ověřování a zabezpečení dat.",
                             "response": null
                         },
                         {
                             "id": "PI1.3",
-                            "text": "Implementuje vaše společnost politiky a postupy, které povedou k produktům a službám odpovídajícím požadovaným cílům?",
-                            "comment": "Zaměřte se na to, zda jsou procesy a postupy pro zpracování dat v systému navrženy tak, aby byly zajištěny správné výstupy v podobě produktů, služeb a reportů.",
+                            "text": "Jsou zavedeny zásady a postupy, které upravují, jak systémy zpracovávají data, aby bylo zajištěno poskytování spolehlivých produktů, služeb a přesných zpráv?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "PI1.4",
-                            "text": "Implementuje vaše společnost politiky a postupy, aby byly výstupy systému poskytovány nebo doručovány úplně, přesně a včas podle specifikací?",
-                            "comment": "Ujistěte se, že výstupy, jako jsou reporty, produkty a služby, jsou distribuovány v souladu s požadavky a termíny, což je klíčové pro splnění cílů společnosti",
+                            "text": "Jsou zavedeny zásady a postupy, které zajišťují, že výstupy z vašich systémů, ať už jde o produkty, služby nebo zprávy, jsou poskytovány úplně, přesně a včas podle stanovených standardů?",
+                            "comment": "",
                             "response": null
                         },
                         {
