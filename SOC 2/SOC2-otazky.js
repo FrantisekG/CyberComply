@@ -298,20 +298,14 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "A1.1",
-                            "text": "Udržuje, monitoruje a vyhodnocuje váš subjekt aktuální zpracovatelskou kapacitu a využití systémových komponent za účelem efektivního řízení poptávky po kapacitě?",
-                            "comment": "Zaměřte se na postupy monitorování infrastruktury, dat a softwaru, abyste zajistili, že zvládnou současnou a plánovanou pracovní zátěž.",
+                            "text": "Je monitorována a pravidelně prověřována kapacita systémových prvků pro případ náhlého navýšení zátěže?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "A1.2",
-                            "text": "Má váš subjekt komplexní přístup k ochraně životního prostředí, procesům zálohování dat a infrastruktuře pro obnovu, aby byla zajištěna dostupnost systému?",
-                            "comment": "V tomto ohledu jsou zásadní nástroje, jako jsou systémy monitorování prostředí, zálohovací řešení a infrastruktura pro obnovení po havárii.",
-                            "response": null
-                        },
-                        {
-                            "id": "A1.3",
-                            "text": "Testuje váš subjekt pravidelně postupy plánu obnovy, aby zajistil jejich účinnost při podpoře obnovy systému?",
-                            "comment": "Zaměřte se na četnost a komplexnost testování plánu obnovy.",
+                            "text": "Jsou pravidelně testovány plány obnov?",
+                            "comment": "",
                             "response": null
                         },
                     ],
@@ -329,14 +323,14 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "C1.1",
-                            "text": "Vaše společnost efektivně identifikuje a udržuje důvěrné informace, aby zajistila splnění cílů týkajících se důvěrnosti?",
-                            "comment": "Zaměřte se na procesy a nástroje používané pro klasifikaci dat, řízení přístupu a šifrování, aby byly důvěrné informace chráněny.",
+                            "text": "Jsou důvěrné informace adekvátně identifikovány a chráněny v souladu s požadavky na zachování důvěrnosti?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "C1.2",
-                            "text": "Likviduje vaše společnost důvěrné informace tak, aby splnila cíle týkající se důvěrnosti?",
-                            "comment": "Ujistěte se, že existují procesy a nástroje pro bezpečné odstranění nebo zničení důvěrných informací, které jsou již nadále potřebné.",
+                            "text": "Jsou důvěrné informace likvidovány v souladu s požadavky na zachování důvěrnosti?",
+                            "comment": "",
                             "response": null
                         },
                     ],
