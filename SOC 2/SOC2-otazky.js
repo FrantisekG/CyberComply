@@ -367,13 +367,13 @@ const questionnaireData = {
                         {
                             "id": "PI1.4",
                             "text": "Jsou zavedeny zásady a postupy, které zajišťují, že výstupy z vašich systémů, ať už jde o produkty, služby nebo zprávy, jsou poskytovány úplně, přesně a včas podle stanovených standardů?",
-                            "comment": "",
+                            "comment": "Výstupy musí být chráněny při přenosu a uložení proti zničení a krádeži.",
                             "response": null
                         },
                         {
                             "id": "PI1.5",
-                            "text": "Implementuje vaše společnost politiky a postupy pro úplné, přesné a včasné ukládání vstupů, položek ve zpracování a výstupů podle specifikací systému?",
-                            "comment": "Zaměřte se na to, zda jsou data během celého zpracovatelského cyklu uchovávána bezpečně a správně, což zahrnuje vstupy, aktuální zpracování i výstupy.",
+                            "text": "Jsou zavedeny zásady a postupy, které v souladu se specifikacemi systému zajišťují úplné, přesné a včasné ukládání dat po celou dobu jejich životního cyklu?",
+                            "comment": "",
                             "response": null
                         },
                     ],
@@ -391,8 +391,8 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "P1.1",
-                            "text": "Poskytuje vaše společnost subjektům údajů informace o praktikách ochrany osobních údajů, včetně účelu sběru, typu sběraných údajů a metod sběru?",
-                            "comment": "Ujistěte se, že subjekty údajů jsou informovány o všech klíčových aspektech ochrany osobních údajů, včetně volby a souhlasu, použití, uchování, likvidace, přístupu, zveřejnění třetím stranám, zabezpečení, kvality a metodách sledování a vynucování pravidel ochrany osobních údajů.",
+                            "text": " Jsou zapojeným stranám poskytovány aktuální informace o postupech v oblasti ochrany osobních údajů a jejich využití, včetně změn týkajících se těchto postupů?",
+                            "comment": "Informace týkající se osobních údajů by měly zahrnovat účel jejich shromažďování, typ údajů, použité metody (cookies), zabezpečení, likvidace atd.",
                             "response": null
                         },
                     ],
@@ -404,7 +404,7 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "P2.1",
-                            "text": "Komunikuje vaše společnost subjektům údajů dostupné možnosti týkající se sběru, využití, uchování, zveřejnění a likvidace osobních údajů a získává jejich výslovný souhlas, pokud je to vyžadováno?",
+                            "text": "Jsou uživatelům jasně sdělována jejich práva v souvislosti s použitím jejich osobních údajů?",
                             "comment": "",
                             "response": null
                         },
