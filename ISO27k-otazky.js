@@ -555,7 +555,7 @@ const questionnaireData = {
           questions: [
             {
               id: "A5_1",
-              text: "Jsou definovány a pravidelně přezkoumávány politiky bezpečnosti informací, které udávají směr řízení?",
+              text: "Jsou definovány a pravidelně přezkoumávány politiky bezpečnosti informací?",
               comment:
                 "",
               response: null,
@@ -574,26 +574,33 @@ const questionnaireData = {
           questions: [
             {
               id: "A6_1",
-              text: "Byl vytvořen rámec řízení pro kontrolu provádění a fungování bezpečnosti informací v rámci organizace, včetně přidělení odpovědností a oddělení protichůdných úkolů?",
+              text: "Jsou vymezené a dokumentované role a odpovědnosti pro zajištění a provozování bezpečnosti informací?",
               comment:
                 "",
               response: null,
             },
             {
               id: "A6_2",
-              text: "Jsou udržovány vhodné kontakty s úřady a zájmovými skupinami?",
-              comment: "",
+              text: "Jsou zavedené principy oddělující povinnosti a odpovědnosti?",
+              comment:
+                "Pro snížení hrozby neoprávněného nebo neúmyslného zneužití aktiv.",
               response: null,
             },
             {
               id: "A6_3",
-              text: "Je v projektech organizace řešena bezpečnost informací?",
+              text: "Jsou udržovány přiměřené vztahy s úřady a zájmovými skupinami?",
               comment: "",
               response: null,
             },
             {
               id: "A6_4",
-              text: "Je zavedena politika pro užívání mobilních zařízení a práce na dálku?",
+              text: "Je zohledněna bezpečnost informací v řízení projektů?",
+              comment: "",
+              response: null,
+            },
+            {
+              id: "A6_5",
+              text: "Je zavedena politika pro využívání mobilních zařízení a práce na dálku?",
               comment: "",
               response: null,
             },
@@ -642,9 +649,9 @@ const questionnaireData = {
           questions: [
             {
               id: "A8_1",
-              text: "Existuje inventář aktiv spojených s informacemi a zpracováním informací, byli přiřazeni vlastníci a jsou definována pravidla pro přijatelné použití aktiv a vrácení aktiv?",
+              text: "Jsou aktiva identifikována a je jejich seznam pravidelně udržován a aktualizován?",
               comment:
-                "",
+                "Včetně určení vlastního těchto aktiv.",
               response: null,
             },
             {
@@ -655,13 +662,13 @@ const questionnaireData = {
             },
             {
               id: "A8_3",
-              text: "Byly definovány postupy pro zacházení s aktivy v souladu s jejich klasifikací?",
+              text: "Jsou zavedeny postupy pro zacházení s aktivy v souladu s jejich klasifikací?",
               comment: "",
               response: null,
             },
             {
               id: "A8_4",
-              text: "Existují postupy pro odstranění, likvidaci a přepravu médií obsahujících informace?",
+              text: "Jsou zavedeny postupy pro odstranění, likvidaci a přepravu médií obsahujících klasifikované informace?",
               comment: "",
               response: null,
             },
@@ -686,30 +693,30 @@ const questionnaireData = {
             },
             {
               id: "A9_2",
-              text: "Existuje formální proces registrace uživatelů, který přiřazuje a odebírá přístup a přístupová práva k systémům a službám?",
+              text: "Je nastaven formální proces registrace uživatelů, který přiřazuje a odebírá přístupová práva k systémům a službám?",
               comment:
                 "",
               response: null,
             },
             {
               id: "A9_3",
-              text: "Jsou přístupová práva pravidelně přezkoumávána a odstraněna po ukončení zaměstnání?",
+              text: "Jsou přístupová práva pravidelně přezkoumávána a odstraněna po ukončení smluvního vztahu?",
               comment:
                 "",
               response: null,
             },
             {
               id: "A9_4",
-              text: "Jsou privilegovaná přístupová oprávnění omezena a kontrolována a je informace pro tajné ověření kontrolována?",
+              text: "Jsou privilegovaná přístupová oprávnění omezena a kontrolována?",
               comment:
                 "",
               response: null,
             },
             {
               id: "A9_5",
-              text: "Jsou uživatelé seznámeni s postupy pro použití?",
+              text: "Jsou uživatelé seznámeni s postupy pro používání tajných autentizačních informací?",
               comment:
-                "",
+                "Např. hesla, kryptografické klíče",
               response: null,
             },
             {
@@ -728,7 +735,7 @@ const questionnaireData = {
             },
             {
               id: "A9_8",
-              text: "Je použití pomocných programů a přístup ke zdrojovému kódu programu omezeno?",
+              text: "Je nastaven proces pro řízení přístupů ke zdrojovům kódům?",
               comment:
                 "",
               response: null,
@@ -747,9 +754,9 @@ const questionnaireData = {
           questions: [
             {
               id: "A10_1",
-              text: "Existuje politika pro použití kryptografie a správy klíčů?",
+              text: "Je vytvořena politika pro používání kryptografických opatření včetně správy klíčů?",
               comment:
-                "",
+                "Politika musí být vytvořena a implementována po celou dobu jejich životního cyklu.",
               response: null,
             },
           ],
@@ -766,15 +773,15 @@ const questionnaireData = {
           questions: [
             {
               id: "A11_1",
-              text: "Existují politiky a kontrolní mechanismy k zabránění neoprávněného fyzického přístupu a poškození informací a zařízení pro zpracování informací?",
+              text: "Jsou vytvořeny politiky a kontrolní mechanismy k zamezení neoprávněnému vstupu a poškození zařízení obsahující citlivé nebo kritické informace?",
               comment:
                 "",
               response: null,
             },
             {
               id: "A11_2",
-              text: "Existují politiky a kontrolní mechanismy k zabránění ztrátě, poškození, krádeži nebo kompromitaci aktiv a přerušení provozu?",
-              comment: "",
+              text: "Jsou vytvořeny politiky a kontrolní mechanismy k zamezení ztrátě, poškození, krádeži, kompromitaci aktiv a přerušení provozu?",
+              comment: "Návrh fyzické bezpečnosti, který chrání aktiva proti přírodním katastrofám, havariím, záplavám atd.",
               response: null,
             },
           ],
@@ -791,50 +798,50 @@ const questionnaireData = {
           questions: [
             {
               id: "A12_1",
-              text: "Jsou provozní postupy zdokumentovány a jsou změny v organizaci, obchodních procesech a informačních systémech kontrolovány?",
+              text: "Jsou provozní postupy zdokumentovány a jsou změny v organizaci, obchodních procesech a informačních systémech řízeny?",
               comment:
                 "",
               response: null,
             },
             {
               id: "A12_2",
-              text: "Jsou zdroje monitorovány a jsou prováděny projekce budoucích kapacitních požadavků?",
+              text: "Jsou kritické prvky monitorovány a nastaveny na neočekávatelé navýšení výkonů a kapacit?",
               comment: "",
               response: null,
             },
             {
               id: "A12_3",
-              text: "Existuje oddělení vývojového, testovacího a provozního prostředí?",
+              text: "Je pro zabránění neoprávněného přístupu odděleno provozní, vývojové a testovací prostředí?",
               comment: "",
               response: null,
             },
             {
               id: "A12_4",
-              text: "Existuje ochrana proti škodlivému softwaru?",
-              comment: "",
+              text: "Jsou zavedena opatření na detekci a ochranu před škodlivým kódem?",
+              comment: "Např. antivirus, EDR.",
               response: null,
             },
             {
               id: "A12_5",
-              text: "Jsou informace, software a systémy předmětem zálohování a pravidelného testování?",
+              text: "Jsou zaznamenávány udá a systémy pravidelně zálohovány a testovány v souladu se schválenou politikou zálohování?",
               comment: "",
               response: null,
             },
             {
               id: "A12_6",
-              text: "Existují kontrolní mechanismy pro zaznamenávání událostí a generování důkazů?",
+              text: "Jsou zavedeny efektivní mechanismy pro zaznamenávání logů, které zahrnují identifikaci událostí bezpečnosti informací a jsou tyto záznamy pravidelně kontrolovány a analyzovány?",
               comment: "",
               response: null,
             },
             {
               id: "A12_7",
-              text: "Jsou získávány informace o technických zranitelnostech a jsou přijímána vhodná opatření k mitigaci rizika?",
+              text: "Jsou získávány informace o technických zranitelnostech a přijímána vhodná opatření k mitigaci rizik?",
               comment: "",
               response: null,
             },
             {
               id: "A12_8",
-              text: "Je implementace softwaru na provozních systémech kontrolována a existují pravidla upravující instalaci softwaru uživateli?",
+              text: "Jsou zavedeny postupy a řízení pro instalaci softwaru na provozních systémech?",
               comment: "",
               response: null,
             },
@@ -852,15 +859,15 @@ const questionnaireData = {
           questions: [
             {
               id: "A13_1",
-              text: "Jsou sítě spravovány, v případě potřeby segmentovány a kontrolovány k ochraně informačních systémů a jsou síťové služby předmětem služebních dohod?",
+              text: "Jsou zavedena opatření pro segmentaci a řízení ochrany sítě a jejích prvků?",
               comment:
-                "",
+                "Např. formou fyzické nebo virtuální segmentace, pravidel pro řízení síťového provozu, firewall, IDS, IPS.",
               response: null,
             },
             {
               id: "A13_2",
-              text: "Existují politiky a dohody k zachování bezpečnosti informací přenášených v rámci organizace nebo mimo ni?",
-              comment: "",
+              text: "Je zajištěna bezpečnost informací při jejich přenosu v rámci organizace i s externími subjekty?",
+              comment: "Např. se zákazníkem, dodavatelem atd.",
               response: null,
             },
           ],
@@ -877,42 +884,42 @@ const questionnaireData = {
           questions: [
             {
               id: "A14_1",
-              text: "Jsou definovány požadavky na informační bezpečnost pro informační systémy?",
+              text: "Jsou definovány požadavky na zajištění informační bezpečnosti pro informační systémy v jejich celém životním cyklu?",
               comment:
                 "",
               response: null,
             },
             {
               id: "A14_2",
-              text: "Je informace přenášená přes veřejné sítě a transakce aplikačních služeb chráněna?",
+              text: "Jsou informace přenášené přes veřejné sítě dostatečně chráněny před podvodnými aktivitami?",
               comment:
-                "",
+                "Např. pomocí elektronického podpisu, certifikátů, šifrování.",
               response: null,
             },
             {
               id: "A14_3",
-              text: "Jsou stanoveny systémy a pravidla pro vývoj softwaru a jsou změny v systémech během vývojového cyklu formálně kontrolovány?",
+              text: "Jsou zavedeny postupy pro řízení změn systémů v rámci jejich životního cyklu vývoje?",
               comment:
                 "",
               response: null,
             },
             {
               id: "A14_4",
-              text: "Jsou kritické podnikové aplikace prověřovány a testovány pro změny operačních systémových platforem?",
+              text: "Jsou zavedeny procesy, které při změně operačního systému nebo platformy umožní prověření a otestování funkčnosti kritických aplikací?",
               comment:
-                "",
+                "Musí být ověřena kompatibilita aplikací a systémů s nově zavedenými operačními systémy nebo platformami.",
               response: null,
             },
             {
               id: "A14_5",
-              text: "Existují omezení pro změny softwarových balíčků?",
+              text: "Jsou modifikace softwarových balíků omezeny pouze na nezbytné změny a jsou tyto změny přísně řízeny?",
               comment:
                 "",
               response: null,
             },
             {
               id: "A14_6",
-              text: "Byly stanoveny principy bezpečného inženýrství a jsou udržovány a implementovány, včetně bezpečného vývojového prostředí, testování bezpečnosti, využití testovacích dat a testování přijetí systému?",
+              text: "Jsou stanoveny a dokumentovány principy budování bezpečených systémů, včetně testování jejich funkčnosti?",
               comment:
                 "",
               response: null,
@@ -938,14 +945,14 @@ const questionnaireData = {
           questions: [
             {
               id: "A15_1",
-              text: "Existují politiky a dohody k ochraně informačních aktiv, které jsou dostupné dodavatelům?",
+              text: "Jsou vytvořeny politiky a procesy zajišťující ochranu informačních aktiv, ke kterým mají dodavatelé přístup?",
               comment:
                 "",
               response: null,
             },
             {
               id: "A15_2",
-              text: "Je dohodnutá úroveň informačního bezpečnosti a poskytování služeb monitorována a řízena, včetně změn v poskytování služeb?",
+              text: "Jsou monitorovány a pravidelně auditovány dodávky služeb od dodavatelů?",
               comment:
                 "",
               response: null,
@@ -971,7 +978,13 @@ const questionnaireData = {
             },
             {
               id: "A16_2",
-              text: "Existují politiky a kontrolní mechanismy k zabránění ztrátě, poškození, krádeži nebo kompromitaci aktiv a přerušení provozu?",
+              text: "Jsou zavedeny postupy pro identifikaci, sběr a uchování informací, které mohou sloužit jako důkazy?",
+              comment: "",
+              response: null,
+            },
+            {
+              id: "A16_3",
+              text: "Jsou znalosti z analýz a řešení incidentů použity ke snížení pravděpodobnosti dalších incidentů?",
               comment: "",
               response: null,
             },
@@ -989,15 +1002,15 @@ const questionnaireData = {
           questions: [
             {
               id: "A17_1",
-              text: "Je kontinuita informačního bezpečnosti začleněna do systému řízení kontinuity podnikání? ",
+              text: "Jsou stanoveny požadavky pro kontinuitu informační bezpečnosti a zohledněny při vývoji plánů kontinuity informační bezpečnosti? ",
               comment:
-                "Včetně stanovení požadavků v nepříznivých situacích, postupů a kontrol a ověření účinnosti",
+                "Včetně verifikace, že jsou dostatečně efektivní v případě nastalých nepříznivých situácí.",
               response: null,
             },
             {
               id: "A17_2",
-              text: "Jsou informační zpracovávací zařízení implementovány s redundancí k splnění požadavků na dostupnost?",
-              comment: "",
+              text: "Je kontinuita činností informační bezpečnosti zavedena a pravidelně hodnocena pro případ nastalých krizí?",
+              comment: "Záznamy o provedených testech.",
               response: null,
             },
           ],
@@ -1014,26 +1027,26 @@ const questionnaireData = {
           questions: [
             {
               id: "A18_1",
-              text: "Byly definovány všechny legislativní, zákonné, regulační a smluvní požadavky a přístup k jejich splnění pro každý informační systém a organizaci?",
+              text: "Je si organizace vědoma všech zákonných a regulatorních požadavků kladených na ISMS a jsou tyto požadavky dokumentovány?",
               comment:
-                "Včetně, ale nejen, postupů pro autorská práva, ochranu záznamů, ochranu soukromí a ochranu osobních údajů a regulaci kryptografických kontrol",
+                "Např. ochrana duševního vlastnictví, ochrana soukromí a osobních údajů, regulace týkající se kryptografických opatření.",
               response: null,
             },
             {
               id: "A18_2",
-              text: "Provedl se nezávislý přezkum informačního bezpečnosti?",
+              text: "Jsou cíle, postupy a politiky bezpečnostni informací pravidelně nebo při významné změně přezkoumány?",
               comment: "",
               response: null,
             },
             {
               id: "A18_3",
-              text: "Prověřují manažeři pravidelně dodržování informačního zpracování a postupů v jejich odpovědných oblastech?",
+              text: "Je vedoucími pracovníky pravidelně prověřována shoda s bezpečnostními politikami a normami?",
               comment: "",
               response: null,
             },
             {
               id: "A18_4",
-              text: "Jsou informační systémy pravidelně prověřovány z hlediska technického souladu s politikami a standardy?",
+              text: "Jsou informační systémy pravidelně prověřovány, zda jsou v souladu s politikami a normami bezpečnosti informací?",
               comment: "",
               response: null,
             },

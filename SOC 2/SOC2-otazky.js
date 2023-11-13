@@ -11,7 +11,7 @@ const questionnaireData = {
                         {
                             "id": "CC1.1",
                             "text": "Organizace prokazuje závazek k integritě a etickým hodnotám?",
-                            "comment": "Je vytvořen etický kodex, který je sdělován všem zaměstnancům a jeho dodržování je pravidelně revidováno",
+                            "comment": "Je vytvořen etický kodex, který je sdělován všem zaměstnancům a jeho dodržování je pravidelně revidováno.",
                             "response": null
                         },
                         {
@@ -22,14 +22,14 @@ const questionnaireData = {
                         },
                         {
                             "id": "CC1.3",
-                            "text": "Stanovuje vedení společnosti, pod dohledem představentsva, struktury, hlášení a odpovídající pravomoci a zodpovědnosti pro dosahování cílů?",
+                            "text": "Stanovuje vedení společnosti, pod dohledem představentsva, struktury, hlášení a odpovídající pravomoci a odpovědnosti pro dosahování cílů?",
                             "comment": "",
                             "response": null
                         },
                         {
                             "id": "CC1.4",
                             "text": "Prosazuje organizace metody pro získání, rozvíjení a udržení kompetentních osob?",
-                            "comment": "Např. formou školení stávajícíh zaměstnanců",
+                            "comment": "Např. formou školení stávajícíh zaměstnanců.",
                             "response": null
                         },
                         {
@@ -53,12 +53,12 @@ const questionnaireData = {
                         {
                             "id": "CC2.2",
                             "text": "Existuje formální komunikační proces, který zajišťuje, aby si všichni zaměstnanci byli vědomi svých rolí a povinností v oblasti vnitřní kontroly?",
-                            "comment": "Např. pravidelná školení, sdělení nebo příspěvky na intranetu, které informují zaměstnance o postupech vnitřní kontroly a jejich konkrétních povinnostech.",
+                            "comment": "Např. formou příspěvků na intranetu, které informují zaměstnance o postupech vnitřní kontroly a jejich konkrétních povinnostech.",
                             "response": null
                         },
                         {
                             "id": "CC2.3",
-                            "text": "Jsou zavedeny kanály pro komunikaci s externími stranami, jako jsou zákazníci, regulační orgány a dodavatelé, o otázkách ovlivňujících fungování vnitřní kontroly?",
+                            "text": "Jsou zavedeny komunikační kanály s externími stranami, jako jsou zákazníci, regulační orgány a dodavatelé, o otázkách ovlivňujících fungování vnitřní kontroly?",
                             "comment": "Např. struktury pro podávání zpráv za účelem dodržování právních předpisů nebo mechanismy zpětné vazby pro zákazníky, kteří mohou hlásit obavy o bezpečnost.",
                             "response": null
                         },
@@ -70,7 +70,7 @@ const questionnaireData = {
                         },
                         {
                             "id": "CC2.5",
-                            "text": "Provádí vaše organizace pravidelnou revizi a úpravu svých interních kontrolních komunikačních a informačních procesů v reakci na změny v podnikatelském a provozním prostředí?",
+                            "text": "Provádí vaše organizace pravidelnou revizi a úpravu svých interních komunikačních a informačních procesů v reakci na změny v podnikatelském a provozním prostředí?",
                             "comment": "Především po zavedení významných změn, nových technologií atd.",
                             "response": null
                         },
@@ -82,7 +82,7 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "CC3.1",
-                            "text": "Definuje vaše organizace jasně cíle na různých úrovních, aby bylo možné identifikovat a posoudit rizika související s cíli?",
+                            "text": "Jsou cíle dostatečně definovány, aby bylo možné posoudit a identifikovat rizika s nimi spojenými?",
                             "comment": "Cíle by měly být konkrétní, měřitelné, dosažitelné, relevantní a časově omezené (SMART), aby se usnadnilo účinné hodnocení rizik.",
                             "response": null
                         },
@@ -94,13 +94,13 @@ const questionnaireData = {
                         },
                         {
                             "id": "CC3.3",
-                            "text": "Je zohledňován potenciál dopad podvodu na organizaci při hodnocení rizik?",
+                            "text": "Je zohledňován potenciál dopad podvodu v hodnocení rizik?",
                             "comment": "",
                             "response": null
                         },
                         {
                             "id": "CC3.4",
-                            "text": "Jsou zavedeny procesy pro identifikaci a vyhodnocování změn ve vnějším a vnitřním prostředí, které by mohly významně ovlivnit systém vnitřní kontroly?",
+                            "text": "Jsou zavedeny procesy pro identifikaci a vyhodnocování změn ve vnějším i vnitřním prostředí, které by mohly významně ovlivnit systém vnitřní kontroly?",
                             "comment": "Např. sledování regulačních předpisů nebo interních změn jako restrukturalizace.",
                             "response": null
                         },
@@ -120,7 +120,7 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "CC4.1",
-                            "text": "Provádí vaše organizace pravidelná hodnocení, aby zajistila účinnost vnitřních kontrol?",
+                            "text": "Je pravidelně hodnocena účinnost vnitřních kontrol?",
                             "comment": "Např. formou interních auditů a systémů průběžného monitorování.",
                             "response": null
                         },
@@ -140,19 +140,19 @@ const questionnaireData = {
                         {
                             "id": "CC5.1",
                             "text": "Zavedla vaše organizace kontrolní činnosti, které jsou nezbytné pro zmírnění rizik a dosažení cílů?",
-                            "comment": "Hledejte konkrétní kontrolní mechanismy, jako jsou kontroly přístupu, schvalování, ověřování, odsouhlasování a oddělení povinností.",
+                            "comment": "Např. kontrolní mechanismy, jako je schvalování, ověřování, odsouhlasování a oddělení povinností.",
                             "response": null
                         },
                         {
                             "id": "CC5.2",
-                            "text": "Jsou zavedeny obecné kontrolní činnosti pro řízení technologií a podporu dosahování cílů?",
-                            "comment": "Zvažte kontroly, jako je zabezpečení sítě, zálohování dat a plánování obnovy po havárii.",
+                            "text": "Jsou zavedeny obecné kontrolní činnosti pro řízení technologií?",
+                            "comment": "Např. zabezpečení sítě, zálohování dat a plánování obnovy po havárii.",
                             "response": null
                         },
                         {
                             "id": "CC5.3",
-                            "text": "Jsou kontrolní činnosti prováděny prostřednictvím dobře zdokumentovaných zásad a postupů, které jsou sdělovány příslušným zaměstnancům a jsou pro ně srozumitelné?",
-                            "comment": "Zkontrolujte, zda existují a jsou šířeny jasné politické dokumenty a procesní pokyny.",
+                            "text": "Jsou kontrolní činnosti prováděny prostřednictvím dobře zdokumentovaných zásad a postupů, které jsou sdělovány příslušným zaměstnancům?",
+                            "comment": "Tyto zásady a pokyny musí být sdělovány.",
                             "response": null
                         },
                     ]
@@ -163,50 +163,50 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "CC6.1",
-                            "text": "Je účinně implementováno zabezpečení logického přístupu k identifikaci, ověřování a omezování přístupu uživatelů k systémovým komponentám?",
-                            "comment": "Zaměřte se na software, infrastrukturu a architekturu, které podporují identifikaci, ověřování a omezování přístupu uživatelů.",
+                            "text": "Jsou u kritických aktiv zavedená bezpečnostní opatření na úrovni softwaru a infrastruktury, která je adekvátně chrání před narušením?",
+                            "comment": "Např. řízením přístupových oprávnění, jednoznačnou identifikací uživatelů, nasazení kryptografie, ACL",
                             "response": null
                         },
                         {
                             "id": "CC6.2",
-                            "text": "Jsou noví uživatelé před udělením přístupu do systému autorizováni, v případě ukončení jsou ze systému odebráni?",
+                            "text": "Jsou noví uživatelé před udělením přístupu do systému autorizováni a v případě ukončení úvazku ze systému odebráni?",
                             "comment": "",
                             "response": null
                         },
                         {
                             "id": "CC6.3",
                             "text": "Jsou uživatelé při přístupu k systémovým komponentám důsledně identifikováni a ověřováni?",
-                            "comment": "To by se mělo týkat jak interních, tak externích uživatelů, kteří přistupují k infrastruktuře, softwaru a datům.",
+                            "comment": "Týká se jak interních, tak externích uživatelů, kteří přistupují k infrastruktuře, softwaru a datům.",
                             "response": null
                         },
                         {
                             "id": "CC6.4",
-                            "text": "Je přístup ke zdrojům IT povolen, upraven nebo odebrán na základě rolí, odpovědností nebo návrhu systému?",
+                            "text": "Je přístup ke zdrojům IT povolen, upraven nebo odebrán na základě rolí a odpovědností?",
                             "comment": "Změny by měly být v souladu s požadavky na zabezpečení, dostupnost a důvěrnost.",
                             "response": null
                         },
                         {
                             "id": "CC6.5",
-                            "text": "Je fyzický přístup do prostor, v nichž je systém umístěn, omezen pouze na oprávněné pracovníky?",
-                            "comment": "Zahrnuje datová centra, úložiště záložních médií a další citlivá místa.",
+                            "text": "Je fyzický přístup do prostor, v nichž jsou kritická aktiva umístěna, omezen pouze na oprávněné pracovníky?",
+                            "comment": "Zahrnuje datová centra, úložiště záložních médií a další citlivé oblasti.",
                             "response": null
                         },
                         {
                             "id": "CC6.6",
-                            "text": "Jsou zavedena bezpečnostní opatření logického přístupu na ochranu před vnějšími hrozbami?",
-                            "comment": "Především hrozby pocházející z vnějšího prostředí systému.",
+                            "text": "Jsou zavedena bezpečnostní opatření proti vnějším hrozbám?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "CC6.7",
-                            "text": "Je přenos, pohyb a odstranění informací omezeno na oprávněné uživatele a chráněno?",
-                            "comment": "Měla by být zajištěna ochrana při přenosu, přemísťování nebo odstraňování.",
+                            "text": "Je přenos, uložení a odstranění informací a dat omezeno pouze na oprávněné uživatele?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "CC6.8",
-                            "text": "Jsou zavedeny kontrolní mechanismy, které zabraňují zavedení neoprávněného nebo škodlivého softwaru nebo jej odhalují a reagují na něj?",
-                            "comment": "Zaměřte se na mechanismy detekce a reakce na bezpečnostní hrozby související se škodlivým softwarem.",
+                            "text": "Jsou dostupná opatření, která detekují a chrání před škodlivým kódem?",
+                            "comment": "Např. antivirus, antimalware.",
                             "response": null
                         },
                     ]
@@ -223,32 +223,32 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "CC7.1",
-                            "text": "Používá váš subjekt postupy detekce a monitorování k identifikaci nových zranitelností a náchylností vyplývajících ze změn konfigurace nebo nově objevených zranitelností?",
-                            "comment": "Zaměřte se na mechanismy včasné detekce a reakce na provozní anomálie, např. IDS, IPS",
+                            "text": "Jsou zavedené mechanismy, které detekují možné zranitelnosti a anomálie vzniklé při významné změně?",
+                            "comment": "Např. pravidelné skenování zranitelností.",
                             "response": null
                         },
                         {
                             "id": "CC7.2",
-                            "text": "Monitoruje váš subjekt systémové komponenty a operace, zda nedochází k anomáliím naznačujícím bezpečnostní incidenty, přírodní katastrofy nebo chyby?",
-                            "comment": "Využívejte nástroje jako SIEM (Security Information and Event Management), IDS (Intrusion Detection System) a software pro detekci anomálií k monitorování a analýze neobvyklých aktivit a hledání potenciálních bezpečnostních událostí.",
+                            "text": "Jsou vytvořeny politiky a zavedeny nástroje pro detekci anomálií, hrozeb a obvyklé aktivity?",
+                            "comment": "Např. za pomocí SIEM, IDS.",
                             "response": null
                         },
                         {
                             "id": "CC7.3",
-                            "text": "Vyhodnocuje váš subjekt bezpečnostní události, aby zjistil, zda mohou vést nebo vedly k nesplnění cílů, a přijímá příslušná opatření?",
-                            "comment": "Využívejte protokoly pro reakci na incidenty a nástroje, jako je digitální forenzní software a platformy pro vyhodnocování hrozeb, k vyhodnocování bezpečnostních událostí.",
+                            "text": "Jsou bezpečnostní události posuzovány z hlediska možného nebo skutečného dopadu na organizaci a jsou zavedeny procesy, jak tyto dopady mitigovat?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "CC7.4",
-                            "text": "Má váš subjekt definovaný program reakce na incidenty, který je aktivně prováděn za účelem porozumění bezpečnostním incidentům, jejich řešení, nápravy a komunikace o nich?",
-                            "comment": "Zajistěte, aby program zahrnoval postupy pro okamžité zamezení šíření, eliminaci hrozeb, opatření pro obnovu a komunikační plány.",
+                            "text": "Je zaveden komplexní program pro řešení bezpečnostních incidentů? ",
+                            "comment": "Program by měl jednoznačně určit role, odpovědnosti, nápravy, komunikační kanály.",
                             "response": null
                         },
                         {
                             "id": "CC7.5",
-                            "text": "Má váš subjekt zavedeny postupy pro zotavení po identifikovaných bezpečnostních incidentech?",
-                            "comment": "Zaměřte se na vývoj a implementaci plánů obnovy po havárii a strategií kontinuity provozu.",
+                            "text": "Jsou vytvořeny postupy pro obnovu procesů a systémů po bezpečnostním incidentu? ",
+                            "comment": "Např. plán obnovy po incidentu.",
                             "response": null
                         },
                     ],
@@ -259,8 +259,8 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "CC8.1",
-                            "text": "Má váš subjekt komplexní proces řízení změn infrastruktury, dat, softwaru a postupů, který zahrnuje autorizaci, dokumentaci, testování a schvalování?",
-                            "comment": "Tyto procesy mohou podpořit nástroje, jako jsou systémy pro správu verzí, software pro automatizované testování a platformy pro správu změn.",
+                            "text": "Jsou vytvořeny principy a způsoby pro řízení významných změn?",
+                            "comment": "Návrhy a postupy změn u infrastruktury jsou dokumentovány.",
                             "response": null
                         },
                     ]
@@ -272,14 +272,14 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "CC9.1",
-                            "text": "Identifikuje, vybírá a vyvíjí váš subjekt proaktivně činnosti ke zmírnění rizik v případě možného narušení provozu?",
-                            "comment": "Zaměřte se na implementaci strategií plánování kontinuity provozu (BCP) a obnovy po havárii (DR).",
+                            "text": "Jsou zavedeny postupy pro identifikaci a zmírnění rizik, které by mohly mít dopad na fungování organizace?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "CC9.2",
-                            "text": "Posuzuje a řídí váš subjekt aktivně rizika spojená s dodavateli a obchodními partnery?",
-                            "comment": "Zajistěte, aby byly stanoveny požadavky na zakázky, pravidelná hodnocení rizik, jasné odpovědnosti vedení a komunikační protokoly. Potvrďte také existenci postupů pro řešení problémů, ukončení vztahů a získání a posouzení závazků týkajících se důvěrnosti a ochrany osobních údajů.",
+                            "text": "Jsou vytvořena pravidla pro hodnocení rizik souvisejících s dodavateli?",
+                            "comment": "Je nutné zrevidovat uzavřené smlouvy a SLA.",
                             "response": null
                         },
                     ]
@@ -298,20 +298,14 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "A1.1",
-                            "text": "Udržuje, monitoruje a vyhodnocuje váš subjekt aktuální zpracovatelskou kapacitu a využití systémových komponent za účelem efektivního řízení poptávky po kapacitě?",
-                            "comment": "Zaměřte se na postupy monitorování infrastruktury, dat a softwaru, abyste zajistili, že zvládnou současnou a plánovanou pracovní zátěž.",
+                            "text": "Je monitorována a pravidelně prověřována kapacita systémových prvků pro případ náhlého navýšení zátěže?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "A1.2",
-                            "text": "Má váš subjekt komplexní přístup k ochraně životního prostředí, procesům zálohování dat a infrastruktuře pro obnovu, aby byla zajištěna dostupnost systému?",
-                            "comment": "V tomto ohledu jsou zásadní nástroje, jako jsou systémy monitorování prostředí, zálohovací řešení a infrastruktura pro obnovení po havárii.",
-                            "response": null
-                        },
-                        {
-                            "id": "A1.3",
-                            "text": "Testuje váš subjekt pravidelně postupy plánu obnovy, aby zajistil jejich účinnost při podpoře obnovy systému?",
-                            "comment": "Zaměřte se na četnost a komplexnost testování plánu obnovy.",
+                            "text": "Jsou pravidelně testovány plány obnov?",
+                            "comment": "",
                             "response": null
                         },
                     ],
@@ -329,14 +323,14 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "C1.1",
-                            "text": "Vaše společnost efektivně identifikuje a udržuje důvěrné informace, aby zajistila splnění cílů týkajících se důvěrnosti?",
-                            "comment": "Zaměřte se na procesy a nástroje používané pro klasifikaci dat, řízení přístupu a šifrování, aby byly důvěrné informace chráněny.",
+                            "text": "Jsou důvěrné informace adekvátně identifikovány a chráněny v souladu s požadavky na zachování důvěrnosti?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "C1.2",
-                            "text": "Likviduje vaše společnost důvěrné informace tak, aby splnila cíle týkající se důvěrnosti?",
-                            "comment": "Ujistěte se, že existují procesy a nástroje pro bezpečné odstranění nebo zničení důvěrných informací, které jsou již nadále potřebné.",
+                            "text": "Jsou důvěrné informace likvidovány v souladu s požadavky na zachování důvěrnosti?",
+                            "comment": "",
                             "response": null
                         },
                     ],
@@ -354,32 +348,32 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "PI1.1",
-                            "text": "Zajišťuje vaše společnost správné získávání, používání a sdílení informací týkajících se zpracování dat?",
-                            "comment": "",
+                            "text": "Jsou sbírány, využívány a sdíleny jasné a přesné informace o zpracovaných datech, a o specifikacích produktů a služeb s ohledem na plnění cílů?",
+                            "comment": "Data a informace musí být přesná, zabezpečená a odpovídat stanoveným požadavkům.",
                             "response": null
                         },
                         {
                             "id": "PI1.2",
-                            "text": "Implementuje vaše společnost politiky a postupy pro systémové vstupy, včetně kontrol úplnosti a přesnosti?",
-                            "comment": "Ujistěte se, že existují efektivní mechanismy pro ověřování a zabezpečení vstupních dat do systému.",
+                            "text": "Jsou zavedené zásady a postupy, které zajišťují úplnost a přesnost vstupních údajů do systému, což v konečném důsledku přispívá ke spolehlivosti produktů a služeb?",
+                            "comment": "Měly by být dosupné záznamy a mechanismy pro ověřování a zabezpečení dat.",
                             "response": null
                         },
                         {
                             "id": "PI1.3",
-                            "text": "Implementuje vaše společnost politiky a postupy, které povedou k produktům a službám odpovídajícím požadovaným cílům?",
-                            "comment": "Zaměřte se na to, zda jsou procesy a postupy pro zpracování dat v systému navrženy tak, aby byly zajištěny správné výstupy v podobě produktů, služeb a reportů.",
+                            "text": "Jsou zavedeny zásady a postupy, které upravují, jak systémy zpracovávají data, aby bylo zajištěno poskytování spolehlivých produktů, služeb a přesných zpráv?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "PI1.4",
-                            "text": "Implementuje vaše společnost politiky a postupy, aby byly výstupy systému poskytovány nebo doručovány úplně, přesně a včas podle specifikací?",
-                            "comment": "Ujistěte se, že výstupy, jako jsou reporty, produkty a služby, jsou distribuovány v souladu s požadavky a termíny, což je klíčové pro splnění cílů společnosti",
+                            "text": "Jsou zavedeny zásady a postupy, které zajišťují, že výstupy z vašich systémů, ať už jde o produkty, služby nebo zprávy, jsou poskytovány úplně, přesně a včas podle stanovených standardů?",
+                            "comment": "Výstupy musí být chráněny při přenosu a uložení proti zničení a krádeži.",
                             "response": null
                         },
                         {
                             "id": "PI1.5",
-                            "text": "Implementuje vaše společnost politiky a postupy pro úplné, přesné a včasné ukládání vstupů, položek ve zpracování a výstupů podle specifikací systému?",
-                            "comment": "Zaměřte se na to, zda jsou data během celého zpracovatelského cyklu uchovávána bezpečně a správně, což zahrnuje vstupy, aktuální zpracování i výstupy.",
+                            "text": "Jsou zavedeny zásady a postupy, které v souladu se specifikacemi systému zajišťují úplné, přesné a včasné ukládání dat po celou dobu jejich životního cyklu?",
+                            "comment": "",
                             "response": null
                         },
                     ],
@@ -397,8 +391,8 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "P1.1",
-                            "text": "Poskytuje vaše společnost subjektům údajů informace o praktikách ochrany osobních údajů, včetně účelu sběru, typu sběraných údajů a metod sběru?",
-                            "comment": "Ujistěte se, že subjekty údajů jsou informovány o všech klíčových aspektech ochrany osobních údajů, včetně volby a souhlasu, použití, uchování, likvidace, přístupu, zveřejnění třetím stranám, zabezpečení, kvality a metodách sledování a vynucování pravidel ochrany osobních údajů.",
+                            "text": " Jsou zapojeným stranám poskytovány aktuální informace o postupech v oblasti ochrany osobních údajů a jejich využití, včetně změn týkajících se těchto postupů?",
+                            "comment": "Informace týkající se osobních údajů by měly zahrnovat účel jejich shromažďování, typ údajů, použité metody (cookies), zabezpečení, likvidace atd.",
                             "response": null
                         },
                     ],
@@ -410,7 +404,7 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "P2.1",
-                            "text": "Komunikuje vaše společnost subjektům údajů dostupné možnosti týkající se sběru, využití, uchování, zveřejnění a likvidace osobních údajů a získává jejich výslovný souhlas, pokud je to vyžadováno?",
+                            "text": "Jsou uživatelům jasně sdělována jejich práva v souvislosti s použitím jejich osobních údajů?",
                             "comment": "",
                             "response": null
                         },
@@ -423,14 +417,14 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "P3.1",
-                            "text": "Sbírá vaše společnost osobní údaje v souladu s cíli týkajícími se ochrany soukromí?",
-                            "comment": "Pouze za účelem a v rozsahu, který je v souladu s definovanými cíli ochrany soukromí vaší společnosti.",
+                            "text": "Jsou osobní údaje shromažďovány způsobem, který je v souladu se stanovenými cíli ochrany osobních údajů?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "P3.2",
-                            "text": "Informuje vaše společnost subjekty údajů o potřebě výslovného souhlasu a důsledcích jeho neposkytnutí před sběrem osobních údajů?",
-                            "comment": "",
+                            "text": "Jsou uživatelé jasně informování o potřebě výslovného souhlasu s poskytnutím osobníchů údajů a o důsledcích plynoucích z neposkytnutí souhlasu?",
+                            "comment": "Souhlas je nutný pro dodržení závazků a stanovených cílů v ochraně osobních údajů.",
                             "response": null
                         },
                     ],
@@ -442,19 +436,19 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "P4.1",
-                            "text": "Omezuje vaše společnost použití osobních údajů pouze na účely identifikované v cílech týkajících se ochrany soukromí?",
-                            "comment": "Ujistěte se, že využívání osobních údajů je striktně omezeno na deklarované účely a že nedochází k jejich zneužití pro jiné aktivity",
+                            "text": "Je používání osobních údajů omezeno výhradně na účely uvedené v cílech ochrany osobních údajů?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "P4.2",
-                            "text": "Uchovává vaše společnost osobní údaje v souladu s cíli týkajícími se ochrany soukromí?",
+                            "text": "Je uchovávání osobních údajů v souladu se stanovenými cíli ochrany osobních údajů?",
                             "comment": "",
                             "response": null
                         },
                         {
                             "id": "P4.3",
-                            "text": "Likviduje vaše společnost osobní údaje bezpečným způsobem, aby splnila cíle týkající se ochrany soukromí?",
+                            "text": "Jsou zavedeny bezpečné postupy pro likvidaci osobních údajů, které jsou v souladu s cíli ochrany osobních údajů?",
                             "comment": "",
                             "response": null
                         },
@@ -467,14 +461,14 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "P5.1",
-                            "text": "Poskytuje vaše společnost identifikovaným a autentizovaným subjektům údajů přístup k jejich uloženým osobním údajům a na vyžádání jim poskytuje fyzické nebo elektronické kopie těchto údajů?",
+                            "text": "Je autentizovaným uživatelům poskytován přístup k jejich osobním údajům a je jim na vyžádání poskytnuta kopie? Pokud je přístup odepřen, jsou o těchto důvodech informováni s ohledem na požadavky a cíle ochrany osobních údajů?",
                             "comment": "",
                             "response": null
                         },
                         {
                             "id": "P5.2",
-                            "text": "Opravuje, upravuje nebo doplňuje vaše společnost osobní údaje na základě informací poskytnutých subjekty údajů a komunikuje tyto informace třetím stranám, pokud je to požadováno nebo slíbeno?",
-                            "comment": "Ujistěte se, že subjekty údajů mají možnost požádat o korekci svých osobních údajů a že jsou informovány o důvodech zamítnutí takového požadavku.",
+                            "text": "Aktualizuje vaše organizace osobní údaje na žádost subjektu údajů a informuje o těchto změnách třetí strany v rámci svých závazků v oblasti ochrany osobních údajů a jsou uživatelé o odepření těchto úprav informováni?",
+                            "comment": "",
                             "response": null
                         },
                     ],
@@ -486,44 +480,44 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "P6.1",
-                            "text": "Zveřejňuje vaše společnost osobní údaje třetím stranám s výslovným souhlasem subjektů údajů, který je získán před zveřejněním?",
-                            "comment": "Ujistěte se, že před předáním jakýchkoli osobních údajů třetím stranám je získán explicitní souhlas od subjektů údajů.",
+                            "text": "Zajišťuje vaše organizace, aby byl od uživatelů získán výslovný souhlas před poskytnutím jejich osobních údajů třetím stranám?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "P6.2",
-                            "text": "Vytváří a uchovává vaše společnost úplný, přesný a včasný záznam o autorizovaných zveřejněních osobních údajů?",
-                            "comment": "Zaměřte se na to, zda je vedena důkladná evidence o všech zveřejněních osobních údajů, včetně informací o tom, komu, kdy a za jakých podmínek byly údaje poskytnuty.",
+                            "text": "Jsou vedeny podrobné a přesné záznamy o všech povolených přístupech k osobním údajům?",
+                            "comment": "Např. formou logů.",
                             "response": null
                         },
                         {
                             "id": "P6.3",
-                            "text": "Vytváří a uchovává vaše společnost úplný, přesný a včasný záznam o zjištěných nebo nahlášených neoprávněných zveřejněních osobních údajů?",
-                            "comment": "Ujistěte se, že máte proces pro detekci a zaznamenávání bezpečnostních incidentů, včetně úniků a neoprávněného zveřejnění osobních údajů, a že tyto informace jsou správně a včas evidovány.",
+                            "text": "Jsou vedeny záznamy ve formě protokolu nebo logů o všech zjištěných a nahlášených neoprávněných přístupech k osobnímů údajům?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "P6.4",
-                            "text": "Získává vaše společnost závazky k ochraně soukromí od dodavatelů a dalších třetích stran, které mají přístup k osobním údajům, a pravidelně hodnotí jejich dodržování?",
-                            "comment": "Ujistěte se, že máte procesy pro získávání a pravidelné hodnocení závazků k ochraně soukromí od třetích stran, které mají přístup k osobním údajům, a že přijímáte nápravná opatření v případě nedostatků.",
+                            "text": "Jsou pravidelně kontrolovány závazky třetích stran a dodavatelů vůči dodržování a plnění požadavků v oblasti ochrany osobních údajů?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "P6.5",
-                            "text": "Získává vaše společnost závazky od dodavatelů a dalších třetích stran s přístupem k osobním údajům, že vás upozorní v případě skutečného nebo podezřelého neoprávněného zveřejnění osobních údajů?",
-                            "comment": "Ujistěte se, že existují procesy, podle kterých třetí strany informují vaši společnost o jakýchkoli incidentech souvisejících s únikem osobních údajů, a že tato upozornění jsou řádně zpracovávána v souladu s postupy pro reakci na incidenty.",
+                            "text": "Je v plánu zvládání incidentů uveden proces, který stanovuje, že dodavatelé a třetí strany jsou povinni hlásit jakýkoli neoprávněný přístup k osobním údajům?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "P6.6",
-                            "text": "Poskytuje vaše společnost oznámení o porušeních a incidentech dotčeným subjektům údajů, regulátorům a dalším stranám v souladu s cíli týkajícími se ochrany soukromí?",
-                            "comment": "Ujistěte se, že máte postupy pro informování dotčených stran, včetně subjektů údajů a regulačních orgánů, o jakýchkoli bezpečnostních incidentech nebo únicích dat, které by mohly ovlivnit jejich soukromí.",
+                            "text": "Jsou dotčené osoby a příslušné orgány informovány o narušení zásad ochrany osobních údajů?",
+                            "comment": "",
                             "response": null
                         },
                         {
                             "id": "P6.7",
-                            "text": "Poskytuje vaše společnost subjektům údajů přehled o držených osobních údajích a informace o zveřejnění jejich osobních údajů na jejich žádost?",
-                            "comment": "Ujistěte se, že subjekty údajů mají možnost požádat o korekci svých osobních údajů a že jsou informovány o důvodech zamítnutí takového požadavku.",
+                            "text": "Je na žádost uživatele předložen přehled jejich osobních údajů, včetně podrobnostech o jejich zveřejnění?",
+                            "comment": "",
                             "response": null
                         },
                     ],
@@ -541,8 +535,8 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "P7.1",
-                            "text": "Sbírá a udržuje vaše společnost přesné, aktuální, úplné a relevantní osobní údaje?",
-                            "comment": "Zajistěte, že procesy sběru a udržování osobních údajů jsou navrženy tak, aby zajistily jejich přesnost, aktuálnost, úplnost a relevanci v souladu s cíli ochrany soukromí vaší společnosti.",
+                            "text": "Jsou shromážděné osobní údaje přesné, aktuální a v souladu se standardy pro ochranu osobních údajů?",
+                            "comment": "",
                             "response": null
                         },
                     ],
@@ -553,8 +547,8 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "P8.1",
-                            "text": "Má vaše společnost proces pro přijímání, řešení a komunikaci výsledků dotazů, stížností a sporů od subjektů údajů a dalších stran a pravidelně monitoruje dodržování pravidel?",
-                            "comment": "Ujistěte se, že existuje efektivní proces pro řešení dotazů a stížností souvisejících s ochranou soukromí a že jsou případné nedostatky řešeny včas.",
+                            "text": "Jsou zavedeny postupy a procesy pro řešení dotazů a sporů týkajících se ochrany osobních údajů, včetně včasných náprav?",
+                            "comment": "",
                             "response": null
                         },
                     ],

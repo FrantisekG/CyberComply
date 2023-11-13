@@ -30,7 +30,7 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 }
 
 
-// Mapping of internal representation to user-friendly labels
+// Mapování interních labelů na user-friendly verzi 
 const labelMap = {
     "1.opatreni": "1. Opatření",
     "2.opatreni": "2. Opatření",
@@ -42,7 +42,7 @@ const labelMap = {
     "8.opatreni": "8. Opatření",
 };
 
-// Mapping of user-friendly labels back to internal representation
+// Logika pro mapování na user-friendly
 const reverseLabelMap = {};
 for (const key in labelMap) {
     reverseLabelMap[labelMap[key]] = key;
@@ -75,8 +75,8 @@ var labels = [
 // Získání výsledků z localStorage
 var barChartNISSrovnavacresults = JSON.parse(localStorage.getItem('individualMeasurePercentages'));
 
-// Now, when you create the chart, map your internal labels to the user-friendly ones
-var userFriendlyLabels = labels.map(label => labelMap[label] || label); // Fallback to the original label if not found in the map
+
+var userFriendlyLabels = labels.map(label => labelMap[label] || label);
 
 
 // Vytvoření pole hodnot z výsledků, které odpovídají statickým názvům os
@@ -112,25 +112,25 @@ const sceneMessages = {
     "10.opatreni": "Absence vícefaktorového ověření identity a bezpečných komunikačních nástrojů zvyšuje riziko úniku informací a neautorizovaného přístupu do systémů."
 };
 
-// Function to create messages based on the completion percentage, 
+// Funkcr pro zobrazení zprávy u výsledků pod 50%
 function createMessages(dataValues, userFriendlyLabels, containerID) {
     var warningBoxHtml = "";
 
     dataValues.forEach((value, index) => {
         var userFriendlyLabel = userFriendlyLabels[index];
-        var internalLabel = reverseLabelMap[userFriendlyLabel] || userFriendlyLabel; // Map back to internal representation
-        var sceneMessage = sceneMessages[internalLabel]; // Get the specific scene message
+        var internalLabel = reverseLabelMap[userFriendlyLabel] || userFriendlyLabel;
+        var sceneMessage = sceneMessages[internalLabel];
         if (value < 50) {
             warningBoxHtml += `<div class="alert alert-danger"> U <b>${userFriendlyLabel}</b> máte míru souladu s požadavky směrnice NIS 2 pod <b>50 %</b>. <br><span style="display: block; padding-top: 10px;">${sceneMessage}</span></div>`;
         }
     });
-    // Append the messages to the respective container
+
     var warningBoxContainer = document.getElementById(containerID);
     warningBoxContainer.innerHTML = warningBoxHtml;
 }
 
-// Call the function after you have the dataValues and userFriendlyLabels
-// Call the function with the desired container ID
+
+// Volání funkce do HTML
 createMessages(dataValues, userFriendlyLabels, "SOC2warningContainer1");
 createMessages(dataValues, userFriendlyLabels, "SOC2warningContainer2");
 createMessages(dataValues, userFriendlyLabels, "SOC2warningContainer3");
@@ -177,7 +177,7 @@ document.querySelectorAll('.myBarChartNISSOC2Bar').forEach(function (canvas) {
                         ticks: {
                             maxTicksLimit: 10,
                         },
-                        // maxBarThickness: 40,
+
                     },
                 ],
                 yAxes: [
@@ -220,13 +220,13 @@ document.querySelectorAll('.myBarChartNISSOC2Bar').forEach(function (canvas) {
                 callbacks: {
                     title: function (tooltipItem, data) {
                         var label = data.labels[tooltipItem[0].index];
-                        var internalLabel = reverseLabelMap[label] || label; // Map back to internal representation
-                        var hoverLabel = hoverLabelMap[internalLabel] || label; // Get the detailed hover label
-                        return hoverLabel; // This will be displayed as the title
+                        var internalLabel = reverseLabelMap[label] || label;
+                        var hoverLabel = hoverLabelMap[internalLabel] || label;
+                        return hoverLabel;
                     },
                     label: function (tooltipItem, data) {
                         var value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index].toFixed(1);
-                        return "Plnění: " + value + ' %'; // Display only the percentage value here
+                        return "Plnění: " + value + ' %';
                     },
                 },
             },
