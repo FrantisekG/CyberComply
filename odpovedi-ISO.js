@@ -166,7 +166,7 @@ function calculateScores() {
     const results = {
         totalScores: totalScores,
         maxScore: maxScore,
-        percentage: (((totalScores["Ano"] * 2) + totalScores["Částečně"])/ maxScore) * 100,
+        percentage: (((totalScores["Ano"] * 2) + totalScores["Částečně"]) / maxScore) * 100,
         sections: sectionScores,
         // Procentuální hodnota otázek označených jako "Neaplikováno"
         notApplicablePercentage: (totalScores["Neaplikováno"] / totalQuestions) * 100
@@ -301,7 +301,11 @@ function calculateScoresForMeasure(measureName) {
 }
 
 submitButton.addEventListener("click", function () {
-    event.preventDefault(); // Prevent default form submission if necessary
+    event.preventDefault(); // Prevence náhodného kliknutí
+
+    // U submit button vypnuto
+    hasStartedQuestionnaire = false;
+
     if (!validateSectionAnswers()) {
         alert("Prosím vyplňte všechny otázky.");
         return;

@@ -311,7 +311,11 @@ function calculateScoresForMeasure(measureName) {
 }
 
 submitButton.addEventListener("click", function () {
-    event.preventDefault(); // Prevent default form submission if necessary
+    event.preventDefault(); // Zabrání náhodnému kliknutí
+
+    // U submit button vypnuto
+    hasStartedQuestionnaire = false;
+
     if (!validateSectionAnswers()) {
         alert("Prosím vyplňte všechny otázky.");
         return;
