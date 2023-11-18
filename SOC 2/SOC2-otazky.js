@@ -645,7 +645,7 @@ function displaySection(sectionId, containerId) {
 
                     const iconElement = document.createElement('i');
                     iconElement.className = "fas fa-info-circle";
-                    iconElement.style.marginLeft = '5px';  // Adjust as needed
+                    iconElement.style.marginLeft = '5px';
                     tooltipWrapper.appendChild(iconElement);
 
                     const tooltipTextElement = document.createElement('span');
@@ -662,7 +662,7 @@ function displaySection(sectionId, containerId) {
 
                     const iconElement = document.createElement('i');
                     iconElement.className = "fas fa-info-circle";
-                    iconElement.style.marginLeft = '5px';  // Adjust as needed
+                    iconElement.style.marginLeft = '5px';
                     tooltipWrapper.appendChild(iconElement);
 
                     const tooltipTextElement = document.createElement('span');
@@ -679,7 +679,7 @@ function displaySection(sectionId, containerId) {
 
                     const iconElement = document.createElement('i');
                     iconElement.className = "fas fa-info-circle";
-                    iconElement.style.marginLeft = '5px';  // Adjust as needed
+                    iconElement.style.marginLeft = '5px';
                     tooltipWrapper.appendChild(iconElement);
 
                     const tooltipTextElement = document.createElement('span');
@@ -696,7 +696,7 @@ function displaySection(sectionId, containerId) {
 
                     const iconElement = document.createElement('i');
                     iconElement.className = "fas fa-info-circle";
-                    iconElement.style.marginLeft = '5px';  // Adjust as needed
+                    iconElement.style.marginLeft = '5px';
                     tooltipWrapper.appendChild(iconElement);
 
                     const tooltipTextElement = document.createElement('span');
