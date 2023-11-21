@@ -111,7 +111,7 @@ const sceneMessages = {
   "3.opatreni": "Nedostatečná kontinuita činností, včetně zálohování a disaster recovery, znamená, že vaše organizace není připravena efektivně reagovat na mimořádné události, což ohrožuje její dlouhodobou udržitelnost.",
   "4.opatreni": "Bezpečnost v rámci dodavatelského řetězce není ve vaší organizaci dostatečně řešena, což zvyšuje riziko infiltrace škodlivými aktéry do vašich systému.",
   "5.opatreni": "Nedostatečné postupy v pořízení, vývoji a údržbě systémů mohou vést k zavádění zranitelností do organizace, čímž se zvyšuje riziko útoků.",
-  "6.opatreni": "Vaše organizace nemá adekvátně zavedené politiky a postupy pro hodnocení účinnosti bezpečnostních opatření (interní audit). To má za následek, že organizace nevidí jaké se v kritických systémech skýtají slabiny a kde je nutné zavést účinnější procesy.",
+  "6.opatreni": "Vaše organizace nemá adekvátně zavedené politiky a postupy pro hodnocení účinnosti bezpečnostních opatření (interní audit). To má za následek, že organizace nevidí, jaké se v kritických systémech skýtají slabiny a kde je nutné zavést účinnější procesy.",
   "7.opatreni": "Ve vaší organizaci je určitá absence praktik základní počítačové hygieny a vzdělávání v oblasti kybernetické bezpečnosti, což zvyšuje riziko incidentů způsobených lidskou chybou.",
   "8.opatreni": "Nemáte dostatečně nasazené kryptografické prostředky a šifrování, což znamená, že citlivé informace nejsou řádně chráněny a existuje značné riziko jejich kompromitace.",
   "9.opatreni": "Dle výsledků je evidentní, že nemáte zavedené procesy pro dostatečné řízení bezpečnosti lidských zdrojů. Tato zranitelnost může vést k neoprávněnému přístupu k citlivým informacím a aktivům.",
