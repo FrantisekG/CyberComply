@@ -22,14 +22,14 @@ const questionnaireData = {
                         },
                         {
                             "id": "CC1.3",
-                            "text": "Stanovuje vedení společnosti, pod dohledem představentsva, struktury, hlášení a odpovídající pravomoci a odpovědnosti pro dosahování cílů?",
+                            "text": "Stanovuje vedení společnosti, pod dohledem představenstva, struktury, hlášení a odpovídající pravomoci a odpovědnosti pro dosahování cílů?",
                             "comment": "",
                             "response": null
                         },
                         {
                             "id": "CC1.4",
                             "text": "Prosazuje organizace metody pro získání, rozvíjení a udržení kompetentních osob?",
-                            "comment": "Např. formou školení stávajícíh zaměstnanců.",
+                            "comment": "Např. formou školení stávajících zaměstnanců.",
                             "response": null
                         },
                         {
@@ -355,7 +355,7 @@ const questionnaireData = {
                         {
                             "id": "PI1.2",
                             "text": "Jsou zavedené zásady a postupy, které zajišťují úplnost a přesnost vstupních údajů do systému, což v konečném důsledku přispívá ke spolehlivosti produktů a služeb?",
-                            "comment": "Měly by být dosupné záznamy a mechanismy pro ověřování a zabezpečení dat.",
+                            "comment": "Měly by být dostupné záznamy a mechanismy pro ověřování a zabezpečení dat.",
                             "response": null
                         },
                         {
@@ -423,7 +423,7 @@ const questionnaireData = {
                         },
                         {
                             "id": "P3.2",
-                            "text": "Jsou uživatelé jasně informování o potřebě výslovného souhlasu s poskytnutím osobníchů údajů a o důsledcích plynoucích z neposkytnutí souhlasu?",
+                            "text": "Jsou uživatelé jasně informování o potřebě výslovného souhlasu s poskytnutím osobních údajů a o důsledcích plynoucích z neposkytnutí souhlasu?",
                             "comment": "Souhlas je nutný pro dodržení závazků a stanovených cílů v ochraně osobních údajů.",
                             "response": null
                         },
@@ -492,7 +492,7 @@ const questionnaireData = {
                         },
                         {
                             "id": "P6.3",
-                            "text": "Jsou vedeny záznamy ve formě protokolu nebo logů o všech zjištěných a nahlášených neoprávněných přístupech k osobnímů údajům?",
+                            "text": "Jsou vedeny záznamy ve formě protokolu nebo logů o všech zjištěných a nahlášených neoprávněných přístupech k osobním údajům?",
                             "comment": "",
                             "response": null
                         },
