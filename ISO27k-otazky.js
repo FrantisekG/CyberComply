@@ -61,7 +61,7 @@ const questionnaireData = {
             },
             {
               id: "q4.3_2",
-              text: "Má organiazce přehled o všech rozšiřujících částech sahajících mimo rozsah ISMS?",
+              text: "Má organizace přehled o všech rozšiřujících částech sahajících mimo rozsah ISMS?",
               comment: "",
               response: null,
             },
@@ -74,7 +74,7 @@ const questionnaireData = {
           questions: [
             {
               id: "q4.4_1",
-              text: "Jsou nastaveny procesy, které zaručují implementaci, údžbu a zlepšování ISMS dle ISO/IEC 27001?",
+              text: "Jsou nastaveny procesy, které zaručují implementaci, údržbu a zlepšování ISMS dle ISO/IEC 27001?",
               comment: "",
               response: null,
             },
@@ -311,7 +311,7 @@ const questionnaireData = {
               id: "q7.4_1",
               text: "Jsou definované role pro externí a interní komunikaci?",
               comment:
-                "Interní - V rámci podniku, Externí - Mimo podnik (např.zákazník).",
+                "Interní - V rámci podniku, Externí - Mimo podnik (např. zákazník).",
               response: null,
             },
             {
@@ -392,7 +392,7 @@ const questionnaireData = {
           questions: [
             {
               id: "q8.2_1",
-              text: "Jsou v pravidelných intervalech hodnoceny rizika bezpečenosti informací nebo po každé větší změně?",
+              text: "Jsou v pravidelných intervalech hodnoceny rizika bezpečnosti informací nebo po každé větší změně?",
               comment: "Může být součástí interního auditu.",
               response: null,
             },
@@ -417,7 +417,7 @@ const questionnaireData = {
             },
             {
               id: "q8.3_2",
-              text: "Je uchovávána dokumentace o výsledcích ošetření rizik bezepčnosti informací?",
+              text: "Je uchovávána dokumentace o výsledcích ošetření rizik bezpečnosti informací?",
               comment:
                 '"Ano" v případě pravidelné údržby, "Částečně" v případě nepravidelné údržby, "Ne" v případě žádné údržby.',
               response: null,
@@ -512,7 +512,7 @@ const questionnaireData = {
               id: "q10.1_1",
               text: "Reaguje organizace v rozumné době na neshody jejího ISMS se standardem ISO/IEC 27001?",
               comment:
-                "Dle velikosti neshody může být rozumná doba brána různě, nutno rozhoudnout z pohledu CIO.",
+                "Dle velikosti neshody může být rozumná doba brána různě, nutno rozhodnout z pohledu CIO.",
               response: null,
             },
             {
@@ -625,7 +625,7 @@ const questionnaireData = {
             },
             {
               id: "A7_2",
-              text: "Jsou zaměstnanci adekvátně proškolení o povinostech, zásadách a postupech bezpečnosti informací?",
+              text: "Jsou zaměstnanci adekvátně proškolení o povinnostech, zásadách a postupech bezpečnosti informací?",
               comment: "",
               response: null,
             },
@@ -735,7 +735,7 @@ const questionnaireData = {
             },
             {
               id: "A9_8",
-              text: "Je nastaven proces pro řízení přístupů ke zdrojovům kódům?",
+              text: "Je nastaven proces pro řízení přístupů ke zdrojovým kódům?",
               comment:
                 "",
               response: null,
@@ -805,7 +805,7 @@ const questionnaireData = {
             },
             {
               id: "A12_2",
-              text: "Jsou kritické prvky monitorovány a nastaveny na neočekávatelé navýšení výkonů a kapacit?",
+              text: "Jsou kritické prvky monitorovány a nastaveny na neočekávatelné navýšení výkonů a kapacit?",
               comment: "",
               response: null,
             },
@@ -919,7 +919,7 @@ const questionnaireData = {
             },
             {
               id: "A14_6",
-              text: "Jsou stanoveny a dokumentovány principy budování bezpečených systémů, včetně testování jejich funkčnosti?",
+              text: "Jsou stanoveny a dokumentovány principy budování bezpečných systémů, včetně testování jejich funkčnosti?",
               comment:
                 "",
               response: null,
@@ -1004,7 +1004,7 @@ const questionnaireData = {
               id: "A17_1",
               text: "Jsou stanoveny požadavky pro kontinuitu informační bezpečnosti a zohledněny při vývoji plánů kontinuity informační bezpečnosti? ",
               comment:
-                "Včetně verifikace, že jsou dostatečně efektivní v případě nastalých nepříznivých situácí.",
+                "Včetně verifikace, že jsou dostatečně efektivní v případě nastalých nepříznivých situací.",
               response: null,
             },
             {
