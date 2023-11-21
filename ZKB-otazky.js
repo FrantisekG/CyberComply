@@ -82,12 +82,6 @@ const questionnaireData = {
                         },
                         {
                             "id": "5c",
-                            "text": "Dochází k identifikaci, evidenci a hodnocení rizik včetně jejich relevantních hrozeb, zranitelnosti a dopadů?",
-                            "comment": "Včetně rizik spojených s dodavateli, více v příloze 2 a 3 VKB.",
-                            "response": null
-                        },
-                        {
-                            "id": "5d",
                             "text": "Jsou bezpečnostní opatřená zaváděna v souladu s RTP?",
                             "comment": "",
                             "response": null
@@ -706,7 +700,7 @@ const questionnaireData = {
                         {
                             "id": "17m",
                             "text": "Je vedena evidence přístupů do zabezpečených prostor?",
-                            "comment": "Např. serverovna",
+                            "comment": "Např. serverovna.",
                             "response": null
                         },
                     ],
@@ -946,12 +940,6 @@ const questionnaireData = {
                             "id": "24c",
                             "text": "Jsou nástroje pro sběr a vyhodnocování KBI dostatečně ošetřeny personálními kapacitami a aktivně se s nimi a jejich výstupy pracuje?",
                             "comment": "",
-                            "response": null
-                        },
-                        {
-                            "id": "24d",
-                            "text": "Je nasazeno řešení pro ochranu před únikem dat?",
-                            "comment": "Např. DLP",
                             "response": null
                         },
                     ],
