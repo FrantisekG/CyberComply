@@ -242,7 +242,7 @@ const questionnaireData = {
                         },
                         {
                             "id": "9b",
-                            "text": "Existuje plán rozvoje bezpečenostního povědomí s určenými odpovědnými osobami za jeho realizaci a hodnocení jeho účinnosti?",
+                            "text": "Existuje plán rozvoje bezpečnostního povědomí s určenými odpovědnými osobami za jeho realizaci a hodnocení jeho účinnosti?",
                             "comment": "",
                             "response": null
                         },
@@ -254,7 +254,7 @@ const questionnaireData = {
                         },
                         {
                             "id": "9d",
-                            "text": "Jsou prováděna vstupní a pravidelná školení administrátorů, uživatelů a osob zástavajících bezpečnostní role?",
+                            "text": "Jsou prováděna vstupní a pravidelná školení administrátorů, uživatelů a osob zastávajících bezpečnostní role?",
                             "comment": "Včetně ověřování získaných znalostí.",
                             "response": null
                         },
@@ -302,7 +302,7 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "10a",
-                            "text": "Je vytvořena politika řízení provozu a komunikací včetně pravidel a postuů dle § 10 odst. 1) VKB?",
+                            "text": "Je vytvořena politika řízení provozu a komunikací včetně pravidel a postupů dle § 10 odst. 1) VKB?",
                             "comment": "Politika je zároveň dodržována a aktualizována.",
                             "response": null
                         },
@@ -314,7 +314,7 @@ const questionnaireData = {
                         },
                         {
                             "id": "10c",
-                            "text": "Je vytvořena politika bezpečeného předávání a výměny informací?",
+                            "text": "Je vytvořena politika bezpečného předávání a výměny informací?",
                             "comment": "Více informací naleznete v příloze 5 1.10.",
                             "response": null
                         },
@@ -473,7 +473,7 @@ const questionnaireData = {
                         },
                         {
                             "id": "13c",
-                            "text": "Je zajištěna bezpečnost a oddělení vývojového, provozního a testovacícho prostředí a to včetně ochrany testovacích dat?",
+                            "text": "Je zajištěna bezpečnost a oddělení vývojového, provozního a testovacího prostředí a to včetně ochrany testovacích dat?",
                             "comment": "",
                             "response": null
                         },
@@ -699,7 +699,7 @@ const questionnaireData = {
                         },
                         {
                             "id": "17l",
-                            "text": "Jsou aplikovány standardy bezpečenostních opatření proti přírodním katastrofám?",
+                            "text": "Jsou aplikovány standardy bezpečnostních opatření proti přírodním katastrofám?",
                             "comment": "",
                             "response": null
                         },
@@ -767,7 +767,7 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "19a",
-                            "text": "Je implentován nástroj pro ověření identity uživatele, který současně zajišťuje řízení počtu neúspěšných pokusů o přihlášení, centralizovanou správu identit a další požadavky dle § 19 odst. 2 VKB?",
+                            "text": "Je implementován nástroj pro ověření identity uživatele, který současně zajišťuje řízení počtu neúspěšných pokusů o přihlášení, centralizovanou správu identit a další požadavky dle § 19 odst. 2 VKB?",
                             "comment": "Např. Active Directory (AD), IdM.",
                             "response": null
                         },
@@ -810,7 +810,7 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "20a",
-                            "text": "Je nastaven proces bezpečeného přístupu dodavatelů do vnitřní sítě?",
+                            "text": "Je nastaven proces bezpečného přístupu dodavatelů do vnitřní sítě?",
                             "comment": "Např. pomocí VPN, segmentace, řízeného oprávnění atd.",
                             "response": null
                         },
@@ -879,7 +879,7 @@ const questionnaireData = {
                 },
                 {
                     "id": "§ 22",
-                    "title": "Záznamenování událostí informačního a komunikačního systému, je uživatelů a adminstrátorů (§ 22)",
+                    "title": "Zaznamenávání událostí informačního a komunikačního systému, je uživatelů a administrátorů (§ 22)",
                     "questions": [
                         {
                             "id": "22a",
@@ -924,7 +924,7 @@ const questionnaireData = {
         {
 
             "id": "section9",
-            "title": "Technická opatření - SIEM, dostupnost a kryptografrie",
+            "title": "Technická opatření - SIEM, dostupnost a kryptografie",
             "subsections": [
                 {
                     "id": "§ 24",
@@ -962,7 +962,7 @@ const questionnaireData = {
                     "questions": [
                         {
                             "id": "25a",
-                            "text": "Jsou prováděny penetráční testy před uvedením důležitých aktiv do provozu?",
+                            "text": "Jsou prováděny penetrační testy před uvedením důležitých aktiv do provozu?",
                             "comment": "",
                             "response": null
                         },
@@ -1048,7 +1048,7 @@ const questionnaireData = {
                 },
                 {
                     "id": "§ 28",
-                    "title": "Půmyslové, řídící a obdobné specifické systémy (§ 28)",
+                    "title": "Průmyslové, řídící a obdobné specifické systémy (§ 28)",
                     "questions": [
                         {
                             "id": "28a",
@@ -1077,7 +1077,7 @@ const questionnaireData = {
                         },
                         {
                             "id": "30b",
-                            "text": "Probíha pravidelné přezkoumání bezpečnostní politiky a bezpečnostní dokumentace?",
+                            "text": "Probíhá pravidelné přezkoumání bezpečnostní politiky a bezpečnostní dokumentace?",
                             "comment": "",
                             "response": null
                         },
