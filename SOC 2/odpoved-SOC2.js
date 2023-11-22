@@ -247,8 +247,6 @@ const measureMappings = {
 function calculateScoresForMeasure(measureName) {
     const subsectionIds = measureMappings[measureName].subsections;
     const sectionIds = measureMappings[measureName].sections;
-    console.log("Toto se z mapování zobrazuje", subsectionIds);
-    console.log(sectionIds);
     // Objekt pro ukládání skóre z odpovědí
     let measureScores = {
         subsections: {},
@@ -261,10 +259,10 @@ function calculateScoresForMeasure(measureName) {
 
         section.subsections.forEach(subsection => {
             let subsectionScore = 0;
-            let subsectionMaxScore = subsection.questions.length * 2; // Assuming max score per question is 2
+            let subsectionMaxScore = subsection.questions.length * 2; 
 
             subsection.questions.forEach(question => {
-                // Scores based on responses
+                // Výsledky podle odpovědí
                 switch (question.response) {
                     case "Ano":
                         subsectionScore += 2;
@@ -280,7 +278,7 @@ function calculateScoresForMeasure(measureName) {
                 }
             });
 
-            // If the subsection is relevant to the measure, store its score
+            // Pokud je sekce relevantní, ulož výsledky
             if (subsectionIds.includes(subsection.id)) {
                 measureScores.subsections[subsection.id] = {
                     score: subsectionScore,
@@ -289,12 +287,12 @@ function calculateScoresForMeasure(measureName) {
                 };
             }
 
-            // Accumulate scores for the section
+            // Součet výsledků
             sectionScore += subsectionScore;
             sectionMaxScore += subsectionMaxScore;
         });
 
-        // If the section is relevant to the measure, store its score
+       
         if (sectionIds.includes(section.id)) {
             measureScores.sections[section.id] = {
                 score: sectionScore,
@@ -304,7 +302,7 @@ function calculateScoresForMeasure(measureName) {
         }
     });
 
-    // Handle the measure scores as needed, e.g., store in localStorage, display to the user, etc.
+    // Uložení do localStorage
     localStorage.setItem('measureScores', JSON.stringify(measureScores));
 
     return measureScores;
@@ -342,36 +340,29 @@ function updateProgressBarsAndCalculateOverallPercentage() {
     let overallCount = 0;
     let individualMeasurePercentages = {};
 
-    console.log('measureMappings', measureMappings); // Debug output
-
     // Loop through each measure and update its progress bar
     for (const measureName in measureMappings) {
 
         const measureScores = JSON.parse(localStorage.getItem(`${measureName}Scores`));
 
-        // ZMĚNY NAROZDÍL OD ISO
         if (measureScores) {
             let totalPercentage = 0;
             let count = 0;
 
             // Sum up the percentage of each section
             for (const sectionId in measureScores.sections) {
-                console.log('sectionId', sectionId); // Debug output
                 totalPercentage += measureScores.sections[sectionId].percentage;
                 overallTotalPercentage += measureScores.sections[sectionId].percentage;
                 count++;
                 overallCount++;
             }
-
-            // NOVINKA  - Sum up the percentage of each subsection
             for (const subsectionId in measureScores.subsections) {
                 // ...
                 totalPercentage += measureScores.subsections[subsectionId].percentage;
                 overallTotalPercentage += measureScores.subsections[subsectionId].percentage;
                 count++;
                 overallCount++;
-            } // KONEC NOVINKY
-
+            }
             // Calculate the average percentage for the individual measure
             const averagePercentage = count > 0 ? totalPercentage / count : 0;
             individualMeasurePercentages[measureName] = averagePercentage;

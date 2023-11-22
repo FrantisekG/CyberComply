@@ -96,7 +96,7 @@ const questionnaireData = {
                         {
                             "id": "6a",
                             "text": "Je vytvořena politika organizační bezpečnosti?",
-                            "comment": "Příloha 5 1.3",
+                            "comment": "Příloha 5 1.3.",
                             "response": null
                         },
                         {
@@ -1095,12 +1095,22 @@ Pokud containerId není poskytnuto, použije se výchozí hodnota 'questionnaire
 // Proměnná sledující, zda uživatel zahájil vyplňování dotazníku
 let hasStartedQuestionnaire = false;
 
+// Nové okno bude automaticky začínat nahoře
+function scrollToTop() {
+    window.scrollTo(0, 0);
+}
+
 function displaySection(sectionId, containerId) {
     const container = document.getElementById(containerId || 'questionnaireContainer');
     container.innerHTML = '';
 
     const section = questionnaireData.sections.find(s => s.id === sectionId);
     if (!section) return;
+    
+        // Delay the scrolling to ensure the DOM has updated
+        setTimeout(function() {
+            scrollToTop();
+        }, 100); // Adjust the delay time as needed
 
     /*Tvorba elementů HTML*/
     /*Název sekce*/
@@ -1256,6 +1266,7 @@ function displaySection(sectionId, containerId) {
     });
 
     container.appendChild(sectionElement);
+
 }
 
 window.onload = function () {
@@ -1269,6 +1280,18 @@ window.onload = function () {
     displaySection('section8', 'questionnaireContainer8');
     displaySection('section9', 'questionnaireContainer9');
     displaySection('section10', 'questionnaireContainer10');
+
+    // Při kliknutí na "Další" zavolá funkci, která scrolluje nahoru
+    const nextButton = document.getElementById('nextButton');
+    if (nextButton) {
+        nextButton.addEventListener('click', scrollToTop);
+    }
+
+          // Zavolá funkci pro scroll nahoru u "Zpět"
+          const prevButton = document.getElementById('prevButton');
+          if (prevButton) {
+              prevButton.addEventListener('click', scrollToTop);
+          }
 }
 
 // Funkce, která zobrazí výzvu, pokud uživatel pokusí opustit stránku po zahájení vyplňování dotazníku

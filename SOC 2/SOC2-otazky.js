@@ -565,6 +565,11 @@ Pokud containerId není poskytnuto, použije se výchozí hodnota 'questionnaire
 // Proměnná sledující, zda uživatel zahájil vyplňování dotazníku
 let hasStartedQuestionnaire = false;
 
+// Nové okno bude automaticky začínat nahoře
+function scrollToTop() {
+    window.scrollTo(0, 0);
+}
+
 function displaySection(sectionId, containerId) {
     const container = document.getElementById(containerId || 'questionnaireContainer');
     container.innerHTML = '';
@@ -737,6 +742,18 @@ window.onload = function () {
     displaySection('section6', 'questionnaireContainer6');
     displaySection('section7', 'questionnaireContainer7');
     displaySection('section8', 'questionnaireContainer8');
+
+      // Při kliknutí na "Další" zavolá funkci, která scrolluje nahoru
+  const nextButton = document.getElementById('nextButton');
+  if (nextButton) {
+      nextButton.addEventListener('click', scrollToTop);
+  }
+
+      // Zavolá funkci pro scroll nahoru u "Zpět"
+      const prevButton = document.getElementById('prevButton');
+      if (prevButton) {
+          prevButton.addEventListener('click', scrollToTop);
+      }
 }
 
 // Funkce, která zobrazí výzvu, pokud uživatel pokusí opustit stránku po zahájení vyplňování dotazníku
