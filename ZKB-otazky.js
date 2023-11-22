@@ -1044,6 +1044,30 @@ const questionnaireData = {
                             "comment": "",
                             "response": null
                         },
+                        {
+                            "id": "28b",
+                            "text": "Je komunikační síť určená pro průmyslové a řídicí systémy fyzicky nebo logicky oddělená od ostatní infrastruktury?",
+                            "comment": "",
+                            "response": null
+                        },
+                        {
+                            "id": "28c",
+                            "text": "Jsou operační systémy klíčových aktiv aktualizované?",
+                            "comment": "Smluvně zajištěno, že dodavatel/provozovatel musí udržovat nejnovější zabezpečení a firmware.",
+                            "response": null
+                        },
+                        {
+                            "id": "28d",
+                            "text": "Jsou zásahy pracovníků do těchto systémů zaznamenávány?",
+                            "comment": "Např. kamerové záznamy, logy přístupů.",
+                            "response": null
+                        },
+                        {
+                            "id": "28e",
+                            "text": "Jsou kritická aktiva dostatečně fyzicky chráněna a je k nim omezen přístup pouze pro určený personál?",
+                            "comment": "",
+                            "response": null
+                        },
                     ],
                 },
             ],
