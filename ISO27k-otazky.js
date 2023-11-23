@@ -82,7 +82,7 @@ const questionnaireData = {
               id: "q4.4_2",
               text: "Má organizace plnou autoritu, zodpovědnost a autonomii při plnění požadavků ISMS?",
               comment:
-                'Pokud o ISMS organizace rozhoduje např. její mateřská společnost, vyplňte "ne"',
+                'Pokud o ISMS organizace rozhoduje např. její mateřská společnost, vyplňte "ne".',
               response: null,
             },
           ],
@@ -259,7 +259,7 @@ const questionnaireData = {
               id: "q7.1_2",
               text: "Jsou zajištěné dostatečné zdroje pro údržbu a neustálé zlepšování ISMS?",
               comment:
-                '"Ano" v případě nadbytku zdrojů, "ne" v případě nedostatku zdrojů',
+                '"Ano" v případě nadbytku zdrojů, "ne" v případě nedostatku zdrojů.',
               response: null,
             },
           ],
@@ -651,7 +651,7 @@ const questionnaireData = {
               id: "A8_1",
               text: "Jsou aktiva identifikována a je jejich seznam pravidelně udržován a aktualizován?",
               comment:
-                "Včetně určení vlastního těchto aktiv.",
+                "Včetně jejich určení.",
               response: null,
             },
             {
@@ -716,7 +716,7 @@ const questionnaireData = {
               id: "A9_5",
               text: "Jsou uživatelé seznámeni s postupy pro používání tajných autentizačních informací?",
               comment:
-                "Např. hesla, kryptografické klíče",
+                "Např. hesla, kryptografické klíče.",
               response: null,
             },
             {
